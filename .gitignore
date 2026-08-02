@@ -16,6 +16,7 @@ venv/
 # Assets (generated)
 assets/models/*.glb
 assets/textures/generated/
+assets/qa/
 scripts/postgresql-binaries.zip
 scripts/pgsql/
 scripts/pgdata/
