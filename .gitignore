@@ -1,0 +1,31 @@
+# Node
+node_modules/
+dist/
+*.local
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Env
+.env
+.env.local
+
+# Assets (generated)
+assets/models/*.glb
+assets/textures/generated/
+scripts/postgresql-binaries.zip
+scripts/pgsql/
+scripts/pgdata/
+scripts/pg.log
+pgsql/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Editor
+.idea/
+.vscode/

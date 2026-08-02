@@ -1,0 +1,403 @@
+{
+  "textures": [
+    {
+      "slug": "subway-white-600x300",
+      "name": "White Subway Tile",
+      "category": "wall-tiles",
+      "tile_width_mm": 600,
+      "tile_height_mm": 300,
+      "thickness_mm": 9,
+      "colour_family": "white",
+      "finish": "gloss",
+      "material": "ceramic",
+      "pattern": "plain",
+      "source_type": "custom",
+      "license": "custom",
+      "maps": {
+        "albedo": "/textures/wall-tiles/subway-white-600x300/albedo.jpg",
+        "normal": "/textures/wall-tiles/subway-white-600x300/normal.jpg",
+        "preview": "/textures/wall-tiles/subway-white-600x300/preview.jpg"
+      }
+    },
+    {
+      "slug": "subway-grey-600x300",
+      "name": "Grey Subway Tile",
+      "category": "wall-tiles",
+      "tile_width_mm": 600,
+      "tile_height_mm": 300,
+      "thickness_mm": 9,
+      "colour_family": "grey",
+      "finish": "matte",
+      "material": "ceramic",
+      "pattern": "plain",
+      "source_type": "custom",
+      "license": "custom",
+      "maps": {
+        "albedo": "/textures/wall-tiles/subway-grey-600x300/albedo.jpg",
+        "normal": "/textures/wall-tiles/subway-grey-600x300/normal.jpg",
+        "preview": "/textures/wall-tiles/subway-grey-600x300/preview.jpg"
+      }
+    },
+    {
+      "slug": "metro-black-600x300",
+      "name": "Black Metro Tile",
+      "category": "wall-tiles",
+      "tile_width_mm": 600,
+      "tile_height_mm": 300,
+      "thickness_mm": 9,
+      "colour_family": "black",
+      "finish": "gloss",
+      "material": "ceramic",
+      "pattern": "plain",
+      "source_type": "custom",
+      "license": "custom",
+      "maps": {
+        "albedo": "/textures/wall-tiles/metro-black-600x300/albedo.jpg",
+        "normal": "/textures/wall-tiles/metro-black-600x300/normal.jpg",
+        "preview": "/textures/wall-tiles/metro-black-600x300/preview.jpg"
+      }
+    },
+    {
+      "slug": "marble-white-600x300",
+      "name": "Carrara White Marble",
+      "category": "wall-tiles",
+      "tile_width_mm": 600,
+      "tile_height_mm": 300,
+      "thickness_mm": 9,
+      "colour_family": "white",
+      "finish": "gloss",
+      "material": "ceramic",
+      "pattern": "marble",
+      "source_type": "custom",
+      "license": "custom",
+      "maps": {
+        "albedo": "/textures/wall-tiles/marble-white-600x300/albedo.jpg",
+        "normal": "/textures/wall-tiles/marble-white-600x300/normal.jpg",
+        "preview": "/textures/wall-tiles/marble-white-600x300/preview.jpg"
+      }
+    },
+    {
+      "slug": "marble-charcoal-600x300",
+      "name": "Charcoal Marble",
+      "category": "wall-tiles",
+      "tile_width_mm": 600,
+      "tile_height_mm": 300,
+      "thickness_mm": 9,
+      "colour_family": "grey",
+      "finish": "gloss",
+      "material": "ceramic",
+      "pattern": "marble",
+      "source_type": "custom",
+      "license": "custom",
+      "maps": {
+        "albedo": "/textures/wall-tiles/marble-charcoal-600x300/albedo.jpg",
+        "normal": "/textures/wall-tiles/marble-charcoal-600x300/normal.jpg",
+        "preview": "/textures/wall-tiles/marble-charcoal-600x300/preview.jpg"
+      }
+    },
+    {
+      "slug": "ceramic-mint-600x300",
+      "name": "Mint Ceramic Tile",
+      "category": "wall-tiles",
+      "tile_width_mm": 600,
+      "tile_height_mm": 300,
+      "thickness_mm": 9,
+      "colour_family": "green",
+      "finish": "gloss",
+      "material": "ceramic",
+      "pattern": "plain",
+      "source_type": "custom",
+      "license": "custom",
+      "maps": {
+        "albedo": "/textures/wall-tiles/ceramic-mint-600x300/albedo.jpg",
+        "normal": "/textures/wall-tiles/ceramic-mint-600x300/normal.jpg",
+        "preview": "/textures/wall-tiles/ceramic-mint-600x300/preview.jpg"
+      }
+    },
+    {
+      "slug": "ceramic-sage-600x300",
+      "name": "Sage Green Tile",
+      "category": "wall-tiles",
+      "tile_width_mm": 600,
+      "tile_height_mm": 300,
+      "thickness_mm": 9,
+      "colour_family": "green",
+      "finish": "matte",
+      "material": "ceramic",
+      "pattern": "plain",
+      "source_type": "custom",
+      "license": "custom",
+      "maps": {
+        "albedo": "/textures/wall-tiles/ceramic-sage-600x300/albedo.jpg",
+        "normal": "/textures/wall-tiles/ceramic-sage-600x300/normal.jpg",
+        "preview": "/textures/wall-tiles/ceramic-sage-600x300/preview.jpg"
+      }
+    },
+    {
+      "slug": "ceramic-navy-600x300",
+      "name": "Navy Blue Tile",
+      "category": "wall-tiles",
+      "tile_width_mm": 600,
+      "tile_height_mm": 300,
+      "thickness_mm": 9,
+      "colour_family": "blue",
+      "finish": "gloss",
+      "material": "ceramic",
+      "pattern": "plain",
+      "source_type": "custom",
+      "license": "custom",
+      "maps": {
+        "albedo": "/textures/wall-tiles/ceramic-navy-600x300/albedo.jpg",
+        "normal": "/textures/wall-tiles/ceramic-navy-600x300/normal.jpg",
+        "preview": "/textures/wall-tiles/ceramic-navy-600x300/preview.jpg"
+      }
+    },
+    {
+      "slug": "stone-beige-600x300",
+      "name": "Beige Stone Tile",
+      "category": "wall-tiles",
+      "tile_width_mm": 600,
+      "tile_height_mm": 300,
+      "thickness_mm": 9,
+      "colour_family": "beige",
+      "finish": "matte",
+      "material": "natural stone",
+      "pattern": "stone",
+      "source_type": "custom",
+      "license": "custom",
+      "maps": {
+        "albedo": "/textures/wall-tiles/stone-beige-600x300/albedo.jpg",
+        "normal": "/textures/wall-tiles/stone-beige-600x300/normal.jpg",
+        "preview": "/textures/wall-tiles/stone-beige-600x300/preview.jpg"
+      }
+    },
+    {
+      "slug": "mosaic-white-200x200",
+      "name": "White Mosaic",
+      "category": "wall-tiles",
+      "tile_width_mm": 200,
+      "tile_height_mm": 200,
+      "thickness_mm": 9,
+      "colour_family": "white",
+      "finish": "gloss",
+      "material": "ceramic",
+      "pattern": "mosaic",
+      "source_type": "custom",
+      "license": "custom",
+      "maps": {
+        "albedo": "/textures/wall-tiles/mosaic-white-200x200/albedo.jpg",
+        "normal": "/textures/wall-tiles/mosaic-white-200x200/normal.jpg",
+        "preview": "/textures/wall-tiles/mosaic-white-200x200/preview.jpg"
+      }
+    },
+    {
+      "slug": "hex-white-200x200",
+      "name": "Hex White Mosaic",
+      "category": "wall-tiles",
+      "tile_width_mm": 200,
+      "tile_height_mm": 200,
+      "thickness_mm": 9,
+      "colour_family": "white",
+      "finish": "gloss",
+      "material": "ceramic",
+      "pattern": "mosaic",
+      "source_type": "custom",
+      "license": "custom",
+      "maps": {
+        "albedo": "/textures/wall-tiles/hex-white-200x200/albedo.jpg",
+        "normal": "/textures/wall-tiles/hex-white-200x200/normal.jpg",
+        "preview": "/textures/wall-tiles/hex-white-200x200/preview.jpg"
+      }
+    },
+    {
+      "slug": "porcelain-light-grey-600x600",
+      "name": "Light Grey Porcelain",
+      "category": "floor-tiles",
+      "tile_width_mm": 600,
+      "tile_height_mm": 600,
+      "thickness_mm": 9,
+      "colour_family": "grey",
+      "finish": "matte",
+      "material": "porcelain",
+      "pattern": "plain",
+      "source_type": "custom",
+      "license": "custom",
+      "maps": {
+        "albedo": "/textures/floor-tiles/porcelain-light-grey-600x600/albedo.jpg",
+        "normal": "/textures/floor-tiles/porcelain-light-grey-600x600/normal.jpg",
+        "preview": "/textures/floor-tiles/porcelain-light-grey-600x600/preview.jpg"
+      }
+    },
+    {
+      "slug": "porcelain-anthracite-600x600",
+      "name": "Anthracite Porcelain",
+      "category": "floor-tiles",
+      "tile_width_mm": 600,
+      "tile_height_mm": 600,
+      "thickness_mm": 9,
+      "colour_family": "grey",
+      "finish": "matte",
+      "material": "porcelain",
+      "pattern": "plain",
+      "source_type": "custom",
+      "license": "custom",
+      "maps": {
+        "albedo": "/textures/floor-tiles/porcelain-anthracite-600x600/albedo.jpg",
+        "normal": "/textures/floor-tiles/porcelain-anthracite-600x600/normal.jpg",
+        "preview": "/textures/floor-tiles/porcelain-anthracite-600x600/preview.jpg"
+      }
+    },
+    {
+      "slug": "stone-slate-600x600",
+      "name": "Slate Effect Tile",
+      "category": "floor-tiles",
+      "tile_width_mm": 600,
+      "tile_height_mm": 600,
+      "thickness_mm": 9,
+      "colour_family": "grey",
+      "finish": "matte",
+      "material": "porcelain",
+      "pattern": "stone",
+      "source_type": "custom",
+      "license": "custom",
+      "maps": {
+        "albedo": "/textures/floor-tiles/stone-slate-600x600/albedo.jpg",
+        "normal": "/textures/floor-tiles/stone-slate-600x600/normal.jpg",
+        "preview": "/textures/floor-tiles/stone-slate-600x600/preview.jpg"
+      }
+    },
+    {
+      "slug": "terrazzo-light-600x600",
+      "name": "Light Terrazzo",
+      "category": "floor-tiles",
+      "tile_width_mm": 600,
+      "tile_height_mm": 600,
+      "thickness_mm": 9,
+      "colour_family": "beige",
+      "finish": "matte",
+      "material": "porcelain",
+      "pattern": "terrazzo",
+      "source_type": "custom",
+      "license": "custom",
+      "maps": {
+        "albedo": "/textures/floor-tiles/terrazzo-light-600x600/albedo.jpg",
+        "normal": "/textures/floor-tiles/terrazzo-light-600x600/normal.jpg",
+        "preview": "/textures/floor-tiles/terrazzo-light-600x600/preview.jpg"
+      }
+    },
+    {
+      "slug": "encaustic-blue-200x200",
+      "name": "Blue Encaustic Cement",
+      "category": "floor-tiles",
+      "tile_width_mm": 200,
+      "tile_height_mm": 200,
+      "thickness_mm": 9,
+      "colour_family": "blue",
+      "finish": "matte",
+      "material": "cement",
+      "pattern": "encaustic",
+      "source_type": "custom",
+      "license": "custom",
+      "maps": {
+        "albedo": "/textures/floor-tiles/encaustic-blue-200x200/albedo.jpg",
+        "normal": "/textures/floor-tiles/encaustic-blue-200x200/normal.jpg",
+        "preview": "/textures/floor-tiles/encaustic-blue-200x200/preview.jpg"
+      }
+    },
+    {
+      "slug": "wood-oak-plank-1200x200",
+      "name": "Oak Wood Effect Plank",
+      "category": "floor-tiles",
+      "tile_width_mm": 1200,
+      "tile_height_mm": 200,
+      "thickness_mm": 9,
+      "colour_family": "wood",
+      "finish": "matte",
+      "material": "porcelain",
+      "pattern": "wood",
+      "source_type": "custom",
+      "license": "custom",
+      "maps": {
+        "albedo": "/textures/floor-tiles/wood-oak-plank-1200x200/albedo.jpg",
+        "normal": "/textures/floor-tiles/wood-oak-plank-1200x200/normal.jpg",
+        "preview": "/textures/floor-tiles/wood-oak-plank-1200x200/preview.jpg"
+      }
+    },
+    {
+      "slug": "wood-walnut-plank-1200x200",
+      "name": "Walnut Wood Effect Plank",
+      "category": "floor-tiles",
+      "tile_width_mm": 1200,
+      "tile_height_mm": 200,
+      "thickness_mm": 9,
+      "colour_family": "wood",
+      "finish": "matte",
+      "material": "porcelain",
+      "pattern": "wood",
+      "source_type": "custom",
+      "license": "custom",
+      "maps": {
+        "albedo": "/textures/floor-tiles/wood-walnut-plank-1200x200/albedo.jpg",
+        "normal": "/textures/floor-tiles/wood-walnut-plank-1200x200/normal.jpg",
+        "preview": "/textures/floor-tiles/wood-walnut-plank-1200x200/preview.jpg"
+      }
+    },
+    {
+      "slug": "panel-tile-effect-white-1200x2400",
+      "name": "White Tile Effect Panel",
+      "category": "panels",
+      "tile_width_mm": 1200,
+      "tile_height_mm": 2400,
+      "thickness_mm": 9,
+      "colour_family": "white",
+      "finish": "gloss",
+      "material": "multiboard",
+      "pattern": "tile-effect",
+      "source_type": "custom",
+      "license": "custom",
+      "maps": {
+        "albedo": "/textures/panels/panel-tile-effect-white-1200x2400/albedo.jpg",
+        "normal": "/textures/panels/panel-tile-effect-white-1200x2400/normal.jpg",
+        "preview": "/textures/panels/panel-tile-effect-white-1200x2400/preview.jpg"
+      }
+    },
+    {
+      "slug": "panel-wood-effect-1200x2400",
+      "name": "Oak Effect Panel",
+      "category": "panels",
+      "tile_width_mm": 1200,
+      "tile_height_mm": 2400,
+      "thickness_mm": 9,
+      "colour_family": "wood",
+      "finish": "matte",
+      "material": "multiboard",
+      "pattern": "wood-effect",
+      "source_type": "custom",
+      "license": "custom",
+      "maps": {
+        "albedo": "/textures/panels/panel-wood-effect-1200x2400/albedo.jpg",
+        "normal": "/textures/panels/panel-wood-effect-1200x2400/normal.jpg",
+        "preview": "/textures/panels/panel-wood-effect-1200x2400/preview.jpg"
+      }
+    },
+    {
+      "slug": "ceiling-white-pvc-600x600",
+      "name": "White PVC Ceiling",
+      "category": "ceiling",
+      "tile_width_mm": 600,
+      "tile_height_mm": 600,
+      "thickness_mm": 9,
+      "colour_family": "white",
+      "finish": "matte",
+      "material": "pvc",
+      "pattern": "plain",
+      "source_type": "custom",
+      "license": "custom",
+      "maps": {
+        "albedo": "/textures/ceiling/ceiling-white-pvc-600x600/albedo.jpg",
+        "normal": "/textures/ceiling/ceiling-white-pvc-600x600/normal.jpg",
+        "preview": "/textures/ceiling/ceiling-white-pvc-600x600/preview.jpg"
+      }
+    }
+  ]
+}
