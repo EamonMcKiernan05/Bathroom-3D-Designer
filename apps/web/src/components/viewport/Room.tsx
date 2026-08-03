@@ -80,7 +80,18 @@ interface WallSegmentProps {
 function WallSegment({ wallIndex, a, b, length: L, u, n, thickness: T, height: H, openings, texture, selected, onWallClick }: WallSegmentProps) {
   const innerMat = useSurfaceMaterial(texture);
   const outerMat = useSurfaceMaterial(null, '#d8d6d1');
-  const capMat = useSurfaceMaterial(null, '#d8d6d1');
+  // Caps close the wall cross-section (thickness × height). DoubleSide so the
+  // cap at a wall start is visible from outside too (it faces into the wall).
+  const capMat = useMemo(
+    () =>
+      new THREE.MeshStandardMaterial({
+        color: '#d8d6d1',
+        roughness: 0.9,
+        metalness: 0,
+        side: THREE.DoubleSide,
+      }),
+    [],
+  );
 
   const pieces = useMemo(() => computePieces(L, H, openings), [L, H, openings]);
 
@@ -113,8 +124,8 @@ function WallSegment({ wallIndex, a, b, length: L, u, n, thickness: T, height: H
     });
   }, [pieces, wallIndex]);
 
-  const capGeom = useMemo(() => new THREE.PlaneGeometry(T, L), [T, L]);
-  const topCapGeom = useMemo(() => new THREE.PlaneGeometry(L, T), [L, T]);
+  const capGeom = useMemo(() => new THREE.PlaneGeometry(T, H), [T, H]);
+  const topCapGeom = useMemo(() => new THREE.BoxGeometry(T, 4, L), [T, L]);
 
   return (
     <group position={[ax, 0, az]}>
@@ -151,15 +162,15 @@ function WallSegment({ wallIndex, a, b, length: L, u, n, thickness: T, height: H
         );
       })}
 
-      {/* side caps */}
-      <mesh geometry={capGeom} material={capMat} position={[0, H / 2, 0]} rotation={[0, Math.atan2(u[0], u[1]), Math.PI / 2]} />
-      <mesh geometry={capGeom} material={capMat} position={[u[0] * L, H / 2, u[1] * L]} rotation={[0, Math.atan2(u[0], u[1]), Math.PI / 2]} />
-      {/* top cap */}
+      {/* side caps: vertical planes spanning thickness × height, facing along the wall */}
+      <mesh geometry={capGeom} material={capMat} position={[0, H / 2, 0]} rotation={[0, Math.atan2(u[0], u[1]), 0]} />
+      <mesh geometry={capGeom} material={capMat} position={[u[0] * L, H / 2, u[1] * L]} rotation={[0, Math.atan2(u[0], u[1]), 0]} />
+      {/* top cap: thin box spanning length × thickness on top of the wall */}
       <mesh
         geometry={topCapGeom}
         material={capMat}
         position={[u[0] * (L / 2), H, u[1] * (L / 2)]}
-        rotation={[Math.PI / 2, 0, Math.atan2(u[0], u[1])]}
+        rotation={[0, Math.atan2(u[0], u[1]), 0]}
       />
       {/* selection tint */}
       {selected && (
@@ -267,6 +278,22 @@ export function Room() {
       {ceilingGeom && (
         <mesh geometry={ceilingGeom} material={ceilingMat} position={[0, H, 0]} userData={{ surface: 'ceiling', clickable: true }} />
       )}
+
+      {/* Corner posts: fill the exterior corner voids left between two wall end caps.
+          Only for plain rectangle rooms — shaped walls carry their own geometry. */}
+      {wallSpecs.every((w) => w.profile === 'rectangle') &&
+        floorPoints.map((p, i) => {
+          const prev = floorPoints[(i - 1 + floorPoints.length) % floorPoints.length];
+          const dx = p[0] - prev[0];
+          const dz = p[1] - prev[1];
+          const len = Math.hypot(dx, dz) || 1;
+          return (
+            <mesh key={`corner-${i}`} position={[p[0], H / 2, p[1]]} rotation={[0, Math.atan2(dx / len, dz / len), 0]}>
+              <boxGeometry args={[T, H, T]} />
+              <meshStandardMaterial color="#d8d6d1" roughness={0.9} />
+            </mesh>
+          );
+        })}
 
       <Openings />
     </group>
