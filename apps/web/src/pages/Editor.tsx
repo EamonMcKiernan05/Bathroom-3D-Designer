@@ -1,15 +1,16 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { Scene } from '../components/viewport/Scene';
+import { Scene, makeItemFromProduct } from '../components/viewport/Scene';
 import { Toolbar, ModeHint } from '../components/ui/Toolbar';
 import { LeftPanel, RightPanel } from '../components/ui/Panels';
+import { WallProperties } from '../components/ui/WallProperties';
+import { FloorplanEditor } from '../components/floorplan/FloorplanEditor';
 import { CatalogueBrowser } from '../components/catalogue/CatalogueBrowser';
 import { TexturePicker } from '../components/surfaces/TexturePicker';
 import { useDesignStore } from '../stores/design-store';
 import { useEditorStore } from '../stores/editor-store';
 import { api } from '../lib/api';
 import { buildWalls, polygonCentroid } from '../lib/geometry';
-import { makeItemFromProduct } from '../components/viewport/Scene';
 import type { Product, SavedDesign } from '../lib/types';
 
 export function EditorPage() {
@@ -213,8 +214,7 @@ export function EditorPage() {
   }, [showNotice]);
 
   const mode = useEditorStore((s) => s.mode);
-  const drawPointCount = useDesignStore((s) => s.design.room.floorPoints.length);
-  const closePolygon = useDesignStore((s) => s.closePolygon);
+  const inPlan = mode === 'draw' || mode === 'walls';
 
   return (
     <div className="flex h-screen flex-col bg-neutral-100">
@@ -222,23 +222,15 @@ export function EditorPage() {
       <div className="flex min-h-0 flex-1">
         <LeftPanel />
         <div className="relative min-w-0 flex-1" ref={sceneWrapRef}>
-          <Scene />
-          <ModeHint />
+          {inPlan ? <FloorplanEditor /> : <Scene />}
+          {!inPlan && <ModeHint />}
           {notice && (
             <div className="absolute left-1/2 top-3 z-20 -translate-x-1/2 rounded-lg bg-neutral-900 px-4 py-2 text-xs text-white shadow-lg">
               {notice}
             </div>
           )}
-          {mode === 'draw' && (
-            <button
-              onClick={() => closePolygon()}
-              className="absolute bottom-20 left-1/2 z-20 -translate-x-1/2 rounded-lg bg-emerald-600 px-4 py-2 text-sm font-medium text-white shadow hover:bg-emerald-700"
-            >
-              ✓ Finish room ({drawPointCount} points)
-            </button>
-          )}
         </div>
-        <RightPanel />
+        {mode === 'walls' ? <WallProperties /> : <RightPanel />}
       </div>
 
       {/* bottom panel */}

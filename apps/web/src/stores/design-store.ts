@@ -1,23 +1,59 @@
 import { create } from 'zustand';
-import type { DesignData, PlacedItem, RoomState, TextureAssignment, WallOpening } from '../lib/types';
+import type { DesignData, PlacedItem, RoomState, TextureAssignment, WallOpening, WallSpec } from '../lib/types';
 import { buildWalls, polygonCentroid } from '../lib/geometry';
 
 export const DEFAULT_CEILING = 2400;
 export const DEFAULT_WALL_THICKNESS = 100;
 
+/** Auto-generate one rectangular wall per floor edge. */
+export function wallsFromFloor(
+  floorPoints: [number, number][],
+  ceilingHeight: number,
+  thickness: number,
+): WallSpec[] {
+  const n = floorPoints.length;
+  const walls: WallSpec[] = [];
+  for (let i = 0; i < n; i++) {
+    const a = floorPoints[i];
+    const b = floorPoints[(i + 1) % n];
+    if (Math.hypot(b[0] - a[0], b[1] - a[1]) < 1) continue;
+    walls.push({
+      id: crypto.randomUUID(),
+      outline: [a, b],
+      thickness,
+      height: ceilingHeight,
+      profile: 'rectangle',
+      slopeRise: 0,
+      stairSteps: 6,
+      boxLength: Math.round((b[0] - a[0] || b[1] - a[1]) / 2),
+      boxDepth: 120,
+      boxFrom: 150,
+      boxTop: 450,
+    });
+  }
+  return walls;
+}
+
+const RECT = (w: number, d: number): [number, number][] => [
+  [-w / 2, -d / 2],
+  [w / 2, -d / 2],
+  [w / 2, d / 2],
+  [-w / 2, d / 2],
+];
+
+function makeRoom(pts: [number, number][], ceiling: number, thickness: number): RoomState {
+  return {
+    floorPoints: pts,
+    walls: wallsFromFloor(pts, ceiling, thickness),
+    ceilingHeight: ceiling,
+    wallThickness: thickness,
+    closed: true,
+  };
+}
+
 export function defaultRoom(closed = true): RoomState {
   // Standard small UK bathroom: 2400 x 1800, centered on origin
-  return {
-    floorPoints: [
-      [-1200, -900],
-      [1200, -900],
-      [1200, 900],
-      [-1200, 900],
-    ],
-    ceilingHeight: DEFAULT_CEILING,
-    wallThickness: DEFAULT_WALL_THICKNESS,
-    closed,
-  };
+  return makeRoom(RECT(2400, 1800), DEFAULT_CEILING, DEFAULT_WALL_THICKNESS);
 }
 
 export function emptyDesign(): DesignData {
@@ -42,17 +78,7 @@ export const ROOM_TEMPLATES: { name: string; w: number; d: number; ceiling: numb
 ];
 
 export function templateRoom(w: number, d: number, ceiling: number): RoomState {
-  return {
-    floorPoints: [
-      [-w / 2, -d / 2],
-      [w / 2, -d / 2],
-      [w / 2, d / 2],
-      [-w / 2, d / 2],
-    ],
-    ceilingHeight: ceiling,
-    wallThickness: DEFAULT_WALL_THICKNESS,
-    closed: true,
-  };
+  return makeRoom(RECT(w, d), ceiling, DEFAULT_WALL_THICKNESS);
 }
 
 interface DesignStore {
@@ -81,6 +107,7 @@ interface DesignStore {
   undoPoint: () => void;
   setCeilingHeight: (h: number) => void;
   setWallThickness: (t: number) => void;
+  updateWall: (id: string, patch: Partial<WallSpec>) => void;
 
   // openings
   addOpening: (o: WallOpening) => void;
@@ -128,9 +155,15 @@ export const useDesignStore = create<DesignStore>()((set, get) => ({
   canUndo: false,
   canRedo: false,
 
-  loadDesign: (d, name) =>
-    set({
-      design: snapshot(d),
+  loadDesign: (d, name) => {
+    const data = snapshot(d);
+    // older saved designs may lack per-wall shapes — regenerate from the floor
+    const room = data.room;
+    if (room && room.closed && room.floorPoints?.length >= 3 && (!room.walls || room.walls.length === 0)) {
+      room.walls = wallsFromFloor(room.floorPoints, room.ceilingHeight, room.wallThickness);
+    }
+    return set({
+      design: data,
       designName: name ?? get().designName,
       selectedItemId: null,
       selectedSurface: null,
@@ -138,7 +171,8 @@ export const useDesignStore = create<DesignStore>()((set, get) => ({
       future: [],
       canUndo: false,
       canRedo: false,
-    }),
+    });
+  },
 
   resetDesign: () =>
     set({
@@ -170,7 +204,10 @@ export const useDesignStore = create<DesignStore>()((set, get) => ({
     if (!s.design.room.closed) return; // already drawing
     const prev = snapshot(s.design);
     set((st) => ({
-      design: { ...st.design, room: { ...st.design.room, floorPoints: [], closed: false } },
+      design: {
+        ...st.design,
+        room: { ...st.design.room, floorPoints: [], walls: [], closed: false },
+      },
       past: [...st.past.slice(-49), prev],
       future: [],
       canUndo: true,
@@ -200,8 +237,17 @@ export const useDesignStore = create<DesignStore>()((set, get) => ({
     }
     if (cleaned.length < 3) return;
     const prev = snapshot(s.design);
+    const room = { ...s.design.room };
     set((st) => ({
-      design: { ...st.design, room: { ...st.design.room, floorPoints: cleaned, closed: true } },
+      design: {
+        ...st.design,
+        room: {
+          ...room,
+          floorPoints: cleaned,
+          walls: wallsFromFloor(cleaned, room.ceilingHeight, room.wallThickness),
+          closed: true,
+        },
+      },
       past: [...st.past.slice(-49), prev],
       future: [],
       canUndo: true,
@@ -217,8 +263,36 @@ export const useDesignStore = create<DesignStore>()((set, get) => ({
     set({ design: { ...s.design, room: { ...s.design.room, floorPoints: pts } } });
   },
 
-  setCeilingHeight: (h) => get().setRoom({ ...get().design.room, ceilingHeight: h }),
-  setWallThickness: (t) => get().setRoom({ ...get().design.room, wallThickness: t }),
+  setCeilingHeight: (h) =>
+    get().setRoom({
+      ...get().design.room,
+      ceilingHeight: h,
+      walls: get().design.room.walls.map((w) => (w.profile === 'rectangle' && w.height === get().design.room.ceilingHeight ? { ...w, height: h } : w)),
+    }),
+
+  setWallThickness: (t) =>
+    get().setRoom({
+      ...get().design.room,
+      wallThickness: t,
+      walls: get().design.room.walls.map((w) => ({ ...w, thickness: t })),
+    }),
+
+  updateWall: (id, patch) => {
+    const prev = snapshot(get().design);
+    set((s) => ({
+      design: {
+        ...s.design,
+        room: {
+          ...s.design.room,
+          walls: s.design.room.walls.map((w) => (w.id === id ? { ...w, ...patch } : w)),
+        },
+      },
+      past: [...s.past.slice(-49), prev],
+      future: [],
+      canUndo: true,
+      canRedo: false,
+    }));
+  },
 
   addOpening: (o) => {
     const prev = snapshot(get().design);

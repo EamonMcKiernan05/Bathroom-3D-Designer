@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-export type EditorMode = 'navigate' | 'draw' | 'place' | 'surfaces' | 'openings' | 'measure';
+export type EditorMode = 'navigate' | 'draw' | 'walls' | 'place' | 'surfaces' | 'openings' | 'measure';
 export type CameraMode = '3d' | '2d';
 
 interface EditorStore {
@@ -15,7 +15,10 @@ interface EditorStore {
   openingType: 'door' | 'window';
   /** measurement tool: two points (in room XZ mm), or null */
   measure: { a: [number, number]; b: [number, number] | null } | null;
+  /** selected wall (2D floorplan editor) for shape editing */
+  selectedWallId: string | null;
   setMode: (m: EditorMode) => void;
+  setSelectedWall: (id: string | null) => void;
   setCameraMode: (m: CameraMode) => void;
   toggleGrid: () => void;
   toggleDimensions: () => void;
@@ -37,7 +40,9 @@ export const useEditorStore = create<EditorStore>()((set) => ({
   dragProduct: null,
   openingType: 'door',
   measure: null,
+  selectedWallId: null,
   setMode: (m) => set({ mode: m }),
+  setSelectedWall: (id) => set({ selectedWallId: id }),
   setCameraMode: (m) => set({ cameraMode: m }),
   toggleGrid: () => set((s) => ({ showGrid: !s.showGrid })),
   toggleDimensions: () => set((s) => ({ showDimensions: !s.showDimensions })),

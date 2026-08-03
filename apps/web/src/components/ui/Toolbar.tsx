@@ -3,7 +3,8 @@ import { useEditorStore, type EditorMode } from '../../stores/editor-store';
 
 const MODES: { id: EditorMode; label: string; icon: string; hint: string }[] = [
   { id: 'navigate', label: 'Navigate', icon: '✋', hint: 'Orbit / select items' },
-  { id: 'draw', label: 'Draw Room', icon: '📐', hint: 'Click floor to place wall points, right-click to undo, Esc to cancel' },
+  { id: 'draw', label: 'Draw Room', icon: '📐', hint: '2D plan — draw the floor outline' },
+  { id: 'walls', label: 'Edit Walls', icon: '🧱', hint: '2D plan — click a wall to change its shape (rectangle, sloped roof, under stairs, boxing)' },
   { id: 'openings', label: 'Doors & Windows', icon: '🚪', hint: 'Click a wall to add an opening' },
   { id: 'place', label: 'Place Items', icon: '🛁', hint: 'Drag from catalogue below, or click a placed item and drag it' },
   { id: 'surfaces', label: 'Surfaces', icon: '🧱', hint: 'Click a wall/floor/ceiling to apply textures or paint' },

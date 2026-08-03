@@ -1,10 +1,11 @@
 import { useMemo } from 'react';
 import * as THREE from 'three';
 import { useLoader } from '@react-three/fiber';
-import { buildWalls } from '../../lib/geometry';
+import { buildWalls, polygonCentroid } from '../../lib/geometry';
 import { useDesignStore } from '../../stores/design-store';
-import type { TextureAssignment, WallOpening } from '../../lib/types';
+import type { TextureAssignment, WallOpening, WallSpec } from '../../lib/types';
 import { configureTextureMaterial, tilePlaneUVs, tileShapeUVs } from '../../lib/texture-utils';
+import { shapedWallMeshes } from '../../three/wallGeometry';
 
 function useSurfaceMaterial(
   assignment: TextureAssignment | null,
@@ -182,7 +183,7 @@ export function Room() {
   const selectSurface = useDesignStore((s) => s.selectSurface);
 
   const { floorPoints, ceilingHeight: H, wallThickness: T, closed } = room;
-  const walls = useMemo(() => (closed ? buildWalls(floorPoints) : []), [floorPoints, closed]);
+  const wallSpecs = room.walls || [];
 
   const floorGeom = useMemo(() => {
     if (floorPoints.length < 3) return null;
@@ -226,25 +227,39 @@ export function Room() {
         <mesh geometry={floorGeom} material={floorMat} position={[0, 0, 0]} userData={{ surface: 'floor', clickable: true }} />
       )}
 
-      {walls.map((w) => {
+      {wallSpecs.map((spec, wi) => {
+        const a = spec.outline[0];
+        const b = spec.outline[spec.outline.length - 1];
+        const fr = frameFrom(a, b, floorPoints);
         const ops: { pos: number; width: number; height: number; sill: number; type: string }[] = [];
-        for (const d of doors) if (d.wallIndex === w.index) ops.push({ pos: d.pos, width: d.width, height: d.height, sill: 0, type: 'door' });
-        for (const win of windows) if (win.wallIndex === w.index) ops.push({ pos: win.pos, width: win.width, height: win.height, sill: win.sillHeight, type: 'window' });
+        for (const d of doors) if (d.wallIndex === wi) ops.push({ pos: d.pos, width: d.width, height: d.height, sill: 0, type: 'door' });
+        for (const win of windows) if (win.wallIndex === wi) ops.push({ pos: win.pos, width: win.width, height: win.height, sill: win.sillHeight, type: 'window' });
+
+        if (spec.profile === 'rectangle') {
+          return (
+            <WallSegment
+              key={spec.id}
+              wallIndex={wi}
+              a={a}
+              b={b}
+              length={fr.length}
+              u={fr.u}
+              n={fr.n}
+              thickness={spec.thickness || T}
+              height={spec.height || H}
+              openings={ops}
+              texture={wallTextures[wi] ?? null}
+              selected={selectedSurface?.type === 'wall' && selectedSurface.index === wi}
+              onWallClick={(wix) => selectSurface({ type: 'wall', index: wix })}
+            />
+          );
+        }
         return (
-          <WallSegment
-            key={w.index}
-            wallIndex={w.index}
-            a={w.a}
-            b={w.b}
-            length={w.length}
-            u={w.u}
-            n={w.n}
-            thickness={T}
-            height={H}
-            openings={ops}
-            texture={wallTextures[w.index] ?? null}
-            selected={selectedSurface?.type === 'wall' && selectedSurface.index === w.index}
-            onWallClick={(wi, x, z) => selectSurface({ type: 'wall', index: wi })}
+          <ShapedWall
+            key={spec.id}
+            spec={spec}
+            selected={selectedSurface?.type === 'wall' && selectedSurface.index === wi}
+            onClick={() => selectSurface({ type: 'wall', index: wi })}
           />
         );
       })}
@@ -254,6 +269,54 @@ export function Room() {
       )}
 
       <Openings />
+    </group>
+  );
+}
+
+/** Inward-pointing frame for a wall spec's straight centreline. */
+function frameFrom(a: [number, number], b: [number, number], floor: [number, number][]) {
+  const dx = b[0] - a[0], dz = b[1] - a[1];
+  const len = Math.hypot(dx, dz) || 1;
+  const ux = dx / len, uz = dz / len;
+  let nx = -uz, nz = ux;
+  const [cx, cz] = polygonCentroid(floor);
+  const midx = (a[0] + b[0]) / 2, midz = (a[1] + b[1]) / 2;
+  if (nx * (cx - midx) + nz * (cz - midz) < 0) {
+    nx = -nx;
+    nz = -nz;
+  }
+  return { a, b, length: len, u: [ux, uz] as [number, number], n: [nx, nz] as [number, number] };
+}
+
+/** Renders a non-rectangle wall (gable / stairs / boxing) from its parametric shape. */
+function ShapedWall({
+  spec,
+  selected,
+  onClick,
+}: {
+  spec: WallSpec;
+  selected: boolean;
+  onClick: () => void;
+}) {
+  const meshes = useMemo(() => shapedWallMeshes(spec), [spec]);
+  const mat = useMemo(
+    () =>
+      new THREE.MeshStandardMaterial({
+        color: '#cfcac3',
+        roughness: 0.9,
+        metalness: 0,
+        side: THREE.DoubleSide,
+      }),
+    [],
+  );
+  return (
+    <group userData={{ surface: 'wall', clickable: true }} onClick={(e) => {
+      e.stopPropagation();
+      onClick();
+    }}>
+      {meshes.map((m, i) => (
+        <mesh key={i} geometry={m.geo} material={mat} position={m.position} />
+      ))}
     </group>
   );
 }

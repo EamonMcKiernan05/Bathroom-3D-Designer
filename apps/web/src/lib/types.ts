@@ -91,8 +91,35 @@ export interface TextureAssignment {
   solidColor?: string;
 }
 
+export type WallProfile = 'rectangle' | 'gable' | 'stairs' | 'boxing';
+
+/**
+ * A single boundary wall. The room outline produces one wall per floor edge,
+ * but each wall's shape/profile can be edited independently.
+ */
+export interface WallSpec {
+  id: string;
+  /** Footprint centreline polyline in XZ (mm). Straight wall = 2 points. */
+  outline: [number, number][];
+  thickness: number; // mm
+  height: number; // wall height in mm (rectangle default = ceiling height)
+  profile: WallProfile;
+  /** gable (sloped roof ceiling): top rises by slopeRise over the wall length */
+  slopeRise: number; // mm added at the high end (0 = flat)
+  /** stairs (under a staircase): descending stepped top */
+  stairSteps: number; // number of steps, high at end a down to end b
+  /** boxing (bulkhead hiding waste/water pipes): a protruding box from the wall face */
+  boxLength: number; // mm along the wall
+  boxDepth: number; // mm protrusion into the room
+  boxFrom: number; // mm offset along the wall from end a
+  boxTop: number; // mm height of the top of the box (pipes boxing usually from floor)
+}
+
 export interface RoomState {
+  /** the usable floor outline (XZ mm) */
   floorPoints: [number, number][];
+  /** boundary walls — auto-generated from the floor, each shape-editable */
+  walls: WallSpec[];
   ceilingHeight: number;
   wallThickness: number;
   closed: boolean;
