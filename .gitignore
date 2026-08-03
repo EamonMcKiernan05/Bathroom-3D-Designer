@@ -16,6 +16,8 @@ venv/
 
 # Assets (generated)
 assets/models/*.glb
+assets/products/          # scraped retailer images (MinIO in prod)
+assets/thumbnails/model_*.png   # per-product batch thumbnails (MinIO in prod)
 assets/textures/generated/
 assets/qa/
 scripts/postgresql-binaries.zip

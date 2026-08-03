@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
 from .db import Base, engine
-from .routers import designs, plans, products, textures
+from .routers import admin, designs, plans, products, textures
 
 # Project root: apps/api/app/<file> -> repo root (4 levels up)
 ROOT = Path(__file__).resolve().parent.parent.parent.parent
@@ -26,6 +26,7 @@ app.include_router(products.router)
 app.include_router(textures.router)
 app.include_router(designs.router)
 app.include_router(plans.router)
+app.include_router(admin.router)
 
 
 @app.on_event("startup")
@@ -39,8 +40,9 @@ def health():
 
 
 # Demo asset serving — replaces MinIO for local dev (doc 04 §3: MinIO in production).
-# GLB models + textures served straight from the repo assets dir.
-for mount, rel in (("/models", "models"), ("/textures", "textures"), ("/thumbnails", "thumbnails")):
+# GLB models + textures + scraped product images served straight from the repo assets dir.
+for mount, rel in (("/models", "models"), ("/textures", "textures"),
+                   ("/thumbnails", "thumbnails"), ("/products", "products")):
     p = ASSETS / rel
     p.mkdir(parents=True, exist_ok=True)
     app.mount(mount, StaticFiles(directory=p), name=rel)

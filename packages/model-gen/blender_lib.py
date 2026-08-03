@@ -46,6 +46,14 @@ def chrome():
     return _mat('chrome', (0.83, 0.85, 0.88), metal=1.0, rough=0.08)
 
 
+def brass():
+    return _mat('brushed_brass', (0.78, 0.66, 0.35), metal=1.0, rough=0.32)
+
+
+def nickel():
+    return _mat('brushed_nickel', (0.78, 0.79, 0.80), metal=1.0, rough=0.25)
+
+
 def matt_black():
     return _mat('matt_black', (0.10, 0.10, 0.11), metal=0.0, rough=0.75)
 
@@ -475,6 +483,93 @@ def build_soap_dish():
     box('dish', chrome(), (0.12, 0.09, 0.03), (0, -0.045, 0.035))
     box('backplate', chrome(), (0.06, 0.02, 0.13), (0, 0, 0.10))
     export_glb('soap-dish')
+
+
+# =====================================================================
+# DIMENSION-DRIVEN SCALING (doc 03 §2.2 — models match real product dims)
+# =====================================================================
+
+# Finish slug (from products.finishes / scraper normalize) -> material fn.
+FINISH_MATERIALS = {
+    'chrome': chrome,
+    'brushed_brass': brass,
+    'satin_brass': brass,
+    'brushed_nickel': nickel,
+    'polished_nickel': nickel,
+    'matt_black': matt_black,
+    'black': matt_black,
+    'anthracite': anthracite,
+    'oak': wood_oak,
+    'white': white_mdf,
+}
+
+# Material names that swap with the product finish (metallic/furniture parts).
+# Ceramic/glass/acrylic keep their own material regardless of finish.
+_FINISHABLE = {'chrome', 'brushed_brass', 'brushed_nickel', 'matt_black', 'anthracite', 'oak'}
+
+
+def build_scaled(slug: str, w_mm: float, h_mm: float, d_mm: float,
+                 finish: str | None = None, out_name: str | None = None) -> str:
+    """Build the generic model for `slug`, scale it to the product's real
+    dimensions (mm), apply the requested finish to finishable parts, and
+    export GLB. Returns the absolute output path.
+
+    Scaling is computed from the ACTUAL built bounding box (not hardcoded
+    prefer-dimensions), so it tracks the real geometry. Axes missing in the
+    product data (None) are left at the generic size.
+
+    out_name: output file stem (defaults to slug). Callers pass a unique name
+    per product (e.g. 'model_<id>') so scraped models don't overwrite each other.
+    """
+    _clean_scene()
+    if slug not in BUILDERS:
+        raise ValueError(f"no builder for slug '{slug}'")
+
+    BUILDERS[slug]()  # builds the generic shape
+
+    # measure the ACTUAL built dimensions (world axis order: x = w, y = d, z = h)
+    bounds = [None, None]
+    for o in bpy.data.objects:
+        if o.type != 'MESH':
+            continue
+        m = o.matrix_world
+        bb = [m @ Vector(c) for c in o.bound_box]
+        bounds[0] = (min(v.x for v in bb), min(v.y for v in bb), min(v.z for v in bb))
+        bounds[1] = (max(v.x for v in bb), max(v.y for v in bb), max(v.z for v in bb))
+    if bounds[0] is None:
+        raise RuntimeError(f"no mesh built for {slug}")
+    a_min, a_max = bounds
+    actual = (a_max[0] - a_min[0], a_max[1] - a_min[1], a_max[2] - a_min[2])  # w,d,h metres
+
+    # target in metres (None -> keep actual)
+    t = {
+        'w': (w_mm or actual[0] * 1000) / 1000.0,   # width  -> x
+        'd': (d_mm or actual[1] * 1000) / 1000.0,   # depth  -> y
+        'h': (h_mm or actual[2] * 1000) / 1000.0,   # height -> z
+    }
+    # Blender axes: x=width, y=depth, z=height (origin back-bottom-center)
+    scale = (t['w'] / actual[0], t['d'] / actual[1], t['h'] / actual[2])  # x,y,z order
+
+    # apply non-uniform scale to match real dims (origin already at back-bottom-center)
+    for o in bpy.data.objects:
+        if o.type == 'MESH':
+            o.scale = (o.scale[0] * scale[0], o.scale[1] * scale[1], o.scale[2] * scale[2])
+    bpy.ops.object.select_all(action='SELECT')
+    bpy.ops.object.transform_apply(scale=True)
+
+    # finish override on finishable parts
+    if finish and finish in FINISH_MATERIALS:
+        mat = FINISH_MATERIALS[finish]()
+        for o in bpy.data.objects:
+            if o.type != 'MESH' or not o.data.materials:
+                continue
+            mname = o.data.materials[0].name
+            if mname in _FINISHABLE:
+                assign(o, mat)
+
+    out = out_name or slug
+    export_glb(out)
+    return f"C:/Users/Eamon/Desktop/bathroom-3d/assets/models/{out}.glb"
 
 
 BUILDERS = {

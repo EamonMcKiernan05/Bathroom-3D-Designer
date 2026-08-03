@@ -126,6 +126,72 @@ export PLAN_VISION_API_KEY=                       # only if your server needs on
 If the local server isn't running, the endpoint returns a clear 502/503 and the room stays
 drawable by hand.
 
+## Scraping pipeline
+
+Per-vendor scrapers in `packages/scraper/` (doc 02 / Phase 6). Each retailer gets its own
+isolated module over a shared polite pipeline (robots.txt-respecting fetcher with 2–5s delays,
+dimension parsing with confidence scoring, UK price parsing, image download → WebP + 256px thumb,
+DB upsert keyed on `(retailer_id, retailer_sku)`, `scrape_jobs` tracking).
+
+Run with the **API venv** python from the `packages/` directory:
+
+```bash
+# dry-run first (no DB writes)
+apps/api/.venv/Scripts/python.exe -m scraper.cli --retailer ideal-bathrooms --dry-run --limit 10
+
+# live run
+apps/api/.venv/Scripts/python.exe -m scraper.cli --retailer ideal-bathrooms
+apps/api/.venv/Scripts/python.exe -m scraper.cli --all                       # every vendor
+apps/api/.venv/Scripts/python.exe -m scraper.cli --retailer warren-keys --curated curated.json
+```
+
+| Retailer | Platform | Rendering | Notes |
+|----------|----------|-----------|-------|
+| ideal-bathrooms | Custom CMS | SSR (HTTP) | IoM local, small; **first priority, verified end-to-end** |
+| genesis | WordPress/WooCommerce | SSR (HTTP) | JSON-LD/HTML parse; prices often null (variable products) |
+| mylife | Magento 2 | **JS** → Playwright | REST API is auth-gated; needs `playwright` |
+| crosswater | Custom CMS | SSR product pages | Discovered via `/sitemap.xml` (~870 products), not the JS category pages |
+| warren-keys | Tile supplier (PDFs) | — | Manual curation loader via `--curated <rows.json/csv>` |
+| city-plumbing | Contentful/React | **JS** → Playwright | Massive site; **last priority**, scoped bathroom subset, conservative delays |
+
+Scraped images land in `assets/products/<retailer_slug>/<sku>/` as WebP (resized ≤1200px + 256px
+thumb), served by the API at `/products/...`. Set `MINIO_ENDPOINT`/keys to upload to MinIO
+`bathroom-assets` instead. Scraped products start `model_status='pending'`.
+
+## Model generation pipeline
+
+`packages/model-gen/` generates a parametric GLB for every scraped/pending product from its real
+dimensions (doc 03 / Phase 5). The DB-driven driver runs in the API venv:
+
+```bash
+cd packages/model-gen
+# list what would run
+apps/api/.venv/Scripts/python.exe batch_generate.py --dry-run --retailer ideal-bathrooms
+# generate everything pending (or --retailer / --category / --product-id / --limit)
+apps/api/.venv/Scripts/python.exe batch_generate.py
+```
+
+`batch_generate.py` maps each product's category to a builder, invokes **headless Blender**
+(`gen_one.py`) per product, then updates the products row (`model_url`, `model_status='ready'`,
+`model_file_kb`, `model_polygons`, `thumbnail_url`) and writes a `model_jobs` record.
+`blender_lib.build_scaled()` builds the generic shape, measures its actual bounding box and
+**non-uniformly scales it to the product's real mm width/depth/height**, then applies the product
+finish to finishable parts. Output: `assets/models/model_<id>.glb` (Draco-compressed) +
+`assets/thumbnails/model_<id>.png` (256px EEVEE 3/4-view). Single product: `single_generate.py
+--product-id <id>`.
+
+Blocking caveats:
+- **JS vendors** (mylife, city-plumbing) need Playwright: `pip install playwright && playwright install chromium`.
+- Genesis prices are often null (option-based WooCommerce variants) — expected.
+- Crosswater's sitemap-driven crawl can't infer per-product categories, so they fall back to `crosswater/all`.
+- Categories with no generator slot yet (toilet seats, bidets, etc.) stay `pending` — add builders in
+  `blender_lib.BUILDERS` + the map in `batch_generate.CATEGORY_TO_SLUG` when needed.
+
+## Operations endpoints
+
+- `GET /api/v1/admin/scrape-status` — last scrape run per retailer (counts, status, errors).
+- `GET /api/v1/admin/model-status` — model generation queue (status counts, pending products, recent jobs).
+
 ## Testing
 
 Verified end-to-end in a real browser (Brave): draw room → add doors/windows → place 6 products → tile floor + walls → save → export BOM + CSV. Three bugs found and fixed during test loops: a camera/grid NaN crash when entering draw mode, a keyboard-handler crash on non-element event targets, and a save-blocking schema field-name mismatch (camelCase frontend vs snake_case backend).
