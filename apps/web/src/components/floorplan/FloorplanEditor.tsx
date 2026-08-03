@@ -47,7 +47,19 @@ export function FloorplanEditor() {
   }, []);
 
   const pts = room.floorPoints;
-  const bounds = useMemo(() => roomBounds(pts), [pts]);
+  // While the room is open (drawing), keep a stable minimum viewport so the
+  // zoom doesn't collapse to a single point (which would map every subsequent
+  // click to the same world cell and block further drawing).
+  const bounds = useMemo(() => {
+    const b = roomBounds(pts);
+    const MIN_W = 3000;
+    const MIN_D = 2000;
+    const w = Math.max(MIN_W, b.maxX - b.minX);
+    const d = Math.max(MIN_D, b.maxZ - b.minZ);
+    const cx = (b.minX + b.maxX) / 2;
+    const cz = (b.minZ + b.maxZ) / 2;
+    return { minX: cx - w / 2, maxX: cx + w / 2, minZ: cz - d / 2, maxZ: cz + d / 2, cx, cz };
+  }, [pts]);
   const roomW = Math.max(1, bounds.maxX - bounds.minX);
   const roomD = Math.max(1, bounds.maxZ - bounds.minZ);
   const S = Math.min(size.w / roomW, size.h / roomD) * 0.82;
