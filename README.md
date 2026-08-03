@@ -132,6 +132,7 @@ Per-vendor scrapers in `packages/scraper/` (doc 02 / Phase 6). Each retailer get
 isolated module over a shared polite pipeline (robots.txt-respecting fetcher with 2–5s delays,
 dimension parsing with confidence scoring, UK price parsing, image download → WebP + 256px thumb,
 DB upsert keyed on `(retailer_id, retailer_sku)`, `scrape_jobs` tracking).
+Full reference: [`docs/pipelines.md`](docs/pipelines.md).
 
 Run with the **API venv** python from the `packages/` directory:
 
