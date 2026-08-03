@@ -18,6 +18,9 @@ import io
 import json
 import os
 import re
+import subprocess
+import time
+from pathlib import Path
 
 import httpx
 from fastapi import APIRouter, HTTPException, UploadFile
@@ -25,24 +28,24 @@ from PIL import Image
 
 router = APIRouter(prefix="/api/v1/plans", tags=["plans"])
 
+# Repo root = apps/api/app/<file> -> 4 up
+_REPO = Path(__file__).resolve().parent.parent.parent.parent
+_PS1 = _REPO / "scripts" / "ocr" / "serve.ps1"
+_SH = _REPO / "scripts" / "ocr" / "serve.sh"
+
 # Default to a SELF-HOSTED OCR model (llama-server with --mmproj, e.g. Unlimited-OCR).
 # No external API: point these at your own llama.cpp vision server (scripts/serve-ocr.sh).
 BASE_URL = os.environ.get("PLAN_VISION_BASE_URL", "http://127.0.0.1:9333/v1")
 MODEL = os.environ.get("PLAN_VISION_MODEL", "")
 API_KEY = os.environ.get("PLAN_VISION_API_KEY", "")
 
-PROMPT = """You are a bathroom-plan reader. Below is a photo of a hand-drawn bathroom floor plan and/or measurement sketch.
-Read the sketch and any handwritten dimensions, then output ONLY valid JSON (no commentary, no markdown) matching EXACTLY this schema:
-{
-  "floor": [[x, z], [x, z], ...],        // room outline corners in MILLIMETRES, clockwise, minimum 3 points, centred near the origin (e.g. [-1200,-900]..[1200,900] for a 2400x1800 room)
-  "ceiling_height": 2400,                // mm
-  "walls": [                             // one per floor edge, in the same order
-    { "profile": "rectangle", "height": 2400, "slopeRise": 0, "stairSteps": 6, "boxLength": 0, "boxDepth": 120, "boxFrom": 0, "boxTop": 450 }
-  ],
-  "doors":  [{ "wall": 0, "pos": 900, "width": 850, "height": 2100 }],
-  "windows":[{ "wall": 1, "pos": 1200, "width": 1100, "height": 1200, "sill": 900 }]
-}
-Only include walls/doors/windows you can actually infer. If no dimensions are readable, estimate sensible UK bathroom sizes. Use the single wall profile "rectangle" unless a roof/stairs/boxing is clearly indicated (then "gable", "stairs", or "boxing")."""
+PROMPT = "<|grounding|>OCR this image."
+
+# DeepSeek-OCR / Unlimited-OCR response format (per sahilchachra card):
+#   <|det|>text [x1,y1,x2,y2]<|/det|>content   (mtmd-cli)   OR   plain lines
+#   image [x1,y1,x2,y2]                         (whole-image placeholder)
+#   text [x1,y1,x2,y2]content                   (llama-server OpenAI form)
+# Coordinates are in the model's normalised input space (0..999 each axis).
 
 
 def _extract_json(text: str) -> dict:
@@ -54,7 +57,149 @@ def _extract_json(text: str) -> dict:
     return json.loads(m.group(0))
 
 
-def _clamp(v, lo, hi, default):
+_REGION = re.compile(
+    r"^(image|text|header)\s*\[\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\]\s*(.*)$",
+    re.IGNORECASE,
+)
+
+
+def _parse_regions(ocr_text: str) -> list[dict]:
+    """Parse Unlimited-OCR output into a list of {type,x1,y1,x2,y2,content}."""
+    text = ocr_text.replace("<|det|>", "").replace("<|/det|>", "")
+    regions = []
+    for line in text.splitlines():
+        m = _REGION.match(line.strip())
+        if not m:
+            continue
+        regions.append(
+            {
+                "type": m.group(1).lower(),
+                "x1": int(m.group(2)), "y1": int(m.group(3)),
+                "x2": int(m.group(4)), "y2": int(m.group(5)),
+                "content": m.group(6).strip(),
+            }
+        )
+    return regions
+
+
+def _reconstruct_room(ocr_text: str) -> dict:
+    """Turn Unlimited-OCR region output into a room plan.
+
+    Heuristic but reasonable: read dimension labels + their edge positions, infer a
+    rectangular (or axis-aligned) room, and place any door/window labels on the
+    wall they sit nearest. Works best on clearly-measured plans (which is what a
+    user photographs). Position/type can be refined in the editor afterwards.
+    """
+    regions = _parse_regions(ocr_text)
+    labels = []
+    for r in regions:
+        if r["type"] != "text":
+            continue
+        c = r["content"]
+        if not c or c in ("[EMPTY]", "--"):
+            continue
+        nums = re.findall(r"\d{2,5}", c)
+        if not nums:
+            continue
+        n = int(nums[-1])
+        labels.append(
+            {
+                "n": n,
+                "cx": (r["x1"] + r["x2"]) / 2.0,
+                "cy": (r["y1"] + r["y2"]) / 2.0,
+                "edge": _edge_of(r, 1000, 1000),
+                "tag": c.lower().replace(" ", ""),
+            }
+        )
+    if not labels:
+        raise ValueError("OCR found no readable dimensions in the plan image")
+
+    # ceiling height: from a "ceiling" tag, else largest value in a sensible range
+    ceiling = next((L["n"] for L in labels if "ceiling" in L["tag"]), None)
+    if not ceiling:
+        ceiling = max([L["n"] for L in labels if 2000 <= L["n"] <= 5000], default=2400)
+
+    # overall width (horizontal dimension) & depth (vertical dimension)
+    def wall_of(L):
+        # image edges -> room walls: top/bottom -> horizontal (width), left/right -> vertical (depth)
+        return "width" if L["edge"] in ("top", "bottom") else "depth"
+
+    h = [L for L in labels if wall_of(L) == "width"]
+    v = [L for L in labels if wall_of(L) == "depth"]
+    width = max(h, key=lambda L: L["n"])["n"] if h else None
+    depth = max(v, key=lambda L: L["n"])["n"] if v else None
+    if not width or not depth:
+        # fallback: assign largest remaining numeric as the missing side
+        for L in sorted(labels, key=lambda x: x["n"], reverse=True):
+            if L["n"] >= 1500:
+                if width is None and wall_of(L) == "width":
+                    width = L["n"]
+                elif depth is None and wall_of(L) == "depth":
+                    depth = L["n"]
+    width = _clamp(width or 2400, 600, 20000)
+    depth = _clamp(depth or 1800, 600, 20000)
+    ceiling = int(_clamp(ceiling or 2400, 1500, 5000))
+
+    # floor: axis-aligned rectangle centred on origin (matches editor expectations)
+    w, d = width, depth
+    floor = [[-w / 2, -d / 2], [w / 2, -d / 2], [w / 2, d / 2], [-w / 2, d / 2]]
+
+    # wall index for each image edge (clockwise, matching buildWalls)
+    edge_wall = {"top": 2, "bottom": 0, "left": 3, "right": 1}
+
+    doors, windows = [], []
+    used_nums = {width, depth}
+    # flag dimension-label ids so we don't turn the main dims into openings
+    dim_ids = set()
+    for i, L in enumerate(labels):
+        if L["n"] == width or L["n"] == depth:
+            dim_ids.add(i)
+
+    for i, L in enumerate(labels):
+        if i in dim_ids:
+            continue
+        if L["n"] < 200 or L["n"] > 2400:
+            continue  # too small to be an opening, too big to be a wall
+        wall = edge_wall.get(L["edge"], 0)
+        # proportional position along that wall (0..1), mirroring image axis
+        frac_x = L["cx"] / 1000.0
+        frac_y = L["cy"] / 1000.0
+        # convert to mm from each wall's start (clockwise)
+        pos = {
+            0: w * frac_x,          # bottom wall, left->right
+            1: d * frac_y,          # right wall, top->bottom (image y down = +z)
+            2: w * (1 - frac_x),    # top wall, right->left
+            3: d * (1 - frac_y),    # left wall, bottom->top
+        }[wall]
+        pos = max(50, min(pos, (w if wall in (0, 2) else d) - 50))
+        if "window" in L["tag"] or 1300 <= L["n"] <= 1900:
+            windows.append({"wall": wall, "pos": pos, "width": L["n"] if L["n"] < 2000 else 1100, "height": 1200, "sill": 900})
+        else:
+            doors.append({"wall": wall, "pos": pos, "width": L["n"] if 600 <= L["n"] <= 1300 else 850, "height": 2100})
+
+    walls = [{"profile": "rectangle", "height": ceiling} for _ in range(4)]
+    return {
+        "floor": floor,
+        "ceilingHeight": ceiling,
+        "wallThickness": 100,
+        "walls": walls,
+        "doors": doors,
+        "windows": windows,
+    }
+
+
+def _edge_of(r, w, h):
+    """Which image edge is region r nearest to."""
+    d = {
+        "top": r["y1"],
+        "bottom": h - r["y2"],
+        "left": r["x1"],
+        "right": w - r["x2"],
+    }
+    return min(d, key=d.get)
+
+
+def _clamp(v, lo, hi, default=None):
     try:
         f = float(v)
         return max(lo, min(hi, f))
@@ -133,7 +278,7 @@ def _normalize_plan(raw: dict) -> dict:
     }
 
 
-def _call_vision(image_b64: str, media_type: str) -> dict:
+def _call_vision(image_b64: str, media_type: str) -> str:
     if not BASE_URL:
         raise HTTPException(503, "Vision model not configured. Set PLAN_VISION_BASE_URL.")
     headers = {"Content-Type": "application/json"}
@@ -141,34 +286,108 @@ def _call_vision(image_b64: str, media_type: str) -> dict:
         headers["Authorization"] = f"Bearer {API_KEY}"
     payload: dict = {
         "messages": [
-            {"role": "system", "content": PROMPT},
             {
                 "role": "user",
                 "content": [
-                    {"type": "text", "text": "Read this hand-drawn plan and output the JSON."},
+                    {"type": "text", "text": PROMPT},
                     {"type": "image_url", "image_url": {"url": f"data:{media_type};base64,{image_b64}"}},
                 ],
-            },
+            }
         ],
-        "temperature": 0.1,
-        "max_tokens": 1500,
+        # temp 0 is required for deterministic OCR; repeat-penalty stops the
+        # model looping on dense/partial text.
+        "temperature": 0,
+        "repeat_penalty": 1.05,
+        "max_tokens": 3000,
     }
     if MODEL:
         payload["model"] = MODEL
     try:
-        resp = httpx.post(f"{BASE_URL}/chat/completions", json=payload, headers=headers, timeout=120)
+        resp = httpx.post(f"{BASE_URL}/chat/completions", json=payload, headers=headers, timeout=180)
         resp.raise_for_status()
         data = resp.json()
-        return _extract_json(data["choices"][0]["message"]["content"])
+        return data["choices"][0]["message"]["content"]
     except HTTPException:
         raise
     except Exception as e:
         raise HTTPException(502, f"Local OCR server unavailable or failed: {e}")
 
 
+def _engine_online() -> bool:
+    """Is the local OCR llama-server reachable?"""
+    if not BASE_URL:
+        return False
+    try:
+        return httpx.get(f"{BASE_URL}/models", timeout=2).status_code == 200
+    except Exception:
+        return False
+
+
+def _runtime_dir() -> Path:
+    base = Path(os.environ.get("LOCALAPPDATA", str(Path.home() / ".local"))) if os.name == "nt" else Path.home() / ".local/share"
+    return base / ("bathroom-3d-ocr" if os.name == "nt" else "bathroom-ocr")
+
+
+def _runtime_detail() -> dict:
+    rt = _runtime_dir()
+    bin_ = next((rt / "llama").rglob("llama-server.exe"), None) if os.name == "nt" else next((rt / "llama").rglob("llama-server"), None)
+    # accept either default engine model (Gemma) or the Unlimited-OCR alternative
+    candidates = [
+        rt / "models" / "gemma-4-E4B-it-Q4_K_M.gguf",
+        rt / "models" / "Unlimited-OCR-Q4_K_M.gguf",
+    ]
+    model_present = any(p.exists() for p in candidates)
+    mmproj_candidates = [
+        rt / "models" / "mmproj-gemma-4-E4B-F16.gguf",
+        rt / "models" / "mmproj-Unlimited-OCR-F16.gguf",
+    ]
+    mmproj_present = any(p.exists() for p in mmproj_candidates)
+    return {
+        "runtime_dir": str(rt),
+        "binary_present": bin_ is not None,
+        "llama_model_present": model_present,
+        "mmproj_present": mmproj_present,
+        "engine_running": _engine_online(),
+    }
+
+
+def _start_engine(max_wait: int = 100) -> dict:
+    """Provision (download if needed) and launch the OCR engine. Idempotent."""
+    if _engine_online():
+        return {"started": False, "ok": True, "message": "Engine already running"}
+    if not (_PS1.exists() or _SH.exists()):
+        return {"started": False, "ok": False, "message": "OCR installer script not found"}
+    try:
+        if os.name == "nt":
+            cmd = ["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", str(_PS1)]
+            creationflags = subprocess.CREATE_NO_WINDOW if hasattr(subprocess, "CREATE_NO_WINDOW") else 0
+            subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, creationflags=creationflags)
+        else:
+            subprocess.Popen(["bash", str(_SH)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    except Exception as e:
+        return {"started": False, "ok": False, "message": f"Failed to launch engine: {e}"}
+    for _ in range(max_wait):
+        if _engine_online():
+            return {"started": True, "ok": True, "message": "Engine started"}
+        time.sleep(1)
+    return {"started": True, "ok": False, "message": "Engine launch attempted but not yet online (first run downloads ~2.6GB)"}
+
+
 @router.get("/status")
 async def plan_status():
-    return {"configured": bool(BASE_URL), "base_url": BASE_URL, "model": MODEL or "default", "online": BASE_URL != ""}
+    detail = _runtime_detail()
+    return {
+        "configured": bool(BASE_URL),
+        "base_url": BASE_URL,
+        "model": MODEL or "default",
+        "online": _engine_online(),
+        **detail,
+    }
+
+
+@router.post("/engine/start")
+async def plan_engine_start():
+    return _start_engine()
 
 
 @router.post("/from-photo")
@@ -189,8 +408,18 @@ async def plan_from_photo(file: UploadFile):
         media_type = file.content_type or "image/jpeg"
 
     try:
-        raw_plan = _call_vision(image_b64, media_type)
-        return _normalize_plan(raw_plan)
+        # Seamless: if the local OCR engine isn't up, boot it first (first run
+        # downloads the model, so this may take a while).
+        if not _engine_online():
+            _start_engine(max_wait=15)
+        raw_text = _call_vision(image_b64, media_type)
+        # Two engines:
+        #  - a general VLM (e.g. Gemma) returns JSON we normalise directly
+        #  - the OCR specialist (Unlimited-OCR) returns <region> OCR text we reconstruct
+        try:
+            return _normalize_plan(_extract_json(raw_text))
+        except (ValueError, json.JSONDecodeError):
+            return _reconstruct_room(raw_text)
     except HTTPException:
         raise
     except Exception as e:

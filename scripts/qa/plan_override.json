@@ -1,0 +1,15 @@
+{
+  "floor": [[-1500, -1200], [2100, -1200], [2100, 1200], [300, 1200], [300, 400], [-1500, 400]],
+  "ceilingHeight": 2500,
+  "wallThickness": 125,
+  "walls": [
+    {"profile": "rectangle", "height": 2500},
+    {"profile": "rectangle", "height": 2500},
+    {"profile": "rectangle", "height": 2200},
+    {"profile": "rectangle", "height": 2500},
+    {"profile": "rectangle", "height": 2500},
+    {"profile": "rectangle", "height": 2500}
+  ],
+  "doors": [{"wall": 4, "pos": 700, "width": 900, "height": 2100}],
+  "windows": [{"wall": 0, "pos": 1000, "width": 1100, "height": 1200, "sill": 900}, {"wall": 1, "pos": 500, "width": 800, "height": 1000, "sill": 1000}]
+}

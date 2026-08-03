@@ -112,6 +112,8 @@ interface DesignStore {
   // openings
   addOpening: (o: WallOpening) => void;
   removeOpening: (id: string) => void;
+  /** Clear all doors/windows/items — used when importing a replacement plan/room. */
+  clearRoomContents: () => void;
 
   // items
   addItem: (item: PlacedItem) => void;
@@ -317,6 +319,18 @@ export const useDesignStore = create<DesignStore>()((set, get) => ({
         doors: s.design.doors.filter((d) => d.id !== id),
         windows: s.design.windows.filter((w) => w.id !== id),
       },
+      past: [...s.past.slice(-49), prev],
+      future: [],
+      canUndo: true,
+      canRedo: false,
+    }));
+  },
+
+  clearRoomContents: () => {
+    const prev = snapshot(get().design);
+    set((s) => ({
+      design: { ...s.design, doors: [], windows: [], items: [] },
+      selectedItemId: null,
       past: [...s.past.slice(-49), prev],
       future: [],
       canUndo: true,

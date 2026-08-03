@@ -55,6 +55,8 @@ export function LeftPanel() {
         };
       });
       useDesignStore.getState().setRoom({ floorPoints: floor, walls: wallSpecs, ceilingHeight: ceiling, wallThickness: thickness, closed: true });
+      // Importing a new plan replaces the room — clear any prior doors/windows/items first.
+      useDesignStore.getState().clearRoomContents();
       const st = useDesignStore.getState();
       (plan.doors ?? []).forEach((d: any) =>
         st.addOpening({ id: crypto.randomUUID(), type: 'door', wallIndex: d.wall ?? 0, pos: d.pos ?? 0, width: d.width ?? 850, height: d.height ?? 2100, sillHeight: 0 }),

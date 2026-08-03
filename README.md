@@ -87,39 +87,37 @@ scripts/
 ## Import a plan from a photo (fully offline)
 
 In the Room panel, **"Import plan from photo"** uploads a photo of a hand-drawn plan / measurement
-sketch. The backend sends it to your **own local** OCR/vision model, gets back the room geometry
+sketch. The backend sends it to your **own local** vision model, gets back the room geometry
 (floor outline in mm, wall shapes, doors, windows), and drops it into the editor — no external API.
 
-**Licensing (checked): everything is MIT.** `llama.cpp` is MIT-licensed (`Copyright (c) 2023-2026
-The ggml authors`), and the recommended `baidu/Unlimited-OCR` model is MIT (as is its
-DeepSeek-OCR base). You may freely run, modify, and bundle all of it for your own app; just keep
-the MIT copyright notices.
+**Everything is automated — no knowledge of AI/LLMs needed.** On first use the app provisions the
+whole engine itself: it downloads a **prebuilt Vulkan llama.cpp binary** (no compiling) plus the
+**Unlimited-OCR** model (~1.8GB text + 774MB mmproj), and launches the server on `127.0.0.1:9333`.
+`GET /api/v1/plans/status` reports runtime state (binary/model present, engine online); the import
+request auto-starts the engine if it's down.
 
-Serving your own model (recommended — Unlimited-OCR, a 3B OCR specialist that reads handwriting
-well, Q4 ~1.8GB + 774MB mmproj):
-
-```bash
-scripts/serve-ocr.sh            # downloads GGUF+mmproj to ~/.local/share/bathroom-ocr, starts
-                                # llama-server with --mmproj on 127.0.0.1:9333
+```powershell
+# one command, or let the app do it automatically via POST /api/v1/plans/engine/start
+scripts\ocr\serve.ps1          # idempotent: detects missing pieces, downloads, launches
+# or from git-bash:  scripts/ocr/serve.sh
 ```
 
-The app defaults `PLAN_VISION_BASE_URL` to that local endpoint (`http://127.0.0.1:9333/v1`), so
-it works with no extra config once the server is up. `GET /api/v1/plans/status` reports whether
-it's configured.
+**Licensing (checked): everything is MIT.** `llama.cpp` is MIT (`The ggml authors`), and
+`baidu/Unlimited-OCR` is MIT (as is its DeepSeek-OCR base, itself MIT). Freely run, modify, bundle.
 
-> ⚠️ **Unlimited-OCR needs a DeepSeek-OCR-aware llama.cpp build (PR #17400)** — the model uses
-> the DeepSeek-OCR architecture (SAM+CLIP DeepEncoder + DeepSeek-V2 MoE), which isn't in upstream
-> `main` yet. Build that branch:
-> `git fetch origin pull/24975/head:pr24975 && git checkout pr24975` then build `llama-server`
-> (`-DGGML_CUDA=ON` for NVIDIA). Your homelab `.5` llama.cpp already has the CUDA build flow.
->
-> If you'd rather use a **stock llama.cpp** build, swap `PLAN_VISION_MODEL` to a
-> Gemma 4 E2B/12B GGUF (`unsloth/gemma-4-E2B-it-GGUF` + its mmproj) — same OpenAI-compatible
-> interface, one-line change, though tiny Gemma reads handwriting less reliably than
-> Unlimited-OCR.
+**How the OCR output is used (programmatically):** Unlimited-OCR is a *pure OCR* model — it emits
+text regions with bounding boxes (`text [x1,y1,x2,y2]label`), not a room. The backend parses those
+regions, interprets the dimension labels by their position (top/bottom → width, left/right → depth,
+"ceiling N" → ceiling height), and rebuilds a rectangular room + door/window placements. This is
+heuristic: it works best on clearly-measured plans (what users photograph). Refine positioning in
+the editor afterwards. DeepSeek-OCR support is **merged into llama.cpp** (PR #17400) — the prebuilt
+Windows release is Vulkan-targeted, so it runs on the AMD RX 6750 XT with no special setup.
+
+**Alternative engine** — a general instruction-following VLM (Gemma 4 E4B) can output the room JSON
+directly instead of OCR regions (`OCR_MODEL=gemma`, default `ocr`). Pick whichever suits your plans.
 
 ```bash
-# custom endpoints if not using the default
+# custom endpoints if not using the local engine
 export PLAN_VISION_BASE_URL=http://<host>:9333/v1
 export PLAN_VISION_MODEL=Unlimited-OCR-Q4_K_M   # or leave unset (server default)
 export PLAN_VISION_API_KEY=                       # only if your server needs one
