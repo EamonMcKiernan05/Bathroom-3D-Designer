@@ -20,11 +20,11 @@ WIN_ARCH="win-vulkan-x64"
 HOST="127.0.0.1"
 
 # Choose the engine's vision model.
-#   OCR_MODEL=gemma  (default) -> Gemma 4 E4B it (general instruction-following VLM;
-#        best fit for "understand plan -> emit room JSON").
-#   OCR_MODEL=ocr    -> Unlimited-OCR (DeepSeek-OCR). SOTA text-region OCR, but outputs
-#        OCR token streams, NOT room JSON — only useful if you re-parse regions yourself.
-OCR_MODEL="${OCR_MODEL:-gemma}"
+#   OCR_MODEL=ocr    (default) -> Unlimited-OCR (DeepSeek-OCR). SOTA text-region OCR; the
+#        backend re-parses its region output into a room. Default = matches README.
+#   OCR_MODEL=gemma  -> Gemma 4 E4B it (general instruction-following VLM; can emit room
+#        JSON directly instead of OCR regions).
+OCR_MODEL="${OCR_MODEL:-ocr}"
 case "$OCR_MODEL" in
   gemma)
     MODEL_REPO="unsloth/gemma-4-E4B-it-GGUF"

@@ -28,8 +28,17 @@ from PIL import Image
 
 router = APIRouter(prefix="/api/v1/plans", tags=["plans"])
 
-# Repo root = apps/api/app/<file> -> 4 up
-_REPO = Path(__file__).resolve().parent.parent.parent.parent
+# Repo root: walk up from apps/api/app/routers/plans.py until scripts/ocr/ is found.
+def _find_repo() -> Path:
+    d = Path(__file__).resolve().parent
+    for _ in range(8):
+        if (d / "scripts" / "ocr" / "serve.ps1").exists():
+            return d
+        d = d.parent
+    return d  # fallback: repo root as best effort
+
+
+_REPO = _find_repo()
 _PS1 = _REPO / "scripts" / "ocr" / "serve.ps1"
 _SH = _REPO / "scripts" / "ocr" / "serve.sh"
 
