@@ -42,26 +42,48 @@ export function EditorPage() {
       .catch(() => showNotice('Failed to load design'));
   }, [designIdParam, showNotice]);
 
-  const save = useCallback(async () => {
-    setSaving(true);
-    try {
-      const st = useDesignStore.getState();
-      const payload = { name: st.designName || 'Untitled Design', data: st.design };
-      let id = st.designId;
-      if (id) {
-        await api.updateDesign(id, { name: payload.name, data: payload.data });
-      } else {
-        const created = await api.createDesign(payload);
-        id = created.id;
-        st.setDesignId(id);
+  const save = useCallback(
+    async (silent = false) => {
+      setSaving(true);
+      try {
+        const st = useDesignStore.getState();
+        const payload = { name: st.designName || 'Untitled Design', data: st.design };
+        let id = st.designId;
+        if (id) {
+          await api.updateDesign(id, { name: payload.name, data: payload.data });
+        } else {
+          const created = await api.createDesign(payload);
+          id = created.id;
+          st.setDesignId(id);
+        }
+        st.setSavedAt(new Date().toLocaleTimeString());
+        if (!silent) showNotice(`Saved as design #${id}`);
+      } catch (e) {
+        if (!silent) showNotice(`Save failed: ${String(e).slice(0, 120)}`);
+      } finally {
+        setSaving(false);
       }
-      st.setSavedAt(new Date().toLocaleTimeString());
-      showNotice(`Saved as design #${id}`);
-    } catch (e) {
-      showNotice(`Save failed: ${String(e).slice(0, 120)}`);
-    } finally {
-      setSaving(false);
-    }
+    },
+    [showNotice],
+  );
+
+  // auto-save every 60s (existing designs only — don't spam-create on a new one)
+  useEffect(() => {
+    const timer = setInterval(() => {
+      const st = useDesignStore.getState();
+      if (st.designId) save(true).catch(() => {});
+    }, 60000);
+    return () => clearInterval(timer);
+  }, [save]);
+
+  const snapshot3D = useCallback(() => {
+    const canvas = document.querySelector('canvas');
+    if (!canvas) return;
+    const a = document.createElement('a');
+    a.download = 'bathroom-3d-snapshot.png';
+    a.href = canvas.toDataURL('image/png');
+    a.click();
+    showNotice('3D snapshot exported');
   }, [showNotice]);
 
   // keyboard shortcuts (page level)
@@ -89,6 +111,7 @@ export function EditorPage() {
           useDesignStore.getState().selectItem(null);
           useDesignStore.getState().selectSurface(null);
         }
+        ed.clearMeasure();
       } else if (e.key === '1') ed.setMode('navigate');
       else if (e.key === '2') ed.setMode('draw');
       else if (e.key === '3') ed.setMode('place');
@@ -253,12 +276,20 @@ export function EditorPage() {
         </div>
       </div>
 
-      {exportOpen && <ExportDialog onClose={() => setExportOpen(false)} onExportFloorplan={exportFloorplan} />}
+      {exportOpen && <ExportDialog onClose={() => setExportOpen(false)} onExportFloorplan={exportFloorplan} onSnapshot3D={snapshot3D} />}
     </div>
   );
 }
 
-function ExportDialog({ onClose, onExportFloorplan }: { onClose: () => void; onExportFloorplan: () => void }) {
+function ExportDialog({
+  onClose,
+  onExportFloorplan,
+  onSnapshot3D,
+}: {
+  onClose: () => void;
+  onExportFloorplan: () => void;
+  onSnapshot3D: () => void;
+}) {
   const [bom, setBom] = useState<{ items: { product_name: string; retailer_name: string; sku: string; unit_price?: number; total_price?: number; retailer_url?: string; finish?: string }[]; grand_total?: number; design_name: string } | null>(null);
   const [err, setErr] = useState('');
   const designId = useDesignStore((s) => s.designId);
@@ -324,6 +355,9 @@ function ExportDialog({ onClose, onExportFloorplan }: { onClose: () => void; onE
                 )}
                 <button onClick={onExportFloorplan} className="rounded border border-neutral-300 px-3 py-1.5 text-xs text-neutral-700 hover:bg-neutral-50">
                   2D Floorplan PNG
+                </button>
+                <button onClick={onSnapshot3D} className="rounded border border-neutral-300 px-3 py-1.5 text-xs text-neutral-700 hover:bg-neutral-50">
+                  3D Snapshot PNG
                 </button>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-export type EditorMode = 'navigate' | 'draw' | 'place' | 'surfaces' | 'openings';
+export type EditorMode = 'navigate' | 'draw' | 'place' | 'surfaces' | 'openings' | 'measure';
 export type CameraMode = '3d' | '2d';
 
 interface EditorStore {
@@ -13,6 +13,8 @@ interface EditorStore {
   /** current drag product payload (set on dragstart from catalogue) */
   dragProduct: unknown | null;
   openingType: 'door' | 'window';
+  /** measurement tool: two points (in room XZ mm), or null */
+  measure: { a: [number, number]; b: [number, number] | null } | null;
   setMode: (m: EditorMode) => void;
   setCameraMode: (m: CameraMode) => void;
   toggleGrid: () => void;
@@ -21,6 +23,8 @@ interface EditorStore {
   setCatalogueOpen: (open: boolean) => void;
   setDragProduct: (p: unknown | null) => void;
   setOpeningType: (t: 'door' | 'window') => void;
+  setMeasurePoint: (p: [number, number]) => void;
+  clearMeasure: () => void;
 }
 
 export const useEditorStore = create<EditorStore>()((set) => ({
@@ -32,6 +36,7 @@ export const useEditorStore = create<EditorStore>()((set) => ({
   catalogueOpen: true,
   dragProduct: null,
   openingType: 'door',
+  measure: null,
   setMode: (m) => set({ mode: m }),
   setCameraMode: (m) => set({ cameraMode: m }),
   toggleGrid: () => set((s) => ({ showGrid: !s.showGrid })),
@@ -40,6 +45,14 @@ export const useEditorStore = create<EditorStore>()((set) => ({
   setCatalogueOpen: (open) => set({ catalogueOpen: open }),
   setDragProduct: (p) => set({ dragProduct: p }),
   setOpeningType: (t) => set({ openingType: t }),
+  setMeasurePoint: (p) =>
+    set((s) => {
+      const m = s.measure;
+      if (!m) return { measure: { a: p, b: null } };
+      if (!m.b) return { measure: { a: m.a, b: p } };
+      return { measure: null }; // already complete — clicking again restarts
+    }),
+  clearMeasure: () => set({ measure: null }),
 }));
 
 /** Mount height (mm from floor) for wall-mounted products by category prefix. */

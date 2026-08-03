@@ -10,8 +10,18 @@ function useSurfaceMaterial(
   assignment: TextureAssignment | null,
   fallbackColor = '#f2f1ee',
 ) {
-  const map = assignment ? useLoader(THREE.TextureLoader, assignment.url) : null;
+  const isSolid = !!assignment?.solidColor;
+  const map =
+    assignment && !isSolid && assignment.url ? useLoader(THREE.TextureLoader, assignment.url) : null;
   return useMemo(() => {
+    if (isSolid && assignment?.solidColor) {
+      const mat = new THREE.MeshStandardMaterial({
+        color: new THREE.Color(assignment.solidColor),
+        roughness: 0.7,
+        metalness: 0,
+      });
+      return mat;
+    }
     const mat = new THREE.MeshStandardMaterial({
       color: new THREE.Color(fallbackColor),
       roughness: 0.85,
@@ -21,7 +31,7 @@ function useSurfaceMaterial(
       configureTextureMaterial(mat, map, assignment);
     }
     return mat;
-  }, [map, assignment?.url, assignment?.layout, assignment?.rotation, assignment?.groutWidthMm, fallbackColor]);
+  }, [isSolid, assignment?.solidColor, map, assignment?.url, assignment?.layout, assignment?.rotation, assignment?.groutWidthMm, fallbackColor]);
 }
 
 interface Piece {
@@ -190,7 +200,7 @@ export function Room() {
     return g;
   }, [floorPoints, floorTexture]);
 
-  const floorMat = useSurfaceMaterial(floorTexture, new THREE.Color('#e5e4e0'));
+  const floorMat = useSurfaceMaterial(floorTexture, '#e5e4e0');
 
   const ceilingGeom = useMemo(() => {
     if (floorPoints.length < 3) return null;
@@ -208,7 +218,7 @@ export function Room() {
     return g;
   }, [floorPoints, ceilingTexture]);
 
-  const ceilingMat = useSurfaceMaterial(ceilingTexture, new THREE.Color('#f8f8f6'));
+  const ceilingMat = useSurfaceMaterial(ceilingTexture, '#f8f8f6');
 
   return (
     <group>

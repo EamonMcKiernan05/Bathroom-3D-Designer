@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { buildWalls } from '../../lib/geometry';
-import { useDesignStore } from '../../stores/design-store';
+import { ROOM_TEMPLATES, templateRoom, useDesignStore } from '../../stores/design-store';
 import { useEditorStore } from '../../stores/editor-store';
 
 export function LeftPanel() {
@@ -11,6 +11,7 @@ export function LeftPanel() {
   const removeItem = useDesignStore((s) => s.removeItem);
   const setCeilingHeight = useDesignStore((s) => s.setCeilingHeight);
   const setWallThickness = useDesignStore((s) => s.setWallThickness);
+  const setRoom = useDesignStore((s) => s.setRoom);
   const updateItem = useDesignStore((s) => s.updateItem);
   const doors = useDesignStore((s) => s.design.doors);
   const windows = useDesignStore((s) => s.design.windows);
@@ -36,6 +37,21 @@ export function LeftPanel() {
       <div className="flex-1 overflow-y-auto p-3">
         {tab === 'room' && (
           <div className="space-y-3 text-sm">
+            <div>
+              <p className="mb-1 text-xs font-semibold text-neutral-600">Start from a template</p>
+              <div className="flex flex-wrap gap-1">
+                {ROOM_TEMPLATES.map((t) => (
+                  <button
+                    key={t.name}
+                    onClick={() => setRoom(templateRoom(t.w, t.d, t.ceiling))}
+                    className="rounded border border-neutral-300 px-2 py-1 text-[11px] text-neutral-700 hover:border-sky-400 hover:text-sky-700"
+                    title={`${t.w}x${t.d}mm, ${t.ceiling}mm ceiling`}
+                  >
+                    {t.name}
+                  </button>
+                ))}
+              </div>
+            </div>
             <div>
               <p className="mb-1 text-xs font-semibold text-neutral-600">Room dimensions</p>
               {room.closed ? (

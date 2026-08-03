@@ -5,6 +5,14 @@ import { buildWalls } from '../../lib/geometry';
 import type { TextureAssignment, TextureInfo } from '../../lib/types';
 
 const GROUT_COLORS = ['#ffffff', '#d4d4d4', '#9ca3af', '#4b5563', '#000000'];
+const PAINT_COLORS = [
+  '#f2f1ec', '#e7e4dd', '#d5d0c6', '#b8b2a6', '#8a857b',
+  '#f5efe6', '#e8dcc8', '#d9c6a8', '#c4aa86',
+  '#e8f0ef', '#cddcdb', '#a9c0bd', '#7da5a1',
+  '#eef0f3', '#d3d9e3', '#afb8c9', '#7e8ba3',
+  '#f5edea', '#e6d2cc', '#d3aba0', '#b57f72',
+  '#2f3437', '#5f666b', '#8c9399',
+];
 
 export function TexturePicker({ category }: { category: string }) {
   const [textures, setTextures] = useState<TextureInfo[]>([]);
@@ -59,6 +67,24 @@ export function TexturePicker({ category }: { category: string }) {
     else setWallTexture(active.index, next);
   };
 
+  const applyPaint = (color: string) => {
+    const assignment: TextureAssignment = {
+      textureId: 0,
+      tileWidthMm: 0,
+      tileHeightMm: 0,
+      groutWidthMm: 3,
+      groutColor: GROUT_COLORS[1],
+      layout: 'straight',
+      rotation: 0,
+      url: '',
+      name: color,
+      solidColor: color,
+    };
+    if (active.type === 'floor') setFloorTexture(assignment);
+    else if (active.type === 'ceiling') setCeilingTexture(assignment);
+    else setWallTexture(active.index, assignment);
+  };
+
   const clearSurface = () => {
     if (active.type === 'floor') setFloorTexture(null);
     else if (active.type === 'ceiling') setCeilingTexture(null);
@@ -108,51 +134,77 @@ export function TexturePicker({ category }: { category: string }) {
       {current && (
         <div className="mb-3 rounded border border-neutral-200 bg-neutral-50 p-2">
           <div className="mb-1.5 flex items-center gap-2">
-            <img src={current.url} alt="" className="h-10 w-10 rounded object-cover" />
+            {current.solidColor ? (
+              <div className="h-10 w-10 rounded object-cover" style={{ background: current.solidColor, border: '1px solid #ccc' }} />
+            ) : (
+              <img src={current.url} alt="" className="h-10 w-10 rounded object-cover" />
+            )}
             <div>
               <p className="text-xs font-medium text-neutral-800">{current.name}</p>
-              <p className="text-[10px] text-neutral-500">
-                {current.tileWidthMm}×{current.tileHeightMm} mm
-              </p>
+              {!current.solidColor && (
+                <p className="text-[10px] text-neutral-500">
+                  {current.tileWidthMm}×{current.tileHeightMm} mm
+                </p>
+              )}
             </div>
           </div>
-          <div className="flex items-center gap-2 text-[11px] text-neutral-600">
-            <span>Layout:</span>
-            {(['straight', 'diagonal'] as const).map((l) => (
-              <button
-                key={l}
-                onClick={() => updateCurrent({ layout: l })}
-                className={`rounded px-1.5 py-0.5 capitalize ${current.layout === l ? 'bg-sky-600 text-white' : 'bg-white border border-neutral-300'}`}
-              >
-                {l}
-              </button>
-            ))}
-          </div>
-          <div className="mt-1.5 flex items-center gap-2 text-[11px] text-neutral-600">
-            <span>Grout:</span>
-            {[2, 3, 5].map((w) => (
-              <button
-                key={w}
-                onClick={() => updateCurrent({ groutWidthMm: w })}
-                className={`rounded px-1.5 py-0.5 ${current.groutWidthMm === w ? 'bg-sky-600 text-white' : 'bg-white border border-neutral-300'}`}
-              >
-                {w}mm
-              </button>
-            ))}
-            <span className="ml-1 flex gap-1">
-              {GROUT_COLORS.map((c) => (
-                <button
-                  key={c}
-                  onClick={() => updateCurrent({ groutColor: c })}
-                  className={`h-4 w-4 rounded-full border ${current.groutColor === c ? 'ring-2 ring-sky-500' : 'border-neutral-300'}`}
-                  style={{ background: c }}
-                  title={c}
-                />
-              ))}
-            </span>
-          </div>
+          {!current.solidColor && (
+            <>
+              <div className="flex items-center gap-2 text-[11px] text-neutral-600">
+                <span>Layout:</span>
+                {(['straight', 'diagonal'] as const).map((l) => (
+                  <button
+                    key={l}
+                    onClick={() => updateCurrent({ layout: l })}
+                    className={`rounded px-1.5 py-0.5 capitalize ${current.layout === l ? 'bg-sky-600 text-white' : 'bg-white border border-neutral-300'}`}
+                  >
+                    {l}
+                  </button>
+                ))}
+              </div>
+              <div className="mt-1.5 flex items-center gap-2 text-[11px] text-neutral-600">
+                <span>Grout:</span>
+                {[2, 3, 5].map((w) => (
+                  <button
+                    key={w}
+                    onClick={() => updateCurrent({ groutWidthMm: w })}
+                    className={`rounded px-1.5 py-0.5 ${current.groutWidthMm === w ? 'bg-sky-600 text-white' : 'bg-white border border-neutral-300'}`}
+                  >
+                    {w}mm
+                  </button>
+                ))}
+                <span className="ml-1 flex gap-1">
+                  {GROUT_COLORS.map((c) => (
+                    <button
+                      key={c}
+                      onClick={() => updateCurrent({ groutColor: c })}
+                      className={`h-4 w-4 rounded-full border ${current.groutColor === c ? 'ring-2 ring-sky-500' : 'border-neutral-300'}`}
+                      style={{ background: c }}
+                      title={c}
+                    />
+                  ))}
+                </span>
+              </div>
+            </>
+          )}
         </div>
       )}
+
+      {/* Paint (solid colour) */}
+      <div className="mb-2">
+        <p className="mb-1 text-[11px] font-semibold text-neutral-600">Paint (solid colour)</p>
+        <div className="flex flex-wrap gap-1">
+          {PAINT_COLORS.map((c) => (
+            <button
+              key={c}
+              onClick={() => applyPaint(c)}
+              className={`h-6 w-6 rounded border ${current?.solidColor === c ? 'ring-2 ring-sky-500' : 'border-neutral-300'}`}
+              style={{ background: c }}
+              title={c}
+            />
+          ))}
+        </div>
+      </div>
 
       <div className="grid grid-cols-3 gap-1.5">
         {textures.map((t) => (

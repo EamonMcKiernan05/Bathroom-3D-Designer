@@ -118,6 +118,7 @@ class TextureAssignmentSchema(BaseModel):
     rotation: float = 0
     url: Optional[str] = None
     name: Optional[str] = None
+    solidColor: Optional[str] = None
 
 
 class DesignDataSchema(BaseModel):

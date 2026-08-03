@@ -33,6 +33,28 @@ export function emptyDesign(): DesignData {
   };
 }
 
+/** Quick-start room templates (competitor feature). Returns a closed rectangular room. */
+export const ROOM_TEMPLATES: { name: string; w: number; d: number; ceiling: number }[] = [
+  { name: 'Small UK Bathroom', w: 2400, d: 1800, ceiling: 2400 },
+  { name: 'Family Bathroom', w: 3000, d: 2500, ceiling: 2400 },
+  { name: 'Large Master', w: 3600, d: 3000, ceiling: 2600 },
+  { name: 'En-suite (L-shape)', w: 2400, d: 2000, ceiling: 2400 },
+];
+
+export function templateRoom(w: number, d: number, ceiling: number): RoomState {
+  return {
+    floorPoints: [
+      [-w / 2, -d / 2],
+      [w / 2, -d / 2],
+      [w / 2, d / 2],
+      [-w / 2, d / 2],
+    ],
+    ceilingHeight: ceiling,
+    wallThickness: DEFAULT_WALL_THICKNESS,
+    closed: true,
+  };
+}
+
 interface DesignStore {
   design: DesignData;
   selectedItemId: string | null;

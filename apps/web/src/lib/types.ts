@@ -87,6 +87,8 @@ export interface TextureAssignment {
   rotation: number;
   url: string;
   name: string;
+  /** Flat paint colour (no texture). When set, the surface is a solid colour. */
+  solidColor?: string;
 }
 
 export interface RoomState {

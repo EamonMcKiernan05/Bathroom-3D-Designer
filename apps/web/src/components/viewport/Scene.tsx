@@ -4,7 +4,7 @@ import { Canvas, useThree, type ThreeEvent } from '@react-three/fiber';
 import { OrbitControls, OrthographicCamera, PerspectiveCamera, Html } from '@react-three/drei';
 import { Room } from './Room';
 import { PlacedProduct, useCollisions } from './PlacedProduct';
-import { buildWalls, clampPointToPolygon, snapToWall } from '../../lib/geometry';
+import { buildWalls, clampPointToPolygon, distToSegment, snapToWall } from '../../lib/geometry';
 import { useDesignStore, roomBounds } from '../../stores/design-store';
 import { useEditorStore, mountHeightFor, isWallMounted } from '../../stores/editor-store';
 import type { PlacedItem, Product } from '../../lib/types';
@@ -33,7 +33,7 @@ export function makeItemFromProduct(p: Product, x: number, z: number): PlacedIte
     category: p.category ?? '',
     price: p.price_gbp ?? null,
     retailerName: p.retailer_name,
-    retailerUrl: p.retailer_url,
+    retailerUrl: p.retailer_website,
     sku: p.retailer_sku,
     finish: p.finishes?.[0],
     position: [x, mount, z],
@@ -50,6 +50,7 @@ export function makeItemFromProduct(p: Product, x: number, z: number): PlacedIte
 
 function SceneContents() {
   const design = useDesignStore((s) => s.design);
+  const selectedItemId = useDesignStore((s) => s.selectedItemId);
   const selectItem = useDesignStore((s) => s.selectItem);
   const addItem = useDesignStore((s) => s.addItem);
   const moveItem = useDesignStore((s) => s.moveItem);
@@ -63,11 +64,16 @@ function SceneContents() {
   const showDimensions = useEditorStore((s) => s.showDimensions);
   const snapEnabled = useEditorStore((s) => s.snapEnabled);
   const dragProduct = useEditorStore((s) => s.dragProduct);
+  const measure = useEditorStore((s) => s.measure);
+  const setMeasurePoint = useEditorStore((s) => s.setMeasurePoint);
+  const clearMeasure = useEditorStore((s) => s.clearMeasure);
 
   const { camera, gl, controls } = useThree();
+  const camControls = (controls ?? null) as { enabled: boolean } | null;
   const glEl = gl.domElement;
 
   const [cursor, setCursor] = useState<THREE.Vector3 | null>(null);
+  const [dragGap, setDragGap] = useState<number | null>(null);
   const openingType = useEditorStore((s) => s.openingType);
   const dragRef = useRef<{ id: string } | null>(null);
 
@@ -93,12 +99,19 @@ function SceneContents() {
         return;
       }
       setCursor(null);
-      if (!dragRef.current) return;
+      if (!dragRef.current) {
+        if (dragGap !== null) setDragGap(null);
+        return;
+      }
       const item = design.items.find((i) => i.id === dragRef.current!.id);
       if (!item) return;
       const y = item.position[1];
       const p = raycastToPlane(e.clientX, e.clientY, y, camera, glEl);
       if (!p) return;
+      // live gap to nearest wall (in mm) while dragging
+      let gap = Infinity;
+      for (const w of walls) gap = Math.min(gap, distToSegment(p.x, p.z, w.a[0], w.a[1], w.b[0], w.b[1]));
+      setDragGap(Math.round(gap));
       let x = p.x, z = p.z;
       if (snapEnabled) {
         const snap = snapToWall(x, z, room.floorPoints, 150);
@@ -106,6 +119,7 @@ function SceneContents() {
           // apply wall snap: keep mount height, align rotation
           const st = useDesignStore.getState();
           st.updateItem(item.id, { position: [snap.pos[0], y, snap.pos[2]], rotation: snap.rotation });
+          setDragGap(0);
           return;
         }
       }
@@ -114,7 +128,7 @@ function SceneContents() {
       z = Math.round(z / 50) * 50;
       moveItem(item.id, [x, y, z]);
     },
-    [camera, glEl, design.items, snapEnabled, room.floorPoints, moveItem, mode],
+    [camera, glEl, design.items, snapEnabled, room.floorPoints, moveItem, mode, walls, dragGap],
   );
 
   const handlePointerDown = useCallback(
@@ -125,16 +139,16 @@ function SceneContents() {
         e.stopPropagation();
         selectItem(itemId);
         dragRef.current = { id: itemId };
-        if (controls) controls.enabled = false; // stop orbit fighting the drag
+        if (camControls) camControls.enabled = false; // stop orbit fighting the drag
       }
     },
-    [selectItem, controls],
+    [selectItem, camControls],
   );
 
   const handlePointerUp = useCallback(() => {
     dragRef.current = null;
-    if (controls) controls.enabled = true;
-  }, [controls]);
+    if (camControls) camControls.enabled = true;
+  }, [camControls]);
 
   const handleClick = useCallback(
     (e: ThreeEvent<MouseEvent>) => {
@@ -176,6 +190,10 @@ function SceneContents() {
       }
       if (mode === 'surfaces' && surf) {
         selectSurface({ type: surf as 'floor' | 'ceiling' | 'wall', index: (obj.userData?.wallIndex as number) ?? 0 });
+        return;
+      }
+      if (mode === 'measure' && surf === 'floor') {
+        setMeasurePoint([Math.round(e.point.x), Math.round(e.point.z)]);
         return;
       }
       if (itemId) {
@@ -294,6 +312,57 @@ function SceneContents() {
           </Html>
         ))}
 
+      {/* measurement tool overlay */}
+      {mode === 'measure' && measure && (
+        <group>
+          <mesh position={[measure.a[0], 1, measure.a[1]]}>
+            <sphereGeometry args={[45, 12, 8]} />
+            <meshBasicMaterial color="#f59e0b" />
+          </mesh>
+          {measure.b && (
+            <>
+              <mesh position={[measure.b[0], 1, measure.b[1]]}>
+                <sphereGeometry args={[45, 12, 8]} />
+                <meshBasicMaterial color="#f59e0b" />
+              </mesh>
+              <line>
+                <bufferGeometry>
+                  <bufferAttribute
+                    attach="attributes-position"
+                    args={[new Float32Array([measure.a[0], 1, measure.a[1], measure.b[0], 1, measure.b[1]]), 3]}
+                  />
+                </bufferGeometry>
+                <lineBasicMaterial color="#f59e0b" />
+              </line>
+              <Html
+                position={[(measure.a[0] + measure.b[0]) / 2, 120, (measure.a[1] + measure.b[1]) / 2]}
+                center
+                style={{ pointerEvents: 'none' }}
+              >
+                <div style={{ background: '#f59e0b', color: '#fff', padding: '2px 7px', borderRadius: 6, fontSize: 12, fontWeight: 600, whiteSpace: 'nowrap' }}>
+                  {Math.round(Math.hypot(measure.a[0] - measure.b[0], measure.a[1] - measure.b[1]))} mm
+                </div>
+              </Html>
+            </>
+          )}
+        </group>
+      )}
+
+      {/* live gap-to-wall while dragging an item */}
+      {dragGap !== null &&
+        selectedItemId &&
+        (() => {
+          const it = design.items.find((i) => i.id === selectedItemId);
+          if (!it) return null;
+          return (
+            <Html position={[it.position[0], (it.position[1] || 0) + 250, it.position[2]]} center style={{ pointerEvents: 'none' }}>
+              <div style={{ background: '#111827', color: '#fff', padding: '2px 7px', borderRadius: 6, fontSize: 11, whiteSpace: 'nowrap' }}>
+                {dragGap === 0 ? 'snapped to wall' : `${dragGap} mm to wall`}
+              </div>
+            </Html>
+          );
+        })()}
+
       {/* transparent interaction plane: draws walls / places items / moves selected */}
       <mesh
         rotation={[-Math.PI / 2, 0, 0]}
@@ -330,7 +399,7 @@ export function Scene() {
       <Canvas
         shadows={false}
         dpr={[1, 2]}
-        gl={{ antialias: true, toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 1.0 }}
+        gl={{ antialias: true, preserveDrawingBuffer: true, toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 1.0 }}
         camera={{ position: [2500, 3000, 3500], fov: 50 }}
       >
         <SceneContents />

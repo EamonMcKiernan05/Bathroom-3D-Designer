@@ -6,7 +6,8 @@ const MODES: { id: EditorMode; label: string; icon: string; hint: string }[] = [
   { id: 'draw', label: 'Draw Room', icon: '📐', hint: 'Click floor to place wall points, right-click to undo, Esc to cancel' },
   { id: 'openings', label: 'Doors & Windows', icon: '🚪', hint: 'Click a wall to add an opening' },
   { id: 'place', label: 'Place Items', icon: '🛁', hint: 'Drag from catalogue below, or click a placed item and drag it' },
-  { id: 'surfaces', label: 'Surfaces', icon: '🧱', hint: 'Click a wall/floor/ceiling to apply textures' },
+  { id: 'surfaces', label: 'Surfaces', icon: '🧱', hint: 'Click a wall/floor/ceiling to apply textures or paint' },
+  { id: 'measure', label: 'Measure', icon: '📏', hint: 'Click two points to measure a distance; Esc to clear' },
 ];
 
 export function Toolbar({ onSave, onExport, onNew }: { onSave: () => void; onExport: () => void; onNew: () => void }) {
