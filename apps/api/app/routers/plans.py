@@ -25,7 +25,9 @@ from PIL import Image
 
 router = APIRouter(prefix="/api/v1/plans", tags=["plans"])
 
-BASE_URL = os.environ.get("PLAN_VISION_BASE_URL", "").rstrip("/")
+# Default to a SELF-HOSTED OCR model (llama-server with --mmproj, e.g. Unlimited-OCR).
+# No external API: point these at your own llama.cpp vision server (scripts/serve-ocr.sh).
+BASE_URL = os.environ.get("PLAN_VISION_BASE_URL", "http://127.0.0.1:9333/v1")
 MODEL = os.environ.get("PLAN_VISION_MODEL", "")
 API_KEY = os.environ.get("PLAN_VISION_API_KEY", "")
 
@@ -132,17 +134,12 @@ def _normalize_plan(raw: dict) -> dict:
 
 
 def _call_vision(image_b64: str, media_type: str) -> dict:
-    if not BASE_URL or not MODEL:
-        raise HTTPException(
-            503,
-            "Vision model not configured. Set PLAN_VISION_BASE_URL (OpenAI-compatible vision "
-            "endpoint, e.g. a llama.cpp server with --mmproj) and PLAN_VISION_MODEL.",
-        )
+    if not BASE_URL:
+        raise HTTPException(503, "Vision model not configured. Set PLAN_VISION_BASE_URL.")
     headers = {"Content-Type": "application/json"}
     if API_KEY:
         headers["Authorization"] = f"Bearer {API_KEY}"
-    payload = {
-        "model": MODEL,
+    payload: dict = {
         "messages": [
             {"role": "system", "content": PROMPT},
             {
@@ -156,6 +153,8 @@ def _call_vision(image_b64: str, media_type: str) -> dict:
         "temperature": 0.1,
         "max_tokens": 1500,
     }
+    if MODEL:
+        payload["model"] = MODEL
     try:
         resp = httpx.post(f"{BASE_URL}/chat/completions", json=payload, headers=headers, timeout=120)
         resp.raise_for_status()
@@ -164,7 +163,12 @@ def _call_vision(image_b64: str, media_type: str) -> dict:
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(502, f"Vision model call failed: {e}")
+        raise HTTPException(502, f"Local OCR server unavailable or failed: {e}")
+
+
+@router.get("/status")
+async def plan_status():
+    return {"configured": bool(BASE_URL), "base_url": BASE_URL, "model": MODEL or "default", "online": BASE_URL != ""}
 
 
 @router.post("/from-photo")

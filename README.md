@@ -84,30 +84,49 @@ scripts/
 - **Fully lit, no shadows**, straight + diagonal tile layouts (herringbone/brick deferred), plain PostgreSQL (no PostGIS).
 - **Auth deferred** — API is open for local testing; add auth before any public launch.
 
-## Import a plan from a photo
+## Import a plan from a photo (fully offline)
 
-In the Room panel, **"Import plan from photo"** lets you upload a clear photo of a hand-drawn
-bathroom plan / measurement sketch. The backend sends it to a local Vision LLM, gets back the
-room geometry (floor outline in mm, wall shapes, doors, windows), and drops it straight into the
-editor where you can then tweak walls in the 2D editor.
+In the Room panel, **"Import plan from photo"** uploads a photo of a hand-drawn plan / measurement
+sketch. The backend sends it to your **own local** OCR/vision model, gets back the room geometry
+(floor outline in mm, wall shapes, doors, windows), and drops it into the editor — no external API.
 
-The vision model is any **OpenAI-compatible multimodal endpoint** — the natural fit is a Gemma 4
-edge model on your existing homelab llama.cpp.
+**Licensing (checked): everything is MIT.** `llama.cpp` is MIT-licensed (`Copyright (c) 2023-2026
+The ggml authors`), and the recommended `baidu/Unlimited-OCR` model is MIT (as is its
+DeepSeek-OCR base). You may freely run, modify, and bundle all of it for your own app; just keep
+the MIT copyright notices.
+
+Serving your own model (recommended — Unlimited-OCR, a 3B OCR specialist that reads handwriting
+well, Q4 ~1.8GB + 774MB mmproj):
 
 ```bash
-# serve Gemma 4 E2B (tiny, ~5GB) or 12B (better at reading handwriting) with vision
-llama-server -m <text>.gguf --mmproj <mmproj>.gguf -c 8192 --port 8080
-
-# point the app at it
-export PLAN_VISION_BASE_URL=http://127.0.0.1:8080/v1
-export PLAN_VISION_MODEL=gemma-4-E2B-it        # or gemma-4-12b-it
-export PLAN_VISION_API_KEY=                    # optional
+scripts/serve-ocr.sh            # downloads GGUF+mmproj to ~/.local/share/bathroom-ocr, starts
+                                # llama-server with --mmproj on 127.0.0.1:9333
 ```
 
-Without these env vars the endpoint returns a clear 503 (no model configured) — the room stays
-drawable by hand. Model accuracy note: reading messy handwriting is the weak point of the tiny
-E2B/E4B edge models; the 12B Gemma 4 reads hand-drawn measurements far more reliably. Same
-interface either way, so it's a one-line env swap.
+The app defaults `PLAN_VISION_BASE_URL` to that local endpoint (`http://127.0.0.1:9333/v1`), so
+it works with no extra config once the server is up. `GET /api/v1/plans/status` reports whether
+it's configured.
+
+> ⚠️ **Unlimited-OCR needs a DeepSeek-OCR-aware llama.cpp build (PR #17400)** — the model uses
+> the DeepSeek-OCR architecture (SAM+CLIP DeepEncoder + DeepSeek-V2 MoE), which isn't in upstream
+> `main` yet. Build that branch:
+> `git fetch origin pull/24975/head:pr24975 && git checkout pr24975` then build `llama-server`
+> (`-DGGML_CUDA=ON` for NVIDIA). Your homelab `.5` llama.cpp already has the CUDA build flow.
+>
+> If you'd rather use a **stock llama.cpp** build, swap `PLAN_VISION_MODEL` to a
+> Gemma 4 E2B/12B GGUF (`unsloth/gemma-4-E2B-it-GGUF` + its mmproj) — same OpenAI-compatible
+> interface, one-line change, though tiny Gemma reads handwriting less reliably than
+> Unlimited-OCR.
+
+```bash
+# custom endpoints if not using the default
+export PLAN_VISION_BASE_URL=http://<host>:9333/v1
+export PLAN_VISION_MODEL=Unlimited-OCR-Q4_K_M   # or leave unset (server default)
+export PLAN_VISION_API_KEY=                       # only if your server needs one
+```
+
+If the local server isn't running, the endpoint returns a clear 502/503 and the room stays
+drawable by hand.
 
 ## Testing
 
