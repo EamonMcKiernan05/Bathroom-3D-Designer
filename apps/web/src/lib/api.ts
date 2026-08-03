@@ -42,4 +42,14 @@ export const api = {
   bom: (id: number) => req<any>(`/api/v1/designs/${id}/bom`),
   bomCsvUrl: (id: number) => `/api/v1/designs/${id}/bom.csv`,
   share: (id: number) => req<any>(`/api/v1/designs/${id}/share`, { method: 'POST' }),
+  uploadPlanPhoto: async (file: File) => {
+    const fd = new FormData();
+    fd.append('file', file);
+    const res = await fetch('/api/v1/plans/from-photo', { method: 'POST', body: fd });
+    if (!res.ok) {
+      const t = await res.text().catch(() => '');
+      throw new Error(`${res.status}: ${t.slice(0, 220)}`);
+    }
+    return res.json();
+  },
 };

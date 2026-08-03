@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
 from .db import Base, engine
-from .routers import designs, products, textures
+from .routers import designs, plans, products, textures
 
 # Project root: apps/api/app/<file> -> repo root (4 levels up)
 ROOT = Path(__file__).resolve().parent.parent.parent.parent
@@ -25,6 +25,7 @@ app.add_middleware(
 app.include_router(products.router)
 app.include_router(textures.router)
 app.include_router(designs.router)
+app.include_router(plans.router)
 
 
 @app.on_event("startup")

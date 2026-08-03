@@ -84,6 +84,31 @@ scripts/
 - **Fully lit, no shadows**, straight + diagonal tile layouts (herringbone/brick deferred), plain PostgreSQL (no PostGIS).
 - **Auth deferred** — API is open for local testing; add auth before any public launch.
 
+## Import a plan from a photo
+
+In the Room panel, **"Import plan from photo"** lets you upload a clear photo of a hand-drawn
+bathroom plan / measurement sketch. The backend sends it to a local Vision LLM, gets back the
+room geometry (floor outline in mm, wall shapes, doors, windows), and drops it straight into the
+editor where you can then tweak walls in the 2D editor.
+
+The vision model is any **OpenAI-compatible multimodal endpoint** — the natural fit is a Gemma 4
+edge model on your existing homelab llama.cpp.
+
+```bash
+# serve Gemma 4 E2B (tiny, ~5GB) or 12B (better at reading handwriting) with vision
+llama-server -m <text>.gguf --mmproj <mmproj>.gguf -c 8192 --port 8080
+
+# point the app at it
+export PLAN_VISION_BASE_URL=http://127.0.0.1:8080/v1
+export PLAN_VISION_MODEL=gemma-4-E2B-it        # or gemma-4-12b-it
+export PLAN_VISION_API_KEY=                    # optional
+```
+
+Without these env vars the endpoint returns a clear 503 (no model configured) — the room stays
+drawable by hand. Model accuracy note: reading messy handwriting is the weak point of the tiny
+E2B/E4B edge models; the 12B Gemma 4 reads hand-drawn measurements far more reliably. Same
+interface either way, so it's a one-line env swap.
+
 ## Testing
 
 Verified end-to-end in a real browser (Brave): draw room → add doors/windows → place 6 products → tile floor + walls → save → export BOM + CSV. Three bugs found and fixed during test loops: a camera/grid NaN crash when entering draw mode, a keyboard-handler crash on non-element event targets, and a save-blocking schema field-name mismatch (camelCase frontend vs snake_case backend).

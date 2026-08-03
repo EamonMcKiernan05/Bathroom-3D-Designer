@@ -1,7 +1,9 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { buildWalls } from '../../lib/geometry';
 import { ROOM_TEMPLATES, templateRoom, useDesignStore } from '../../stores/design-store';
 import { useEditorStore } from '../../stores/editor-store';
+import { api } from '../../lib/api';
+import type { WallSpec } from '../../lib/types';
 
 export function LeftPanel() {
   const room = useDesignStore((s) => s.design.room);
@@ -18,7 +20,55 @@ export function LeftPanel() {
   const removeOpening = useDesignStore((s) => s.removeOpening);
 
   const [tab, setTab] = useState<'room' | 'items'>('room');
+  const fileRef = useRef<HTMLInputElement>(null);
+  const [planError, setPlanError] = useState('');
+  const [planBusy, setPlanBusy] = useState(false);
   const walls = useMemo(() => (room.closed ? buildWalls(room.floorPoints) : []), [room]);
+
+  const onPlanFile = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    e.target.value = '';
+    if (!file) return;
+    setPlanBusy(true);
+    setPlanError('');
+    try {
+      const plan = await api.uploadPlanPhoto(file);
+      const floor = (plan.floor ?? []) as [number, number][];
+      if (floor.length < 3) throw new Error('No usable outline in the photo result');
+      const ceiling = plan.ceilingHeight ?? 2400;
+      const thickness = plan.wallThickness ?? 100;
+      const wallSpecs: WallSpec[] = floor.map((a, i) => {
+        const b = floor[(i + 1) % floor.length];
+        const pw = plan.walls?.[i] ?? {};
+        return {
+          id: crypto.randomUUID(),
+          outline: [a, b],
+          thickness,
+          height: pw.height ?? ceiling,
+          profile: pw.profile ?? 'rectangle',
+          slopeRise: pw.slopeRise ?? 0,
+          stairSteps: pw.stairSteps ?? 6,
+          boxLength: pw.boxLength ?? 0,
+          boxDepth: pw.boxDepth ?? 120,
+          boxFrom: pw.boxFrom ?? 0,
+          boxTop: pw.boxTop ?? 450,
+        };
+      });
+      useDesignStore.getState().setRoom({ floorPoints: floor, walls: wallSpecs, ceilingHeight: ceiling, wallThickness: thickness, closed: true });
+      const st = useDesignStore.getState();
+      (plan.doors ?? []).forEach((d: any) =>
+        st.addOpening({ id: crypto.randomUUID(), type: 'door', wallIndex: d.wall ?? 0, pos: d.pos ?? 0, width: d.width ?? 850, height: d.height ?? 2100, sillHeight: 0 }),
+      );
+      (plan.windows ?? []).forEach((w: any) =>
+        st.addOpening({ id: crypto.randomUUID(), type: 'window', wallIndex: w.wall ?? 0, pos: w.pos ?? 0, width: w.width ?? 1100, height: w.height ?? 1200, sillHeight: w.sill ?? 900 }),
+      );
+      useEditorStore.getState().setMode('walls');
+    } catch (err) {
+      setPlanError(String(err).slice(0, 200));
+    } finally {
+      setPlanBusy(false);
+    }
+  };
 
   return (
     <div className="flex h-full w-64 flex-col border-r border-neutral-200 bg-white">
@@ -51,6 +101,20 @@ export function LeftPanel() {
                   </button>
                 ))}
               </div>
+            </div>
+            <div>
+              <button
+                onClick={() => fileRef.current?.click()}
+                disabled={planBusy}
+                className="w-full rounded border border-dashed border-sky-300 bg-sky-50 px-2 py-1.5 text-[11px] font-medium text-sky-700 hover:bg-sky-100 disabled:opacity-50"
+              >
+                {planBusy ? '📷 Reading photo…' : '📷 Import plan from photo'}
+              </button>
+              <input ref={fileRef} type="file" accept="image/*" className="hidden" onChange={onPlanFile} />
+              {planError && <p className="mt-1 text-[10px] text-red-600">{planError}</p>}
+              <p className="mt-1 text-[10px] text-neutral-400">
+                Upload a clear photo of a hand-drawn plan / measurements — a local vision model (Gemma 4 edge) turns it into this room.
+              </p>
             </div>
             <div>
               <p className="mb-1 text-xs font-semibold text-neutral-600">Room dimensions</p>
