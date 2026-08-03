@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import * as THREE from 'three';
 import { useLoader } from '@react-three/fiber';
-import { buildWalls, polygonCentroid } from '../../lib/geometry';
+import { polygonCentroid } from '../../lib/geometry';
 import { useDesignStore } from '../../stores/design-store';
 import type { TextureAssignment, WallOpening, WallSpec } from '../../lib/types';
 import { configureTextureMaterial, tilePlaneUVs, tileShapeUVs } from '../../lib/texture-utils';
@@ -295,7 +295,8 @@ export function Room() {
           );
         })}
 
-      <Openings />
+      {/* Openings are plain holes cut into the wall faces (see computePieces) —
+          no door leaf / window frame / glass / sill for now. */}
     </group>
   );
 }
@@ -344,74 +345,6 @@ function ShapedWall({
       {meshes.map((m, i) => (
         <mesh key={i} geometry={m.geo} material={mat} position={m.position} />
       ))}
-    </group>
-  );
-}
-
-/** Door leaf + window frame/glass rendered in front of the wall surface. */
-function Openings() {
-  const doors = useDesignStore((s) => s.design.doors);
-  const windows = useDesignStore((s) => s.design.windows);
-  const room = useDesignStore((s) => s.design.room);
-  const walls = useMemo(() => (room.closed ? buildWalls(room.floorPoints) : []), [room]);
-
-  if (!room.closed) return null;
-
-  return (
-    <group>
-      {doors.map((d) => {
-        const w = walls[d.wallIndex];
-        if (!w) return null;
-        const t = (d.pos - d.width / 2) / w.length;
-        const hingeX = w.a[0] + w.u[0] * (d.pos - d.width / 2);
-        const hingeZ = w.a[1] + w.u[1] * (d.pos - d.width / 2);
-        return (
-          <group key={d.id} position={[hingeX, 0, hingeZ]}>
-            {/* door leaf, hinged at one side, opened ~65° */}
-            <mesh position={[0, d.height / 2, 0]} rotation={[0, Math.atan2(w.u[0], w.u[1]) - Math.PI / 2 - 1.1, 0]}>
-              <boxGeometry args={[d.width, d.height, 36]} />
-              <meshStandardMaterial color="#cbb391" roughness={0.6} />
-            </mesh>
-            {/* frame: header */}
-            <mesh position={[w.u[0] * (d.width / 2) + w.n[0] * 20, d.height + 20, w.u[1] * (d.width / 2) + w.n[1] * 20]}>
-              <boxGeometry args={[d.width + 60, 40, 80]} />
-              <meshStandardMaterial color="#efece6" roughness={0.7} />
-            </mesh>
-          </group>
-        );
-      })}
-
-      {windows.map((win) => {
-        const w = walls[win.wallIndex];
-        if (!w) return null;
-        const cx = w.a[0] + w.u[0] * win.pos;
-        const cz = w.a[1] + w.u[1] * win.pos;
-        const nOut = [-w.n[0], -w.n[1]] as [number, number];
-        const rot = Math.atan2(nOut[0], nOut[1]);
-        return (
-          <group key={win.id} position={[cx, win.sillHeight + win.height / 2, cz]} rotation={[0, rot, 0]}>
-            {/* glass */}
-            <mesh position={[0, 0, -20]}>
-              <planeGeometry args={[win.width, win.height]} />
-              <meshStandardMaterial color="#bfe3f0" transparent opacity={0.55} roughness={0.05} metalness={0.1} side={THREE.DoubleSide} />
-            </mesh>
-            {/* frame */}
-            <mesh position={[0, 0, -24]}>
-              <boxGeometry args={[win.width + 70, 30, 50]} />
-              <meshStandardMaterial color="#efece6" roughness={0.7} />
-            </mesh>
-            <mesh position={[0, 0, -24]}>
-              <boxGeometry args={[30, win.height + 70, 50]} />
-              <meshStandardMaterial color="#efece6" roughness={0.7} />
-            </mesh>
-            {/* sill */}
-            <mesh position={[0, -win.height / 2 - 12, 8]}>
-              <boxGeometry args={[win.width + 90, 24, 140]} />
-              <meshStandardMaterial color="#efece6" roughness={0.7} />
-            </mesh>
-          </group>
-        );
-      })}
     </group>
   );
 }
