@@ -48,17 +48,17 @@ export function CatalogueBrowser({ onAddToDesign }: Props) {
 
   return (
     <div className="flex h-full flex-col">
-      <div className="flex items-center gap-2 border-b border-neutral-200 px-3 py-2">
+      <div className="flex items-center gap-1.5 border-b border-neutral-200 px-3 py-2">
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
-          placeholder="Search products…"
-          className="w-56 rounded border border-neutral-300 px-2 py-1 text-sm outline-none focus:border-sky-500"
+          placeholder="Search…"
+          className="w-36 shrink-0 rounded border border-neutral-300 px-2 py-1 text-sm outline-none focus:border-sky-500"
         />
         <select
           value={cat}
           onChange={(e) => setCat(e.target.value)}
-          className="rounded border border-neutral-300 px-2 py-1 text-sm"
+          className="min-w-0 shrink rounded border border-neutral-300 px-1.5 py-1 text-sm"
         >
           <option value="">All categories</option>
           {categories
@@ -69,7 +69,7 @@ export function CatalogueBrowser({ onAddToDesign }: Props) {
               </option>
             ))}
         </select>
-        <span className="ml-auto text-xs text-neutral-500">{products.length} products</span>
+        <span className="ml-auto shrink-0 whitespace-nowrap text-xs text-neutral-500">{products.length} products</span>
       </div>
       <div className="flex-1 overflow-y-auto p-3">
         {error && <p className="text-sm text-red-600">{error}</p>}
