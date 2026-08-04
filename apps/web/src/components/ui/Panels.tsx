@@ -318,7 +318,7 @@ function StartSection() {
 /* Per-view LEFT sidebar                                               */
 /* ------------------------------------------------------------------ */
 
-const VIEW_TITLES: Record<EditorMode, string> = {
+export const VIEW_TITLES: Record<EditorMode, string> = {
   navigate: 'Scene',
   draw: 'Draw Room',
   walls: 'Edit Walls',

@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Scene, makeItemFromProduct } from '../components/viewport/Scene';
 import { Toolbar, ModeHint } from '../components/ui/Toolbar';
-import { ViewSidebar, LibraryPanel } from '../components/ui/Panels';
+import { ViewSidebar, LibraryPanel, VIEW_TITLES } from '../components/ui/Panels';
 import { FloorplanEditor } from '../components/floorplan/FloorplanEditor';
 import { WallFaceEditor } from '../components/viewport/WallFaceEditor';
 import { useDesignStore } from '../stores/design-store';
@@ -216,7 +216,7 @@ export function EditorPage() {
     <div className="flex h-screen flex-col bg-neutral-100">
       <Toolbar onSave={save} onExport={() => setExportOpen(true)} onNew={newDesign} />
       <div className="flex min-h-0 flex-1">
-        <CollapsibleSidebar side="left" defaultWidth={264} min={190} max={440}>
+        <CollapsibleSidebar side="left" title={VIEW_TITLES[mode]} defaultWidth={264} min={190} max={440}>
           <ViewSidebar mode={mode} />
         </CollapsibleSidebar>
 
@@ -230,7 +230,7 @@ export function EditorPage() {
           )}
         </div>
 
-        <CollapsibleSidebar side="right" defaultWidth={300} min={230} max={520}>
+        <CollapsibleSidebar side="right" title="Library" fixedWidth={460}>
           <LibraryPanel onAddToDesign={addFromCatalogue} />
         </CollapsibleSidebar>
       </div>
@@ -241,21 +241,27 @@ export function EditorPage() {
 }
 
 /**
- * A resizable, collapsible sidebar. Drag the edge handle to resize; click the
- * chevron (or the slim rail when collapsed) to fold it away. The canvas between
- * the two sidebars absorbs the freed space automatically (flex layout).
+ * A collapsible sidebar. Drag the edge handle to resize (unless `fixedWidth` is
+ * set — the catalogue sidebar stays one size); click the chevron to fold it
+ * into a slim rail that shows the title sideways (letter bottoms facing the
+ * canvas). The canvas between the two sidebars absorbs freed space (flex).
  */
 function CollapsibleSidebar({
   side,
-  defaultWidth,
-  min,
-  max,
+  title,
+  fixedWidth,
+  defaultWidth = 264,
+  min = 190,
+  max = 440,
   children,
 }: {
   side: 'left' | 'right';
-  defaultWidth: number;
-  min: number;
-  max: number;
+  title: string;
+  /** Pin the width and hide the resize handle (e.g. catalogue panel). */
+  fixedWidth?: number;
+  defaultWidth?: number;
+  min?: number;
+  max?: number;
   children: React.ReactNode;
 }) {
   const [width, setWidth] = useState(defaultWidth);
@@ -263,6 +269,7 @@ function CollapsibleSidebar({
   const dragging = useRef(false);
 
   const startDrag = (e: React.PointerEvent) => {
+    if (fixedWidth) return;
     e.preventDefault();
     dragging.current = true;
     const startX = e.clientX;
@@ -285,12 +292,20 @@ function CollapsibleSidebar({
     return (
       <button
         onClick={() => setCollapsed(false)}
-        title={side === 'left' ? 'Expand panel' : 'Expand library panel'}
-        className={`group flex w-6 shrink-0 cursor-pointer items-start justify-center bg-white pt-3 text-neutral-400 hover:text-sky-600 ${
-          side === 'left' ? 'border-r border-neutral-200' : 'border-l border-neutral-200'
+        title="Expand panel"
+        className={`group flex w-8 shrink-0 cursor-pointer flex-col items-center gap-2 border-neutral-200 bg-white py-2 text-neutral-400 hover:text-sky-600 ${
+          side === 'left' ? 'border-r' : 'border-l'
         }`}
       >
         <span className="text-xs">{side === 'left' ? '»' : '«'}</span>
+        {/* sideways title — bottom of the letters faces the canvas (inwards) */}
+        <span
+          className={`whitespace-nowrap text-[10px] font-semibold uppercase tracking-widest ${
+            side === 'left' ? '-rotate-90' : 'rotate-90'
+          }`}
+        >
+          {title}
+        </span>
       </button>
     );
   }
@@ -298,7 +313,7 @@ function CollapsibleSidebar({
   return (
     <div
       className={`relative flex shrink-0 flex-col bg-white ${side === 'left' ? 'border-r border-neutral-200' : 'border-l border-neutral-200'}`}
-      style={{ width }}
+      style={{ width: fixedWidth ?? width }}
     >
       {/* collapse chevron */}
       <button
@@ -313,15 +328,17 @@ function CollapsibleSidebar({
 
       <div className="min-h-0 flex-1">{children}</div>
 
-      {/* resize handle on the canvas-facing edge */}
-      <div
-        onPointerDown={startDrag}
-        className={`absolute top-0 z-10 h-full w-1.5 cursor-col-resize bg-transparent transition hover:bg-sky-200 ${
-          side === 'left' ? 'right-0' : 'left-0'
-        }`}
-        style={{ touchAction: 'none' }}
-        title="Drag to resize"
-      />
+      {/* resize handle on the canvas-facing edge (hidden for fixed-width panels) */}
+      {!fixedWidth && (
+        <div
+          onPointerDown={startDrag}
+          className={`absolute top-0 z-10 h-full w-1.5 cursor-col-resize bg-transparent transition hover:bg-sky-200 ${
+            side === 'left' ? 'right-0' : 'left-0'
+          }`}
+          style={{ touchAction: 'none' }}
+          title="Drag to resize"
+        />
+      )}
     </div>
   );
 }
