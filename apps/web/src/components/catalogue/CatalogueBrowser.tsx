@@ -77,7 +77,7 @@ export function CatalogueBrowser({ onAddToDesign }: Props) {
         {!loading && !error && Object.entries(grouped).map(([key, items]) => (
           <div key={key} className="mb-4">
             <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-neutral-500">{key}</h4>
-            <div className="grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-6 xl:grid-cols-8">
+            <div className="flex flex-wrap gap-2">
               {items.map((p) => (
                 <ProductCard key={p.id} product={p} onAddToDesign={onAddToDesign} />
               ))}
@@ -94,7 +94,7 @@ function ProductCard({ product, onAddToDesign }: { product: Product; onAddToDesi
   const setDragProduct = useEditorStore((s) => s.setDragProduct);
   return (
     <div
-      className="group cursor-grab rounded-lg border border-neutral-200 bg-white p-2 shadow-sm transition hover:border-sky-400 hover:shadow"
+      className="group w-[132px] shrink-0 cursor-grab rounded-lg border border-neutral-200 bg-white p-2 shadow-sm transition hover:border-sky-400 hover:shadow"
       draggable
       onDragStart={(e) => {
         e.dataTransfer.setData('application/product', JSON.stringify(product));
@@ -104,25 +104,27 @@ function ProductCard({ product, onAddToDesign }: { product: Product; onAddToDesi
       onDragEnd={() => setDragProduct(null)}
       title="Drag into the room, or click to add"
     >
-      <div className="relative mb-1 h-16 overflow-hidden rounded bg-neutral-50">
+      {/* image dominates the card */}
+      <div className="relative mb-1.5 flex h-[104px] items-center justify-center overflow-hidden rounded bg-neutral-50">
         {product.thumbnail_url ? (
-          <img src={product.thumbnail_url} alt={product.name} className="h-full w-full object-contain" draggable={false} />
+          <img src={product.thumbnail_url} alt={product.name} className="max-h-full max-w-full object-contain" draggable={false} />
         ) : (
-          <div className="flex h-full items-center justify-center text-2xl">🛁</div>
+          <div className="flex h-full items-center justify-center text-3xl">🛁</div>
         )}
         {product.model_status !== 'ready' && (
           <span className="absolute bottom-0 left-0 rounded-tr bg-amber-500 px-1 text-[9px] text-white">model pending</span>
         )}
       </div>
-      <p className="line-clamp-2 text-[11px] leading-tight text-neutral-700" title={product.name}>
+      {/* name, supplier, price — one line each */}
+      <p className="line-clamp-2 min-h-[26px] text-[11px] leading-tight text-neutral-700" title={product.name}>
         {product.name}
       </p>
-      <div className="mt-1 flex items-center justify-between">
-        <span className="text-xs font-semibold text-neutral-900">
-          {product.price_gbp != null ? `£${Number(product.price_gbp).toFixed(2)}` : '—'}
-        </span>
-        {product.retailer_slug && <span className="text-[9px] text-neutral-400">{product.retailer_slug}</span>}
-      </div>
+      <p className="mt-0.5 truncate text-[9px] text-neutral-400">
+        {product.retailer_slug ?? '—'}
+      </p>
+      <p className="text-xs font-semibold text-neutral-900">
+        {product.price_gbp != null ? `£${Number(product.price_gbp).toFixed(2)}` : '—'}
+      </p>
       <button
         onClick={() => onAddToDesign(product)}
         className="mt-1.5 w-full rounded bg-sky-600 px-1 py-0.5 text-[11px] font-medium text-white opacity-0 transition group-hover:opacity-100 hover:bg-sky-700"
