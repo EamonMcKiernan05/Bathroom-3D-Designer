@@ -1,10 +1,11 @@
+import { useNavigate } from 'react-router-dom';
 import { useDesignStore } from '../../stores/design-store';
 import { useEditorStore, type EditorMode } from '../../stores/editor-store';
 
 const MODES: { id: EditorMode; label: string; icon: string; hint: string }[] = [
   { id: 'navigate', label: 'Navigate', icon: '✋', hint: 'Orbit / select items' },
-  { id: 'draw', label: 'Draw Room', icon: '📐', hint: '2D plan — draw the floor outline' },
-  { id: 'walls', label: 'Edit Walls', icon: '🧱', hint: '2D plan — click a wall to change its shape (rectangle, sloped roof, under stairs, boxing)' },
+  { id: 'draw', label: 'Draw Room', icon: '📐', hint: '2D plan — draw the outline, drag corners & right-click a wall to reshape' },
+  { id: 'walls', label: 'Edit Walls', icon: '🧱', hint: '3D face view — drag the top corners to slope the wall, right-click the top edge to add a point' },
   { id: 'openings', label: 'Doors & Windows', icon: '🚪', hint: 'Click a wall to add an opening' },
   { id: 'place', label: 'Place Items', icon: '🛁', hint: 'Drag from catalogue below, or click a placed item and drag it' },
   { id: 'surfaces', label: 'Surfaces', icon: '🧱', hint: 'Click a wall/floor/ceiling to apply textures or paint' },
@@ -12,6 +13,7 @@ const MODES: { id: EditorMode; label: string; icon: string; hint: string }[] = [
 ];
 
 export function Toolbar({ onSave, onExport, onNew }: { onSave: () => void; onExport: () => void; onNew: () => void }) {
+  const navigate = useNavigate();
   const mode = useEditorStore((s) => s.mode);
   const setMode = useEditorStore((s) => s.setMode);
   const cameraMode = useEditorStore((s) => s.cameraMode);
@@ -32,15 +34,18 @@ export function Toolbar({ onSave, onExport, onNew }: { onSave: () => void; onExp
 
   return (
     <div className="flex items-center gap-1 border-b border-neutral-200 bg-white px-2 py-1.5">
-      <span className="mr-1 text-sm font-bold text-neutral-800">🛁 Bathroom 3D</span>
+      <button
+        onClick={() => navigate('/')}
+        title="Back to home"
+        className="mr-1 rounded px-1 text-sm font-bold text-neutral-800 hover:bg-neutral-100 hover:text-sky-700"
+      >
+        🛁 Bathroom 3D
+      </button>
       <div className="flex items-center gap-0.5 rounded-lg bg-neutral-100 p-0.5">
         {MODES.map((m) => (
           <button
             key={m.id}
-            onClick={() => {
-              setMode(m.id);
-              if (m.id === 'draw') useDesignStore.getState().startDrawing();
-            }}
+            onClick={() => setMode(m.id)}
             title={m.hint}
             className={`rounded-md px-2.5 py-1 text-xs font-medium transition ${
               mode === m.id ? 'bg-white text-sky-700 shadow' : 'text-neutral-600 hover:text-neutral-900'

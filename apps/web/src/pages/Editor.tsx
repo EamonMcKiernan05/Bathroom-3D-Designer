@@ -2,11 +2,9 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Scene, makeItemFromProduct } from '../components/viewport/Scene';
 import { Toolbar, ModeHint } from '../components/ui/Toolbar';
-import { LeftPanel, RightPanel } from '../components/ui/Panels';
-import { WallProperties } from '../components/ui/WallProperties';
+import { ViewSidebar, LibraryPanel } from '../components/ui/Panels';
 import { FloorplanEditor } from '../components/floorplan/FloorplanEditor';
-import { CatalogueBrowser } from '../components/catalogue/CatalogueBrowser';
-import { TexturePicker } from '../components/surfaces/TexturePicker';
+import { WallFaceEditor } from '../components/viewport/WallFaceEditor';
 import { useDesignStore } from '../stores/design-store';
 import { useEditorStore } from '../stores/editor-store';
 import { api } from '../lib/api';
@@ -21,8 +19,6 @@ export function EditorPage() {
   const [exportOpen, setExportOpen] = useState(false);
   const [saving, setSaving] = useState(false);
   const [notice, setNotice] = useState('');
-  const [bottomTab, setBottomTab] = useState<'catalogue' | 'surfaces'>('catalogue');
-  const [surfaceCat, setSurfaceCat] = useState('wall-tiles');
   const sceneWrapRef = useRef<HTMLDivElement>(null);
 
   const showNotice = useCallback((msg: string) => {
@@ -220,9 +216,12 @@ export function EditorPage() {
     <div className="flex h-screen flex-col bg-neutral-100">
       <Toolbar onSave={save} onExport={() => setExportOpen(true)} onNew={newDesign} />
       <div className="flex min-h-0 flex-1">
-        <LeftPanel />
+        <CollapsibleSidebar side="left" defaultWidth={264} min={190} max={440}>
+          <ViewSidebar mode={mode} />
+        </CollapsibleSidebar>
+
         <div className="relative min-w-0 flex-1" ref={sceneWrapRef}>
-          {inPlan ? <FloorplanEditor /> : <Scene />}
+          {mode === 'draw' ? <FloorplanEditor /> : mode === 'walls' ? <WallFaceEditor /> : <Scene />}
           {!inPlan && <ModeHint />}
           {notice && (
             <div className="absolute left-1/2 top-3 z-20 -translate-x-1/2 rounded-lg bg-neutral-900 px-4 py-2 text-xs text-white shadow-lg">
@@ -230,45 +229,99 @@ export function EditorPage() {
             </div>
           )}
         </div>
-        {mode === 'walls' ? <WallProperties /> : <RightPanel />}
-      </div>
 
-      {/* bottom panel */}
-      <div className="h-52 border-t border-neutral-200 bg-white">
-        <div className="flex items-center gap-1 border-b border-neutral-200 px-2">
-          <button
-            onClick={() => setBottomTab('catalogue')}
-            className={`px-3 py-1.5 text-xs font-medium ${bottomTab === 'catalogue' ? 'border-b-2 border-sky-600 text-sky-700' : 'text-neutral-500'}`}
-          >
-            🛒 Catalogue
-          </button>
-          <button
-            onClick={() => setBottomTab('surfaces')}
-            className={`px-3 py-1.5 text-xs font-medium ${bottomTab === 'surfaces' ? 'border-b-2 border-sky-600 text-sky-700' : 'text-neutral-500'}`}
-          >
-            🧱 Surfaces & Tiles
-          </button>
-          {bottomTab === 'surfaces' && (
-            <div className="ml-2 flex gap-1">
-              {['wall-tiles', 'floor-tiles', 'panels', 'ceiling'].map((c) => (
-                <button
-                  key={c}
-                  onClick={() => setSurfaceCat(c)}
-                  className={`rounded px-2 py-0.5 text-[11px] capitalize ${surfaceCat === c ? 'bg-sky-600 text-white' : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'}`}
-                >
-                  {c.replace('-', ' ')}
-                </button>
-              ))}
-            </div>
-          )}
-          <span className="ml-auto text-[10px] text-neutral-400">Shortcuts: 1 navigate · 2 draw · 3 place · R rotate · Del delete · Ctrl+Z undo · Ctrl+S save</span>
-        </div>
-        <div className="h-[calc(100%-33px)]">
-          {bottomTab === 'catalogue' ? <CatalogueBrowser onAddToDesign={addFromCatalogue} /> : <TexturePicker category={surfaceCat} />}
-        </div>
+        <CollapsibleSidebar side="right" defaultWidth={300} min={230} max={520}>
+          <LibraryPanel onAddToDesign={addFromCatalogue} />
+        </CollapsibleSidebar>
       </div>
 
       {exportOpen && <ExportDialog onClose={() => setExportOpen(false)} onExportFloorplan={exportFloorplan} onSnapshot3D={snapshot3D} />}
+    </div>
+  );
+}
+
+/**
+ * A resizable, collapsible sidebar. Drag the edge handle to resize; click the
+ * chevron (or the slim rail when collapsed) to fold it away. The canvas between
+ * the two sidebars absorbs the freed space automatically (flex layout).
+ */
+function CollapsibleSidebar({
+  side,
+  defaultWidth,
+  min,
+  max,
+  children,
+}: {
+  side: 'left' | 'right';
+  defaultWidth: number;
+  min: number;
+  max: number;
+  children: React.ReactNode;
+}) {
+  const [width, setWidth] = useState(defaultWidth);
+  const [collapsed, setCollapsed] = useState(false);
+  const dragging = useRef(false);
+
+  const startDrag = (e: React.PointerEvent) => {
+    e.preventDefault();
+    dragging.current = true;
+    const startX = e.clientX;
+    const startW = width;
+    const move = (ev: PointerEvent) => {
+      if (!dragging.current) return;
+      const delta = side === 'left' ? ev.clientX - startX : startX - ev.clientX;
+      setWidth(Math.max(min, Math.min(max, startW + delta)));
+    };
+    const up = () => {
+      dragging.current = false;
+      window.removeEventListener('pointermove', move);
+      window.removeEventListener('pointerup', up);
+    };
+    window.addEventListener('pointermove', move);
+    window.addEventListener('pointerup', up);
+  };
+
+  if (collapsed) {
+    return (
+      <button
+        onClick={() => setCollapsed(false)}
+        title={side === 'left' ? 'Expand panel' : 'Expand library panel'}
+        className={`group flex w-6 shrink-0 cursor-pointer items-start justify-center bg-white pt-3 text-neutral-400 hover:text-sky-600 ${
+          side === 'left' ? 'border-r border-neutral-200' : 'border-l border-neutral-200'
+        }`}
+      >
+        <span className="text-xs">{side === 'left' ? '»' : '«'}</span>
+      </button>
+    );
+  }
+
+  return (
+    <div
+      className={`relative flex shrink-0 flex-col bg-white ${side === 'left' ? 'border-r border-neutral-200' : 'border-l border-neutral-200'}`}
+      style={{ width }}
+    >
+      {/* collapse chevron */}
+      <button
+        onClick={() => setCollapsed(true)}
+        title="Collapse panel"
+        className={`absolute top-2 z-20 rounded p-0.5 text-[10px] text-neutral-300 hover:bg-neutral-100 hover:text-neutral-600 ${
+          side === 'left' ? 'right-1' : 'left-1'
+        }`}
+      >
+        {side === 'left' ? '«' : '»'}
+      </button>
+
+      <div className="min-h-0 flex-1">{children}</div>
+
+      {/* resize handle on the canvas-facing edge */}
+      <div
+        onPointerDown={startDrag}
+        className={`absolute top-0 z-10 h-full w-1.5 cursor-col-resize bg-transparent transition hover:bg-sky-200 ${
+          side === 'left' ? 'right-0' : 'left-0'
+        }`}
+        style={{ touchAction: 'none' }}
+        title="Drag to resize"
+      />
     </div>
   );
 }

@@ -93,6 +93,12 @@ export interface TextureAssignment {
 
 export type WallProfile = 'rectangle' | 'gable' | 'stairs' | 'boxing';
 
+/** A point on a wall's top edge: u = mm along the wall from end a, h = mm height. */
+export interface TopPoint {
+  u: number;
+  h: number;
+}
+
 /**
  * A single boundary wall. The room outline produces one wall per floor edge,
  * but each wall's shape/profile can be edited independently.
@@ -113,6 +119,12 @@ export interface WallSpec {
   boxDepth: number; // mm protrusion into the room
   boxFrom: number; // mm offset along the wall from end a
   boxTop: number; // mm height of the top of the box (pipes boxing usually from floor)
+  /** corner indices into room.floorPoints — end a / end b. Index-aligned for legacy data. */
+  cornerA?: number;
+  cornerB?: number;
+  /** extra top-edge points between the two ends (u = mm from end a, h = mm height).
+   *  End heights live on RoomState.cornerHeights so adjacent walls share corners. */
+  topPoints?: TopPoint[];
 }
 
 export interface RoomState {
@@ -123,6 +135,9 @@ export interface RoomState {
   ceilingHeight: number;
   wallThickness: number;
   closed: boolean;
+  /** top height (mm) at each floor corner — shared by the two adjacent walls.
+   *  Missing for legacy saved designs; backfilled on load. */
+  cornerHeights?: number[];
 }
 
 export interface DesignData {

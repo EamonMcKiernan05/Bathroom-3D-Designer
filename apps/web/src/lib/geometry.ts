@@ -61,6 +61,26 @@ export function pointInPolygon(px: number, pz: number, pts: [number, number][]):
   return inside;
 }
 
+/**
+ * Interior corner angles (degrees) of a polygon, one per point.
+ * Visual-only helper — the angle at each corner between its two edges (0..180).
+ */
+export function cornerAnglesDeg(pts: [number, number][]): number[] {
+  const n = pts.length;
+  if (n < 3) return pts.map(() => 0);
+  return pts.map((p, i) => {
+    const prev = pts[(i - 1 + n) % n];
+    const next = pts[(i + 1) % n];
+    const v1x = prev[0] - p[0], v1z = prev[1] - p[1];
+    const v2x = next[0] - p[0], v2z = next[1] - p[1];
+    const l1 = Math.hypot(v1x, v1z);
+    const l2 = Math.hypot(v2x, v2z);
+    if (l1 < 1e-6 || l2 < 1e-6) return 0;
+    const dot = v1x * v2x + v1z * v2z;
+    return (Math.acos(Math.max(-1, Math.min(1, dot / (l1 * l2)))) * 180) / Math.PI;
+  });
+}
+
 export function distToSegment(px: number, pz: number, ax: number, az: number, bx: number, bz: number): number {
   const dx = bx - ax, dz = bz - az;
   const len2 = dx * dx + dz * dz;

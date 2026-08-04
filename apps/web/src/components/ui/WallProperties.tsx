@@ -1,20 +1,21 @@
-import { useDesignStore } from '../../stores/design-store';
+import { useMemo } from 'react';
+import { useDesignStore, cornerHeightsFor } from '../../stores/design-store';
 import { useEditorStore } from '../../stores/editor-store';
-import type { WallProfile } from '../../lib/types';
-
-const PROFILES: { id: WallProfile; label: string; desc: string }[] = [
-  { id: 'rectangle', label: 'Rectangle', desc: 'Plain vertical wall, full height' },
-  { id: 'gable', label: 'Sloped roof', desc: 'Top follows a sloped ceiling (e.g. attic/gable)' },
-  { id: 'stairs', label: 'Under stairs', desc: 'Stepped top where a staircase runs above' },
-  { id: 'boxing', label: 'Boxing (pipes)', desc: 'Protruding box to hide waste/water pipes' },
-];
+import { cornerAnglesDeg } from '../../lib/geometry';
 
 export function WallProperties() {
   const selectedWallId = useEditorStore((s) => s.selectedWallId) ?? null;
   const walls = useDesignStore((s) => s.design.room.walls);
   const updateWall = useDesignStore((s) => s.updateWall);
   const room = useDesignStore((s) => s.design.room);
-  const wall = walls.find((w) => w.id === selectedWallId) ?? null;
+  const setHeights = useDesignStore((s) => s.setWallHeights);
+  const wall = walls.find((w) => w.id === selectedWallId) ?? walls[0] ?? null;
+
+  // interior angles at each corner — visual only
+  const angles = useMemo(
+    () => (room.closed && room.floorPoints.length >= 3 ? cornerAnglesDeg(room.floorPoints) : []),
+    [room.floorPoints, room.closed],
+  );
 
   if (!wall) {
     return (
@@ -33,6 +34,14 @@ export function WallProperties() {
 
   const set = (patch: Parameters<typeof updateWall>[1]) => updateWall(wall.id, patch);
 
+  const n = room.floorPoints.length;
+  const ch = cornerHeightsFor(room);
+  const ca = wall.cornerA ?? idx;
+  const cb = wall.cornerB ?? (idx + 1) % n;
+  const hA = ch[ca] ?? wall.height;
+  const hB = ch[cb] ?? wall.height;
+  const uniform = Math.abs(hA - hB) < 1;
+
   const labelCls = 'block text-[10px] text-neutral-500';
   const inputCls = 'w-full rounded border border-neutral-300 px-1.5 py-1 text-xs';
 
@@ -42,30 +51,38 @@ export function WallProperties() {
         Wall {idx + 1} · {Math.round(length)} mm
       </div>
 
-      <div className="mb-2 space-y-1">
-        {PROFILES.map((p) => (
-          <button
-            key={p.id}
-            onClick={() => {
-              // sensible defaults so a chosen shape is immediately visible
-              const patch: Parameters<typeof updateWall>[1] = { profile: p.id };
-              if (p.id === 'gable' && !wall.slopeRise) patch.slopeRise = 800;
-              set(patch);
-            }}
-            className={`block w-full rounded border px-2 py-1.5 text-left transition ${
-              wall.profile === p.id ? 'border-sky-500 bg-sky-50 text-sky-800' : 'border-neutral-200 text-neutral-700 hover:border-neutral-300'
-            }`}
-          >
-            <span className="font-medium">{p.label}</span>
-            <span className="block text-[10px] text-neutral-500">{p.desc}</span>
-          </button>
-        ))}
+      {/* corner angles — display only, not editable */}
+      <div className="mb-2 rounded bg-neutral-50 px-2 py-1.5 text-[11px] text-neutral-600">
+        Corner angles: end A <span className="font-semibold">{Math.round(angles[ca] ?? 0)}°</span> · end B{' '}
+        <span className="font-semibold">{Math.round(angles[cb] ?? 0)}°</span>
       </div>
 
       <label className={labelCls}>
-        Height (mm)
-        <input type="number" value={wall.height} onChange={(e) => set({ height: Number(e.target.value) || 0 })} className={inputCls} />
+        Height (mm) — both ends
+        <input
+          type="number"
+          value={uniform ? Math.round(hA) : Math.round((hA + hB) / 2)}
+          onChange={(e) => {
+            const h = Number(e.target.value) || 0;
+            setHeights(wall.id, h, h);
+          }}
+          className={inputCls}
+        />
       </label>
+
+      {wall.profile === 'rectangle' && (
+        <div className="mt-1 space-y-1">
+          <label className={labelCls}>
+            End A height (mm) — shared with the previous wall
+            <input type="number" value={Math.round(hA)} onChange={(e) => setHeights(wall.id, Number(e.target.value) || 0, hB)} className={inputCls} />
+          </label>
+          <label className={labelCls}>
+            End B height (mm) — shared with the next wall
+            <input type="number" value={Math.round(hB)} onChange={(e) => setHeights(wall.id, hA, Number(e.target.value) || 0)} className={inputCls} />
+          </label>
+          {!uniform && <p className="text-[10px] text-amber-600">Sloped top — {(hB - hA) > 0 ? 'rises' : 'falls'} {Math.round(Math.abs(hB - hA))} mm along the wall</p>}
+        </div>
+      )}
 
       {wall.profile === 'gable' && (
         <label className={labelCls}>
@@ -104,7 +121,7 @@ export function WallProperties() {
 
       <div className="mt-3 flex gap-1">
         <button
-          onClick={() => set({ height: room.ceilingHeight })}
+          onClick={() => setHeights(wall.id, room.ceilingHeight, room.ceilingHeight)}
           className="flex-1 rounded border border-neutral-300 py-1 text-[11px] text-neutral-600 hover:bg-neutral-50"
         >
           Full height

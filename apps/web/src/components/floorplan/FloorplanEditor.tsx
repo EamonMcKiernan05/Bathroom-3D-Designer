@@ -1,40 +1,34 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { useDesignStore, DEFAULT_CEILING } from '../../stores/design-store';
+import { useDesignStore } from '../../stores/design-store';
 import { useEditorStore } from '../../stores/editor-store';
 import { roomBounds } from '../../stores/design-store';
-import type { WallProfile } from '../../lib/types';
-
-const PROFILE_LABEL: Record<WallProfile, string> = {
-  rectangle: 'Rectangle',
-  gable: 'Sloped roof',
-  stairs: 'Under stairs',
-  boxing: 'Boxing (pipes)',
-};
-const PROFILE_COLOR: Record<WallProfile, string> = {
-  rectangle: '#5b6470',
-  gable: '#0e7a5f',
-  stairs: '#b45309',
-  boxing: '#6d28d9',
-};
+import { buildWalls, cornerAnglesDeg, distToSegment, polygonCentroid } from '../../lib/geometry';
 
 /**
- * 2D floor-plan editor (SVG). In "draw" mode the user clicks the floor outline;
- * the program auto-generates a wall per edge. In "walls" mode the user clicks a
- * wall to edit its shape (rectangle / sloped roof / under stairs / boxing).
+ * 2D floor-plan editor (SVG). While the room is open ("draw") the user clicks
+ * the floor outline; clicking the FIRST point (once ≥3 points exist) encloses
+ * the room. Once closed, corner points can be dragged to reshape the room and
+ * right-clicking on a wall inserts a new corner point.
  */
 export function FloorplanEditor() {
   const room = useDesignStore((s) => s.design.room);
   const mode = useEditorStore((s) => s.mode);
-  const selectedWallId = useEditorStore((s) => s.selectedWallId) ?? null;
-  const setSelectedWall = useEditorStore((s) => s.setSelectedWall);
 
   const addWallPoint = useDesignStore((s) => s.addWallPoint);
   const closePolygon = useDesignStore((s) => s.closePolygon);
   const undoPoint = useDesignStore((s) => s.undoPoint);
+  const startDrawing = useDesignStore((s) => s.startDrawing);
+  const moveCorner = useDesignStore((s) => s.moveCorner);
+  const addCornerOnWall = useDesignStore((s) => s.addCornerOnWall);
+  const removeCorner = useDesignStore((s) => s.removeCorner);
+  const beginEdit = useDesignStore((s) => s.beginEdit);
+  const commitEdit = useDesignStore((s) => s.commitEdit);
 
   const wrapRef = useRef<HTMLDivElement>(null);
   const [size, setSize] = useState({ w: 900, h: 700 });
   const [cursor, setCursor] = useState<[number, number] | null>(null);
+  const [nearFirst, setNearFirst] = useState(false);
+  const dragRef = useRef<number | null>(null);
 
   useEffect(() => {
     const el = wrapRef.current;
@@ -47,9 +41,11 @@ export function FloorplanEditor() {
   }, []);
 
   const pts = room.floorPoints;
+  const closed = room.closed;
+  const drawing = mode === 'draw' && !closed;
+
   // While the room is open (drawing), keep a stable minimum viewport so the
-  // zoom doesn't collapse to a single point (which would map every subsequent
-  // click to the same world cell and block further drawing).
+  // zoom doesn't collapse to a single point.
   const bounds = useMemo(() => {
     const b = roomBounds(pts);
     const MIN_W = 3000;
@@ -72,8 +68,8 @@ export function FloorplanEditor() {
   const sz = useCallback((z: number) => (z - cz) * S + oz, [S, cz, oz]);
 
   const toWorld = useCallback(
-    (e: React.MouseEvent) => {
-      const rect = (e.currentTarget as SVGSVGElement).getBoundingClientRect();
+    (e: { clientX: number; clientY: number }) => {
+      const rect = wrapRef.current!.getBoundingClientRect();
       const wx = (e.clientX - rect.left - ox) / S + cx;
       const wz = (e.clientY - rect.top - oz) / S + cz;
       return [wx, wz] as [number, number];
@@ -81,15 +77,81 @@ export function FloorplanEditor() {
     [S, ox, oz, cx, cz],
   );
 
+  const closeIfOnFirst = useCallback(
+    (wx: number, wz: number) => {
+      if (pts.length >= 3) {
+        const f = pts[0];
+        if (Math.hypot(wx - f[0], wz - f[1]) < 120) {
+          closePolygon();
+          useEditorStore.getState().setMode('walls');
+          return true;
+        }
+      }
+      return false;
+    },
+    [pts, closePolygon],
+  );
+
   const handleClick = (e: React.MouseEvent) => {
-    if (mode === 'draw' && !room.closed) {
-      const [wx, wz] = toWorld(e);
-      addWallPoint(Math.round(wx / 25) * 25, Math.round(wz / 25) * 25);
-    }
+    if (!drawing) return;
+    const [wx, wz] = toWorld(e);
+    if (closeIfOnFirst(wx, wz)) return;
+    addWallPoint(Math.round(wx / 25) * 25, Math.round(wz / 25) * 25);
   };
 
   const handleMove = (e: React.MouseEvent) => {
-    if (mode === 'draw' && !room.closed) setCursor(toWorld(e));
+    if (drawing) {
+      const [wx, wz] = toWorld(e);
+      setCursor([wx, wz]);
+      setNearFirst(pts.length >= 3 && Math.hypot(wx - pts[0][0], wz - pts[0][1]) < 120);
+    }
+  };
+
+  // corner dragging (closed room)
+  const onCornerDown = (e: React.PointerEvent, index: number) => {
+    e.stopPropagation();
+    e.preventDefault();
+    beginEdit();
+    dragRef.current = index;
+    const move = (ev: PointerEvent) => {
+      if (dragRef.current == null) return;
+      const [wx, wz] = toWorld(ev);
+      moveCorner(dragRef.current, Math.round(wx / 25) * 25, Math.round(wz / 25) * 25);
+    };
+    const up = () => {
+      dragRef.current = null;
+      commitEdit();
+      window.removeEventListener('pointermove', move);
+      window.removeEventListener('pointerup', up);
+    };
+    window.addEventListener('pointermove', move);
+    window.addEventListener('pointerup', up);
+  };
+
+  // right-click a wall to insert a corner point
+  const handleContextMenu = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (!closed) return;
+    const [wx, wz] = toWorld(e);
+    const n = pts.length;
+    let best = -1;
+    let bestDPx = 12; // px threshold
+    for (let i = 0; i < n; i++) {
+      const a = pts[i];
+      const b = pts[(i + 1) % n];
+      const d = distToSegment(wx, wz, a[0], a[1], b[0], b[1]);
+      // skip near the ends — the corner handles already cover those
+      const dx = b[0] - a[0], dz = b[1] - a[1];
+      const len2 = dx * dx + dz * dz || 1;
+      const t = ((wx - a[0]) * dx + (wz - a[1]) * dz) / len2;
+      if (t < 0.08 || t > 0.92) continue;
+      const dPx = d * S;
+      if (dPx < bestDPx) {
+        best = i;
+        bestDPx = dPx;
+      }
+    }
+    if (best >= 0) addCornerOnWall(best, wx, wz);
   };
 
   // keyboard for draw mode
@@ -111,7 +173,12 @@ export function FloorplanEditor() {
     return () => window.removeEventListener('keydown', onKey);
   }, []);
 
-  const isWalls = mode === 'walls' || (mode === 'draw' && room.closed);
+  const first = pts[0];
+
+  // corner angles (visual only) + wall lengths for the closed room
+  const angles = useMemo(() => (closed && pts.length >= 3 ? cornerAnglesDeg(pts) : []), [closed, pts]);
+  const wallSegs = useMemo(() => (closed && pts.length >= 3 ? buildWalls(pts) : []), [closed, pts]);
+  const centroid = useMemo(() => (pts.length >= 3 ? polygonCentroid(pts) : ([0, 0] as [number, number])), [pts]);
 
   return (
     <div ref={wrapRef} className="relative h-full w-full bg-neutral-50">
@@ -120,6 +187,7 @@ export function FloorplanEditor() {
         style={{ touchAction: 'none' }}
         onClick={handleClick}
         onMouseMove={handleMove}
+        onContextMenu={handleContextMenu}
       >
         {/* grid */}
         {Array.from({ length: Math.ceil(roomW / 250) + 3 }).map((_, i) => {
@@ -142,62 +210,112 @@ export function FloorplanEditor() {
           />
         )}
         {/* cursor preview */}
-        {mode === 'draw' && !room.closed && pts.length > 0 && cursor && (
-          <line x1={sx(pts[pts.length - 1][0])} y1={sz(pts[pts.length - 1][1])} x2={sx(cursor[0])} y2={sz(cursor[1])} stroke="#f59e0b" strokeWidth={2} strokeDasharray="6 4" />
+        {drawing && pts.length > 0 && cursor && (
+          <line
+            x1={sx(pts[pts.length - 1][0])}
+            y1={sz(pts[pts.length - 1][1])}
+            x2={sx(cursor[0])}
+            y2={sz(cursor[1])}
+            stroke="#f59e0b"
+            strokeWidth={2}
+            strokeDasharray="6 4"
+          />
         )}
-        {/* floor points */}
-        {pts.map((p, i) => (
-          <circle key={i} cx={sx(p[0])} cy={sz(p[1])} r={4} fill="#3b82f6" />
-        ))}
 
-        {/* walls (edit mode) */}
-        {isWalls &&
-          room.walls.map((w, wi) => {
-            const a = w.outline[0];
-            const b = w.outline[Math.max(0, w.outline.length - 1)];
-            const sel = w.id === selectedWallId;
-            const col = sel ? '#f59e0b' : PROFILE_COLOR[w.profile];
-            const thickness = Math.max(6, (w.thickness || 100) * S * 0.12);
+        {/* floor points */}
+        {drawing &&
+          pts.map((p, i) => {
+            const isFirst = i === 0 && nearFirst;
             return (
-              <g
-                key={w.id}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSelectedWall(w.id);
-                }}
-                style={{ cursor: 'pointer' }}
-              >
-                <line x1={sx(a[0])} y1={sz(a[1])} x2={sx(b[0])} y2={sz(b[1])} stroke={col} strokeWidth={thickness} strokeLinecap="butt" opacity={sel ? 1 : 0.55} />
-                <line x1={sx(a[0])} y1={sz(a[1])} x2={sx(b[0])} y2={sz(b[1])} stroke="#fff" strokeWidth={thickness * 0.35} />
-                <title>{`Wall ${wi + 1} — ${PROFILE_LABEL[w.profile]} · ${Math.round(Math.hypot(b[0] - a[0], b[1] - a[1]))}mm`}</title>
-              </g>
+              <circle
+                key={i}
+                cx={sx(p[0])}
+                cy={sz(p[1])}
+                r={isFirst ? 9 : 5}
+                fill={isFirst ? '#f59e0b' : '#3b82f6'}
+                stroke={isFirst ? '#fff' : 'none'}
+                strokeWidth={2}
+              />
             );
           })}
+
+        {/* closed room: draggable corner handles — double-click deletes one */}
+        {closed &&
+          pts.map((p, i) => (
+            <g
+              key={i}
+              style={{ cursor: 'grab' }}
+              onPointerDown={(e) => onCornerDown(e, i)}
+              onDoubleClick={(e) => {
+                e.stopPropagation();
+                removeCorner(i);
+              }}
+            >
+              <circle cx={sx(p[0])} cy={sz(p[1])} r={8} fill="#fff" stroke="#3b82f6" strokeWidth={2} />
+              <circle cx={sx(p[0])} cy={sz(p[1])} r={3.5} fill="#3b82f6" />
+            </g>
+          ))}
+
+        {/* corner angle labels (visual only, closed room) */}
+        {closed &&
+          pts.length >= 3 &&
+          pts.map((p, i) => {
+            // nudge the label slightly toward the polygon centre
+            const dx = centroid[0] - p[0];
+            const dz = centroid[1] - p[1];
+            const d = Math.hypot(dx, dz) || 1;
+            const lx = sx(p[0] + (dx / d) * 260);
+            const lz = sz(p[1] + (dz / d) * 260);
+            return (
+              <text
+                key={`ang${i}`}
+                x={lx}
+                y={lz}
+                fontSize={10}
+                fill="#9ca3af"
+                textAnchor="middle"
+                dominantBaseline="middle"
+                className="select-none"
+              >
+                {Math.round(angles[i])}°
+              </text>
+            );
+          })}
+
+        {/* wall length labels (closed room) */}
+        {closed &&
+          wallSegs.map((w) => (
+            <text
+              key={`len${w.index}`}
+              x={sx(w.a[0] + w.u[0] * (w.length / 2) + w.n[0] * 140)}
+              y={sz(w.a[1] + w.u[1] * (w.length / 2) + w.n[1] * 140)}
+              fontSize={10}
+              fill="#6b7280"
+              textAnchor="middle"
+              dominantBaseline="middle"
+              className="select-none"
+            >
+              {Math.round(w.length)} mm
+            </text>
+          ))}
+
+        {closed && (
+          <text x={12} y={18} fontSize={11} fill="#6b7280" className="select-none">
+            Drag a corner to reshape · double-click a corner to delete it · right-click a wall to add a corner · set exact lengths in the left panel
+          </text>
+        )}
       </svg>
 
       {/* hint bar */}
       <div className="pointer-events-none absolute bottom-0 left-1/2 z-10 -translate-x-1/2 mb-3 whitespace-nowrap rounded-full bg-black/70 px-4 py-1.5 text-xs text-white">
-        {room.closed
-          ? `Room drawn — ${room.walls.length} wall${room.walls.length === 1 ? '' : 's'}. Click a wall to edit its shape.`
-          : 'Draw the floor outline — click to place points, Enter/Esc to finish'}
+        {drawing
+          ? pts.length >= 3
+            ? 'Click the first point to close the room'
+            : 'Draw the floor outline — click to place points'
+          : `Room drawn — ${room.walls.length} wall${room.walls.length === 1 ? '' : 's'}. Drag corners to reshape, or go to Edit Walls for the 3D view.`}
       </div>
 
-      {room.closed && (
-        <div className="absolute left-4 top-4 rounded-lg border border-neutral-200 bg-white px-3 py-2 text-xs shadow-sm">
-          <div className="mb-1 font-semibold text-neutral-700">Walls ({room.walls.length})</div>
-          {room.walls.map((w, i) => (
-            <div
-              key={w.id}
-              onClick={() => setSelectedWall(w.id)}
-              className={`mb-0.5 cursor-pointer rounded px-1.5 py-0.5 ${w.id === selectedWallId ? 'bg-amber-100 text-amber-900' : 'text-neutral-600 hover:bg-neutral-100'}`}
-            >
-              <span>{i + 1}.</span> <span style={{ color: PROFILE_COLOR[w.profile] }}>●</span> {PROFILE_LABEL[w.profile]}
-            </div>
-          ))}
-        </div>
-      )}
-
-      {!room.closed && (
+      {!closed && (
         <button
           onClick={() => {
             closePolygon();
@@ -207,6 +325,22 @@ export function FloorplanEditor() {
         >
           ✓ Finish room ({room.floorPoints.length} points)
         </button>
+      )}
+
+      {closed && (
+        <button
+          onClick={startDrawing}
+          className="absolute right-4 top-4 z-20 rounded-lg border border-neutral-300 bg-white px-3 py-1.5 text-xs font-medium text-neutral-700 shadow-sm hover:bg-neutral-50"
+          title="Clear the outline and draw a new one"
+        >
+          ✏️ Redraw
+        </button>
+      )}
+
+      {first && nearFirst && drawing && (
+        <div className="pointer-events-none absolute left-1/2 top-6 z-10 -translate-x-1/2 rounded-full bg-amber-500 px-3 py-1 text-xs font-medium text-white shadow">
+          Click to close the room
+        </div>
       )}
     </div>
   );
