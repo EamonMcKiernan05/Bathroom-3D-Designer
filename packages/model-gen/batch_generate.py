@@ -73,6 +73,8 @@ CATEGORY_TO_SLUG = {
     "ideal-bathrooms/combined-units": "toilet",
     "taps": "tap",
     "accessories/shelves": "shelf",
+    # plain 'accessories' (Q4 brochure misc) -> shelf builder as generic small item
+    "accessories": "shelf",
     "accessories/towel-rings": "towel-ring",
     "accessories/robe-hooks": "robe-hook",
     "accessories/soap-dishes": "soap-dish",
@@ -102,10 +104,13 @@ def get_pending(filters: dict):
 
 
 def slug_for_category(category: str) -> str | None:
+    """Map a product category to a builder slug. Longest prefix wins so a
+    plain parent key ('accessories') never shadows 'accessories/towel-rings'."""
+    best, best_len = None, 0
     for prefix, slug in CATEGORY_TO_SLUG.items():
-        if category.startswith(prefix):
-            return slug
-    return None
+        if category.startswith(prefix) and len(prefix) > best_len:
+            best, best_len = slug, len(prefix)
+    return best
 
 
 def generate_one(product) -> dict:
