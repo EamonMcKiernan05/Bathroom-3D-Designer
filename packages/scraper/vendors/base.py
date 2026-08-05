@@ -209,6 +209,13 @@ class VendorScraper:
             log.exception("[%s] error on %s", self.slug, url)
             self.errors.append(f"{url}: {e}")
             self.stats["failed"] += 1
+            # a failed flush poisons the session (PendingRollbackError) and
+            # every later upsert in the run dies — roll back to recover
+            if db:
+                try:
+                    db.rollback()
+                except Exception:
+                    pass
 
     def _persist(self, product: dict, cat_key: str, db, retailer_id: int):
         # product-level category_key wins (sitemap-driven vendors attribute

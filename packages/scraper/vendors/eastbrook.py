@@ -114,6 +114,10 @@ class EastbrookScraper(VendorScraper):
 
         sm = _SKU.search(html)
         sku = sm.group(1) if sm else url.rstrip("/").rsplit("/", 1)[-1]
+        # URL-slug SKUs can exceed the varchar(100) column — truncate, and
+        # sanitize filename-hostile chars (used in the image dir path)
+        sku = sku[:100]
+        sku = re.sub(r"[^\w\-.]+", "-", sku).strip("-")
 
         pm = _PRICE.search(html)
         price = float(pm.group(1).replace(",", "")) if pm else None
