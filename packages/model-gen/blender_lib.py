@@ -316,6 +316,106 @@ def build_bath():
     export_glb('bath')
 
 
+def build_bath_freestanding():
+    """Oval freestanding bath — lathe-style shell, no wall-side flat edges.
+    Generic 1700 x 560(h) x 750; build_scaled stretches to real dims."""
+    _clean_scene()
+    w, h, d = 1.7, 0.56, 0.75
+    # outer oval shell: cylinder scaled to an oval, top opened
+    outer = cyl('outer', acrylic_white(), 0.5, 1.0, (0, -d / 2, h / 2))
+    outer.scale = (w, d, h)
+    bpy.ops.object.transform_apply(scale=True)
+    delete_top_faces(outer)
+    # visible inner floor (oval)
+    floor = cyl('inner_floor', acrylic_white(), 0.5, 0.05, (0, -d / 2, 0.12))
+    floor.scale = (w - 0.22, d - 0.22, 1.0)
+    bpy.ops.object.transform_apply(scale=True)
+    # plinth (freestanding baths sit on a smaller base)
+    plinth = cyl('plinth', acrylic_white(), 0.5, 0.08, (0, -d / 2, 0.04))
+    plinth.scale = (w - 0.30, d - 0.26, 1.0)
+    bpy.ops.object.transform_apply(scale=True)
+    export_glb('bath-freestanding')
+
+
+def build_bath_curved():
+    """Single-ended bath with a curved (bulged) front edge: rectangular body
+    + semicircular front bulge. Generic 1700 x 560(h) x 750."""
+    _clean_scene()
+    w, h, d = 1.7, 0.56, 0.75
+    r = d / 2  # bulge radius
+    # rectangular body (back section)
+    body = box('body', acrylic_white(), (w, d - r, h), (0, -(d - r) / 2, h / 2))
+    delete_top_faces(body)
+    # curved front bulge (full cylinder — the half inside the body overlaps harmlessly)
+    bulge = cyl('bulge', acrylic_white(), r, h, (0, -(d - r), h / 2))
+    delete_top_faces(bulge)
+    # inner floor spanning both sections (oval)
+    floor = cyl('inner_floor', acrylic_white(), 0.5, 0.05, (0, -d / 2, 0.10))
+    floor.scale = (w - 0.22, d - 0.20, 1.0)
+    bpy.ops.object.transform_apply(scale=True)
+    export_glb('bath-curved')
+
+
+def build_shower_tray_quadrant():
+    """Quadrant shower tray: square plan with one rounded front corner.
+    Generic 900 x 45(h) x 900; radius = min(w, d)."""
+    _clean_scene()
+    w, h, d = 0.9, 0.045, 0.9
+    r = min(w, d)
+    # back section (full width, short depth)
+    box('back', stone_resin(), (w, d - r, h), (0, -(d - r) / 2, h / 2), bevel=0.01)
+    # front-left section
+    box('front', stone_resin(), (w - r, r, h), (-r / 2, -(d - r) - r / 2, h / 2), bevel=0.01)
+    # rounded corner (cylinder fills the corner square; overlapping quadrants
+    # hide inside the two boxes above)
+    cyl('corner', stone_resin(), r, h, (w / 2 - r, -d + r / 2, h / 2))
+    # waste hole near the rounded corner
+    cyl('waste', _mat('waste', (0.15, 0.15, 0.16), metal=0.5, rough=0.4), 0.045, 0.02,
+        (w / 2 - r, -d + r, h + 0.005))
+    export_glb('shower-tray-quadrant')
+
+
+def build_shower_enclosure_quadrant():
+    """Quadrant enclosure with a CURVED front: the arc is faceted into 6 flat
+    glass panels (how real multi-panel quadrants look), chrome posts at the
+    arc ends + faceted top rail. Arc radius = depth, centred at the back-left
+    corner. Generic 900(w) x 1900(h) x 900(d)."""
+    _clean_scene()
+    w, h, d = 0.9, 1.9, 0.9
+    r = d
+    gt = 0.008  # glass thickness
+    fp = 0.028  # profile size
+    cx = -w / 2  # arc centre x (back-left corner)
+    n = 6        # panels along the arc
+    glass = glass_clear()
+    ch = chrome()
+    import math as _m
+    prev_pt = None
+    for i in range(n + 1):
+        th = _m.pi / 2 * i / n  # 0..90°
+        px = cx + r * _m.cos(th)
+        py = -r * _m.sin(th)
+        if prev_pt is not None:
+            # chord panel between prev_pt and (px, py)
+            mx = (prev_pt[0] + px) / 2
+            my = (prev_pt[1] + py) / 2
+            chord = _m.hypot(px - prev_pt[0], py - prev_pt[1])
+            ang = _m.atan2(py - prev_pt[1], px - prev_pt[0])
+            box(f'arc_panel_{i}', glass, (chord, gt, h), (mx, my, h / 2), rot=(0, 0, ang))
+            # top rail segment along the same chord
+            box(f'arc_rail_{i}', ch, (chord + 0.01, fp, fp), (mx, my, h + fp / 2), rot=(0, 0, ang))
+        prev_pt = (px, py)
+    # chrome posts at the arc endpoints
+    cyl('post_back', ch, 0.02, h, (cx + r, -0.02, h / 2))
+    cyl('post_front', ch, 0.02, h, (cx + 0.02, -r, h / 2))
+    # door handle mid-arc
+    mid_th = _m.pi / 4
+    hx = cx + r * _m.cos(mid_th)
+    hy = -r * _m.sin(mid_th)
+    box('handle', ch, (0.015, 0.02, 0.32), (hx + 0.12, hy - 0.02, h * 0.52))
+    export_glb('shower-enclosure-quadrant')
+
+
 def build_shower_tray():
     _clean_scene()
     w, h, d = 0.9, 0.04, 0.76
@@ -619,6 +719,10 @@ BUILDERS = {
     'toilet': build_toilet,
     'basin': build_basin,
     'bath': build_bath,
+    'bath-freestanding': build_bath_freestanding,
+    'bath-curved': build_bath_curved,
+    'shower-tray-quadrant': build_shower_tray_quadrant,
+    'shower-enclosure-quadrant': build_shower_enclosure_quadrant,
     'shower-tray': build_shower_tray,
     'shower-screen': build_shower_screen,
     'panel': build_panel,
