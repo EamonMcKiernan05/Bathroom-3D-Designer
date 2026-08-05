@@ -55,6 +55,18 @@ CATEGORY_TO_SLUG = {
     "mirrors-cabinets/illuminated-mirrors": "mirror",
     "mirrors-cabinets/mirror-cabinets": "cabinet",
     "furniture/vanity-units": "vanity-unit",
+    # fitted/wall-mounted/floorstanding/cloakroom/BTW furniture all get the
+    # vanity-unit builder (box + basin) scaled to real dims
+    "furniture/fitted": "vanity-unit",
+    "furniture/wall-mounted": "vanity-unit",
+    "furniture/floorstanding": "vanity-unit",
+    "furniture/cloakroom-units": "vanity-unit",
+    "furniture/btw-units": "vanity-unit",
+    "furniture/with-basins": "vanity-unit",
+    "furniture/with-worktops": "vanity-unit",
+    "furniture/handles": "vanity-unit",
+    # toilet + basin combo units model as a toilet
+    "ideal-bathrooms/combined-units": "toilet",
     "taps": "tap",
     "accessories/shelves": "shelf",
     "accessories/towel-rings": "towel-ring",
