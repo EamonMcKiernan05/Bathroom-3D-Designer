@@ -76,6 +76,7 @@ function SceneContents() {
   const [dragGap, setDragGap] = useState<number | null>(null);
   const openingType = useEditorStore((s) => s.openingType);
   const dragRef = useRef<{ id: string } | null>(null);
+  const justDraggedRef = useRef(false);
 
   const room = design.room;
   const walls = useMemo(() => (room.closed ? buildWalls(room.floorPoints) : []), [room.floorPoints, room.closed]);
@@ -99,36 +100,10 @@ function SceneContents() {
         return;
       }
       setCursor(null);
-      if (!dragRef.current) {
-        if (dragGap !== null) setDragGap(null);
-        return;
-      }
-      const item = design.items.find((i) => i.id === dragRef.current!.id);
-      if (!item) return;
-      const y = item.position[1];
-      const p = raycastToPlane(e.clientX, e.clientY, y, camera, glEl);
-      if (!p) return;
-      // live gap to nearest wall (in mm) while dragging
-      let gap = Infinity;
-      for (const w of walls) gap = Math.min(gap, distToSegment(p.x, p.z, w.a[0], w.a[1], w.b[0], w.b[1]));
-      setDragGap(Math.round(gap));
-      let x = p.x, z = p.z;
-      if (snapEnabled) {
-        const snap = snapToWall(x, z, room.floorPoints, 150);
-        if (snap) {
-          // apply wall snap: keep mount height, align rotation
-          const st = useDesignStore.getState();
-          st.updateItem(item.id, { position: [snap.pos[0], y, snap.pos[2]], rotation: snap.rotation });
-          setDragGap(0);
-          return;
-        }
-      }
-      [x, z] = clampPointToPolygon(x, z, room.floorPoints);
-      x = Math.round(x / 50) * 50;
-      z = Math.round(z / 50) * 50;
-      moveItem(item.id, [x, y, z]);
+      // item dragging is handled by the window-level onDragMove handler
+      if (dragGap !== null && !dragStateRef.current) setDragGap(null);
     },
-    [camera, glEl, design.items, snapEnabled, room.floorPoints, moveItem, mode, walls, dragGap],
+    [camera, glEl, mode, dragGap],
   );
 
   const handlePointerDown = useCallback(
@@ -145,14 +120,94 @@ function SceneContents() {
     [selectItem, camControls],
   );
 
-  const handlePointerUp = useCallback(() => {
+  /** Window-level drag: pointer events are tracked on the window (not via R3F
+   *  routing), so the drag keeps working even when the pointer leaves the
+   *  canvas or hovers other objects. */
+  const dragStateRef = useRef<{ id: string; y: number } | null>(null);
+
+  const onDragMove = useCallback(
+    (ev: PointerEvent) => {
+      const st = dragStateRef.current;
+      if (!st) return;
+      const designNow = useDesignStore.getState().design;
+      const item = designNow.items.find((i) => i.id === st.id);
+      if (!item) return;
+      const p = raycastToPlane(ev.clientX, ev.clientY, st.y, camera, glEl);
+      if (!p) return;
+      const roomNow = designNow.room;
+      const ws = roomNow.closed ? buildWalls(roomNow.floorPoints) : [];
+      // live gap to nearest wall (in mm) while dragging
+      let gap = Infinity;
+      for (const w of ws) gap = Math.min(gap, distToSegment(p.x, p.z, w.a[0], w.a[1], w.b[0], w.b[1]));
+      setDragGap(Math.round(gap));
+      let x = p.x, z = p.z;
+      if (snapEnabled) {
+        const snap = snapToWall(x, z, roomNow.floorPoints, 150);
+        if (snap) {
+          useDesignStore.getState().updateItem(item.id, { position: [snap.pos[0], st.y, snap.pos[2]], rotation: snap.rotation });
+          setDragGap(0);
+          return;
+        }
+      }
+      [x, z] = clampPointToPolygon(x, z, roomNow.floorPoints);
+      x = Math.round(x / 50) * 50;
+      z = Math.round(z / 50) * 50;
+      moveItem(item.id, [x, st.y, z]);
+    },
+    [camera, glEl, snapEnabled, moveItem],
+  );
+
+  /** Begin dragging an item — called from PlacedProduct's onPointerDown so the
+   *  drag starts on the ITEM itself (the floor plane never sees the item's
+   *  userData, which is why dragging previously did nothing). */
+  const startDrag = useCallback(
+    (itemId: string, e: ThreeEvent<PointerEvent>) => {
+      if (e.button !== 0) return;
+      e.stopPropagation(); // keep the floor plane from treating this as a floor click
+      selectItem(itemId);
+      const item = design.items.find((i) => i.id === itemId);
+      dragStateRef.current = { id: itemId, y: item?.position[1] ?? 0 };
+      dragRef.current = { id: itemId };
+      justDraggedRef.current = false;
+      if (camControls) camControls.enabled = false; // stop orbit fighting the drag
+      window.addEventListener('pointermove', onDragMove);
+    },
+    [selectItem, camControls, design.items, onDragMove],
+  );
+
+  const endDrag = useCallback(() => {
+    if (dragStateRef.current) {
+      justDraggedRef.current = true;
+      window.removeEventListener('pointermove', onDragMove);
+    }
+    dragStateRef.current = null;
     dragRef.current = null;
     if (camControls) camControls.enabled = true;
-  }, [camControls]);
+    setDragGap(null);
+  }, [camControls, onDragMove]);
+
+  // safety net: pointer released anywhere ends the drag
+  useEffect(() => {
+    const onUp = () => endDrag();
+    window.addEventListener('pointerup', onUp);
+    return () => {
+      window.removeEventListener('pointerup', onUp);
+      window.removeEventListener('pointermove', onDragMove);
+    };
+  }, [endDrag, onDragMove]);
+
+  const handlePointerUp = useCallback(() => {
+    endDrag();
+  }, [endDrag]);
 
   const handleClick = useCallback(
     (e: ThreeEvent<MouseEvent>) => {
       if (dragRef.current) return;
+      // a click synthesized right after an item drag must not act on the floor
+      if (justDraggedRef.current) {
+        justDraggedRef.current = false;
+        return;
+      }
       const obj = e.object as THREE.Object3D;
       const surf = obj.userData?.surface as string | undefined;
       const itemId = obj.userData?.itemId as string | undefined;
@@ -233,6 +288,49 @@ function SceneContents() {
 
   const roomCx = Number.isFinite(bounds.cx) ? bounds.cx : 0;
   const roomCz = Number.isFinite(bounds.cz) ? bounds.cz : 0;
+
+  // dev hook: expose world->screen projection + item world positions so
+  // automated tests can aim CDP pointer events precisely.
+  useEffect(() => {
+    (window as unknown as Record<string, unknown>).__bathroom3d = {
+      projectToScreen: (wx: number, wy: number, wz: number) => {
+        const v = new THREE.Vector3(wx, wy, wz).project(camera);
+        const rect = glEl.getBoundingClientRect();
+        return {
+          x: rect.left + ((v.x + 1) / 2) * rect.width,
+          y: rect.top + ((1 - v.y) / 2) * rect.height,
+        };
+      },
+      itemPositions: () =>
+        useDesignStore.getState().design.items.map((i) => ({
+          productId: i.productId,
+          id: i.id,
+          pos: i.position,
+        })),
+      /** What does a ray from the camera through this screen point hit? */
+      raycastAt: (clientX: number, clientY: number) => {
+        const rect = glEl.getBoundingClientRect();
+        const ndc = new THREE.Vector2(
+          ((clientX - rect.left) / rect.width) * 2 - 1,
+          -((clientY - rect.top) / rect.height) * 2 + 1,
+        );
+        const ray = new THREE.Raycaster();
+        ray.setFromCamera(ndc, camera);
+        const root = camera.parent;
+        if (!root) return { error: 'no scene root' };
+        const hits = ray.intersectObjects(root.children, true);
+        return hits.slice(0, 6).map((h) => ({
+          dist: Math.round(h.distance),
+          point: [Math.round(h.point.x), Math.round(h.point.y), Math.round(h.point.z)],
+          userData: h.object.userData,
+          objName: h.object.name,
+        }));
+      },
+    };
+    return () => {
+      delete (window as unknown as Record<string, unknown>).__bathroom3d;
+    };
+  }, [camera, glEl]);
   const roomDiag = Math.max(2000, Math.min(30000, Math.hypot(bounds.maxX - bounds.minX, bounds.maxZ - bounds.minZ)));
   const gridSize = Math.min(Math.max(8000, roomDiag * 1.6), 50000);
 
@@ -263,7 +361,7 @@ function SceneContents() {
       <Room />
 
       {design.items.map((item) => (
-        <PlacedProduct key={item.id} item={item} onBoundsReady={onBoundsReady} />
+        <PlacedProduct key={item.id} item={item} onBoundsReady={onBoundsReady} onDragStart={startDrag} />
       ))}
 
       {showGrid && (

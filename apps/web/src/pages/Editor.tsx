@@ -21,6 +21,11 @@ export function EditorPage() {
   const [notice, setNotice] = useState('');
   const sceneWrapRef = useRef<HTMLDivElement>(null);
 
+  // dev hook: expose the store + live camera for automated verification
+  useEffect(() => {
+    (window as unknown as Record<string, unknown>).__designStore = useDesignStore;
+  }, []);
+
   const showNotice = useCallback((msg: string) => {
     setNotice(msg);
     setTimeout(() => setNotice(''), 2500);

@@ -1,6 +1,7 @@
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import * as THREE from 'three';
-import { useGLTF } from '@react-three/drei';
+import { useGLTF, useCursor } from '@react-three/drei';
+import type { ThreeEvent } from '@react-three/fiber';
 import { useDesignStore } from '../../stores/design-store';
 import type { PlacedItem } from '../../lib/types';
 
@@ -11,9 +12,11 @@ import type { PlacedItem } from '../../lib/types';
 export function PlacedProduct({
   item,
   onBoundsReady,
+  onDragStart,
 }: {
   item: PlacedItem;
   onBoundsReady?: (id: string, b: { w: number; h: number; d: number } | null) => void;
+  onDragStart?: (id: string, e: ThreeEvent<PointerEvent>) => void;
 }) {
   const gltf = item.modelUrl ? useGLTF(item.modelUrl) : null;
   const selectItem = useDesignStore((s) => s.selectItem);
@@ -21,6 +24,8 @@ export function PlacedProduct({
   const colliding = useDesignStore((s) => s.collisionMap[item.id] ?? false);
 
   const isSelected = selectedId === item.id;
+  const [hovered, setHovered] = useState(false);
+  useCursor(hovered, 'grab');
 
   const scene = useMemo(() => {
     if (!gltf) return null;
@@ -48,6 +53,12 @@ export function PlacedProduct({
       position={item.position}
       rotation={[0, item.rotation, 0]}
       userData={{ itemId: item.id }}
+      onPointerOver={(e) => {
+        e.stopPropagation();
+        setHovered(true);
+      }}
+      onPointerOut={() => setHovered(false)}
+      onPointerDown={(e) => onDragStart?.(item.id, e)}
       onClick={(e) => {
         e.stopPropagation();
         selectItem(item.id);
