@@ -11,6 +11,7 @@ export default defineConfig({
       '/models': 'http://127.0.0.1:8000',
       '/textures': 'http://127.0.0.1:8000',
       '/thumbnails': 'http://127.0.0.1:8000',
+      '/products': 'http://127.0.0.1:8000',
     },
   },
 });

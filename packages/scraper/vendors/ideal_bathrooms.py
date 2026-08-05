@@ -92,8 +92,73 @@ class IdealBathroomsScraper(VendorScraper):
         ("baths", "/prod_cat/C_baths_14.shtml"),
         ("bath-screen", "/prod_cat/C_bath-screen_15.shtml"),
         ("bath-waste-kit", "/prod_cat/C_bath-waste-kit_16.shtml"),
+        ("brochures", "/prod_cat/C_brochures-_55.shtml"),
     ]
     CATEGORY_MAP = CATEGORY_MAP
+
+    def extract_from_category(self, html: str, category_url: str) -> list[dict] | None:
+        """The brochures page (C_brochures-_55.shtml) is a DIRECTORY of brand
+        brochures with no detail pages — each entry is brand name + cover
+        image + external brand link. Extract them as catalogue entries
+        directly, attributed to their brand (Armitage Shanks, EastBrook...).
+        Return None for every other category (normal P_*.shtml crawl)."""
+        if "C_brochures" not in category_url:
+            return None
+        entries = []
+        # Each entry is `<a href=... title="BRAND"> <span.prod_image><img ...>
+        # ... <h5 class="list_name">BRAND</h5>`. The wrapper div classes are
+        # inconsistent across entries (only some carry `category_product`),
+        # and nav/breadcrumb anchors earlier on the page also carry title=,
+        # so walk backwards from each h5 to its nearest anchor (≤1500 chars
+        # back) instead of matching forward.
+        _h5 = re.compile(r'<h5 class="list_name">([^<]+)</h5>', re.I)
+        _anchor = re.compile(r'<a href="([^"]+)" title="([^"]+)"[^>]*>', re.I)
+        _img = re.compile(r'<img src="([^"]+)"', re.I)
+        for m in _h5.finditer(html):
+            brand = re.sub(r"\s+", " ", htmlmod.unescape(m.group(1))).strip()
+            if not brand or brand.lower() == "test":
+                continue
+            window = html[max(0, m.start() - 1500):m.start()]
+            am = None
+            for am_c in _anchor.finditer(window):
+                am = am_c  # keep the LAST (nearest) anchor before the h5
+            if not am or am.group(2).strip().lower() != brand.lower():
+                continue  # not a product entry (nav leftover)
+            href = am.group(1)
+            img_m = _img.search(window[am.end():])
+            sku = "brochure-" + re.sub(r"[^a-z0-9]+", "-", brand.lower()).strip("-")
+            imgs = []
+            if img_m and "missing_catproduct" not in img_m.group(1):
+                src = img_m.group(1)
+                imgs.append(("/prod_cat/" + src) if src.startswith("images/") else src)
+            entries.append({
+                "retailer_sku": sku,
+                "retailer_url": href,
+                "name": f"{brand} Brochure",
+                "brand": brand,
+                "description": (
+                    f"{brand} product brochure, available from Ideal Bathrooms "
+                    f"Isle of Man. Source for wall/floor/ceiling patterns and "
+                    f"bathroom furniture ranges."
+                ),
+                "price_gbp": None,
+                "price_note": None,
+                "price_is_from": False,
+                "width_mm": None,
+                "height_mm": None,
+                "depth_mm": None,
+                "diameter_mm": None,
+                "dimensions_confidence": None,
+                "finishes": [],
+                "colours": [],
+                "sizes": [],
+                "image_urls": imgs,
+                "in_stock": None,
+                "category_key": "brochures",
+                # brochures are reference material — nothing to model-generate
+                "model_status": "ready",
+            })
+        return entries or None
 
     def list_product_urls(self, html: str, category_url: str) -> list[str]:
         urls = []

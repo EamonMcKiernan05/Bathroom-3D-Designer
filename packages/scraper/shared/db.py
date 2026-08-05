@@ -115,6 +115,11 @@ def upsert_product(db, product: dict, retailer_id: int) -> dict:
         active=True,
         last_scraped_at=now,
     )
+    # Optional pass-through: vendors that know a product needs no model
+    # (e.g. brochure entries) can set it explicitly. Normal scrapes omit the
+    # key so existing model_status is never clobbered.
+    if product.get("model_status"):
+        fields["model_status"] = product["model_status"]
 
     if existing is None:
         fields.update(first_scraped_at=now, created_at=now, updated_at=now)

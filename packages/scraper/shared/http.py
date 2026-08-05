@@ -52,14 +52,17 @@ class PoliteSession:
         return True
 
     # -- politeness -----------------------------------------------------
-    def _throttle(self):
+    def _throttle(self, image: bool = False):
         elapsed = time.monotonic() - self.last_request_at
-        want = random.uniform(config.MIN_DELAY_S, config.MAX_DELAY_S)
+        if image:
+            want = random.uniform(config.IMAGE_MIN_DELAY_S, config.IMAGE_MAX_DELAY_S)
+        else:
+            want = random.uniform(config.MIN_DELAY_S, config.MAX_DELAY_S)
         if elapsed < want:
             time.sleep(want - elapsed)
 
-    def _get(self, url: str, **kw):
-        self._throttle()
+    def _get(self, url: str, image: bool = False, **kw):
+        self._throttle(image=image)
         kw.setdefault("timeout", config.REQUEST_TIMEOUT_S)
         kw.setdefault("headers", {})
         kw["headers"].setdefault(
@@ -99,10 +102,11 @@ class PoliteSession:
 
     def fetch_bytes(self, url: str) -> bytes | None:
         """GET binary content (images) with retry. robots.txt not consulted for
-        CDN image hosts — they are asset servers, not crawl targets."""
+        CDN image hosts — they are asset servers, not crawl targets. Uses the
+        shorter image delay (config.IMAGE_*_DELAY_S)."""
         for attempt in range(1, config.MAX_RETRIES + 1):
             try:
-                resp = self._get(url)
+                resp = self._get(url, image=True)
                 if resp.status_code == 200:
                     return resp.content
                 log.warning("[img] %s -> %d", url, resp.status_code)

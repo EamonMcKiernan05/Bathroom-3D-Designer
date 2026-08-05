@@ -341,6 +341,37 @@ def build_shower_screen():
     export_glb('shower-screen')
 
 
+def build_shower_enclosure():
+    """Corner shower enclosure: two wall-side glass panels + front door panel,
+    chrome corner posts + top rails. Generic footprint 900x900x1900mm —
+    build_scaled stretches it to the product's real W x D x H."""
+    _clean_scene()
+    w, d, h = 0.9, 0.9, 1.9
+    gt = 0.008   # glass thickness
+    fp = 0.03    # profile size
+    glass = glass_clear()
+    ch = chrome()
+    # wall-side panels (left at x=-w/2, right at x=+w/2), spanning the depth
+    box('panel_left', glass, (gt, d, h), (-w / 2 + gt / 2, -d / 2, h / 2))
+    box('panel_right', glass, (gt, d, h), (w / 2 - gt / 2, -d / 2, h / 2))
+    # front door panel across the opening (leaves a door gap toward the left)
+    door_w = w - gt * 2
+    box('panel_front', glass, (door_w, gt, h), (0, -d + gt / 2, h / 2))
+    # chrome corner posts (full height) at the two front corners
+    cyl('post_left', ch, 0.02, h, (-w / 2, -d + fp / 2, h / 2))
+    cyl('post_right', ch, 0.02, h, (w / 2, -d + fp / 2, h / 2))
+    # wall posts where the side panels meet the wall
+    cyl('post_wall_l', ch, 0.018, h, (-w / 2, -fp / 2, h / 2))
+    cyl('post_wall_r', ch, 0.018, h, (w / 2, -fp / 2, h / 2))
+    # top rails along all three edges
+    box('rail_front', ch, (w, fp, fp), (0, -d + fp / 2, h + fp / 2))
+    box('rail_left', ch, (fp, d, fp), (-w / 2 + fp / 2, -d / 2, h + fp / 2))
+    box('rail_right', ch, (fp, d, fp), (w / 2 - fp / 2, -d / 2, h + fp / 2))
+    # door handle on the front panel
+    box('handle', ch, (0.015, 0.02, 0.32), (-w / 2 + 0.18, -d - 0.015, h * 0.52))
+    export_glb('shower-enclosure')
+
+
 def build_radiator():
     _clean_scene()
     w, h, d = 1.2, 0.6, 0.07
@@ -578,6 +609,7 @@ BUILDERS = {
     'bath': build_bath,
     'shower-tray': build_shower_tray,
     'shower-screen': build_shower_screen,
+    'shower-enclosure': build_shower_enclosure,
     'radiator': build_radiator,
     'towel-rail': build_towel_rail,
     'mirror': build_mirror,

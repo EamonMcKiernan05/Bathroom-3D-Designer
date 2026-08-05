@@ -119,8 +119,8 @@ function ProductCard({ product, onAddToDesign }: { product: Product; onAddToDesi
       <p className="line-clamp-2 min-h-[26px] text-[11px] leading-tight text-neutral-700" title={product.name}>
         {product.name}
       </p>
-      <p className="mt-0.5 truncate text-[9px] text-neutral-400">
-        {product.retailer_slug ?? '—'}
+      <p className="mt-0.5 truncate text-[9px] text-neutral-400" title={product.brand ?? product.retailer_slug ?? ''}>
+        {product.brand ?? product.retailer_slug ?? '—'}
       </p>
       <p className="text-xs font-semibold text-neutral-900">
         {product.price_gbp != null ? `£${Number(product.price_gbp).toFixed(2)}` : '—'}

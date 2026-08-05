@@ -43,6 +43,9 @@ CATEGORY_TO_SLUG = {
     "baths": "bath",
     "showering/shower-trays": "shower-tray",
     "showering/shower-screens": "shower-screen",
+    # brochure enclosures (glass corner units, e.g. Nuie lucie/rene ranges)
+    # get the dedicated enclosure builder (wall panels + front door + rails)
+    "showering/shower-enclosures": "shower-enclosure",
     "showering/shower-heads": "shower-head",
     "showering/shower-handsets": "shower-head",
     "showering/shower-sets": "shower-set",
@@ -73,9 +76,11 @@ def get_pending(filters: dict):
             from app.models import Retailer
 
             q = q.join(Retailer).where(Retailer.slug == filters["retailer"])
+        if filters.get("brand"):
+            q = q.where(Product.brand == filters["brand"])
         if filters.get("category"):
             q = q.where(Product.category.like(f"{filters['category']}%"))
-        return db.scalars(q.limit(200)).all()
+        return db.scalars(q.limit(2000)).all()
     finally:
         db.close()
 
@@ -136,7 +141,10 @@ def record(db, product_id, result):
         glb = ROOT / "assets" / "models" / f"{out_stem}.glb"
         size_kb = glb.stat().st_size // 1024 if glb.exists() else None
         product.model_url = f"/models/{out_stem}.glb"
-        product.thumbnail_url = f"/thumbnails/{out_stem}.png"
+        # keep an existing product-photo thumbnail (brochure scrapes) — the
+        # photo is a better catalogue card image than the parametric render
+        if not product.thumbnail_url:
+            product.thumbnail_url = f"/thumbnails/{out_stem}.png"
         product.model_status = "ready"
         product.model_method = "parametric"
         product.model_polygons = result.get("polys")
@@ -167,6 +175,7 @@ def record(db, product_id, result):
 def main():
     p = argparse.ArgumentParser(description="Batch generate 3D models (doc 03 §2.5)")
     p.add_argument("--retailer", help="Retailer slug")
+    p.add_argument("--brand", help="Exact brand name (e.g. 'Nuie Bathrooms')")
     p.add_argument("--category", help="Category prefix")
     p.add_argument("--product-id", type=int, help="Single product id")
     p.add_argument("--dry-run", action="store_true", help="List what would run")

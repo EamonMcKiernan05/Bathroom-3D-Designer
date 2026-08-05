@@ -11,6 +11,10 @@ API_DIR = ROOT / "apps" / "api"
 # Polite crawling (doc 00 §9): 2-5s between requests.
 MIN_DELAY_S = float(os.environ.get("SCRAPER_MIN_DELAY", "2.0"))
 MAX_DELAY_S = float(os.environ.get("SCRAPER_MAX_DELAY", "5.0"))
+# Image assets get a shorter delay (doc 02 §3.2): they are CDN-hosted files,
+# not crawl targets — page-level politeness stays on HTML fetches.
+IMAGE_MIN_DELAY_S = float(os.environ.get("SCRAPER_IMAGE_MIN_DELAY", "0.2"))
+IMAGE_MAX_DELAY_S = float(os.environ.get("SCRAPER_IMAGE_MAX_DELAY", "0.6"))
 MAX_RETRIES = int(os.environ.get("SCRAPER_MAX_RETRIES", "3"))
 RETRY_BACKOFF_S = 5.0
 REQUEST_TIMEOUT_S = 30

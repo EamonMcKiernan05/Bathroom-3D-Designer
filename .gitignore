@@ -33,3 +33,18 @@ Thumbs.db
 # Editor
 .idea/
 .vscode/
+
+# Brochure source PDFs are large binary downloads — fetched on demand,
+# never committed (see packages/scraper/brochure_pdf/ docstrings).
+assets/brochures/**/*.pdf
+assets/brochures/**/extracted/
+
+# scraper caches (category maps, rebuilt per run)
+packages/scraper/cache/
+
+# scratch/recon scripts (dev only)
+apps/api/_*.py
+apps/api/brochure_pdfs_found.json
+packages/_debug_*.py
+mylife_scrape.log
+mylife_models.log
