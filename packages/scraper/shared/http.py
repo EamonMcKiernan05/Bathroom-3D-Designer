@@ -85,6 +85,12 @@ class PoliteSession:
             try:
                 resp = self._get(url)
                 if resp.status_code == 200:
+                    # sites that omit the charset default to ISO-8859-1 in
+                    # requests, mojibaking UTF-8 text (idealbathrooms.im does).
+                    # Modern pages are UTF-8 — default to it unless the server
+                    # explicitly declared a different charset.
+                    if not resp.encoding or resp.encoding.lower() == "iso-8859-1":
+                        resp.encoding = "utf-8"
                     return resp.text
                 if resp.status_code in (403, 429, 503):
                     log.warning(
