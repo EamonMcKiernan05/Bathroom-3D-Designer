@@ -35,7 +35,9 @@ from . import (  # noqa: E402,F401
     crosswater,
     genesis,
     ideal_bathrooms,
+    kaldewei,
     mylife,
+    tissino,
     warren_keys,
 )
 
@@ -45,6 +47,8 @@ for _cls in (
     genesis.GenesisScraper,
     mylife.MyLifeScraper,
     crosswater.CrosswaterScraper,
+    kaldewei.KaldeweiScraper,
+    tissino.TissinoScraper,
     warren_keys.WarrenKeysLoader,
     city_plumbing.CityPlumbingScraper,
 ):

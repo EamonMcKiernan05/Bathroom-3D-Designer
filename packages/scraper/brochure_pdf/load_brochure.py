@@ -87,7 +87,7 @@ def build_row(v: dict, brand: str, retailer_slug: str) -> dict:
             f"Ideal Bathrooms Isle of Man."
         ),
         "price_gbp": v.get("price_gbp"),
-        "price_note": "inc VAT",
+        "price_note": v.get("price_note", "inc VAT"),
         "price_is_from": False,
         "width_mm": dims.get("width_mm"),
         "height_mm": dims.get("height_mm"),
