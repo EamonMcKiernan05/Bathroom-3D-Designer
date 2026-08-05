@@ -55,6 +55,10 @@ CATEGORY_TO_SLUG = {
     "mirrors-cabinets/illuminated-mirrors": "mirror",
     "mirrors-cabinets/mirror-cabinets": "cabinet",
     "furniture/vanity-units": "vanity-unit",
+    # plain 'furniture' (Q4 brochure) -> vanity-unit builder
+    "furniture": "vanity-unit",
+    # plain 'showering' (Q4 shower kits/valves) -> shower-set builder
+    "showering": "shower-set",
     # fitted/wall-mounted/floorstanding/cloakroom/BTW furniture all get the
     # vanity-unit builder (box + basin) scaled to real dims
     "furniture/fitted": "vanity-unit",

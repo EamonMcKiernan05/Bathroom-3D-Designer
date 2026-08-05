@@ -33,6 +33,7 @@ PRIORITY_ORDER = [
 from . import (  # noqa: E402,F401
     city_plumbing,
     crosswater,
+    eastbrook,
     genesis,
     ideal_bathrooms,
     kaldewei,
@@ -47,6 +48,7 @@ for _cls in (
     genesis.GenesisScraper,
     mylife.MyLifeScraper,
     crosswater.CrosswaterScraper,
+    eastbrook.EastbrookScraper,
     kaldewei.KaldeweiScraper,
     tissino.TissinoScraper,
     warren_keys.WarrenKeysLoader,
