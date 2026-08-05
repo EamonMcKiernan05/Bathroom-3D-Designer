@@ -43,6 +43,10 @@ CATEGORY_TO_SLUG = {
     "baths": "bath",
     "showering/shower-trays": "shower-tray",
     "showering/shower-screens": "shower-screen",
+    # wall/ceiling panels + flooring = flat boards
+    "tiles-panels/shower-wall-panels": "panel",
+    "tiles-panels/ceiling-panels": "panel",
+    "tiles-panels/floor-tiles": "panel",
     # brochure enclosures (glass corner units, e.g. Nuie lucie/rene ranges)
     # get the dedicated enclosure builder (wall panels + front door + rails)
     "showering/shower-enclosures": "shower-enclosure",

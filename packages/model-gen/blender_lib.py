@@ -327,6 +327,18 @@ def build_shower_tray():
     export_glb('shower-tray')
 
 
+def build_panel():
+    """Flat panel/tile board (wall panels, ceiling panels, flooring).
+    Generic size 2400 wide x 8 thick x 1200 high — build_scaled stretches it
+    to the product's real dims when known; patterns/textures live on the
+    surface, so a plain matte board is the right placeholder shape."""
+    _clean_scene()
+    w, d, h = 2.4, 0.008, 1.2
+    mat = _mat("panel_board", base=(0.93, 0.92, 0.9), metal=0.0, rough=0.65)
+    box('panel', mat, (w, d, h), (0, -d / 2, h / 2))
+    export_glb('panel')
+
+
 def build_shower_screen():
     _clean_scene()
     w, h, d = 0.8, 1.9, 0.008
@@ -609,6 +621,7 @@ BUILDERS = {
     'bath': build_bath,
     'shower-tray': build_shower_tray,
     'shower-screen': build_shower_screen,
+    'panel': build_panel,
     'shower-enclosure': build_shower_enclosure,
     'radiator': build_radiator,
     'towel-rail': build_towel_rail,

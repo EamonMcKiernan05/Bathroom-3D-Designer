@@ -186,6 +186,9 @@ class IdealBathroomsScraper(VendorScraper):
         if not name:
             return None
         name = re.sub(r"\s+", " ", name).strip()
+        # placeholder listings on the live site (a £1 "Test" product exists)
+        if name.lower() in ("test",) or name.lower().startswith("test "):
+            return None
 
         # SKU — the product code sits after the "Code" attrib_label span
         # (e.g. ...>Code</span> <span itemprop='productID' ...>AQ-T2</span>)
