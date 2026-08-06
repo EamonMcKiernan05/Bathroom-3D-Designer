@@ -16,8 +16,11 @@ venv/
 
 # Assets (generated)
 assets/models/*.glb
-assets/products/          # scraped retailer images (MinIO in prod)
-assets/thumbnails/model_*.png   # per-product batch thumbnails (MinIO in prod)
+# scraped retailer images (MinIO in prod)
+# NOTE: trailing comments on pattern lines invalidate gitignore rules — keep them on their own line
+assets/products/
+# per-product batch thumbnails (MinIO in prod)
+assets/thumbnails/model_*.png
 assets/textures/generated/
 assets/qa/
 scripts/postgresql-binaries.zip
