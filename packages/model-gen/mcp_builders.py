@@ -157,6 +157,49 @@ def lathe(name, m, prof, axis='Z', steps=40, close_bottom=True):
     return o
 
 
+def loft_hull(name, m, w, d, h, n_sections=12, n_pts=36, footprint=0.70, rim_mod=None,
+              lip=1.02):
+    """Lofted bath hull: elliptical cross-sections from floor (narrow footprint)
+    to rim (widest), convex flare — how real freestanding baths actually look.
+    rim_mod: optional callable(theta)->extra_z for slipper/boat rim lines.
+    lip: final ring flared outward by this factor (reads as a rolled rim).
+    Open top; bottom capped with a fan."""
+    import bmesh
+    bm = bmesh.new()
+    rings = []
+    for i in range(n_sections):
+        t = i / (n_sections - 1)
+        k = footprint + (1 - footprint) * (t ** 0.75)
+        z = h * t
+        rx = (w / 2) * k
+        ry = (d / 2) * k
+        if i == n_sections - 1:
+            rx *= lip
+            ry *= lip
+        ring = []
+        for j in range(n_pts):
+            th = 2 * math.pi * j / n_pts
+            zz = z + (rim_mod(th) if rim_mod else 0)
+            ring.append(bm.verts.new((rx * math.cos(th), ry * math.sin(th), zz)))
+        rings.append(ring)
+    bm.verts.ensure_lookup_table()
+    for i in range(n_sections - 1):
+        for j in range(n_pts):
+            j2 = (j + 1) % n_pts
+            bm.faces.new([rings[i][j], rings[i][j2], rings[i + 1][j2], rings[i + 1][j]])
+    c = bm.verts.new((0, 0, 0.0))
+    bm.verts.ensure_lookup_table()
+    for j in range(n_pts):
+        j2 = (j + 1) % n_pts
+        bm.faces.new([c, rings[0][j2], rings[0][j]])
+    me = bpy.data.meshes.new(name)
+    bm.to_mesh(me)
+    bm.free()
+    o = bpy.data.objects.new(name, me)
+    bpy.context.collection.objects.link(o)
+    return _add(o, name, m)
+
+
 def quarter_disc(name, m, r, h, center=(0, 0), n=18):
     """Quarter-circle sector (plan), extruded to height h. Arc sweeps from the
     +x direction to the -y direction around `center`. Used for quadrant tray
@@ -296,7 +339,8 @@ def render_thumb(slug, size=256):
     s.render.resolution_y = size
     s.render.image_settings.file_format = 'PNG'
     _lights()
-    _frame_camera((1, -0.9, 0.75))
+    # high camera for open vessels (baths/basins) so the cavity reads as open
+    _frame_camera((1, -0.9, 0.75) if not slug.startswith(('bath', 'basin')) else (1, -0.8, 1.35))
     s.render.film_transparent = True
     s.render.filepath = os.path.join(THUMBS, f"{slug}.png").replace("\\", "/")
     bpy.ops.render.render(write_still=True)
@@ -443,10 +487,10 @@ def _corner_bath(w, h, d, curved):
         quarter_disc('bath_corner', m_white(), r, h, center=(w / 2 - r, -(d - r)))
         delete_top_faces(bpy.data.objects['bath_corner'])
     else:
-        # angled flat front: 3-vertex prism across the diagonal
-        prism = cyl('bath_corner', m_white(), r, h, (w / 2 - r, -(d - r) - r, h / 2),
-                    rot=(0, 0, math.radians(135)), verts=3)
-        delete_top_faces(prism)
+        # angled flat front: right-triangle prism filling the cut corner
+        # (quarter_disc with n=1 = straight hypotenuse)
+        quarter_disc('bath_corner', m_white(), r, h, center=(w / 2 - r, -(d - r)), n=1)
+        delete_top_faces(bpy.data.objects['bath_corner'])
     f = cyl('bath_ifloor', m_white(), 0.5, 0.03, (0, -d / 2, 0.12))
     f.scale = (w - 0.2, d - 0.2, 1)
     bpy.ops.object.transform_apply(scale=True)
@@ -463,33 +507,42 @@ def build_bath_corner_whitchurch(w=1.45, h=0.56, d=1.45):
 
 
 def _freestanding(w, h, d, style):
-    """styles: plinth | feet | slipper | round | boat"""
-    # lift the shell so plinth/feet are visible beneath it (else hidden inside)
-    lift = 0.07 if style == 'plinth' else (0.09 if style == 'feet' else 0.0)
-    body = open_ellipse_shell('bath_body', m_white(), w, d, h, -d / 2)
-    body.location.z = lift
-    f = cyl('bath_ifloor', m_white(), 0.5, 0.03, (0, -d / 2, 0.13 + lift))
-    f.scale = (w - 0.24, d - 0.24, 1)
+    """Lofted hulls built to the BARROW-BATH reference (mylife): widest at rim,
+    convex flare toward a narrow floor footprint, open top, bullnose lip ring."""
+    lift = 0.05 if style == 'plinth' else (0.10 if style == 'feet' else 0.0)
+    if style == 'round':
+        loft_hull('bath_body', m_white(), w, d, h, footprint=0.80, lip=1.015).location = (0, -d / 2, 0)
+    elif style == 'slipper':
+        # raised backrest at the back end (+Y = back/wall side)
+        def rim(th):
+            return 0.13 * max(0.0, math.sin(th)) ** 1.6
+        loft_hull('bath_body', m_white(), w, d, h, footprint=0.72, rim_mod=rim).location = (0, -d / 2, 0)
+    elif style == 'boat':
+        # both ends raised equally
+        def rim(th):
+            return 0.075 * max(0.0, abs(math.cos(th))) ** 1.2
+        loft_hull('bath_body', m_white(), w, d, h, footprint=0.70, rim_mod=rim).location = (0, -d / 2, 0)
+    else:
+        loft_hull('bath_body', m_white(), w, d, h, footprint=0.72).location = (0, -d / 2, 0)
+    # interior bowl floor (visible down through the rim)
+    f = cyl('bath_ifloor', m_white(), 0.5, 0.03, (0, -d / 2, 0.14 + lift))
+    f.scale = (w - 0.30, d - 0.30, 1)
     bpy.ops.object.transform_apply(scale=True)
     if style == 'plinth':
-        p = cyl('bath_plinth', m_white(), 0.5, 0.09, (0, -d / 2, 0.045))
-        p.scale = (w - 0.28, d - 0.24, 1)
-        bpy.ops.object.transform_apply(scale=True)
+        p = loft_hull('bath_plinth', m_white(), w * 0.92, d * 0.90, 0.07, n_sections=3,
+                      footprint=0.97, lip=1.0)
+        p.location = (0, -d / 2, 0)
+        loft_hull_body = bpy.data.objects.get('bath_body')
+        if loft_hull_body:
+            loft_hull_body.location.z = 0.05
     elif style == 'feet':
         for sx in (-1, 1):
             for sy in (-1, 1):
-                foot = cyl('bath_foot', m_chrome(), 0.035, 0.11,
-                           (sx * (w / 2 - 0.18), -d / 2 + sy * (d / 2 - 0.15), 0.055))
-                foot.scale = (1, 1, 1)
-    elif style == 'slipper':
-        body2 = open_ellipse_shell('bath_raised', m_white(), w * 0.42, d, h + 0.12, 0)
-        body2.location = (w * 0.22, -d * 0.28, 0)
-    elif style == 'round':
-        pass  # body is already round; no plinth (sits flush)
-    elif style == 'boat':
-        for sx in (-1, 1):
-            end = ellipsoid('bath_end', m_white(), w * 0.08, d / 2, h * 0.62,
-                            (sx * (w / 2 - w * 0.04), -d / 2, h * 0.55))
+                foot = cyl('bath_foot', m_chrome(), 0.028, 0.12,
+                           (sx * (w / 2 - 0.20), -d / 2 + sy * (d / 2 - 0.16), 0.06))
+        loft_hull_body = bpy.data.objects.get('bath_body')
+        if loft_hull_body:
+            loft_hull_body.location.z = 0.10
 
 
 def build_bath_fs_plinth(w=1.70, h=0.58, d=0.75):
@@ -698,20 +751,87 @@ def _corner_enclosure(w, d, h, door, rounded):
         _side_panels(w, d, h)
         _enc_frame(w, d, h)
         box('panel_back_left', m_glass(), (w * 0.3, 0.008, h), (-w * 0.35, -d + 0.004, h / 2))
-        if door == 'sliding':
+        if door in ('sliding',):
             _front_sliding(w, d, h, double=False)
-        elif door == 'double-sliding':
+        elif door in ('double-sliding', 'dbl-sliding'):
             _front_sliding(w, d, h, double=True)
-        elif door == 'bifold':
+        elif door in ('bifold',):
             _front_bifold(w, d, h, double=False)
-        elif door == 'double-bifold':
+        elif door in ('double-bifold', 'dbl-bifold'):
             _front_bifold(w, d, h, double=True)
         elif door == 'panel':
             _glass_panel('panel_front', w, h - 0.02, 0.008, loc=(0, -d + 0.004, h / 2))
         # 'open': no door glass
 
 
+def _front_panel_or_gap(w, d, h, door):
+    if door == 'panel':
+        _glass_panel('panel_front', w, h - 0.02, 0.008, loc=(0, -d + 0.004, h / 2))
+    # 'open'/'gap': no front glass
+
+
+def _enc_rounded_corner(w, d, h, door):
+    """Square footprint, rounded OUTER back-right corner, flat front + door."""
+    r = min(w, d) * 0.45
+    ch = m_chrome()
+    box('panel_left', m_glass(), (0.008, d, h), (-w / 2 + 0.004, -d / 2, h / 2))
+    box('panel_back', m_glass(), (w - r, 0.008, h), (-r / 2, -0.004, h / 2))
+    box('panel_right', m_glass(), (0.008, d - r, h), (w / 2 - 0.004, -(d + r) / 2, h / 2))
+    n = 6
+    prev = None
+    for i in range(n + 1):
+        th = math.pi / 2 * (1 - i / n)
+        px = (w / 2 - r) + r * math.cos(th)
+        py = -r + r * math.sin(th)
+        if prev is not None:
+            mx, my = (prev[0] + px) / 2, (prev[1] + py) / 2
+            chord = math.hypot(px - prev[0], py - prev[1])
+            ang = math.atan2(py - prev[1], px - prev[0])
+            box(f'arc_{i}', m_glass(), (chord, 0.008, h), (mx, my, h / 2), rot=(0, 0, ang))
+            box(f'arc_rail_{i}', ch, (chord + 0.008, 0.03, 0.03), (mx, my, h + 0.015), rot=(0, 0, ang))
+        prev = (px, py)
+    cyl('post_left', ch, 0.02, h, (-w / 2, -0.02, h / 2))
+    cyl('post_right', ch, 0.02, h, (w / 2, -d + 0.02, h / 2))
+    box('rail_front', ch, (w + 0.03, 0.035, 0.035), (0, -d + 0.0175, h + 0.017))
+    if door == 'sliding':
+        _front_sliding(w, d, h, double=False)
+    elif door == 'dbl-sliding':
+        _front_sliding(w, d, h, double=True)
+    elif door == 'bifold':
+        _front_bifold(w, d, h, double=False)
+    elif door == 'dbl-bifold':
+        _front_bifold(w, d, h, double=True)
+    else:
+        _front_panel_or_gap(w, d, h, door)
+
+
+def _quadrant_full(w, d, h, door):
+    """Quadrant (fully rounded front corner) with the full door set."""
+    _corner_enclosure(w, d, h, door, rounded=True)
+    if door in ('dbl-sliding', 'dbl-bifold'):
+        # add second overlapping door layer on the arc chord
+        t = 0.008
+        ch = m_chrome()
+        box('door_overlap', m_glass(), (w * 0.4, t, h - 0.06),
+            (w * 0.05, -d + 0.06, h / 2), rot=(0, 0, math.radians(-38)))
+
+
 def build_enc_corner_sq_sliding(w=0.90, d=0.90, h=1.90): _corner_enclosure(w, d, h, 'sliding', False)
+def build_enc_corner_sq_dblbifold(w=0.90, d=0.90, h=1.90): _corner_enclosure(w, d, h, 'dbl-bifold', False)
+def build_enc_corner_rnd_sliding(w=0.90, d=0.90, h=1.90): _enc_rounded_corner(w, d, h, 'sliding')
+def build_enc_corner_rnd_dsliding(w=0.90, d=0.90, h=1.90): _enc_rounded_corner(w, d, h, 'dbl-sliding')
+def build_enc_corner_rnd_bifold(w=0.90, d=0.90, h=1.90): _enc_rounded_corner(w, d, h, 'bifold')
+def build_enc_corner_rnd_dblbifold(w=0.90, d=0.90, h=1.90): _enc_rounded_corner(w, d, h, 'dbl-bifold')
+def build_enc_corner_rnd_open(w=0.90, d=0.90, h=1.90): _enc_rounded_corner(w, d, h, 'open')
+def build_enc_corner_rnd_panel(w=0.90, d=0.90, h=1.90): _enc_rounded_corner(w, d, h, 'panel')
+def build_enc_quadrant_dsliding(w=0.90, d=0.90, h=1.90): _quadrant_full(w, d, h, 'dbl-sliding')
+def build_enc_quadrant_dblbifold(w=0.90, d=0.90, h=1.90): _quadrant_full(w, d, h, 'dbl-bifold')
+def build_enc_quadrant_panel(w=0.90, d=0.90, h=1.90): _quadrant_full(w, d, h, 'panel')
+def build_enc_midwall_fold(w=1.20, d=0.90, h=1.90): _midwall_enclosure(w, d, h, 'bifold')
+def build_enc_midwall_dsliding(w=1.20, d=0.90, h=1.90): _midwall_enclosure(w, d, h, 'dbl-sliding')
+def build_enc_midwall_panel(w=1.20, d=0.90, h=1.90): _midwall_enclosure(w, d, h, 'panel')
+def build_enc_dooronly_dsliding(w=0.90, h=1.90): _door_only(w, h, 'dbl-sliding')
+def build_enc_dooronly_panel(w=0.90, h=1.90): _door_only(w, h, 'panel')
 def build_enc_corner_sq_dsliding(w=0.90, d=0.90, h=1.90): _corner_enclosure(w, d, h, 'double-sliding', False)
 def build_enc_corner_sq_bifold(w=0.90, d=0.90, h=1.90): _corner_enclosure(w, d, h, 'bifold', False)
 def build_enc_corner_sq_open(w=0.90, d=0.90, h=1.90): _corner_enclosure(w, d, h, 'open', False)
@@ -728,8 +848,14 @@ def _midwall_enclosure(w, d, h, door):
     _enc_frame(w, d, h)
     if door == 'sliding':
         _front_sliding(w, d, h, double=False)
-    elif door == 'double-bifold':
+    elif door in ('double-bifold', 'dbl-bifold'):
         _front_bifold(w, d, h, double=True)
+    elif door == 'bifold':
+        _front_bifold(w, d, h, double=False)
+    elif door == 'dbl-sliding':
+        _front_sliding(w, d, h, double=True)
+    elif door == 'panel':
+        _glass_panel('panel_front', w, h - 0.02, 0.008, loc=(0, -d + 0.004, h / 2))
     # 'open': no front glass
 
 
@@ -748,8 +874,14 @@ def _door_only(w, h, door):
         _glass_panel('door_fixed', w * 0.5, h - 0.04, 0.008, loc=(-w * 0.24, -0.02, h / 2))
         _glass_panel('door_slide', w * 0.52, h - 0.04, 0.008, loc=(w * 0.2, -0.05, h / 2))
         box('handle', ch, (0.02, 0.03, 0.3), (w * 0.38, -0.08, h * 0.5))
+    elif door == 'dbl-sliding':
+        _glass_panel('door_l', w * 0.52, h - 0.04, 0.008, loc=(-w * 0.24, -0.02, h / 2))
+        _glass_panel('door_r', w * 0.52, h - 0.04, 0.008, loc=(w * 0.24, -0.05, h / 2))
+        box('handle', ch, (0.02, 0.03, 0.3), (0.0, -0.08, h * 0.5))
     elif door == 'bifold':
         _front_bifold(w, 0.04, h, double=False)
+    elif door == 'panel':
+        _glass_panel('panel_front', w, h - 0.02, 0.008, loc=(0, -0.02, h / 2))
     else:  # gap: just a header rail, no glass
         pass
 
@@ -763,12 +895,19 @@ def build_enc_dooronly_gap(w=0.90, h=1.90): _door_only(w, h, 'gap')
 # TRAYS (3) — corner radius + drain position are per-build params
 # =====================================================================
 
-def _tray(w, d, h, corner_r=0.0, drain='center'):
+def _tray(w, d, h, corner_r=0.0, drain='center', double_corner=False):
     if corner_r > 0:
         r = corner_r
         box('tray_back', m_stone(), (w, d - r, h), (0, -(d - r) / 2, h / 2), bevel=0.008)
-        box('tray_side', m_stone(), (w - r, r, h), (-r / 2, -(d - r) - r / 2, h / 2), bevel=0.008)
-        quarter_disc('tray_corner', m_stone(), r, h, center=(w / 2 - r, -(d - r)))
+        if double_corner:
+            # straight middle strip + quarter discs at BOTH front corners
+            # (disc occupies [Cx, Cx+r] x [Cy-r, Cy] around its centre)
+            box('tray_mid', m_stone(), (w - 2 * r, r, h), (0, -(d - r) - r / 2, h / 2), bevel=0.008)
+            quarter_disc('tray_corner_l', m_stone(), r, h, center=(-w / 2, -(d - r)))
+            quarter_disc('tray_corner_r', m_stone(), r, h, center=(w / 2 - r, -(d - r)))
+        else:
+            box('tray_side', m_stone(), (w - r, r, h), (-r / 2, -(d - r) - r / 2, h / 2), bevel=0.008)
+            quarter_disc('tray_corner', m_stone(), r, h, center=(w / 2 - r, -(d - r)))
     else:
         box('tray', m_stone(), (w, d, h), (0, -d / 2, h / 2), bevel=0.01)
     # recessed top
@@ -786,6 +925,14 @@ def _tray(w, d, h, corner_r=0.0, drain='center'):
 def build_tray_square(w=0.90, h=0.045, d=0.90): _tray(w, d, h, corner_r=0.0, drain='center')
 def build_tray_rect(w=1.20, h=0.045, d=0.80): _tray(w, d, h, corner_r=0.0, drain='center')
 def build_tray_quadrant(w=0.90, h=0.045, d=0.90): _tray(w, d, h, corner_r=min(w, d) * 0.95, drain='corner')
+def build_tray_sq_curved1(w=0.90, h=0.045, d=0.90): _tray(w, d, h, corner_r=min(w, d) * 0.55, drain='center')
+def build_tray_sq_curved2(w=0.90, h=0.045, d=0.90): _tray(w, d, h, corner_r=min(w, d) * 0.30, drain='center', double_corner=True)
+def build_tray_sq_waste_corner(w=0.90, h=0.045, d=0.90): _tray(w, d, h, corner_r=0.0, drain='corner')
+def build_tray_sq_waste_edge(w=0.90, h=0.045, d=0.90): _tray(w, d, h, corner_r=0.0, drain='edge')
+def build_tray_rect_curved1(w=1.20, h=0.045, d=0.80): _tray(w, d, h, corner_r=min(w, d) * 0.45, drain='center')
+def build_tray_rect_curved2(w=1.20, h=0.045, d=0.80): _tray(w, d, h, corner_r=min(w, d) * 0.30, drain='center', double_corner=True)
+def build_tray_rect_waste_corner(w=1.20, h=0.045, d=0.80): _tray(w, d, h, corner_r=0.0, drain='corner')
+def build_tray_rect_waste_edge(w=1.20, h=0.045, d=0.80): _tray(w, d, h, corner_r=0.0, drain='edge')
 
 
 # =====================================================================
@@ -1033,13 +1180,45 @@ def _led_border(w, h, shape, margin):
 def build_mirror_rect(w=0.60, h=0.80): 
     box('back', m_black(), (w, 0.02, h), (0, -0.01, h / 2))
     _mirror_face(w, h, 'rect')
+def _led_sides(w, h):
+    """LED strips on left+right edges only."""
+    bt = 0.012
+    iw = w - 0.04
+    box('led_l', m_led(), (bt, 0.01, h - 0.05), (-iw / 2 + bt / 2, -0.016, h / 2))
+    box('led_r', m_led(), (bt, 0.01, h - 0.05), (iw / 2 - bt / 2, -0.016, h / 2))
+
+
+def build_mirror_square(w=0.55, h=0.55):
+    box('back', m_black(), (w, 0.02, h), (0, -0.01, h / 2))
+    _mirror_face(w, h, 'rect')
+def build_mirror_square_rounded(w=0.55, h=0.55):
+    box('back', m_black(), (w, 0.02, h), (0, -0.01, h / 2), bevel=0.05)
+    _mirror_face(w, h, 'rect')
 def build_mirror_rect_led(w=0.60, h=0.80):
     box('back', m_black(), (w, 0.02, h), (0, -0.01, h / 2))
     _mirror_face(w, h, 'rect'); _led_border(w, h, 'rect', margin=False)
+def build_mirror_rect_led_margin(w=0.60, h=0.80):
+    box('back', m_black(), (w, 0.02, h), (0, -0.01, h / 2))
+    _mirror_face(w, h, 'rect'); _led_border(w, h, 'rect', margin=True)
+def build_mirror_rect_led_sides(w=0.60, h=0.80):
+    box('back', m_black(), (w, 0.02, h), (0, -0.01, h / 2))
+    _mirror_face(w, h, 'rect'); _led_sides(w, h)
+def build_mirror_square_led_edge(w=0.55, h=0.55):
+    box('back', m_black(), (w, 0.02, h), (0, -0.01, h / 2))
+    _mirror_face(w, h, 'rect'); _led_border(w, h, 'rect', margin=False)
+def build_mirror_square_led_margin(w=0.55, h=0.55):
+    box('back', m_black(), (w, 0.02, h), (0, -0.01, h / 2))
+    _mirror_face(w, h, 'rect'); _led_border(w, h, 'rect', margin=True)
+def build_mirror_square_led_sides(w=0.55, h=0.55):
+    box('back', m_black(), (w, 0.02, h), (0, -0.01, h / 2))
+    _mirror_face(w, h, 'rect'); _led_sides(w, h)
 def build_mirror_round(w=0.60, h=0.60):
     cyl('back', m_black(), w / 2, 0.02, (0, -0.01, h / 2), rot=(math.pi / 2, 0, 0))
     _mirror_face(w, h, 'round')
 def build_mirror_round_led(w=0.60, h=0.60):
+    cyl('back', m_black(), w / 2, 0.02, (0, -0.01, h / 2), rot=(math.pi / 2, 0, 0))
+    _mirror_face(w, h, 'round'); _led_border(w, h, 'round', margin=False)
+def build_mirror_round_led_margin(w=0.60, h=0.60):
     cyl('back', m_black(), w / 2, 0.02, (0, -0.01, h / 2), rot=(math.pi / 2, 0, 0))
     _mirror_face(w, h, 'round'); _led_border(w, h, 'round', margin=True)
 def build_mirror_oval(w=0.50, h=0.80):
@@ -1052,6 +1231,22 @@ def build_mirror_oval_led(w=0.50, h=0.80):
     o.scale = (w, h, 1)
     bpy.ops.object.transform_apply(scale=True)
     _mirror_face(w, h, 'oval'); _led_border(w, h, 'oval', margin=True)
+def build_mirror_oval_led_edge(w=0.50, h=0.80):
+    o = cyl('back', m_black(), 0.5, 0.02, (0, -0.01, h / 2), rot=(math.pi / 2, 0, 0))
+    o.scale = (w, h, 1)
+    bpy.ops.object.transform_apply(scale=True)
+    _mirror_face(w, h, 'oval'); _led_border(w, h, 'oval', margin=False)
+def build_mirror_oval_led_sides(w=0.50, h=0.80):
+    o = cyl('back', m_black(), 0.5, 0.02, (0, -0.01, h / 2), rot=(math.pi / 2, 0, 0))
+    o.scale = (w, h, 1)
+    bpy.ops.object.transform_apply(scale=True)
+    _mirror_face(w, h, 'oval'); _led_sides(w, h)
+def build_vanity_standing_1drawer(w=0.60, h=0.85, d=0.46): _vanity_body(w, h, d, False, 1, False)
+def build_vanity_standing_3drawer(w=0.80, h=0.85, d=0.46): _vanity_body(w, h, d, False, 3, False)
+def build_vanity_standing_4drawer(w=0.90, h=0.85, d=0.46): _vanity_body(w, h, d, False, 4, False)
+def build_vanity_floating_1drawer(w=0.60, h=0.50, d=0.46): _vanity_body(w, h, d, True, 1, False)
+def build_vanity_floating_3drawer(w=0.80, h=0.60, d=0.46): _vanity_body(w, h, d, True, 3, False)
+def build_vanity_floating_4drawer(w=0.90, h=0.65, d=0.46): _vanity_body(w, h, d, True, 4, False)
 
 
 def _cabinet(w, h, d, doors):
@@ -1255,10 +1450,33 @@ BUILDERS = {
     'enc-dooronly-sliding': build_enc_dooronly_sliding,
     'enc-dooronly-bifold': build_enc_dooronly_bifold,
     'enc-dooronly-gap': build_enc_dooronly_gap,
-    # trays (3)
+    'enc-corner-sq-dblbifold': build_enc_corner_sq_dblbifold,
+    'enc-corner-rnd-sliding': build_enc_corner_rnd_sliding,
+    'enc-corner-rnd-dsliding': build_enc_corner_rnd_dsliding,
+    'enc-corner-rnd-bifold': build_enc_corner_rnd_bifold,
+    'enc-corner-rnd-dblbifold': build_enc_corner_rnd_dblbifold,
+    'enc-corner-rnd-open': build_enc_corner_rnd_open,
+    'enc-corner-rnd-panel': build_enc_corner_rnd_panel,
+    'enc-quadrant-dsliding': build_enc_quadrant_dsliding,
+    'enc-quadrant-dblbifold': build_enc_quadrant_dblbifold,
+    'enc-quadrant-panel': build_enc_quadrant_panel,
+    'enc-midwall-fold': build_enc_midwall_fold,
+    'enc-midwall-dsliding': build_enc_midwall_dsliding,
+    'enc-midwall-panel': build_enc_midwall_panel,
+    'enc-dooronly-dsliding': build_enc_dooronly_dsliding,
+    'enc-dooronly-panel': build_enc_dooronly_panel,
+    # trays (11)
     'tray-square': build_tray_square,
     'tray-rect': build_tray_rect,
     'tray-quadrant': build_tray_quadrant,
+    'tray-sq-curved1': build_tray_sq_curved1,
+    'tray-sq-curved2': build_tray_sq_curved2,
+    'tray-sq-waste-corner': build_tray_sq_waste_corner,
+    'tray-sq-waste-edge': build_tray_sq_waste_edge,
+    'tray-rect-curved1': build_tray_rect_curved1,
+    'tray-rect-curved2': build_tray_rect_curved2,
+    'tray-rect-waste-corner': build_tray_rect_waste_corner,
+    'tray-rect-waste-edge': build_tray_rect_waste_edge,
     # toilets (6)
     'toilet-close-coupled': build_toilet_close_coupled,
     'toilet-btw': build_toilet_btw,
@@ -1277,18 +1495,34 @@ BUILDERS = {
     'vanity-standing-drawers': build_vanity_standing_drawers,
     'vanity-standing-cupboard': build_vanity_standing_cupboard,
     'vanity-standing-mix': build_vanity_standing_mix,
+    'vanity-standing-1drawer': build_vanity_standing_1drawer,
+    'vanity-standing-3drawer': build_vanity_standing_3drawer,
+    'vanity-standing-4drawer': build_vanity_standing_4drawer,
     'vanity-floating-drawers': build_vanity_floating_drawers,
     'vanity-floating-cupboard': build_vanity_floating_cupboard,
+    'vanity-floating-1drawer': build_vanity_floating_1drawer,
+    'vanity-floating-3drawer': build_vanity_floating_3drawer,
+    'vanity-floating-4drawer': build_vanity_floating_4drawer,
     'vanity-curved': build_vanity_curved,
     'vanity-combined-btw': build_vanity_combined_btw,
     'vanity-basin-on-top': build_vanity_basin_on_top,
-    # mirrors (10)
+    # mirrors + cabinets (16)
     'mirror-rect': build_mirror_rect,
+    'mirror-square': build_mirror_square,
+    'mirror-square-rounded': build_mirror_square_rounded,
     'mirror-rect-led': build_mirror_rect_led,
+    'mirror-rect-led-margin': build_mirror_rect_led_margin,
+    'mirror-rect-led-sides': build_mirror_rect_led_sides,
+    'mirror-square-led-edge': build_mirror_square_led_edge,
+    'mirror-square-led-margin': build_mirror_square_led_margin,
+    'mirror-square-led-sides': build_mirror_square_led_sides,
     'mirror-round': build_mirror_round,
     'mirror-round-led': build_mirror_round_led,
+    'mirror-round-led-margin': build_mirror_round_led_margin,
     'mirror-oval': build_mirror_oval,
     'mirror-oval-led': build_mirror_oval_led,
+    'mirror-oval-led-edge': build_mirror_oval_led_edge,
+    'mirror-oval-led-sides': build_mirror_oval_led_sides,
     'cabinet-1door': build_cabinet_1door,
     'cabinet-2door': build_cabinet_2door,
     'cabinet-3door': build_cabinet_3door,
