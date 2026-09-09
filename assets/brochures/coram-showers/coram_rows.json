@@ -1,0 +1,1442 @@
+[
+ {
+  "page": 9,
+  "name": "Column 700x2000mm",
+  "sku": "CORAM-ASC70CUC",
+  "price_gbp": 803.83,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 700,
+   "height_mm": 2000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "700x2000mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 9,
+  "name": "Column 800x2000mm",
+  "sku": "CORAM-ASC80CUC",
+  "price_gbp": 908.5,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 800,
+   "height_mm": 2000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800x2000mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 9,
+  "name": "Column 900x2000mm",
+  "sku": "CORAM-ASC90CUC",
+  "price_gbp": 932.76,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 900,
+   "height_mm": 2000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "900x2000mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 9,
+  "name": "Column 1000x2000mm",
+  "sku": "CORAM-ASC10CUC",
+  "price_gbp": 999.5,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1000,
+   "height_mm": 2000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000x2000mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 9,
+  "name": "Column 1200x2000mm",
+  "sku": "CORAM-ASC12CUC",
+  "price_gbp": 1060.16,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1200,
+   "height_mm": 2000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200x2000mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 9,
+  "name": "Column 159x191mm",
+  "sku": "CORAM-IASCT2000",
+  "price_gbp": 191.41,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 159,
+   "height_mm": 191,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "159x191mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 11,
+  "name": "Pivot Door Chrome 760x2000mm",
+  "sku": "CORAM-P8PI76CUC",
+  "price_gbp": 539.87,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 760,
+   "height_mm": 2000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "760x2000mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 11,
+  "name": "Pivot Door Chrome 800x2000mm",
+  "sku": "CORAM-P8PI80CUC",
+  "price_gbp": 627.64,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 800,
+   "height_mm": 2000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800x2000mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 11,
+  "name": "Pivot Door Chrome 900x2000mm",
+  "sku": "CORAM-P8PI90CUC",
+  "price_gbp": 602.8,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 900,
+   "height_mm": 2000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "900x2000mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 11,
+  "name": "Pivot Door Chrome 1000x2000mm",
+  "sku": "CORAM-P8PI10CUC",
+  "price_gbp": 711.18,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1000,
+   "height_mm": 2000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000x2000mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "Sliding Door Chrome 700x2000mm",
+  "sku": "CORAM-P8SP70CUC",
+  "price_gbp": 361.51,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 700,
+   "height_mm": 2000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "700x2000mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "Sliding Door Chrome 760x2000mm",
+  "sku": "CORAM-P8SP76CUC",
+  "price_gbp": 361.51,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 760,
+   "height_mm": 2000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "760x2000mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "Sliding Door Chrome 800x2000mm",
+  "sku": "CORAM-P8SP80CUC",
+  "price_gbp": 361.51,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 800,
+   "height_mm": 2000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800x2000mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "Sliding Door Chrome 900x2000mm",
+  "sku": "CORAM-P8SP90CUC",
+  "price_gbp": 444.16,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 900,
+   "height_mm": 2000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "900x2000mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "Sliding Door Chrome 1000x2000mm",
+  "sku": "CORAM-P8SL10CUC",
+  "price_gbp": 663.31,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1000,
+   "height_mm": 2000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000x2000mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "Sliding Door Chrome",
+  "sku": "CORAM-P8ES20C",
+  "price_gbp": 54.82,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": null,
+   "height_mm": null,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "Sliding Door Chrome 1100x2000mm",
+  "sku": "CORAM-P8SL11CUC",
+  "price_gbp": 681.54,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1100,
+   "height_mm": 2000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1100x2000mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "Sliding Door Chrome 1200x2000mm",
+  "sku": "CORAM-P8SL12CUC",
+  "price_gbp": 54.82,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1200,
+   "height_mm": 2000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200x2000mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "Sliding Door Chrome 1400x2000mm",
+  "sku": "CORAM-P8SL14CUC",
+  "price_gbp": 827.24,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1400,
+   "height_mm": 2000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1400x2000mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "Sliding Door Chrome",
+  "sku": "CORAM-OPFBW0C",
+  "price_gbp": 59.27,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": null,
+   "height_mm": null,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 13,
+  "name": "Specification as standard 700x1900mm",
+  "sku": "CORAM-O6PI70CUC",
+  "price_gbp": 370.31,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 700,
+   "height_mm": 1900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "700x1900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 13,
+  "name": "Specification as standard 760x1900mm",
+  "sku": "CORAM-O6PI76CUC",
+  "price_gbp": 379.9,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 760,
+   "height_mm": 1900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "760x1900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 13,
+  "name": "Specification as standard 800x1900mm",
+  "sku": "CORAM-O6PI80CUC",
+  "price_gbp": 383.68,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 800,
+   "height_mm": 1900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800x1900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 13,
+  "name": "Specification as standard 900x1900mm",
+  "sku": "CORAM-O6PI90CUC",
+  "price_gbp": 480.95,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 900,
+   "height_mm": 1900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "900x1900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 13,
+  "name": "Specification as standard 1000x1900mm",
+  "sku": "CORAM-O6PI10CUC",
+  "price_gbp": 560.88,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1000,
+   "height_mm": 1900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000x1900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 14,
+  "name": "Quadrant Door 760x1900mm",
+  "sku": "CORAM-O6BF76CUC",
+  "price_gbp": 635.48,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 760,
+   "height_mm": 1900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "760x1900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 14,
+  "name": "Quadrant Door 800x1900mm",
+  "sku": "CORAM-O6BF80CUC",
+  "price_gbp": 679.8,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 800,
+   "height_mm": 1900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800x1900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 14,
+  "name": "Quadrant Door 900x1900mm",
+  "sku": "CORAM-O6BF90CUC",
+  "price_gbp": 697.58,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 900,
+   "height_mm": 1900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "900x1900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 14,
+  "name": "Quadrant Door 1000x1900mm",
+  "sku": "CORAM-O6BF10CUC",
+  "price_gbp": 664.0,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1000,
+   "height_mm": 1900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000x1900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 15,
+  "name": "Sliding Door 700x1900mm",
+  "sku": "CORAM-O6SP70CUC",
+  "price_gbp": 268.91,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 700,
+   "height_mm": 1900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "700x1900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 15,
+  "name": "Sliding Door 760x1900mm",
+  "sku": "CORAM-O6SP76CUC",
+  "price_gbp": 268.91,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 760,
+   "height_mm": 1900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "760x1900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 15,
+  "name": "Sliding Door 800x1900mm",
+  "sku": "CORAM-O6SP80CUC",
+  "price_gbp": 271.61,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 800,
+   "height_mm": 1900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800x1900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 15,
+  "name": "Sliding Door 900x1900mm",
+  "sku": "CORAM-O6SP90CUC",
+  "price_gbp": 327.83,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 900,
+   "height_mm": 1900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "900x1900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 15,
+  "name": "Sliding Door 1000x1900mm",
+  "sku": "CORAM-O6SL10CUC",
+  "price_gbp": 544.92,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1000,
+   "height_mm": 1900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000x1900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 15,
+  "name": "Sliding Door",
+  "sku": "CORAM-O6ES20C",
+  "price_gbp": 52.32,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": null,
+   "height_mm": null,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 15,
+  "name": "Sliding Door 1100x1900mm",
+  "sku": "CORAM-O6SL11CUC",
+  "price_gbp": 556.57,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1100,
+   "height_mm": 1900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1100x1900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 15,
+  "name": "Sliding Door 1200x1900mm",
+  "sku": "CORAM-O6SL12CUC",
+  "price_gbp": 582.94,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1200,
+   "height_mm": 1900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200x1900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 15,
+  "name": "Sliding Door 1400x1900mm",
+  "sku": "CORAM-O6SL14CUC",
+  "price_gbp": 654.68,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1400,
+   "height_mm": 1900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1400x1900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 17,
+  "name": "Bi-Fold Door 700x1800mm",
+  "sku": "CORAM-GB5PI70CUC",
+  "price_gbp": 430.08,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 700,
+   "height_mm": 1800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "700x1800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 17,
+  "name": "Bi-Fold Door 760x1800mm",
+  "sku": "CORAM-GB5PI76CUC",
+  "price_gbp": 445.44,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 760,
+   "height_mm": 1800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "760x1800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 17,
+  "name": "Bi-Fold Door 800x1800mm",
+  "sku": "CORAM-GB5PI80CUC",
+  "price_gbp": 460.8,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 800,
+   "height_mm": 1800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800x1800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 17,
+  "name": "Bi-Fold Door 900x1800mm",
+  "sku": "CORAM-GB5PI90CUC",
+  "price_gbp": 476.16,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 900,
+   "height_mm": 1800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "900x1800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 17,
+  "name": "Bi-Fold Door 1000x1800mm",
+  "sku": "CORAM-GB5BF10CUC",
+  "price_gbp": 491.52,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1000,
+   "height_mm": 1800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000x1800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 18,
+  "name": "Side Panel & Accessories 700x1800mm",
+  "sku": "CORAM-GB5SP70CUC",
+  "price_gbp": 199.68,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 700,
+   "height_mm": 1800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "700x1800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 18,
+  "name": "Side Panel & Accessories 760x1800mm",
+  "sku": "CORAM-GB5SP76CUC",
+  "price_gbp": 207.36,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 760,
+   "height_mm": 1800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "760x1800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 18,
+  "name": "Side Panel & Accessories 1000x1800mm",
+  "sku": "CORAM-GB5SL10CUC",
+  "price_gbp": 399.36,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1000,
+   "height_mm": 1800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000x1800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 18,
+  "name": "Side Panel & Accessories 800x1800mm",
+  "sku": "CORAM-GB5SP80CUC",
+  "price_gbp": 215.04,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 800,
+   "height_mm": 1800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800x1800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 18,
+  "name": "Side Panel & Accessories 1200x1800mm",
+  "sku": "CORAM-GB5SL12CUC",
+  "price_gbp": 430.08,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1200,
+   "height_mm": 1800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200x1800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 18,
+  "name": "Side Panel & Accessories 900x1800mm",
+  "sku": "CORAM-GB5SP90CUC",
+  "price_gbp": 230.4,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 900,
+   "height_mm": 1800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "900x1800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 18,
+  "name": "Side Panel & Accessories",
+  "sku": "CORAM-GB5ES20C",
+  "price_gbp": 29.77,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": null,
+   "height_mm": null,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 18,
+  "name": "Side Panel & Accessories",
+  "sku": "CORAM-GB5FBW2C",
+  "price_gbp": 76.56,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": null,
+   "height_mm": null,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 20,
+  "name": "Codes and prices 176x211mm",
+  "sku": "CORAM-SFR80CUC",
+  "price_gbp": 211.24,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 176,
+   "height_mm": 211,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "176x211mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 20,
+  "name": "Codes and prices 165x198mm",
+  "sku": "CORAM-SFR55CUC",
+  "price_gbp": 211.2,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 165,
+   "height_mm": 198,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "165x198mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 21,
+  "name": "Code and prices 355x426mm",
+  "sku": "CORAM-SFR105CUC",
+  "price_gbp": 426.0,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 355,
+   "height_mm": 426,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "355x426mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 21,
+  "name": "Code and prices 340x408mm",
+  "sku": "CORAM-SFR802CUC",
+  "price_gbp": 426.0,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 340,
+   "height_mm": 408,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "340x408mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 22,
+  "name": "Code and prices 336x404mm",
+  "sku": "CORAM-SFD4CUC",
+  "price_gbp": 192.0,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 336,
+   "height_mm": 404,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "336x404mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 22,
+  "name": "Code and prices 355x427mm",
+  "sku": "CORAM-SFD5CUC",
+  "price_gbp": 427.0,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 355,
+   "height_mm": 427,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "355x427mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "SHOWER TRAYS 1700x482mm",
+  "sku": "CORAM-YA1793WHI",
+  "price_gbp": 578.4,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1700,
+   "height_mm": 482,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1700x482mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Flat Top Trays 800x226mm",
+  "sku": "CORAM-YAQ802WHI",
+  "price_gbp": 271.2,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 800,
+   "height_mm": 226,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800x226mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Rectangular Shower Trays 900x244mm",
+  "sku": "CORAM-YAQ902WHI",
+  "price_gbp": 292.8,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 900,
+   "height_mm": 244,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "900x244mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Universal 1000x800mm",
+  "sku": "CORAM-YA108WHI",
+  "price_gbp": 283.09,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1000,
+   "height_mm": 800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000x800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Universal 1200x800mm",
+  "sku": "CORAM-YA128WHI",
+  "price_gbp": 310.87,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1200,
+   "height_mm": 800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200x800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Universal 1200x900mm",
+  "sku": "CORAM-YA129WHI",
+  "price_gbp": 321.46,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1200,
+   "height_mm": 900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200x900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Universal 1400x800mm",
+  "sku": "CORAM-YA148WHI",
+  "price_gbp": 354.53,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1400,
+   "height_mm": 800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1400x800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Universal 1700x800mm",
+  "sku": "CORAM-YA178WHI",
+  "price_gbp": 461.69,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1700,
+   "height_mm": 800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1700x800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Universal 1700x900mm",
+  "sku": "CORAM-YA179WHI",
+  "price_gbp": 494.76,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1700,
+   "height_mm": 900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1700x900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Square Shower Trays 760x760mm",
+  "sku": "CORAM-YA76WHI",
+  "price_gbp": 227.53,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 760,
+   "height_mm": 760,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "760x760mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Square Shower Trays 760x760mm",
+  "sku": "CORAM-YA764WHI",
+  "price_gbp": 228.0,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 760,
+   "height_mm": 760,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "760x760mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Square Shower Trays 800x800mm",
+  "sku": "CORAM-YA80WHI",
+  "price_gbp": 243.41,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 800,
+   "height_mm": 800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800x800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Square Shower Trays 800x800mm",
+  "sku": "CORAM-YA804WHI",
+  "price_gbp": 244.8,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 800,
+   "height_mm": 800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800x800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Square Shower Trays 900x900mm",
+  "sku": "CORAM-YA90WHI",
+  "price_gbp": 265.9,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 900,
+   "height_mm": 900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "900x900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Square Shower Trays 900x900mm",
+  "sku": "CORAM-YA904WHI",
+  "price_gbp": 288.0,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 900,
+   "height_mm": 900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "900x900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Quadrant Shower Trays 800x800mm",
+  "sku": "CORAM-YAQ80WHI",
+  "price_gbp": 278.4,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 800,
+   "height_mm": 800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800x800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Quadrant Shower Trays 900x900mm",
+  "sku": "CORAM-YAQ90WHI",
+  "price_gbp": 304.8,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 900,
+   "height_mm": 900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "900x900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Quadrant Shower Trays 1200x760mm",
+  "sku": "CORAM-YA1274WHI",
+  "price_gbp": 312.0,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1200,
+   "height_mm": 760,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200x760mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Off-set Quadrant Shower Trays 1200x800mm",
+  "sku": "CORAM-YA1284WHI",
+  "price_gbp": 336.0,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1200,
+   "height_mm": 800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200x800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Off-set Quadrant Shower Trays 1200x900mm",
+  "sku": "CORAM-YA1294WHI",
+  "price_gbp": 348.0,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1200,
+   "height_mm": 900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200x900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Off-set Quadrant Shower Trays 1400x800mm",
+  "sku": "CORAM-YA1484WHI",
+  "price_gbp": 398.4,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1400,
+   "height_mm": 800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1400x800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Off-set Quadrant Shower Trays 1000x800mm",
+  "sku": "CORAM-YAQ108LWHI",
+  "price_gbp": 283.09,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1000,
+   "height_mm": 800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000x800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Off-set Quadrant Shower Trays 1000x800mm",
+  "sku": "CORAM-YAQ108RWHI",
+  "price_gbp": 283.09,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1000,
+   "height_mm": 800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000x800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Off-set Quadrant Shower Trays 1200x800mm",
+  "sku": "CORAM-YAQ128LWHI",
+  "price_gbp": 305.58,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1200,
+   "height_mm": 800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200x800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Off-set Quadrant Shower Trays 1200x800mm",
+  "sku": "CORAM-YAQ128RWHI",
+  "price_gbp": 305.58,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1200,
+   "height_mm": 800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200x800mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Off-set Quadrant Shower Trays 1200x900mm",
+  "sku": "CORAM-YAQ129LWHI",
+  "price_gbp": 321.46,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1200,
+   "height_mm": 900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200x900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Off-set Quadrant Shower Trays 1200x900mm",
+  "sku": "CORAM-YAQ129RWHI",
+  "price_gbp": 321.46,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 1200,
+   "height_mm": 900,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200x900mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 25,
+  "name": "Riser Kits and Waste 104x125mm",
+  "sku": "CORAM-RK179WHI",
+  "price_gbp": 125.68,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 104,
+   "height_mm": 125,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "104x125mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 25,
+  "name": "Riser Kits and Waste 114x137mm",
+  "sku": "CORAM-RKQ129WHI",
+  "price_gbp": 137.58,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": 114,
+   "height_mm": 137,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "114x137mm",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 25,
+  "name": "Riser Kits and Waste",
+  "sku": "CORAM-STA90TRAP",
+  "price_gbp": 66.14,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": null,
+   "height_mm": null,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 25,
+  "name": "Riser Kits and Waste",
+  "sku": "CORAM-US12350",
+  "price_gbp": 52.98,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": null,
+   "height_mm": null,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 28,
+  "name": "Towel Ring",
+  "sku": "CORAM-B3099CHR",
+  "price_gbp": 46.01,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": null,
+   "height_mm": null,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "showering/shower-screens",
+  "image": null
+ },
+ {
+  "page": 28,
+  "name": "Toilet Roll Holder",
+  "sku": "CORAM-B3090CHR",
+  "price_gbp": 81.43,
+  "price_note": "inc VAT",
+  "dims": {
+   "width_mm": null,
+   "height_mm": null,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "showering/shower-screens",
+  "image": null
+ }
+]

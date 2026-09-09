@@ -1,0 +1,118 @@
+
+=== kaldewei (live) ===
+2026-08-05 16:21:27,139 INFO  scraper.vendor: [kaldewei] skipping 0 already-scraped URLs (mode=existing)
+2026-08-05 16:21:27,142 INFO  scraper.vendor: [kaldewei] crawling category: https://www.kaldewei.co.uk/sitemap.xml
+2026-08-05 16:21:32,600 INFO  scraper.vendor:   NEW NUIO DUO | £None | baths
+2026-08-05 16:21:33,583 INFO  scraper.vendor:   NEW NUIO DUO ZEN Edition | £None | baths
+2026-08-05 16:21:34,929 INFO  scraper.vendor:   NEW MEISTERSTÜCK CLASSIC DUO OVAL | £None | baths
+2026-08-05 16:21:36,163 INFO  scraper.vendor:   NEW PURO NEXT DUO | £None | baths
+2026-08-05 16:21:37,234 INFO  scraper.vendor:   NEW PURO NEXT (STAR) | £None | baths
+2026-08-05 16:21:38,730 INFO  scraper.vendor:   NEW PURO NEXT COMBI | £None | baths
+2026-08-05 16:21:40,217 INFO  scraper.vendor:   NEW SANIFORM (STAR) | £None | baths
+2026-08-05 16:21:41,459 INFO  scraper.vendor:   NEW CONODUO freestanding | £None | baths
+2026-08-05 16:21:42,992 INFO  scraper.vendor:   NEW Meisterstück OYO DUO | £None | baths
+2026-08-05 16:21:44,398 INFO  scraper.vendor:   NEW CLASSIC DUO oval | £None | baths
+2026-08-05 16:21:45,957 INFO  scraper.vendor:   NEW Classic Duo Oval freestanding | £None | baths
+2026-08-05 16:21:47,121 INFO  scraper.vendor:   NEW Meisterstück CENTRO DUO OVAL | £None | baths
+2026-08-05 16:21:47,685 INFO  scraper.vendor:   NEW Meisterstücke | £None | baths
+2026-08-05 16:21:48,438 INFO  scraper.vendor:   NEW Meisterstücke | £None | baths
+2026-08-05 16:21:49,128 INFO  scraper.vendor:   NEW Meisterstücke | £None | baths
+2026-08-05 16:21:50,046 INFO  scraper.vendor:   NEW Meisterstücke | £None | baths
+2026-08-05 16:21:51,765 INFO  scraper.vendor:   NEW Meisterstück CENTRO DUO 1 RIGHT | £None | baths
+2026-08-05 16:21:53,205 INFO  scraper.vendor:   NEW Meisterstück CENTRO DUO 1 LEFT | £None | baths
+2026-08-05 16:21:54,527 INFO  scraper.vendor:   NEW Meisterstück CENTRO DUO 2 | £None | baths
+2026-08-05 16:21:55,810 INFO  scraper.vendor:   NEW ASYMMETRIC DUO | £None | baths
+2026-08-05 16:21:57,548 INFO  scraper.vendor:   NEW CAYONO (STAR) | £None | baths
+2026-08-05 16:21:58,747 INFO  scraper.vendor:   NEW CAYONO DUO | £None | baths
+2026-08-05 16:21:59,960 INFO  scraper.vendor:   NEW CENTRO DUO | £None | baths
+2026-08-05 16:22:01,438 INFO  scraper.vendor:   NEW CENTRO DUO 1 left | £None | baths
+2026-08-05 16:22:02,753 INFO  scraper.vendor:   NEW CENTRO DUO 1 right | £None | baths
+2026-08-05 16:22:04,099 INFO  scraper.vendor:   NEW CENTRO DUO 2 | £None | baths
+2026-08-05 16:22:05,531 INFO  scraper.vendor:   NEW CENTRO DUO OVAL | £None | baths
+2026-08-05 16:22:07,173 INFO  scraper.vendor:   NEW CLASSIC DUO | £None | baths
+2026-08-05 16:22:08,378 INFO  scraper.vendor:   NEW CONODUO | £None | baths
+2026-08-05 16:22:09,337 INFO  scraper.vendor:   NEW DYNA (STAR) SET | £None | baths
+2026-08-05 16:22:10,393 INFO  scraper.vendor:   NEW ELLIPSO DUO | £None | baths
+2026-08-05 16:22:11,750 INFO  scraper.vendor:   NEW ELLIPSO DUO OVAL | £None | baths
+2026-08-05 16:22:12,795 INFO  scraper.vendor:   NEW ELLIPSO DUO OVAL freestanding | £None | baths
+2026-08-05 16:22:13,924 INFO  scraper.vendor:   NEW MINI (STAR) left | £None | baths
+2026-08-05 16:22:15,108 INFO  scraper.vendor:   NEW MINI (STAR) right | £None | baths
+2026-08-05 16:22:16,385 INFO  scraper.vendor:   NEW PLAZA DUO LEFT | £None | baths
+2026-08-05 16:22:18,123 INFO  scraper.vendor:   NEW PLAZA DUO RIGHT | £None | baths
+2026-08-05 16:22:19,101 INFO  scraper.vendor:   NEW PURO (STAR) | £None | baths
+2026-08-05 16:22:20,210 INFO  scraper.vendor:   NEW PURO DUO | £None | baths
+2026-08-05 16:22:21,358 INFO  scraper.vendor:   NEW PURO with side overflow | £None | baths
+2026-08-05 16:22:22,320 INFO  scraper.vendor:   NEW PURO SET WIDE LEFT | £None | baths
+2026-08-05 16:22:23,901 INFO  scraper.vendor:   NEW PURO SET WIDE RIGHT | £None | baths
+2026-08-05 16:22:25,060 INFO  scraper.vendor:   NEW SANIFORM PLUS (STAR) | £None | baths
+2026-08-05 16:22:26,222 INFO  scraper.vendor:   NEW SANIFORM V1-V4 (STAR) | £None | baths
+2026-08-05 16:22:27,618 INFO  scraper.vendor:   NEW SILENIO | £None | baths
+2026-08-05 16:22:28,752 INFO  scraper.vendor:   NEW VAIO (STAR) | £None | baths
+2026-08-05 16:22:30,368 INFO  scraper.vendor:   NEW VAIO 6 (STAR) | £None | baths
+2026-08-05 16:22:31,450 INFO  scraper.vendor:   NEW VAIO DUO | £None | baths
+2026-08-05 16:22:33,280 INFO  scraper.vendor:   NEW VAIO DUO 6 | £None | baths
+2026-08-05 16:22:34,552 INFO  scraper.vendor:   NEW VAIO DUO 8 | £None | baths
+2026-08-05 16:22:35,890 INFO  scraper.vendor:   NEW VAIO DUO OVAL | £None | baths
+2026-08-05 16:22:37,411 INFO  scraper.vendor:   NEW VAIO (STAR) SET | £None | baths
+2026-08-05 16:22:38,224 INFO  scraper.vendor:   NEW CALIMA | £None | showering/shower-trays
+2026-08-05 16:22:39,944 INFO  scraper.vendor:   NEW SUPERPLAN | £None | showering/shower-trays
+2026-08-05 16:22:41,040 INFO  scraper.vendor:   NEW SUPERPLAN ZERO | £None | showering/shower-trays
+2026-08-05 16:22:42,520 INFO  scraper.vendor:   NEW ARRONDO with apron | £None | showering/shower-trays
+2026-08-05 16:22:43,757 INFO  scraper.vendor:   NEW NEXSYS | £None | showering/shower-trays
+2026-08-05 16:22:44,985 INFO  scraper.vendor:   NEW CONOFLAT | £None | showering/shower-trays
+2026-08-05 16:22:46,293 INFO  scraper.vendor:   NEW CORNEZZA | £None | showering/shower-trays
+2026-08-05 16:22:47,779 INFO  scraper.vendor:   NEW SUPERPLAN CLASSIC | £None | showering/shower-trays
+2026-08-05 16:22:49,295 INFO  scraper.vendor:   NEW DUSCHPLAN | £None | showering/shower-trays
+2026-08-05 16:22:50,336 INFO  scraper.vendor:   NEW CAYONOPLAN | £None | showering/shower-trays
+2026-08-05 16:22:51,330 INFO  scraper.vendor:   NEW SANIDUSCH | £None | showering/shower-trays
+2026-08-05 16:22:52,526 INFO  scraper.vendor:   NEW ARRONDO | £None | showering/shower-trays
+2026-08-05 16:22:53,651 INFO  scraper.vendor:   NEW ZIRKON | £None | showering/shower-trays
+2026-08-05 16:22:54,652 INFO  scraper.vendor:   NEW AVELLINO WASHBOWL | £None | basins
+2026-08-05 16:22:56,061 INFO  scraper.vendor:   NEW OBJECT R BUILT-IN WASHBASIN | £None | basins
+2026-08-05 16:22:57,504 INFO  scraper.vendor:   NEW OBJECT Q Built-in washbasin | £None | basins
+2026-08-05 16:22:58,366 INFO  scraper.vendor:   NEW NUEVA WASHBOWL | £None | basins
+2026-08-05 16:22:59,582 INFO  scraper.vendor:   NEW SILENIO BUILT-IN DOUBLE WASHBASIN | £None | basins
+2026-08-05 16:23:00,625 INFO  scraper.vendor:   NEW SILENIO COUNTERTOP WASHBASIN (HEIGHT OF RIM 120 MM) | £None | basins
+2026-08-05 16:23:02,013 INFO  scraper.vendor:   NEW SILENIO WALL-HUNG DOUBLE WASHBASIN | £None | basins
+2026-08-05 16:23:03,201 INFO  scraper.vendor:   NEW PURO S COUNTERTOP WASHBASIN (RIM HEIGHT 120 MM) | £None | basins
+2026-08-05 16:23:04,912 INFO  scraper.vendor:   NEW CONO BUILT-IN DOUBLE WASHBASIN | £None | basins
+2026-08-05 16:23:06,210 INFO  scraper.vendor:   NEW CONOWALL-HUNG DOUBLE WASHBASIN | £None | basins
+2026-08-05 16:23:07,266 INFO  scraper.vendor:   NEW SILENIO UNDERCOUNTER WASHBASIN | £None | basins
+2026-08-05 16:23:08,844 INFO  scraper.vendor:   NEW CAYONO washbowl | £None | basins
+2026-08-05 16:23:09,953 INFO  scraper.vendor:   NEW CAYONO S countertop washbasin | £None | basins
+2026-08-05 16:23:11,350 INFO  scraper.vendor:   NEW CAYONO Undercounter washbasin | £None | basins
+2026-08-05 16:23:12,450 INFO  scraper.vendor:   NEW MING WASHBOWL | £None | basins
+2026-08-05 16:23:13,926 INFO  scraper.vendor:   NEW PURO COUNTERTOP WASHBASIN | £None | basins
+2026-08-05 16:23:15,336 INFO  scraper.vendor:   NEW PURO WALL-HUNG DOUBLE WASHBASIN | £None | basins
+2026-08-05 16:23:16,713 INFO  scraper.vendor:   NEW SILENIO BUILT-IN WASHBASIN | £None | basins
+2026-08-05 16:23:18,065 INFO  scraper.vendor:   NEW PURO S COUNTERTOP WASHBASIN (RIM HEIGHT 40 MM) | £None | basins
+2026-08-05 16:23:19,524 INFO  scraper.vendor:   NEW PURO BUILT-IN DOUBLE WASHBASIN | £None | basins
+2026-08-05 16:23:21,060 INFO  scraper.vendor:   NEW PURO COUNTERTOP DOUBLE WASHBASIN (RIM HEIGHT 120 MM) | £None | basins
+2026-08-05 16:23:21,545 WARNING scraper.http: [https://www.kaldewei.co.uk] https://www.kaldewei.co.uk/products/washbasins/detail/product/puro-countertop-twin-washbasin-3171/ -> 404
+2026-08-05 16:23:23,102 INFO  scraper.vendor:   NEW PURO COUNTERTOP WASHBASIN (RIM HEIGHT 120 MM) | £None | basins
+2026-08-05 16:23:24,480 INFO  scraper.vendor:   NEW PURO COUNTERTOP WASHBASIN (RIM HEIGHT 40 MM) | £None | basins
+2026-08-05 16:23:25,363 INFO  scraper.vendor:   NEW CONO WALL-HUNG WASHBASIN | £None | basins
+2026-08-05 16:23:27,009 INFO  scraper.vendor:   NEW CONO COUNTERTOP WASHBASIN | £None | basins
+2026-08-05 16:23:28,585 INFO  scraper.vendor:   NEW CLASSIC UNDERCOUNTER WASHBASIN | £None | basins
+2026-08-05 16:23:30,226 INFO  scraper.vendor:   NEW MIENA WASHBOWL | £None | basins
+2026-08-05 16:23:31,649 INFO  scraper.vendor:   NEW MIENA WASHBOWL | £None | basins
+2026-08-05 16:23:32,848 INFO  scraper.vendor:   NEW SILENIO WALL-HUNG WASHBASIN | £None | basins
+2026-08-05 16:23:34,345 INFO  scraper.vendor:   NEW SILENIO COUNTERTOP DOUBLE WASHBASIN (RIM HEIGHT 120 MM) | £None | basins
+2026-08-05 16:23:35,648 INFO  scraper.vendor:   NEW SILENIO countertop washbasin (rim height 40 mm) | £None | basins
+2026-08-05 16:23:36,551 INFO  scraper.vendor:   NEW PURO WALL-HUNG WASHBASIN | £None | basins
+2026-08-05 16:23:38,170 INFO  scraper.vendor:   NEW PURO BUILT-IN WASHBASIN | £None | basins
+2026-08-05 16:23:39,630 INFO  scraper.vendor:   NEW PURO UNDERCOUNTER WASHBASIN | £None | basins
+2026-08-05 16:23:40,753 INFO  scraper.vendor:   NEW PURO WALL-MOUNTED WASHBASIN | £None | basins
+2026-08-05 16:23:42,275 INFO  scraper.vendor:   NEW CONO WALL-HUNG WASHBASIN | £None | basins
+2026-08-05 16:23:43,552 INFO  scraper.vendor:   NEW CONO COUNTERTOP WASHBASIN (HEIGHT OF RIM 120 MM) | £None | basins
+2026-08-05 16:23:44,945 INFO  scraper.vendor:   NEW CONO COUNTERTOP WASHBASIN (HEIGHT OF RIM 40 MM) | £None | basins
+2026-08-05 16:23:46,389 INFO  scraper.vendor:   NEW CONO BUILT-IN WASHBASIN | £None | basins
+2026-08-05 16:23:47,600 INFO  scraper.vendor:   NEW CONO UNDERCOUNTER WASHBASIN | £None | basins
+2026-08-05 16:23:48,913 INFO  scraper.vendor:   NEW CENTRO WALL-HUNG WASHBASIN | £None | basins
+2026-08-05 16:23:50,003 INFO  scraper.vendor:   NEW CENTRO COUNTERTOP WASHBASIN (RIM HEIGHT 120 MM) | £None | basins
+2026-08-05 16:23:51,498 INFO  scraper.vendor:   NEW CENTRO COUNTERTOP WASHBASIN (RIM HEIGHT 40MM) | £None | basins
+2026-08-05 16:23:53,225 INFO  scraper.vendor:   NEW CENTRO UNDERCOUNTER WASHBASIN | £None | basins
+    kaldewei done: {'found': 110, 'new': 109, 'updated': 0, 'failed': 1, 'skipped': 0}
+
+=== Summary ===
+  kaldewei: {'found': 110, 'new': 109, 'updated': 0, 'failed': 1, 'skipped': 0}

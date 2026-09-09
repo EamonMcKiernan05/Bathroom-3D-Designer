@@ -1,0 +1,50 @@
+[
+ {
+  "page": 5,
+  "name": "Lira Freestanding Bath",
+  "sku": "SCUDO-LIRA-05",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 750,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "1700 x 750mm",
+  "category": "baths",
+  "image": "p005_SCUDO-LIRA-05.png",
+  "_section": ""
+ },
+ {
+  "page": 6,
+  "name": "Bay Freestanding Bath",
+  "sku": "SCUDO-BAY-06",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 750,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "1700 \u00d7 750mm",
+  "category": "baths",
+  "image": "p006_SCUDO-BAY-06.png",
+  "_section": ""
+ },
+ {
+  "page": 7,
+  "name": "Eden Freestanding",
+  "sku": "SCUDO-EDEN-07",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 750,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "1700 x 750mm",
+  "category": "baths",
+  "image": "p007_SCUDO-EDEN-07.png",
+  "_section": ""
+ }
+]

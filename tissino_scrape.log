@@ -1,0 +1,306 @@
+
+=== tissino (live) ===
+2026-08-05 16:01:22,879 INFO  scraper.vendor: [tissino] skipping 0 already-scraped URLs (mode=existing)
+2026-08-05 16:01:22,882 INFO  scraper.vendor: [tissino] crawling category: https://www.tissino.co.uk/sitemap.xml
+2026-08-05 16:01:30,695 INFO  scraper.vendor:   NEW Shower Niche | £173.33 | accessories
+2026-08-05 16:01:31,710 INFO  scraper.vendor:   NEW Pirlo Toilet Roll Holder | £34.67 | accessories
+2026-08-05 16:01:33,242 INFO  scraper.vendor:   NEW Carlos Robe Hook | £31.2 | accessories
+2026-08-05 16:01:34,439 INFO  scraper.vendor:   NEW Carlos Towel Bar | £86.67 | accessories
+2026-08-05 16:01:35,792 INFO  scraper.vendor:   NEW Carlos Hand Towel Holder | £48.53 | accessories
+2026-08-05 16:01:37,182 INFO  scraper.vendor:   NEW Pirlo Robe Hook | £26.0 | accessories
+2026-08-05 16:01:38,480 INFO  scraper.vendor:   NEW Pirlo Double Robe Hook | £30.33 | accessories
+2026-08-05 16:01:39,803 INFO  scraper.vendor:   NEW Pirlo Towel Bar | £69.33 | accessories
+2026-08-05 16:01:41,002 INFO  scraper.vendor:   NEW Pirlo Towel Ring | £56.33 | accessories
+2026-08-05 16:01:42,289 INFO  scraper.vendor:   NEW Pirlo Knurled Toilet Roll Holder | £41.6 | accessories
+2026-08-05 16:01:43,424 INFO  scraper.vendor:   NEW Pirlo Knurled Robe Hook | £28.6 | accessories
+2026-08-05 16:01:44,758 INFO  scraper.vendor:   NEW Pirlo Knurled Double Robe Hook | £34.67 | accessories
+2026-08-05 16:01:46,847 INFO  scraper.vendor:   NEW Pirlo Knurled Towel Bar | £76.27 | accessories
+2026-08-05 16:01:49,748 INFO  scraper.vendor:   NEW Pirlo Knurled Towel Ring | £62.4 | accessories
+2026-08-05 16:01:51,736 INFO  scraper.vendor:   NEW Carlos Toilet Roll Holder | £44.2 | accessories
+2026-08-05 16:02:05,132 INFO  scraper.vendor:   NEW Angelo Premium Slim Round Double Ended Bath | £383.93 | baths
+2026-08-05 16:02:07,278 INFO  scraper.vendor:   NEW Angelo Slim Round Double Ended Bath | £299.0 | baths
+2026-08-05 16:02:09,611 INFO  scraper.vendor:   NEW Angelo Premium Slim Round Single Ended Bath | £375.27 | baths
+2026-08-05 16:02:11,906 INFO  scraper.vendor:   NEW Angelo Slim Round Single Ended Bath | £290.33 | baths
+2026-08-05 16:02:14,533 INFO  scraper.vendor:   NEW Esento Bath | £1781.0 | baths
+2026-08-05 16:02:16,893 INFO  scraper.vendor:   NEW Tanaro Acrylic Freestanding Bath With Ledge 1680 x 780 x 560 | £1553.07 | baths
+2026-08-05 16:02:19,160 INFO  scraper.vendor:   NEW Tanaro Acrylic Freestanding Bath 1680 x 780 x 560mm | £1457.73 | baths
+2026-08-05 16:02:22,128 INFO  scraper.vendor:   NEW Angelo Acrylic Freestanding Bath | £2115.53 | baths
+2026-08-05 16:02:24,978 INFO  scraper.vendor:   NEW Angelo D Shaped Bath | £1786.2 | baths
+2026-08-05 16:02:26,995 INFO  scraper.vendor:   NEW Otello Acrylic Freestanding Bath 1650 x 750 x 750 | £1682.2 | baths
+2026-08-05 16:02:29,324 INFO  scraper.vendor:   NEW Matera Acrylic Freestanding Bath 1597 x 745 x 560mm | £1429.13 | baths
+2026-08-05 16:02:30,814 INFO  scraper.vendor:   NEW Lorenzo Premium Single Ended Bath | £426.4 | baths
+2026-08-05 16:02:32,793 INFO  scraper.vendor:   NEW Lorenzo Premium Single Ended Bath with Handles | £479.27 | baths
+2026-08-05 16:02:35,115 INFO  scraper.vendor:   NEW Lorenzo Premium Double Ended Bath | £426.4 | baths
+2026-08-05 16:02:37,949 INFO  scraper.vendor:   NEW Lorenzo Single Ended Bath | £335.4 | baths
+2026-08-05 16:02:39,867 INFO  scraper.vendor:   NEW Lorenzo Single Ended Bath with Handles | £394.33 | baths
+2026-08-05 16:02:41,734 INFO  scraper.vendor:   NEW Lorenzo Premium Showerbath | £617.07 | baths
+2026-08-05 16:02:43,854 INFO  scraper.vendor:   NEW Angelo Premium RH Bath | £626.6 | baths
+2026-08-05 16:02:45,467 INFO  scraper.vendor:   NEW Angelo Premium LH Bath | £626.6 | baths
+2026-08-05 16:02:47,145 INFO  scraper.vendor:   NEW Lorenzo Eco Bath - Single Ended | £299.0 | baths
+2026-08-05 16:02:49,012 INFO  scraper.vendor:   NEW Lorenzo Double Ended Bath | £339.73 | baths
+2026-08-05 16:02:50,825 INFO  scraper.vendor:   NEW Londra Premium Acrylic Bath - Double Ended | £642.2 | baths
+2026-08-05 16:02:52,640 INFO  scraper.vendor:   NEW Messina Single Panel Rectangular Bath Screen | £256.53 | baths
+2026-08-05 16:02:54,689 INFO  scraper.vendor:   NEW Messina Single panel curved bath screen | £271.27 | baths
+2026-08-05 16:02:56,003 INFO  scraper.vendor:   NEW Messina Pivoting 6mm shower bath screen | £301.6 | baths
+2026-08-05 16:02:58,063 INFO  scraper.vendor:   NEW Messina Double Panel Rectangular Bath Screen | £329.33 | baths
+2026-08-05 16:02:59,562 INFO  scraper.vendor:   NEW Messina Double panel hinged rectangular bath screen | £396.07 | baths
+2026-08-05 16:03:01,586 INFO  scraper.vendor:   NEW Messina Double panel curved bath screen | £338.0 | baths
+2026-08-05 16:03:03,640 INFO  scraper.vendor:   NEW Lorenzo Premium Front Panel | £214.07 | baths
+2026-08-05 16:03:05,198 INFO  scraper.vendor:   NEW Lorenzo Premium End Panel | £160.33 | baths
+2026-08-05 16:03:06,447 INFO  scraper.vendor:   NEW Lorenzo Front Panel | £164.67 | baths
+2026-08-05 16:03:08,049 INFO  scraper.vendor:   NEW Lorenzo End Panel - 700 | £117.0 | baths
+2026-08-05 16:03:09,531 INFO  scraper.vendor:   NEW Lorenzo Premium LH/RH 1700 Shower bath Front Panel | £203.67 | baths
+2026-08-05 16:03:11,277 INFO  scraper.vendor:   NEW Lorenzo Premium L Shape Panel | £464.53 | baths
+2026-08-05 16:03:12,562 INFO  scraper.vendor:   NEW Angelo Premium RH/LH Panel | £325.87 | baths
+2026-08-05 16:03:26,766 INFO  scraper.vendor:   NEW Arturo Bidet Mixer Tap / Cloakroom Mono | £124.8 | taps
+2026-08-05 16:03:28,759 INFO  scraper.vendor:   NEW Santuro Bidet Mixer Tap | £132.6 | taps
+2026-08-05 16:03:31,015 INFO  scraper.vendor:   NEW Santuro Bath Filler Valve and Diverter | £148.2 | taps
+2026-08-05 16:03:32,852 INFO  scraper.vendor:   NEW Santuro Wall Mounted Mono Tap | £175.93 | taps
+2026-08-05 16:03:34,799 INFO  scraper.vendor:   NEW Santuro Four Hole Bath Shower Mixer | £349.27 | taps
+2026-08-05 16:03:36,834 INFO  scraper.vendor:   NEW Santuro Floorstanding Bath Shower Mixer | £828.53 | taps
+2026-08-05 16:03:38,918 INFO  scraper.vendor:   NEW Santuro Deck Mounted Bath Shower Mixer | £260.0 | taps
+2026-08-05 16:03:40,659 INFO  scraper.vendor:   NEW Santuro Deck Mounted Bath Filler | £210.6 | taps
+2026-08-05 16:03:42,217 INFO  scraper.vendor:   NEW Santuro Tall Basin Mono Tap | £90.57 | taps
+2026-08-05 16:03:44,269 INFO  scraper.vendor:   NEW Santuro Basin Mono Tap | £133.47 | taps
+2026-08-05 16:03:46,599 INFO  scraper.vendor:   NEW Arturo Bath Filler Valve and Diverter | £148.2 | taps
+2026-08-05 16:03:48,779 INFO  scraper.vendor:   NEW Arturo Wall Mounted Mono Tap | £172.47 | taps
+2026-08-05 16:03:50,620 INFO  scraper.vendor:   NEW Arturo Four Hole Bath Shower Mixer | £325.87 | taps
+2026-08-05 16:03:52,002 INFO  scraper.vendor:   NEW Arturo Floorstanding Bath Shower Mixer | £804.27 | taps
+2026-08-05 16:03:54,138 INFO  scraper.vendor:   NEW Arturo Deck Mounted Bath Shower Mixer | £260.0 | taps
+2026-08-05 16:03:55,488 INFO  scraper.vendor:   NEW Arturo Deck Mounted Bath Filler | £105.3 | taps
+2026-08-05 16:03:57,528 INFO  scraper.vendor:   NEW Arturo Tall Basin Mono Tap | £166.4 | taps
+2026-08-05 16:03:58,962 INFO  scraper.vendor:   NEW Arturo Basin Mono Tap | £124.8 | taps
+2026-08-05 16:04:00,977 INFO  scraper.vendor:   NEW Santuro Thermostatic Concealed Shower Valve & Plate | £438.53 | taps
+2026-08-05 16:04:02,674 INFO  scraper.vendor:   NEW Arturo Thermostatic Concealed Shower Valve & Plate | £438.53 | taps
+2026-08-05 16:04:04,930 INFO  scraper.vendor:   NEW Sentire High Spout Basin Mono Straight Handle | £300.73 | taps
+2026-08-05 16:04:06,610 INFO  scraper.vendor:   NEW Sentire Bidet Mixer Straight Handle | £162.93 | taps
+2026-08-05 16:04:08,342 INFO  scraper.vendor:   NEW Sentire Wall Mounted Basin Mixer Straight Handle | £303.33 | taps
+2026-08-05 16:04:10,581 INFO  scraper.vendor:   NEW Sentire Wall Mounted Bath Shower Mixer Straight Handle | £263.47 | taps
+2026-08-05 16:04:12,434 INFO  scraper.vendor:   NEW Sentire Basin Midi Height Mono Straight Handle | £197.6 | taps
+2026-08-05 16:04:14,307 INFO  scraper.vendor:   NEW Sentire Basin Mono Angled Handle | £170.73 | taps
+2026-08-05 16:04:16,299 INFO  scraper.vendor:   NEW Sentire Basin Midi Height Mono Angled Handle | £197.6 | taps
+2026-08-05 16:04:18,136 INFO  scraper.vendor:   NEW Sentire High Spout Basin Mono Angled Handle | £300.73 | taps
+2026-08-05 16:04:19,792 INFO  scraper.vendor:   NEW Sentire Wall Mounted Basin Mixer Angled Handle | £303.33 | taps
+2026-08-05 16:04:21,948 INFO  scraper.vendor:   NEW Sentire Wall Mounted Bath Shower Mixer Angled Handle | £263.47 | taps
+2026-08-05 16:04:24,139 INFO  scraper.vendor:   NEW Sentire Basin Mono Cube Handle | £170.73 | taps
+2026-08-05 16:04:25,617 INFO  scraper.vendor:   NEW Sentire Wall Mounted Bath Shower Mixer Cube Handle | £263.47 | taps
+2026-08-05 16:04:27,511 INFO  scraper.vendor:   NEW Sentire Wall Mounted Basin Mixer Cube Handle | £303.33 | taps
+2026-08-05 16:04:29,737 INFO  scraper.vendor:   NEW Sentire Bidet Mixer Cube Handle | £162.93 | taps
+2026-08-05 16:04:31,262 INFO  scraper.vendor:   NEW Sentire High Spout Basin Mono Cube Handle | £300.73 | taps
+2026-08-05 16:04:32,954 INFO  scraper.vendor:   NEW Sentire Basin Midi Height Mono Cube Handle | £197.6 | taps
+2026-08-05 16:04:34,632 INFO  scraper.vendor:   NEW Sentire Bidet Mixer Angled Handle | £162.93 | taps
+2026-08-05 16:04:36,439 INFO  scraper.vendor:   NEW Sentire Basin Mono Straight Handle | £170.73 | taps
+2026-08-05 16:04:38,035 INFO  scraper.vendor:   NEW Parina Basin Medium Height Mono - Matt Black | £186.25 | taps
+2026-08-05 16:04:39,746 INFO  scraper.vendor:   NEW Parina Basin Medium Height Mono - Chrome | £157.09 | taps
+2026-08-05 16:05:25,249 INFO  scraper.vendor:   NEW Tellao Basin Unit | £926.47 | furniture
+2026-08-05 16:05:26,765 INFO  scraper.vendor:   NEW Tellao Tall Unit | £562.47 | furniture
+2026-08-05 16:05:28,280 INFO  scraper.vendor:   NEW Oriana Cast Marble Basin | £303.33 | furniture
+2026-08-05 16:05:29,736 INFO  scraper.vendor:   NEW Furniture Organiser | £41.6 | furniture
+2026-08-05 16:05:31,426 INFO  scraper.vendor:   NEW Cortello Ceramic Basin | £69.34 | furniture
+2026-08-05 16:05:33,453 INFO  scraper.vendor:   NEW Cortello Reduced Depth Ceramic Basin | £138.67 | furniture
+2026-08-05 16:05:35,545 INFO  scraper.vendor:   NEW Stratto Tall Unit Trim | £47.67 | furniture
+2026-08-05 16:05:37,181 INFO  scraper.vendor:   NEW Mozzano Floorstanding Basin Unit | £691.6 | furniture
+2026-08-05 16:05:38,972 INFO  scraper.vendor:   NEW Stratto Tall Unit | £730.6 | furniture
+2026-08-05 16:05:43,068 INFO  scraper.vendor:   NEW Cosenza Floorstanding Basin Unit | £624.0 | furniture
+2026-08-05 16:05:44,843 INFO  scraper.vendor:   NEW Back To Wall WC Unit and Worktop | £234.0 | furniture
+2026-08-05 16:05:46,362 INFO  scraper.vendor:   NEW Stratto Left Hand Wall Hung Basin Units | £1794.87 | furniture
+2026-08-05 16:05:47,935 INFO  scraper.vendor:   NEW Stratto Wall Hung Basin Unit | £1143.13 | furniture
+2026-08-05 16:05:49,727 INFO  scraper.vendor:   NEW Stratto Right Hand Wall Hung Basin Units | £1794.87 | furniture
+2026-08-05 16:05:51,193 INFO  scraper.vendor:   NEW Stratto Basin Unit Trim | £74.53 | furniture
+2026-08-05 16:05:52,624 INFO  scraper.vendor:   NEW Mozzano Cloakroom Basin | £107.47 | furniture
+2026-08-05 16:05:54,580 INFO  scraper.vendor:   NEW Cosenza 1600mm Tall Unit | £671.67 | furniture
+2026-08-05 16:05:56,372 INFO  scraper.vendor:   NEW Catina Reduced Depth Basin | £229.17 | furniture
+2026-08-05 16:05:57,901 INFO  scraper.vendor:   NEW Mozzano Vanity Unit Reduced Depth 390mm | £564.2 | furniture
+2026-08-05 16:05:59,272 INFO  scraper.vendor:   NEW Mozzano Cloakroom Furniture Unit | £273.87 | furniture
+2026-08-05 16:06:00,971 INFO  scraper.vendor:   NEW Cosenza Basin Unit | £686.4 | furniture
+2026-08-05 16:06:02,204 INFO  scraper.vendor:   NEW Cellini Solid Surface Matt Finish Basin | £288.6 | furniture
+2026-08-05 16:06:04,200 INFO  scraper.vendor:   NEW Cellini Solid Surface Matt Finish Basin - No Tap Hole | £288.6 | furniture
+2026-08-05 16:06:05,859 INFO  scraper.vendor:   NEW Pair of Cosenza Basin Unit Legs - 2 x straight | £164.17 | furniture
+2026-08-05 16:06:07,634 INFO  scraper.vendor:   NEW Pair of Cosenza Basin Unit Legs - 1 x straight 1 x with towe | £82.08 | furniture
+2026-08-05 16:06:09,416 INFO  scraper.vendor:   NEW Mozzano Vanity Unit | £605.8 | furniture
+2026-08-05 16:06:11,045 INFO  scraper.vendor:   NEW Mozzano Tall Unit | £526.93 | furniture
+2026-08-05 16:06:13,314 INFO  scraper.vendor:   NEW Vitolo Round Solid Surface Countertop Basin White | £260.87 | furniture
+2026-08-05 16:06:15,465 INFO  scraper.vendor:   NEW Vitolo Square Solid Surface Countertop Basin White | £272.13 | furniture
+2026-08-05 16:06:17,781 INFO  scraper.vendor:   NEW Vitolo Rectangular Solid Surface Countertop Basin White | £325.87 | furniture
+2026-08-05 16:06:20,437 INFO  scraper.vendor:   NEW Vitolo Solid Surface Matt White Countertop | £338.87 | furniture
+2026-08-05 16:06:23,115 INFO  scraper.vendor:   NEW Catina Basin | £69.58 | furniture
+2026-08-05 16:06:25,752 INFO  scraper.vendor:   NEW Emilio Pipes & Single Shroud | £31.2 | heating/towel-rails
+2026-08-05 16:06:27,459 INFO  scraper.vendor:   NEW Hugo Evolute Towel Radiator | £201.93 | heating/towel-rails
+2026-08-05 16:06:30,331 INFO  scraper.vendor:   NEW Ampio Open-Ended Towel Radiator | £318.93 | heating/towel-rails
+2026-08-05 16:06:32,537 INFO  scraper.vendor:   NEW Ampio Bar on Bar Towel Radiator | £305.07 | heating/towel-rails
+2026-08-05 16:06:34,556 INFO  scraper.vendor:   NEW Bartolo Towel Radiator | £268.67 | heating/towel-rails
+2026-08-05 16:06:36,524 INFO  scraper.vendor:   NEW Emilio Towel Radiator | £338.0 | heating/towel-rails
+2026-08-05 16:06:38,478 INFO  scraper.vendor:   NEW Fabio Towel Radiator | £376.13 | heating/towel-rails
+2026-08-05 16:06:40,242 INFO  scraper.vendor:   NEW Hugo2 Towel Radiator - Anthracite | £163.8 | heating/towel-rails
+2026-08-05 16:06:41,987 INFO  scraper.vendor:   NEW Hugo2 Towel Radiator - Arabica | £163.8 | heating/towel-rails
+2026-08-05 16:06:43,657 INFO  scraper.vendor:   NEW Hugo2 Towel Radiator - Chrome | £234.87 | heating/towel-rails
+2026-08-05 16:06:45,229 INFO  scraper.vendor:   NEW Hugo2 Towel Radiator - Lusso Grey | £163.8 | heating/towel-rails
+2026-08-05 16:06:47,186 INFO  scraper.vendor:   NEW Hugo2 Towel Radiator - Mont Blanc | £163.8 | heating/towel-rails
+2026-08-05 16:06:48,560 INFO  scraper.vendor:   NEW Hugo2 Towel Radiator - Matt Black | £163.8 | heating/towel-rails
+2026-08-05 16:06:50,242 INFO  scraper.vendor:   NEW Marcello Towel Radiator | £417.73 | heating/towel-rails
+2026-08-05 16:06:52,316 INFO  scraper.vendor:   NEW Standard heating element | £128.27 | heating/towel-rails
+2026-08-05 16:06:54,109 INFO  scraper.vendor:   NEW Hugo2 Towel Hanger | £58.07 | heating/towel-rails
+2026-08-05 16:06:55,570 INFO  scraper.vendor:   NEW Dual Fuel Valves - Floor Plumbing Connection with Thermostat | £167.27 | heating/towel-rails
+2026-08-05 16:06:57,326 INFO  scraper.vendor:   NEW Towel Rail Temperature regulating element | £246.13 | heating/towel-rails
+2026-08-05 16:06:59,218 INFO  scraper.vendor:   NEW Hugo Dual Fuel Valves - Wall Plumbing Connection with Thermo | £167.27 | heating/towel-rails
+2026-08-05 16:07:01,182 INFO  scraper.vendor:   NEW Straight Valves including Thermostatic Head | £114.4 | heating/towel-rails
+2026-08-05 16:07:03,114 INFO  scraper.vendor:   NEW Double Angle Valves including Thermostatic Head | £114.4 | heating/towel-rails
+2026-08-05 16:07:04,886 INFO  scraper.vendor:   NEW Radiator Straight Valves | £53.73 | heating/towel-rails
+2026-08-05 16:07:06,410 INFO  scraper.vendor:   NEW Radiator Double Angle Valves | £28.17 | heating/towel-rails
+2026-08-05 16:07:08,246 INFO  scraper.vendor:   NEW Radiator Pair of Pipes | £31.2 | heating/towel-rails
+2026-08-05 16:07:10,449 INFO  scraper.vendor:   NEW Radiator Dual Fuel Valves - Wall Plumbing Connection | £123.07 | heating/towel-rails
+2026-08-05 16:07:12,176 INFO  scraper.vendor:   NEW Radiator Dual Fuel Valves – Floor Plumbing Connection | £123.07 | heating/towel-rails
+2026-08-05 16:07:13,703 INFO  scraper.vendor:   NEW Deluna Mirror – Organic Square | £346.67 | mirrors-cabinets
+2026-08-05 16:07:15,620 INFO  scraper.vendor:   NEW Deluna Mirror – Organic Rectangle | £476.67 | mirrors-cabinets
+2026-08-05 16:07:24,193 INFO  scraper.vendor:   NEW Presa Double Door Mirror Cabinet | £883.13 | mirrors-cabinets
+2026-08-05 16:07:26,470 INFO  scraper.vendor:   NEW Presa Single Door Mirror Cabinet | £641.33 | mirrors-cabinets
+2026-08-05 16:07:28,164 INFO  scraper.vendor:   NEW Forma Single Door Mirror Cabinet | £675.13 | mirrors-cabinets
+2026-08-05 16:07:30,244 INFO  scraper.vendor:   NEW Forma Single Door Capsule Mirror Cabinet | £732.33 | mirrors-cabinets
+2026-08-05 16:07:31,430 INFO  scraper.vendor:   NEW Varano LED front lit mirror with shaver socket | £389.13 | mirrors-cabinets
+2026-08-05 16:07:32,810 INFO  scraper.vendor:   NEW Forma Double Door Mirror Cabinet | £761.8 | mirrors-cabinets
+2026-08-05 16:07:34,757 INFO  scraper.vendor:   NEW Briella Backlit Brushed Brass Mirror De-mister Double Touch  | £303.33 | mirrors-cabinets
+2026-08-05 16:07:36,933 INFO  scraper.vendor:   NEW Briella Backlit Brushed Brass Mirror De-mister Double Touch  | £286.0 | mirrors-cabinets
+2026-08-05 16:07:38,930 INFO  scraper.vendor:   NEW Briella Backlit Brushed Brass Mirror De-mister Double Touch  | £320.67 | mirrors-cabinets
+2026-08-05 16:07:40,423 INFO  scraper.vendor:   NEW Test | £0.0 | mirrors-cabinets
+2026-08-05 16:07:41,754 INFO  scraper.vendor:   NEW Cedro Backlit Mirror with De-mister Rectangular | £320.67 | mirrors-cabinets
+2026-08-05 16:07:43,379 INFO  scraper.vendor:   NEW Cedro Backlit Mirror De-mister Rectangular | £359.67 | mirrors-cabinets
+2026-08-05 16:07:45,174 INFO  scraper.vendor:   NEW Cedro Backlit Mirror De-mister Square | £398.67 | mirrors-cabinets
+2026-08-05 16:07:46,469 INFO  scraper.vendor:   NEW Cedro Backlit Mirror with De-mister Circular 500mm | £317.2 | mirrors-cabinets
+2026-08-05 16:07:48,187 INFO  scraper.vendor:   NEW Cedro Backlit Mirror De-mister Double Touch Circular | £350.13 | mirrors-cabinets
+2026-08-05 16:07:49,959 INFO  scraper.vendor:   NEW Cedro Backlit Mirror De-mister Single Touch Capsule 500 x 75 | £325.0 | mirrors-cabinets
+2026-08-05 16:07:51,545 INFO  scraper.vendor:   NEW Cedro Backlit Mirror De-mister Single Touch Capsule 600 x 85 | £359.67 | mirrors-cabinets
+2026-08-05 16:07:53,250 INFO  scraper.vendor:   NEW Terzo Backlit Matt Black Mirror De-mister Double Touch Circu | £352.73 | mirrors-cabinets
+2026-08-05 16:07:55,295 INFO  scraper.vendor:   NEW Terzo Backlit Matt Black Mirror De-mister Double Touch Circu | £453.27 | mirrors-cabinets
+2026-08-05 16:07:57,373 INFO  scraper.vendor:   NEW Terzo Backlit Matt Black Mirror De-mister Double Touch Capsu | £412.53 | mirrors-cabinets
+2026-08-05 16:08:02,181 INFO  scraper.vendor:   NEW Vorta Wall Hung WC with Wrapover Seat | £431.6 | toilets
+2026-08-05 16:08:03,817 INFO  scraper.vendor:   NEW Vorta Wall Hung WC with Slimline Seat | £431.6 | toilets
+2026-08-05 16:08:05,281 INFO  scraper.vendor:   NEW Davoli Short Projection Wall Hung Pan | £489.67 | toilets
+2026-08-05 16:08:06,967 INFO  scraper.vendor:   NEW Nerola Flush Button | £25.0 | toilets
+2026-08-05 16:08:08,586 INFO  scraper.vendor:   NEW Hinges for Slimline Seat | £20.83 | toilets
+2026-08-05 16:08:10,263 INFO  scraper.vendor:   NEW Hinges for Nerola Wrapover Seat | £20.83 | toilets
+2026-08-05 16:08:12,242 INFO  scraper.vendor:   NEW Nerola Slimline Seat | £105.0 | toilets
+2026-08-05 16:08:14,365 INFO  scraper.vendor:   NEW Nerola Wrapover seat | £105.0 | toilets
+2026-08-05 16:08:16,067 INFO  scraper.vendor:   NEW Davoli Flush Button | £24.17 | toilets
+2026-08-05 16:08:17,880 INFO  scraper.vendor:   NEW Davoli Soft Close Square Wrapover Seat | £65.07 | toilets
+2026-08-05 16:08:19,931 INFO  scraper.vendor:   NEW Davoli Soft Close Seat | £126.0 | toilets
+2026-08-05 16:08:21,845 INFO  scraper.vendor:   NEW Rocco2 WC Unit Concealed Cistern with Flush Button | £136.07 | toilets
+2026-08-05 16:08:29,950 INFO  scraper.vendor:   NEW Rocco2 Inox Wall Plate | £303.33 | toilets
+2026-08-05 16:08:31,596 INFO  scraper.vendor:   NEW Davoli Closed Coupled Rimless Soft Square Pan, Cistern & Wra | £491.4 | toilets
+2026-08-05 16:08:33,571 INFO  scraper.vendor:   NEW Davoli Back To Wall Rimless Soft Square Pan, Wrap Seat | £338.87 | toilets
+2026-08-05 16:08:35,523 INFO  scraper.vendor:   NEW Davoli Wall Hung Rimless Soft Square Pan & Wrap seat | £338.87 | toilets
+2026-08-05 16:08:38,211 INFO  scraper.vendor:   NEW Davoli Wall Hung Pan & Wrap Seat | £338.87 | toilets
+2026-08-05 16:08:39,757 INFO  scraper.vendor:   NEW Davoli Back To Wall Pan & Wrap Seat | £338.87 | toilets
+2026-08-05 16:08:41,575 INFO  scraper.vendor:   NEW Davoli Close Coupled Pan, Cistern & Wrap Seat | £491.4 | toilets
+2026-08-05 16:08:43,502 INFO  scraper.vendor:   NEW Cellini Solid Surface Matt Finish Double Basin 1200 No Tap H | £500.0 | toilets
+2026-08-05 16:08:46,320 INFO  scraper.vendor:   NEW Nerola Rimless Wall Hung Pan and Slimline Seat | £436.8 | toilets
+2026-08-05 16:08:48,363 INFO  scraper.vendor:   NEW Nerola Rimless Wall Hung Pan and Wrapover Seat | £436.8 | toilets
+2026-08-05 16:08:50,201 INFO  scraper.vendor:   NEW Nerola Rimless Back To Wall Pan and Slimline Seat | £436.8 | toilets
+2026-08-05 16:08:52,228 INFO  scraper.vendor:   NEW Nerola Rimless Back To Wall Pan and Wrapover Seat | £436.8 | toilets
+2026-08-05 16:08:54,391 INFO  scraper.vendor:   NEW Nerola Rimless Back To Wall Comfort Height Pan and Slimline  | £454.13 | toilets
+2026-08-05 16:08:55,757 INFO  scraper.vendor:   NEW Nerola Rimless Back To Wall Comfort Height Pan and Wrapover  | £454.13 | toilets
+2026-08-05 16:08:57,239 INFO  scraper.vendor:   NEW Nerola Rimless Closed Coupled Pan, Cistern and Slimline Seat | £495.73 | toilets
+2026-08-05 16:08:58,681 INFO  scraper.vendor:   NEW Nerola Rimless Closed Coupled Pan, Cistern and Slimline Seat | £594.53 | toilets
+2026-08-05 16:09:00,118 INFO  scraper.vendor:   NEW Nerola Rimless Closed Coupled Pan, Cistern and Slimline Seat | £594.53 | toilets
+2026-08-05 16:09:01,655 INFO  scraper.vendor:   NEW Nerola Rimless Closed Coupled Pan, Cistern and Wrapover Seat | £495.73 | toilets
+2026-08-05 16:09:03,765 INFO  scraper.vendor:   NEW Nerola Rimless Closed Coupled Pan, Cistern and Wrapover Seat | £594.53 | toilets
+2026-08-05 16:09:05,800 INFO  scraper.vendor:   NEW Nerola Rimless Closed Coupled Pan, Cistern and Wrapover Seat | £594.53 | toilets
+2026-08-05 16:09:07,117 INFO  scraper.vendor:   NEW Nerola Rimless Closed Coupled Comfort Height Pan, Cistern an | £527.8 | toilets
+2026-08-05 16:09:09,043 INFO  scraper.vendor:   NEW Nerola Rimless Closed Coupled Comfort Height Pan, Cistern an | £626.6 | toilets
+2026-08-05 16:09:11,186 INFO  scraper.vendor:   NEW Nerola Rimless Closed Coupled Comfort Height Pan, Cistern an | £626.6 | toilets
+2026-08-05 16:09:12,989 INFO  scraper.vendor:   NEW Nerola Rimless Closed Coupled Comfort Height Pan, Cistern an | £527.8 | toilets
+2026-08-05 16:09:14,777 INFO  scraper.vendor:   NEW Nerola Rimless Closed Coupled Comfort Height Pan, Cistern an | £626.6 | toilets
+2026-08-05 16:09:16,998 INFO  scraper.vendor:   NEW Nerola Rimless Closed Coupled Comfort Height Pan, Cistern an | £626.6 | toilets
+2026-08-05 16:09:19,093 INFO  scraper.vendor:   NEW Nerola Rimless Closed Coupled Open Back Pan, Cistern & Sliml | £480.13 | toilets
+2026-08-05 16:09:20,556 INFO  scraper.vendor:   NEW Nerola Rimless Closed Coupled Open Back Pan, Cistern and Wra | £480.13 | toilets
+2026-08-05 16:09:22,477 INFO  scraper.vendor:   NEW Nerola Basin With Semi-Pedestal | £278.2 | toilets
+2026-08-05 16:09:24,226 INFO  scraper.vendor:   NEW Nerola Bidet | £238.33 | toilets
+2026-08-05 16:09:26,122 INFO  scraper.vendor:   NEW Nerola Full Pedestal Basin | £278.2 | toilets
+2026-08-05 16:09:28,893 INFO  scraper.vendor:   NEW Velino soft close seat | £111.67 | toilets
+2026-08-05 16:09:30,810 INFO  scraper.vendor:   NEW Rocco2 1150mm Universal Framed Cistern | £343.2 | toilets
+2026-08-05 16:09:32,448 INFO  scraper.vendor:   NEW Rocco2 80mm Concealed Cistern | £166.4 | toilets
+2026-08-05 16:09:34,567 INFO  scraper.vendor:   NEW Rocco2 820mm Universal Framed Cistern | £291.2 | toilets
+2026-08-05 16:09:36,058 INFO  scraper.vendor:   NEW Rocco2 Concealed Cistern - Top or Front Flush | £100.1 | toilets
+2026-08-05 16:09:38,287 INFO  scraper.vendor:   NEW Rocco2 Curvo Wall Plate | £70.2 | toilets
+2026-08-05 16:09:40,055 INFO  scraper.vendor:   NEW Rocco2 Quadrato Wall Plate | £102.27 | toilets
+2026-08-05 16:09:45,396 INFO  scraper.vendor:   NEW Vario Rainhead Kit | £606.33 | showering
+2026-08-05 16:09:49,329 INFO  scraper.vendor:   NEW Mont Shower Trays – Matt White | £477.53 | showering
+2026-08-05 16:09:50,751 INFO  scraper.vendor:   NEW Mont Shower Trays – Colour & Bespoke Finishes | £574.96 | showering
+2026-08-05 16:09:52,686 INFO  scraper.vendor:   NEW Rivelo Double Handle Upgrade | £28.77 | showering
+2026-08-05 16:09:53,914 INFO  scraper.vendor:   NEW Fiorti Quad Shower Tray | £198.47 | showering
+2026-08-05 16:09:55,535 INFO  scraper.vendor:   NEW Fiorti Offset Quadrant Shower Tray | £234.0 | showering
+2026-08-05 16:09:57,023 INFO  scraper.vendor:   NEW Fiorti Square Shower Tray | £198.47 | showering
+2026-08-05 16:09:58,934 INFO  scraper.vendor:   NEW Vario Thermostatic Shower Column | £432.5 | showering
+2026-08-05 16:10:00,164 INFO  scraper.vendor:   NEW Fiorti Rectangular Shower Tray | £206.27 | showering
+2026-08-05 16:10:02,162 INFO  scraper.vendor:   NEW Tavo Front Panel with Wall Profile & Wall to Wall Arm | £305.93 | showering
+2026-08-05 16:10:03,438 INFO  scraper.vendor:   NEW Tavo Walkthrough Screen with Stabilising Bars | £434.2 | showering
+2026-08-05 16:10:05,074 INFO  scraper.vendor:   NEW Tavo Flipper Panel | £262.6 | showering
+2026-08-05 16:10:06,311 INFO  scraper.vendor:   NEW Tavo Front Panel with Wall Profile & 1200mm Arm | £261.73 | showering
+2026-08-05 16:10:08,715 INFO  scraper.vendor:   NEW Tavo Front Panel with Wall Profile & 2000mm Arm | £306.8 | showering
+2026-08-05 16:10:11,028 INFO  scraper.vendor:   NEW Tavo Side Panel with Wall Profile & 1200mm Arm | £263.47 | showering
+2026-08-05 16:10:12,757 INFO  scraper.vendor:   NEW Tavo Front Panel with Wall Profile & Floor to Ceiling Arm | £258.27 | showering
+2026-08-05 16:10:13,778 INFO  scraper.vendor:   NEW Tavo Front Panel with Wall Profile & Glass to Ceiling Arm | £213.2 | showering
+2026-08-05 16:10:15,533 INFO  scraper.vendor:   NEW Tavo Glass Panel with Fixed Corner Profile | £144.73 | showering
+2026-08-05 16:10:17,011 INFO  scraper.vendor:   NEW Giorgio2 Quadrant Offset Shower Tray | £585.0 | showering
+2026-08-05 16:10:17,943 INFO  scraper.vendor:   NEW Giorgio2 Rectangle Shower Tray - Soft Taupe | £483.6 | showering
+2026-08-05 16:10:20,260 INFO  scraper.vendor:   NEW Armano Roller End Panel | £546.0 | showering
+2026-08-05 16:10:21,744 INFO  scraper.vendor:   NEW Armano Roller End Profile | £160.33 | showering
+2026-08-05 16:10:23,263 INFO  scraper.vendor:   NEW Giorgio2 Rectangle Shower Tray - Grey Slate | £483.6 | showering
+2026-08-05 16:10:24,567 INFO  scraper.vendor:   NEW Giorgio2 Rectangle Shower Tray - Black Slate | £483.6 | showering
+2026-08-05 16:10:25,917 INFO  scraper.vendor:   NEW Giorgio2 Rectangle Shower Tray - Graphite Slate | £483.6 | showering
+2026-08-05 16:10:27,106 INFO  scraper.vendor:   NEW Finezza Shower Tray | £577.2 | showering
+2026-08-05 16:10:28,824 INFO  scraper.vendor:   NEW Giorgio Lux Rectangle Shower Tray | £692.47 | showering
+2026-08-05 16:10:30,713 INFO  scraper.vendor:   NEW Giorgio Wall Panel | £434.2 | showering
+2026-08-05 16:10:32,577 INFO  scraper.vendor:   NEW Giorgio2 Quadrant Shower Tray | £543.4 | showering
+2026-08-05 16:10:33,324 INFO  scraper.vendor:   NEW Giorgio2 Rectangle Shower Tray - White Slate | £483.6 | showering
+2026-08-05 16:10:35,451 INFO  scraper.vendor:   NEW Armano Roller Clear Glass with Profile and Stabilising Bar - | £949.87 | showering
+2026-08-05 16:10:37,283 INFO  scraper.vendor:   NEW Armano Roller Grey Glass with Matt Black Profile and Stabili | £1193.4 | showering
+2026-08-05 16:10:39,060 INFO  scraper.vendor:   NEW Armano Roller Clear Glass with Profile and Stabilising Bar R | £949.87 | showering
+2026-08-05 16:10:40,945 INFO  scraper.vendor:   NEW Rivelo Quadrant | £459.33 | showering
+2026-08-05 16:10:42,674 INFO  scraper.vendor:   NEW Rivelo In-Fold Shower Door | £442.0 | showering
+2026-08-05 16:10:44,845 INFO  scraper.vendor:   NEW Rivelo Offset Quadrant | £647.4 | showering
+2026-08-05 16:10:46,239 INFO  scraper.vendor:   NEW Rivelo Side Panel | £240.93 | showering
+2026-08-05 16:10:47,350 INFO  scraper.vendor:   NEW Rivelo Bifold Shower Doors | £466.27 | showering
+2026-08-05 16:10:49,085 INFO  scraper.vendor:   NEW Rivelo Sliding Shower Doors | £363.13 | showering
+2026-08-05 16:10:50,978 INFO  scraper.vendor:   NEW Rivelo Pivot Shower Doors | £416.87 | showering
+2026-08-05 16:10:52,839 INFO  scraper.vendor:   NEW Armano Roller Stabilising Bar | £132.6 | showering
+2026-08-05 16:10:54,629 INFO  scraper.vendor:   NEW Armano Roller T Piece Arm Connector | £82.33 | showering
+2026-08-05 16:10:56,181 INFO  scraper.vendor:   NEW Giorgio2 Coloured Grate | £21.67 | showering
+2026-08-05 16:10:57,507 INFO  scraper.vendor:   NEW Giorgio Silicone | £31.67 | showering
+2026-08-05 16:11:04,458 INFO  scraper.vendor:   NEW Vario Pencil Head Kit | £465.0 | showering
+2026-08-05 16:11:05,708 INFO  scraper.vendor:   NEW Vario Dual Head Kit | £857.5 | showering
+2026-08-05 16:11:07,352 INFO  scraper.vendor:   NEW Vario Square Riser Rail with integrated outlet | £162.07 | showering
+2026-08-05 16:11:09,571 INFO  scraper.vendor:   NEW Vario 250mm Square Shower Head | £172.47 | showering
+2026-08-05 16:11:11,868 INFO  scraper.vendor:   NEW Vario Square Shower Arm | £45.07 | showering
+2026-08-05 16:11:13,857 INFO  scraper.vendor:   NEW Vario Square Ceiling Shower Arm | £36.4 | showering
+2026-08-05 16:11:15,576 INFO  scraper.vendor:   NEW Vario 200mm Square Shower Head | £110.07 | showering
+2026-08-05 16:11:16,809 INFO  scraper.vendor:   NEW Vario 300mm Square Shower Head | £206.27 | showering
+2026-08-05 16:11:17,996 INFO  scraper.vendor:   NEW Vario Square ABS Shower Head | £58.93 | showering
+2026-08-05 16:11:19,507 INFO  scraper.vendor:   NEW Vario Square Pencil Hand Shower | £81.47 | showering
+2026-08-05 16:11:21,873 INFO  scraper.vendor:   NEW Vario Square ABS Shower Handset Three Function | £39.0 | showering
+2026-08-05 16:11:23,735 INFO  scraper.vendor:   NEW Vario Square Outlet Elbow | £29.47 | showering
+2026-08-05 16:11:25,502 INFO  scraper.vendor:   NEW Vario Square Outlet Elbow with Hook | £33.8 | showering
+2026-08-05 16:11:26,719 INFO  scraper.vendor:   NEW Vario Square Thermostatic Concealed Shower Valve & Plate | £480.13 | showering
+2026-08-05 16:11:28,304 INFO  scraper.vendor:   NEW Vario Braided Hose | £12.13 | showering
+2026-08-05 16:11:29,882 INFO  scraper.vendor:   NEW Vario Smooth Hose | £25.13 | showering
+2026-08-05 16:11:31,282 INFO  scraper.vendor:   NEW Round Thermostatic Concealed Shower Valve & Plate | £432.47 | showering
+2026-08-05 16:11:33,208 INFO  scraper.vendor:   NEW Vario Square ABS Shower Handset Mono Function | £19.07 | showering
+2026-08-05 16:11:34,875 INFO  scraper.vendor:   NEW Vario Square Thermostatic Shower Bar Valve | £293.8 | showering
+2026-08-05 16:11:36,738 INFO  scraper.vendor:   NEW Vario Round Thermostatic Shower Bar Valve | £260.0 | showering
+2026-08-05 16:11:38,502 INFO  scraper.vendor:   NEW Vario Round Riser Rail | £99.67 | showering
+2026-08-05 16:11:40,163 INFO  scraper.vendor:   NEW Vario Round Riser Rail with integrated outlet | £116.13 | showering
+2026-08-05 16:11:41,610 INFO  scraper.vendor:   NEW Vario Round Shower Arm | £40.73 | showering
+2026-08-05 16:11:42,842 INFO  scraper.vendor:   NEW Round Ceiling Shower Arm | £31.2 | showering
+2026-08-05 16:11:44,522 INFO  scraper.vendor:   NEW Vario 200mm Round Shower Head | £105.73 | showering
+2026-08-05 16:11:46,401 INFO  scraper.vendor:   NEW Vario 250mm Round Shower Head | £168.13 | showering
+2026-08-05 16:11:48,413 INFO  scraper.vendor:   NEW Vario Round ABS Shower Head | £52.0 | showering
+2026-08-05 16:11:50,231 INFO  scraper.vendor:   NEW Vario Round ABS Shower Handset Mono Function | £21.67 | showering
+2026-08-05 16:11:52,151 INFO  scraper.vendor:   NEW Vario Round Pencil Hand Shower | £78.87 | showering
+2026-08-05 16:11:53,669 INFO  scraper.vendor:   NEW Vario Round Outlet Elbow | £24.27 | showering
+2026-08-05 16:11:55,675 INFO  scraper.vendor:   NEW Vario Round ABS Shower Handset Three Function | £36.4 | showering
+2026-08-05 16:11:57,023 INFO  scraper.vendor:   NEW Round Outlet Elbow with Hook | £30.33 | showering
+2026-08-05 16:11:59,053 INFO  scraper.vendor:   NEW Vario Square Riser Rail | £145.6 | showering
+2026-08-05 16:12:00,742 INFO  scraper.vendor:   NEW Vario 300mm Round Shower Head | £201.07 | showering
+    tissino done: {'found': 427, 'new': 298, 'updated': 0, 'failed': 129, 'skipped': 0}
+
+=== Summary ===
+  tissino: {'found': 427, 'new': 298, 'updated': 0, 'failed': 129, 'skipped': 0}

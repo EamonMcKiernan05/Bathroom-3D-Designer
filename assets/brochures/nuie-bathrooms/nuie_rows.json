@@ -1,0 +1,5208 @@
+[
+ {
+  "page": 59,
+  "name": "Round Single Ended Bath",
+  "section": "baths baths imperial baths thin-edge",
+  "category": "baths/single-ended",
+  "size_raw": "L1675 x W700 x D385mm NBA308 \u00a3392.00",
+  "dims": {
+   "width_mm": 1675,
+   "depth_mm": 700,
+   "height_mm": null,
+   "internal_depth_mm": 385
+  },
+  "hand": null,
+  "sku": "NBA308",
+  "price_gbp": 392.0,
+  "image": "p059_NBA308.png"
+ },
+ {
+  "page": 59,
+  "name": "Square Double Ended Bath",
+  "section": "baths baths imperial baths thin-edge",
+  "category": "baths/double-ended",
+  "size_raw": "L1700 x W700 x D400mm NBA909 \u00a3437.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 700,
+   "height_mm": null,
+   "internal_depth_mm": 400
+  },
+  "hand": null,
+  "sku": "NBA909",
+  "price_gbp": 437.0,
+  "image": "p059_NBA909.png"
+ },
+ {
+  "page": 59,
+  "name": "Square Double Ended Bath",
+  "section": "baths baths imperial baths thin-edge",
+  "category": "baths/double-ended",
+  "size_raw": "L1800 x W800 x D400mm NBA914 \u00a3505.00",
+  "dims": {
+   "width_mm": 1800,
+   "depth_mm": 800,
+   "height_mm": null,
+   "internal_depth_mm": 400
+  },
+  "hand": null,
+  "sku": "NBA914",
+  "price_gbp": 505.0,
+  "image": "p059_NBA909.png"
+ },
+ {
+  "page": 59,
+  "name": "Square Single Ended Bath",
+  "section": "baths baths imperial baths thin-edge",
+  "category": "baths/single-ended",
+  "size_raw": "L1700 x W700 x D400mm NBA809 \u00a3437.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 700,
+   "height_mm": null,
+   "internal_depth_mm": 400
+  },
+  "hand": null,
+  "sku": "NBA809",
+  "price_gbp": 437.0,
+  "image": "p059_NBA809.png"
+ },
+ {
+  "page": 59,
+  "name": "Square Single Ended Bath",
+  "section": "baths baths imperial baths thin-edge",
+  "category": "baths/single-ended",
+  "size_raw": "L1700 x W750 x D400mm NBA810 \u00a3468.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 750,
+   "height_mm": null,
+   "internal_depth_mm": 400
+  },
+  "hand": null,
+  "sku": "NBA810",
+  "price_gbp": 468.0,
+  "image": "p059_NBA809.png"
+ },
+ {
+  "page": 59,
+  "name": "Square Single Ended Bath",
+  "section": "baths baths imperial baths thin-edge",
+  "category": "baths/single-ended",
+  "size_raw": "L1800 x W800 x D400mm NBA814 \u00a3505.00",
+  "dims": {
+   "width_mm": 1800,
+   "depth_mm": 800,
+   "height_mm": null,
+   "internal_depth_mm": 400
+  },
+  "hand": null,
+  "sku": "NBA814",
+  "price_gbp": 505.0,
+  "image": "p059_NBA809.png"
+ },
+ {
+  "page": 60,
+  "name": "Curved Standard Bath",
+  "section": "baths baths curved",
+  "category": "baths",
+  "size_raw": "L1700 x W725 x D410mm Left BSG005L \u00a3826.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 725,
+   "height_mm": null,
+   "internal_depth_mm": 410
+  },
+  "hand": "Left",
+  "sku": "BSG005L",
+  "price_gbp": 826.0,
+  "image": "p060_BSG005L.png"
+ },
+ {
+  "page": 60,
+  "name": "Curved Standard Bath",
+  "section": "baths baths curved",
+  "category": "baths",
+  "size_raw": "L1700 x W725 x D410mm Right BSG005R \u00a3826.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 725,
+   "height_mm": null,
+   "internal_depth_mm": 410
+  },
+  "hand": "Right",
+  "sku": "BSG005R",
+  "price_gbp": 826.0,
+  "image": "p060_BSG005L.png"
+ },
+ {
+  "page": 60,
+  "name": "Curved Standard Bath",
+  "section": "baths baths curved",
+  "category": "baths",
+  "size_raw": "L1700 x W725 x D410mm Left NBH209L \u00a3455.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 725,
+   "height_mm": null,
+   "internal_depth_mm": 410
+  },
+  "hand": "Left",
+  "sku": "NBH209L",
+  "price_gbp": 455.0,
+  "image": "p060_BSG005L.png"
+ },
+ {
+  "page": 60,
+  "name": "Curved Standard Bath",
+  "section": "baths baths curved",
+  "category": "baths",
+  "size_raw": "L1700 x W725 x D410mm Right NBH209R \u00a3455.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 725,
+   "height_mm": null,
+   "internal_depth_mm": 410
+  },
+  "hand": "Right",
+  "sku": "NBH209R",
+  "price_gbp": 455.0,
+  "image": "p060_BSG005L.png"
+ },
+ {
+  "page": 60,
+  "name": "Curved Back to Wall Bath",
+  "section": "baths baths curved",
+  "category": "baths",
+  "size_raw": "L1700 x W750 x D410mm BSG003 \u00a3995.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 750,
+   "height_mm": null,
+   "internal_depth_mm": 410
+  },
+  "hand": null,
+  "sku": "BSG003",
+  "price_gbp": 995.0,
+  "image": "p060_BSG003.png"
+ },
+ {
+  "page": 60,
+  "name": "Curved Standard Bath",
+  "section": "baths baths curved",
+  "category": "baths",
+  "size_raw": "L1700 x W725 x D410mm Left NBH209L \u00a3455.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 725,
+   "height_mm": null,
+   "internal_depth_mm": 410
+  },
+  "hand": "Left",
+  "sku": "NBH209L",
+  "price_gbp": 455.0,
+  "image": "p060_NBH209L.png"
+ },
+ {
+  "page": 60,
+  "name": "Curved Standard Bath",
+  "section": "baths baths curved",
+  "category": "baths",
+  "size_raw": "L1700 x W725 x D410mm Right NBH209R \u00a3455.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 725,
+   "height_mm": null,
+   "internal_depth_mm": 410
+  },
+  "hand": "Right",
+  "sku": "NBH209R",
+  "price_gbp": 455.0,
+  "image": "p060_NBH209L.png"
+ },
+ {
+  "page": 60,
+  "name": "Double Ended Inset Spa Bath",
+  "section": "baths baths curved",
+  "category": "baths/double-ended",
+  "size_raw": "L1800 x W1200 x D450mm NBI1812 \u00a31,257.00",
+  "dims": {
+   "width_mm": 1800,
+   "depth_mm": 1200,
+   "height_mm": null,
+   "internal_depth_mm": 450
+  },
+  "hand": null,
+  "sku": "NBI1812",
+  "price_gbp": 1257.0,
+  "image": "p060_NBI1812.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath, Screen & White Acrylic Panel",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1500 x W850 x D400mm Left SBATH28 \u00a3899.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 400
+  },
+  "hand": "Left",
+  "sku": "SBATH28",
+  "price_gbp": 899.0,
+  "image": "p061_SBATH28.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath, Screen & White Acrylic Panel",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1600 x W850 x D400mm Left SBATH13 \u00a3899.00",
+  "dims": {
+   "width_mm": 1600,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 400
+  },
+  "hand": "Left",
+  "sku": "SBATH13",
+  "price_gbp": 899.0,
+  "image": "p061_SBATH28.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath, Screen & White Acrylic Panel",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1700 x W850 x D400mm Left SBATH05 \u00a3899.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 400
+  },
+  "hand": "Left",
+  "sku": "SBATH05",
+  "price_gbp": 899.0,
+  "image": "p061_SBATH28.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath, Screen & White Acrylic Panel",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1800 x W850 x D400mm Left SBATH15 \u00a3899.00",
+  "dims": {
+   "width_mm": 1800,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 400
+  },
+  "hand": "Left",
+  "sku": "SBATH15",
+  "price_gbp": 899.0,
+  "image": "p061_SBATH28.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath, Screen & White Acrylic Panel",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1500 x W850 x D400mm Right SBATH29 \u00a3899.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 400
+  },
+  "hand": "Right",
+  "sku": "SBATH29",
+  "price_gbp": 899.0,
+  "image": "p061_SBATH28.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath, Screen & White Acrylic Panel",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1600 x W850 x D400mm Right SBATH14 \u00a3899.00",
+  "dims": {
+   "width_mm": 1600,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 400
+  },
+  "hand": "Right",
+  "sku": "SBATH14",
+  "price_gbp": 899.0,
+  "image": "p061_SBATH28.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath, Screen & White Acrylic Panel",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1700 x W850 x D400mm Right SBATH06 \u00a3899.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 400
+  },
+  "hand": "Right",
+  "sku": "SBATH06",
+  "price_gbp": 899.0,
+  "image": "p061_SBATH28.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath, Screen & White Acrylic Panel",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1800 x W850 x D400mm Right SBATH16 \u00a3899.00",
+  "dims": {
+   "width_mm": 1800,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 400
+  },
+  "hand": "Right",
+  "sku": "SBATH16",
+  "price_gbp": 899.0,
+  "image": "p061_SBATH28.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1500 x W850 x D400mm Left WBS1585L \u00a3556.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 400
+  },
+  "hand": "Left",
+  "sku": "WBS1585L",
+  "price_gbp": 556.0,
+  "image": "p061_WBS1585L.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1600 x W850 x D400mm Left WBS1685L \u00a3556.00",
+  "dims": {
+   "width_mm": 1600,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 400
+  },
+  "hand": "Left",
+  "sku": "WBS1685L",
+  "price_gbp": 556.0,
+  "image": "p061_WBS1585L.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1700 x W850 x D400mm Left WBS1785L \u00a3556.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 400
+  },
+  "hand": "Left",
+  "sku": "WBS1785L",
+  "price_gbp": 556.0,
+  "image": "p061_WBS1585L.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1800 x W850 x D400mm Left NSK801S \u00a3556.00",
+  "dims": {
+   "width_mm": 1800,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 400
+  },
+  "hand": "Left",
+  "sku": "NSK801S",
+  "price_gbp": 556.0,
+  "image": "p061_WBS1585L.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1500 x W850 x D400mm Right WBS1585R \u00a3556.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 400
+  },
+  "hand": "Right",
+  "sku": "WBS1585R",
+  "price_gbp": 556.0,
+  "image": "p061_WBS1585L.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1600 x W850 x D400mm Right WBS1685R \u00a3556.00",
+  "dims": {
+   "width_mm": 1600,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 400
+  },
+  "hand": "Right",
+  "sku": "WBS1685R",
+  "price_gbp": 556.0,
+  "image": "p061_WBS1585L.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1700 x W850 x D400mm Right WBS1785R \u00a3556.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 400
+  },
+  "hand": "Right",
+  "sku": "WBS1785R",
+  "price_gbp": 556.0,
+  "image": "p061_WBS1585L.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1800 x W850 x D400mm Right NSK802S \u00a3556.00",
+  "dims": {
+   "width_mm": 1800,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 400
+  },
+  "hand": "Right",
+  "sku": "NSK802S",
+  "price_gbp": 556.0,
+  "image": "p061_WBS1585L.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath, Screen & White Acrylic Panel",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1500 x W900 x D415mm Left SBATH20 \u00a3887.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": 900,
+   "height_mm": null,
+   "internal_depth_mm": 415
+  },
+  "hand": "Left",
+  "sku": "SBATH20",
+  "price_gbp": 887.0,
+  "image": "p061_SBATH20.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath, Screen & White Acrylic Panel",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1700 x W900 x D415mm Left SBATH07 \u00a3887.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 900,
+   "height_mm": null,
+   "internal_depth_mm": 415
+  },
+  "hand": "Left",
+  "sku": "SBATH07",
+  "price_gbp": 887.0,
+  "image": "p061_SBATH20.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath, Screen & White Acrylic Panel",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1500 x W900 x D415mm Right SBATH21 \u00a3887.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": 900,
+   "height_mm": null,
+   "internal_depth_mm": 415
+  },
+  "hand": "Right",
+  "sku": "SBATH21",
+  "price_gbp": 887.0,
+  "image": "p061_SBATH20.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath, Screen & White Acrylic Panel",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1700 x W900 x D415mm Right SBATH08 \u00a3887.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 900,
+   "height_mm": null,
+   "internal_depth_mm": 415
+  },
+  "hand": "Right",
+  "sku": "SBATH08",
+  "price_gbp": 887.0,
+  "image": "p061_SBATH20.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath, Screen & White Acrylic Panel",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1500 x W850 x D420mm Left SBATH24 \u00a3877.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 420
+  },
+  "hand": "Left",
+  "sku": "SBATH24",
+  "price_gbp": 877.0,
+  "image": "p061_SBATH24.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath, Screen & White Acrylic Panel",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1700 x W850 x D420mm Left SBATH22 \u00a3877.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 420
+  },
+  "hand": "Left",
+  "sku": "SBATH22",
+  "price_gbp": 877.0,
+  "image": "p061_SBATH24.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath, Screen & White Acrylic Panel",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1500 x W850 x D420mm Right SBATH25 \u00a3877.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 420
+  },
+  "hand": "Right",
+  "sku": "SBATH25",
+  "price_gbp": 877.0,
+  "image": "p061_SBATH24.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath, Screen & White Acrylic Panel",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1700 x W850 x D420mm Right SBATH23 \u00a3877.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 420
+  },
+  "hand": "Right",
+  "sku": "SBATH23",
+  "price_gbp": 877.0,
+  "image": "p061_SBATH24.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1500 x W900 x D415mm Left SBATH20 \u00a3887.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": 900,
+   "height_mm": null,
+   "internal_depth_mm": 415
+  },
+  "hand": "Left",
+  "sku": "SBATH20",
+  "price_gbp": 887.0,
+  "image": "p061_SBATH20.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1700 x W900 x D415mm Left SBATH07 \u00a3887.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 900,
+   "height_mm": null,
+   "internal_depth_mm": 415
+  },
+  "hand": "Left",
+  "sku": "SBATH07",
+  "price_gbp": 887.0,
+  "image": "p061_SBATH20.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1500 x W900 x D415mm Right SBATH21 \u00a3887.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": 900,
+   "height_mm": null,
+   "internal_depth_mm": 415
+  },
+  "hand": "Right",
+  "sku": "SBATH21",
+  "price_gbp": 887.0,
+  "image": "p061_SBATH20.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1700 x W900 x D415mm Right SBATH08 \u00a3887.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 900,
+   "height_mm": null,
+   "internal_depth_mm": 415
+  },
+  "hand": "Right",
+  "sku": "SBATH08",
+  "price_gbp": 887.0,
+  "image": "p061_SBATH20.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1500 x W900 x D415mm Left WBB1585L \u00a3528.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": 900,
+   "height_mm": null,
+   "internal_depth_mm": 415
+  },
+  "hand": "Left",
+  "sku": "WBB1585L",
+  "price_gbp": 528.0,
+  "image": "p061_SBATH20.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1700 x W900 x D415mm Left WBB1785L \u00a3528.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 900,
+   "height_mm": null,
+   "internal_depth_mm": 415
+  },
+  "hand": "Left",
+  "sku": "WBB1785L",
+  "price_gbp": 528.0,
+  "image": "p061_SBATH20.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1500 x W900 x D415mm Right WBB1585R \u00a3528.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": 900,
+   "height_mm": null,
+   "internal_depth_mm": 415
+  },
+  "hand": "Right",
+  "sku": "WBB1585R",
+  "price_gbp": 528.0,
+  "image": "p061_SBATH20.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1700 x W900 x D415mm Right WBB1785R \u00a3528.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 900,
+   "height_mm": null,
+   "internal_depth_mm": 415
+  },
+  "hand": "Right",
+  "sku": "WBB1785R",
+  "price_gbp": 528.0,
+  "image": "p061_SBATH20.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1500 x W850 x D420mm Left SBATH24 \u00a3877.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 420
+  },
+  "hand": "Left",
+  "sku": "SBATH24",
+  "price_gbp": 877.0,
+  "image": "p061_SBATH24.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1700 x W850 x D420mm Left SBATH22 \u00a3877.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 420
+  },
+  "hand": "Left",
+  "sku": "SBATH22",
+  "price_gbp": 877.0,
+  "image": "p061_SBATH24.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1500 x W850 x D420mm Right SBATH25 \u00a3877.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 420
+  },
+  "hand": "Right",
+  "sku": "SBATH25",
+  "price_gbp": 877.0,
+  "image": "p061_SBATH24.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1700 x W850 x D420mm Right SBATH23 \u00a3877.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 420
+  },
+  "hand": "Right",
+  "sku": "SBATH23",
+  "price_gbp": 877.0,
+  "image": "p061_SBATH24.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1500 x W850 x D420mm Left WBP1585L \u00a3528.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 420
+  },
+  "hand": "Left",
+  "sku": "WBP1585L",
+  "price_gbp": 528.0,
+  "image": "p061_SBATH24.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1600 x W850 x D420mm Left WBP1685L \u00a3528.00",
+  "dims": {
+   "width_mm": 1600,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 420
+  },
+  "hand": "Left",
+  "sku": "WBP1685L",
+  "price_gbp": 528.0,
+  "image": "p061_SBATH24.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1700 x W850 x D420mm Left WBP1785L \u00a3528.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 420
+  },
+  "hand": "Left",
+  "sku": "WBP1785L",
+  "price_gbp": 528.0,
+  "image": "p061_SBATH24.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1500 x W850 x D420mm Right WBP1585R \u00a3528.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 420
+  },
+  "hand": "Right",
+  "sku": "WBP1585R",
+  "price_gbp": 528.0,
+  "image": "p061_SBATH24.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1600 x W850 x D420mm Right WBP1685R \u00a3528.00",
+  "dims": {
+   "width_mm": 1600,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 420
+  },
+  "hand": "Right",
+  "sku": "WBP1685R",
+  "price_gbp": 528.0,
+  "image": "p061_SBATH24.png"
+ },
+ {
+  "page": 61,
+  "name": "Bath Only",
+  "section": "baths baths shower",
+  "category": "baths",
+  "size_raw": "L1700 x W850 x D420mm Right WBP1785R \u00a3528.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 850,
+   "height_mm": null,
+   "internal_depth_mm": 420
+  },
+  "hand": "Right",
+  "sku": "WBP1785R",
+  "price_gbp": 528.0,
+  "image": "p061_SBATH24.png"
+ },
+ {
+  "page": 62,
+  "name": "Traditional Double Ended Bath",
+  "section": "baths baths traditional baths shower",
+  "category": "baths/double-ended",
+  "size_raw": "1800 x 800mm  NLB114 \u00a3529.00",
+  "dims": {
+   "width_mm": 1800,
+   "depth_mm": 800,
+   "height_mm": null,
+   "internal_depth_mm": null
+  },
+  "hand": null,
+  "sku": "NLB114",
+  "price_gbp": 529.0,
+  "image": "p062_NLB114.png"
+ },
+ {
+  "page": 62,
+  "name": "Traditional Single Ended Bath",
+  "section": "baths baths traditional baths shower",
+  "category": "baths/single-ended",
+  "size_raw": "1700 x 700mm NLB109 \u00a3466.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 700,
+   "height_mm": null,
+   "internal_depth_mm": null
+  },
+  "hand": null,
+  "sku": "NLB109",
+  "price_gbp": 466.0,
+  "image": "p062_NLB109.png"
+ },
+ {
+  "page": 62,
+  "name": "Traditional Single Ended Bath",
+  "section": "baths baths traditional baths shower",
+  "category": "baths/single-ended",
+  "size_raw": "1700 x 750mm NLB110 \u00a3494.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 750,
+   "height_mm": null,
+   "internal_depth_mm": null
+  },
+  "hand": null,
+  "sku": "NLB110",
+  "price_gbp": 494.0,
+  "image": "p062_NLB109.png"
+ },
+ {
+  "page": 62,
+  "name": "ETERNALITE",
+  "section": "baths baths traditional baths shower",
+  "category": "baths",
+  "size_raw": "L1700 x W750 x D385mm NBA710 \u00a3454.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 750,
+   "height_mm": null,
+   "internal_depth_mm": 385
+  },
+  "hand": null,
+  "sku": "NBA710",
+  "price_gbp": 454.0,
+  "image": "p062_NBA710.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1500 x W700 x D380mm NBA605 \u00a3354.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": 700,
+   "height_mm": null,
+   "internal_depth_mm": 380
+  },
+  "hand": null,
+  "sku": "NBA605",
+  "price_gbp": 354.0,
+  "image": "p063_NBA605.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1600 x W700 x D380mm NBA607 \u00a3367.00",
+  "dims": {
+   "width_mm": 1600,
+   "depth_mm": 700,
+   "height_mm": null,
+   "internal_depth_mm": 380
+  },
+  "hand": null,
+  "sku": "NBA607",
+  "price_gbp": 367.0,
+  "image": "p063_NBA605.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1700 x W700 x D380mm NBA609 \u00a3378.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 700,
+   "height_mm": null,
+   "internal_depth_mm": 380
+  },
+  "hand": null,
+  "sku": "NBA609",
+  "price_gbp": 378.0,
+  "image": "p063_NBA605.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1700 x W750 x D380mm NBA610 \u00a3440.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 750,
+   "height_mm": null,
+   "internal_depth_mm": 380
+  },
+  "hand": null,
+  "sku": "NBA610",
+  "price_gbp": 440.0,
+  "image": "p063_NBA605.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1800 x W800 x D380mm NBA614 \u00a3463.00",
+  "dims": {
+   "width_mm": 1800,
+   "depth_mm": 800,
+   "height_mm": null,
+   "internal_depth_mm": 380
+  },
+  "hand": null,
+  "sku": "NBA614",
+  "price_gbp": 463.0,
+  "image": "p063_NBA605.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1400 x W700 x D370mm NBA404 \u00a3361.00",
+  "dims": {
+   "width_mm": 1400,
+   "depth_mm": 700,
+   "height_mm": null,
+   "internal_depth_mm": 370
+  },
+  "hand": null,
+  "sku": "NBA404",
+  "price_gbp": 361.0,
+  "image": "p063_NBA605.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1500 x W700 x D370mm NBA405 \u00a3372.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": 700,
+   "height_mm": null,
+   "internal_depth_mm": 370
+  },
+  "hand": null,
+  "sku": "NBA405",
+  "price_gbp": 372.0,
+  "image": "p063_NBA605.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1600 x W700 x D380mm NBA407 \u00a3382.00",
+  "dims": {
+   "width_mm": 1600,
+   "depth_mm": 700,
+   "height_mm": null,
+   "internal_depth_mm": 380
+  },
+  "hand": null,
+  "sku": "NBA407",
+  "price_gbp": 382.0,
+  "image": "p063_NBA605.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1700 x W700 x D380mm NBA409 \u00a3393.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 700,
+   "height_mm": null,
+   "internal_depth_mm": 380
+  },
+  "hand": null,
+  "sku": "NBA409",
+  "price_gbp": 393.0,
+  "image": "p063_NBA605.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1700 x W750 x D380mm NBA410 \u00a3444.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 750,
+   "height_mm": null,
+   "internal_depth_mm": 380
+  },
+  "hand": null,
+  "sku": "NBA410",
+  "price_gbp": 444.0,
+  "image": "p063_NBA605.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1800 x W800 x D380mm NBA414 \u00a3479.00",
+  "dims": {
+   "width_mm": 1800,
+   "depth_mm": 800,
+   "height_mm": null,
+   "internal_depth_mm": 380
+  },
+  "hand": null,
+  "sku": "NBA414",
+  "price_gbp": 479.0,
+  "image": "p063_NBA605.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1400 x W700 x D370mm NBA404 \u00a3361.00",
+  "dims": {
+   "width_mm": 1400,
+   "depth_mm": 700,
+   "height_mm": null,
+   "internal_depth_mm": 370
+  },
+  "hand": null,
+  "sku": "NBA404",
+  "price_gbp": 361.0,
+  "image": "p063_NBA404.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1500 x W700 x D370mm NBA405 \u00a3372.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": 700,
+   "height_mm": null,
+   "internal_depth_mm": 370
+  },
+  "hand": null,
+  "sku": "NBA405",
+  "price_gbp": 372.0,
+  "image": "p063_NBA404.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1600 x W700 x D380mm NBA407 \u00a3382.00",
+  "dims": {
+   "width_mm": 1600,
+   "depth_mm": 700,
+   "height_mm": null,
+   "internal_depth_mm": 380
+  },
+  "hand": null,
+  "sku": "NBA407",
+  "price_gbp": 382.0,
+  "image": "p063_NBA404.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1700 x W700 x D380mm NBA409 \u00a3393.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 700,
+   "height_mm": null,
+   "internal_depth_mm": 380
+  },
+  "hand": null,
+  "sku": "NBA409",
+  "price_gbp": 393.0,
+  "image": "p063_NBA404.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1700 x W750 x D380mm NBA410 \u00a3444.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 750,
+   "height_mm": null,
+   "internal_depth_mm": 380
+  },
+  "hand": null,
+  "sku": "NBA410",
+  "price_gbp": 444.0,
+  "image": "p063_NBA404.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1800 x W800 x D380mm NBA414 \u00a3479.00",
+  "dims": {
+   "width_mm": 1800,
+   "depth_mm": 800,
+   "height_mm": null,
+   "internal_depth_mm": 380
+  },
+  "hand": null,
+  "sku": "NBA414",
+  "price_gbp": 479.0,
+  "image": "p063_NBA404.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1700 x W700 x D385mm NBA509 \u00a3390.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 700,
+   "height_mm": null,
+   "internal_depth_mm": 385
+  },
+  "hand": null,
+  "sku": "NBA509",
+  "price_gbp": 390.0,
+  "image": "p063_NBA509.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1700 x W750 x D385mm NBA510 \u00a3440.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 750,
+   "height_mm": null,
+   "internal_depth_mm": 385
+  },
+  "hand": null,
+  "sku": "NBA510",
+  "price_gbp": 440.0,
+  "image": "p063_NBA509.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1800 x W800 x D385mm NBA514 \u00a3471.00",
+  "dims": {
+   "width_mm": 1800,
+   "depth_mm": 800,
+   "height_mm": null,
+   "internal_depth_mm": 385
+  },
+  "hand": null,
+  "sku": "NBA514",
+  "price_gbp": 471.0,
+  "image": "p063_NBA509.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1700 x W700 x D385mm NBA209 \u00a3393.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 700,
+   "height_mm": null,
+   "internal_depth_mm": 385
+  },
+  "hand": null,
+  "sku": "NBA209",
+  "price_gbp": 393.0,
+  "image": "p063_NBA509.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1700 x W750 x D385mm NBA210 \u00a3444.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 750,
+   "height_mm": null,
+   "internal_depth_mm": 385
+  },
+  "hand": null,
+  "sku": "NBA210",
+  "price_gbp": 444.0,
+  "image": "p063_NBA509.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1800 x W800 x D385mm NBA214 \u00a3479.00",
+  "dims": {
+   "width_mm": 1800,
+   "depth_mm": 800,
+   "height_mm": null,
+   "internal_depth_mm": 385
+  },
+  "hand": null,
+  "sku": "NBA214",
+  "price_gbp": 479.0,
+  "image": "p063_NBA509.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1700 x W700 x D385mm NBA209 \u00a3393.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 700,
+   "height_mm": null,
+   "internal_depth_mm": 385
+  },
+  "hand": null,
+  "sku": "NBA209",
+  "price_gbp": 393.0,
+  "image": "p063_NBA209.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1700 x W750 x D385mm NBA210 \u00a3444.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": 750,
+   "height_mm": null,
+   "internal_depth_mm": 385
+  },
+  "hand": null,
+  "sku": "NBA210",
+  "price_gbp": 444.0,
+  "image": "p063_NBA209.png"
+ },
+ {
+  "page": 63,
+  "name": "ETERNALITE",
+  "section": "baths baths standard",
+  "category": "baths",
+  "size_raw": "L1800 x W800 x D385mm NBA214 \u00a3479.00",
+  "dims": {
+   "width_mm": 1800,
+   "depth_mm": 800,
+   "height_mm": null,
+   "internal_depth_mm": 385
+  },
+  "hand": null,
+  "sku": "NBA214",
+  "price_gbp": 479.0,
+  "image": "p063_NBA209.png"
+ },
+ {
+  "page": 71,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200 x 800mm AQU128N-E8 \u00a3862.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": 800,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "AQU128N-E8",
+  "price_gbp": 862.0,
+  "image": "p071_AQU128N-E8.png"
+ },
+ {
+  "page": 71,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm AQFSP80N-E8 \u00a3360.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "AQFSP80N-E8",
+  "price_gbp": 360.0,
+  "image": "p071_AQU128N-E8.png"
+ },
+ {
+  "page": 71,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm AQFSP90N-E8 \u00a3400.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "AQFSP90N-E8",
+  "price_gbp": 400.0,
+  "image": "p071_AQU128N-E8.png"
+ },
+ {
+  "page": 71,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm AQFSP10N-E8 \u00a3440.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "AQFSP10N-E8",
+  "price_gbp": 440.0,
+  "image": "p071_AQU128N-E8.png"
+ },
+ {
+  "page": 71,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900 x 900mm AQU9N-E8 \u00a3738.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": 900,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "AQU9N-E8",
+  "price_gbp": 738.0,
+  "image": "p071_AQU9N-E8.png"
+ },
+ {
+  "page": 71,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000 x 1000mm AQU10N-E8 \u00a3806.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": 1000,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "AQU10N-E8",
+  "price_gbp": 806.0,
+  "image": "p071_AQU9N-E8.png"
+ },
+ {
+  "page": 71,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200mm AQSL12N-E8 \u00a3589.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "AQSL12N-E8",
+  "price_gbp": 589.0,
+  "image": "p071_AQU9N-E8.png"
+ },
+ {
+  "page": 71,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1400mm  AQSL14N-E8 \u00a3636.00",
+  "dims": {
+   "width_mm": 1400,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "AQSL14N-E8",
+  "price_gbp": 636.0,
+  "image": "p071_AQU9N-E8.png"
+ },
+ {
+  "page": 71,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1700mm  AQSL17N-E8 \u00a3712.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "AQSL17N-E8",
+  "price_gbp": 712.0,
+  "image": "p071_AQU9N-E8.png"
+ },
+ {
+  "page": 71,
+  "name": "single sliding door hinged door side panels",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm  AQHD80N-E8 \u00a3493.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "AQHD80N-E8",
+  "price_gbp": 493.0,
+  "image": "p071_AQHD80N-E8.png"
+ },
+ {
+  "page": 71,
+  "name": "single sliding door hinged door side panels",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm  AQHD90N-E8 \u00a3521.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "AQHD90N-E8",
+  "price_gbp": 521.0,
+  "image": "p071_AQHD80N-E8.png"
+ },
+ {
+  "page": 71,
+  "name": "single sliding door hinged door side panels",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200mm AQSL12N-E8 \u00a3589.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "AQSL12N-E8",
+  "price_gbp": 589.0,
+  "image": "p071_AQSL12N-E8.png"
+ },
+ {
+  "page": 71,
+  "name": "single sliding door hinged door side panels",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1400mm  AQSL14N-E8 \u00a3636.00",
+  "dims": {
+   "width_mm": 1400,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "AQSL14N-E8",
+  "price_gbp": 636.0,
+  "image": "p071_AQSL12N-E8.png"
+ },
+ {
+  "page": 71,
+  "name": "single sliding door hinged door side panels",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1700mm  AQSL17N-E8 \u00a3712.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "AQSL17N-E8",
+  "price_gbp": 712.0,
+  "image": "p071_AQSL12N-E8.png"
+ },
+ {
+  "page": 71,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm AQFSP80N-E8 \u00a3360.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "AQFSP80N-E8",
+  "price_gbp": 360.0,
+  "image": "p071_AQFSP80N-E8.png"
+ },
+ {
+  "page": 71,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm AQFSP90N-E8 \u00a3400.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "AQFSP90N-E8",
+  "price_gbp": 400.0,
+  "image": "p071_AQFSP80N-E8.png"
+ },
+ {
+  "page": 71,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm AQFSP10N-E8 \u00a3440.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "AQFSP10N-E8",
+  "price_gbp": 440.0,
+  "image": "p071_AQFSP80N-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "quadrant offset quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200 x 800mm AQU128NBP-E8 \u00a3959.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": 800,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQU128NBP-E8",
+  "price_gbp": 959.0,
+  "image": "p072_AQU128NBP-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "quadrant offset quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm AQFSP80NBP-E8 \u00a3400.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQFSP80NBP-E8",
+  "price_gbp": 400.0,
+  "image": "p072_AQU128NBP-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "quadrant offset quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm AQFSP90NBP-E8 \u00a3444.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQFSP90NBP-E8",
+  "price_gbp": 444.0,
+  "image": "p072_AQU128NBP-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "quadrant offset quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm AQFSP10NBP-E8 \u00a3489.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQFSP10NBP-E8",
+  "price_gbp": 489.0,
+  "image": "p072_AQU128NBP-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "quadrant offset quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200 x 800mm AQU128NBB-E8 \u00a3998.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": 800,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQU128NBB-E8",
+  "price_gbp": 998.0,
+  "image": "p072_AQU128NBB-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "quadrant offset quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm AQFSP80NBB-E8 \u00a3424.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQFSP80NBB-E8",
+  "price_gbp": 424.0,
+  "image": "p072_AQU128NBB-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "quadrant offset quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm AQFSP90NBB-E8 \u00a3471.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQFSP90NBB-E8",
+  "price_gbp": 471.0,
+  "image": "p072_AQU128NBB-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "quadrant offset quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm AQFSP10NBB-E8 \u00a3518.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQFSP10NBB-E8",
+  "price_gbp": 518.0,
+  "image": "p072_AQU128NBB-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "quadrant offset quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900 x 900mm AQU9NBP-E8 \u00a3820.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": 900,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQU9NBP-E8",
+  "price_gbp": 820.0,
+  "image": "p072_AQU9NBP-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "quadrant offset quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000 x 1000mm AQU10NBP-E8 \u00a3896.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": 1000,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQU10NBP-E8",
+  "price_gbp": 896.0,
+  "image": "p072_AQU9NBP-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "quadrant offset quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200mm AQSL12NBP-E8 \u00a3654.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQSL12NBP-E8",
+  "price_gbp": 654.0,
+  "image": "p072_AQU9NBP-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "quadrant offset quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1400mm  AQSL14NBP-E8 \u00a3707.00",
+  "dims": {
+   "width_mm": 1400,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQSL14NBP-E8",
+  "price_gbp": 707.0,
+  "image": "p072_AQU9NBP-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "quadrant offset quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1700mm  AQSL17NBP-E8 \u00a3791.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQSL17NBP-E8",
+  "price_gbp": 791.0,
+  "image": "p072_AQU9NBP-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "quadrant offset quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900 x 900mm AQU9NBB-E8 \u00a3868.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": 900,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQU9NBB-E8",
+  "price_gbp": 868.0,
+  "image": "p072_AQU9NBB-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "quadrant offset quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000 x 1000mm AQU10NBB-E8 \u00a3948.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": 1000,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQU10NBB-E8",
+  "price_gbp": 948.0,
+  "image": "p072_AQU9NBB-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "quadrant offset quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200mm AQSL12NBB-E8 \u00a3693.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQSL12NBB-E8",
+  "price_gbp": 693.0,
+  "image": "p072_AQU9NBB-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "quadrant offset quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1400mm  AQSL14NBB-E8 \u00a3748.00",
+  "dims": {
+   "width_mm": 1400,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQSL14NBB-E8",
+  "price_gbp": 748.0,
+  "image": "p072_AQU9NBB-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "quadrant offset quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1700mm  AQSL17NBB-E8 \u00a3838.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQSL17NBB-E8",
+  "price_gbp": 838.0,
+  "image": "p072_AQU9NBB-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "single sliding door single sliding door hinged door hinged door side panels side panels",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm  AQHD80NBP-E8 \u00a3548.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQHD80NBP-E8",
+  "price_gbp": 548.0,
+  "image": "p072_AQHD80NBP-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "single sliding door single sliding door hinged door hinged door side panels side panels",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm  AQHD90NBP-E8 \u00a3579.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQHD90NBP-E8",
+  "price_gbp": 579.0,
+  "image": "p072_AQHD80NBP-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "single sliding door single sliding door hinged door hinged door side panels side panels",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm  AQHD80NBB-E8 \u00a3580.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQHD80NBB-E8",
+  "price_gbp": 580.0,
+  "image": "p072_AQHD80NBB-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "single sliding door single sliding door hinged door hinged door side panels side panels",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm  AQHD90NBB-E8 \u00a3613.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQHD90NBB-E8",
+  "price_gbp": 613.0,
+  "image": "p072_AQHD80NBB-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "single sliding door single sliding door hinged door hinged door side panels side panels",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200mm AQSL12NBP-E8 \u00a3654.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQSL12NBP-E8",
+  "price_gbp": 654.0,
+  "image": "p072_AQSL12NBP-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "single sliding door single sliding door hinged door hinged door side panels side panels",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1400mm  AQSL14NBP-E8 \u00a3707.00",
+  "dims": {
+   "width_mm": 1400,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQSL14NBP-E8",
+  "price_gbp": 707.0,
+  "image": "p072_AQSL12NBP-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "single sliding door single sliding door hinged door hinged door side panels side panels",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1700mm  AQSL17NBP-E8 \u00a3791.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQSL17NBP-E8",
+  "price_gbp": 791.0,
+  "image": "p072_AQSL12NBP-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "single sliding door single sliding door hinged door hinged door side panels side panels",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200mm AQSL12NBB-E8 \u00a3693.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQSL12NBB-E8",
+  "price_gbp": 693.0,
+  "image": "p072_AQSL12NBB-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "single sliding door single sliding door hinged door hinged door side panels side panels",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1400mm  AQSL14NBB-E8 \u00a3748.00",
+  "dims": {
+   "width_mm": 1400,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQSL14NBB-E8",
+  "price_gbp": 748.0,
+  "image": "p072_AQSL12NBB-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "single sliding door single sliding door hinged door hinged door side panels side panels",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1700mm  AQSL17NBB-E8 \u00a3838.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQSL17NBB-E8",
+  "price_gbp": 838.0,
+  "image": "p072_AQSL12NBB-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "quadrant offset quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm AQFSP80NBP-E8 \u00a3400.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQFSP80NBP-E8",
+  "price_gbp": 400.0,
+  "image": "p072_AQFSP80NBP-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "quadrant offset quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm AQFSP90NBP-E8 \u00a3444.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQFSP90NBP-E8",
+  "price_gbp": 444.0,
+  "image": "p072_AQFSP80NBP-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "quadrant offset quadrant offset quadrant",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm AQFSP10NBP-E8 \u00a3489.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQFSP10NBP-E8",
+  "price_gbp": 489.0,
+  "image": "p072_AQFSP80NBP-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "single sliding door single sliding door hinged door hinged door side panels side panels",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm AQFSP80NBB-E8 \u00a3424.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQFSP80NBB-E8",
+  "price_gbp": 424.0,
+  "image": "p072_AQFSP80NBB-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "single sliding door single sliding door hinged door hinged door side panels side panels",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm AQFSP90NBB-E8 \u00a3471.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQFSP90NBB-E8",
+  "price_gbp": 471.0,
+  "image": "p072_AQFSP80NBB-E8.png"
+ },
+ {
+  "page": 72,
+  "name": "single sliding door single sliding door hinged door hinged door side panels side panels",
+  "section": "enclosures enclosures lucie 8mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm AQFSP10NBB-E8 \u00a3518.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "sku": "AQFSP10NBB-E8",
+  "price_gbp": 518.0,
+  "image": "p072_AQFSP80NBB-E8.png"
+ },
+ {
+  "page": 73,
+  "name": "bi-fold door 4mm corner entry",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800 x 800mm SMCE80-E6 \u00a3656.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": 800,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMCE80-E6",
+  "price_gbp": 656.0,
+  "image": "p073_SMCE80-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "bi-fold door 4mm corner entry",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900 x 900mm SMCE90-E6 \u00a3713.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": 900,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMCE90-E6",
+  "price_gbp": 713.0,
+  "image": "p073_SMCE80-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "bi-fold door 4mm corner entry",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1400mm  SMSLD14-E6 \u00a3520.00",
+  "dims": {
+   "width_mm": 1400,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSLD14-E6",
+  "price_gbp": 520.0,
+  "image": "p073_SMCE80-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "bi-fold door 4mm corner entry",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1700mm  SMSLD17-E6 \u00a3588.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSLD17-E6",
+  "price_gbp": 588.0,
+  "image": "p073_SMCE80-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900 x 760mm SMQU769-E6 \u00a3500.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": 760,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMQU769-E6",
+  "price_gbp": 500.0,
+  "image": "p073_SMQU769-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000 x 800mm SMQU108-E6 \u00a3535.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": 800,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMQU108-E6",
+  "price_gbp": 535.0,
+  "image": "p073_SMQU769-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000 x 900mm SMQU109-E6 \u00a3579.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": 900,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMQU109-E6",
+  "price_gbp": 579.0,
+  "image": "p073_SMQU769-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200 x 800mm SMQU128-E6 \u00a3601.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": 800,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMQU128-E6",
+  "price_gbp": 601.0,
+  "image": "p073_SMQU769-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200 x 900mm SMQU129-E6 \u00a3642.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": 900,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMQU129-E6",
+  "price_gbp": 642.0,
+  "image": "p073_SMQU769-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm SMSL10-E6 \u00a3398.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL10-E6",
+  "price_gbp": 398.0,
+  "image": "p073_SMQU769-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1100mm SMSL11-E6 \u00a3419.00",
+  "dims": {
+   "width_mm": 1100,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL11-E6",
+  "price_gbp": 419.0,
+  "image": "p073_SMQU769-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200mm SMSL12-E6 \u00a3429.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL12-E6",
+  "price_gbp": 429.0,
+  "image": "p073_SMQU769-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1400mm  SMSL14-E6 \u00a3473.00",
+  "dims": {
+   "width_mm": 1400,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL14-E6",
+  "price_gbp": 473.0,
+  "image": "p073_SMQU769-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1500mm  SMSL15-E6 \u00a3489.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL15-E6",
+  "price_gbp": 489.0,
+  "image": "p073_SMQU769-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1600mm  SMSL16-E6 \u00a3505.00",
+  "dims": {
+   "width_mm": 1600,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL16-E6",
+  "price_gbp": 505.0,
+  "image": "p073_SMQU769-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1700mm  SMSL17-E6 \u00a3520.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL17-E6",
+  "price_gbp": 520.0,
+  "image": "p073_SMQU769-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800 x 800mm SMQU8-E6 \u00a3468.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": 800,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMQU8-E6",
+  "price_gbp": 468.0,
+  "image": "p073_SMQU8-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900 x 900mm SMQU9-E6 \u00a3492.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": 900,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMQU9-E6",
+  "price_gbp": 492.0,
+  "image": "p073_SMQU8-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000 x 1000mm SMQU10-E6 \u00a3518.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": 1000,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMQU10-E6",
+  "price_gbp": 518.0,
+  "image": "p073_SMQU8-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "700mm SMHD70-E6 \u00a3375.00",
+  "dims": {
+   "width_mm": 700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD70-E6",
+  "price_gbp": 375.0,
+  "image": "p073_SMQU8-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SMHD76-E6 \u00a3388.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD76-E6",
+  "price_gbp": 388.0,
+  "image": "p073_SMQU8-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm  SMHD80-E6 \u00a3415.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD80-E6",
+  "price_gbp": 415.0,
+  "image": "p073_SMQU8-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm  SMHD90-E6 \u00a3447.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD90-E6",
+  "price_gbp": 447.0,
+  "image": "p073_SMQU8-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900 x 900mm SMQ9E1-E6 \u00a3492.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": 900,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMQ9E1-E6",
+  "price_gbp": 492.0,
+  "image": "p073_SMQ9E1-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SMPD76-E6 \u00a3363.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMPD76-E6",
+  "price_gbp": 363.0,
+  "image": "p073_SMQ9E1-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm SMPD80-E6 \u00a3375.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMPD80-E6",
+  "price_gbp": 375.0,
+  "image": "p073_SMQ9E1-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm SMPD90-E6 \u00a3402.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMPD90-E6",
+  "price_gbp": 402.0,
+  "image": "p073_SMQ9E1-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm SMPD10-E6 \u00a3437.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMPD10-E6",
+  "price_gbp": 437.0,
+  "image": "p073_SMQ9E1-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "bi-fold door 4mm corner entry",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "700mm SMBD7-E6 \u00a3422.00",
+  "dims": {
+   "width_mm": 700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMBD7-E6",
+  "price_gbp": 422.0,
+  "image": "p073_SMBD7-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "bi-fold door 4mm corner entry",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SMBD76-E6 \u00a3423.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMBD76-E6",
+  "price_gbp": 423.0,
+  "image": "p073_SMBD7-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "bi-fold door 4mm corner entry",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm  SMBD8-E6 \u00a3433.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMBD8-E6",
+  "price_gbp": 433.0,
+  "image": "p073_SMBD7-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "bi-fold door 4mm corner entry",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm  SMBD9-E6 \u00a3462.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMBD9-E6",
+  "price_gbp": 462.0,
+  "image": "p073_SMBD7-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "bi-fold door 4mm corner entry",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm SMBD10-E6 \u00a3510.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMBD10-E6",
+  "price_gbp": 510.0,
+  "image": "p073_SMBD7-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "bi-fold door 4mm corner entry",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1100mm  SMBD11-E6 \u00a3520.00",
+  "dims": {
+   "width_mm": 1100,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMBD11-E6",
+  "price_gbp": 520.0,
+  "image": "p073_SMBD7-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "bi-fold door 4mm corner entry",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200mm  SMBD12-E6 \u00a3572.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMBD12-E6",
+  "price_gbp": 572.0,
+  "image": "p073_SMBD7-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "bi-fold door 4mm corner entry",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "700mm SMSP70-E6 \u00a3222.00",
+  "dims": {
+   "width_mm": 700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP70-E6",
+  "price_gbp": 222.0,
+  "image": "p073_SMBD7-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "bi-fold door 4mm corner entry",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SMSP76-E6 \u00a3250.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP76-E6",
+  "price_gbp": 250.0,
+  "image": "p073_SMBD7-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "bi-fold door 4mm corner entry",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm SMSP80-E6 \u00a3269.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP80-E6",
+  "price_gbp": 269.0,
+  "image": "p073_SMBD7-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "bi-fold door 4mm corner entry",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm SMSP90-E6 \u00a3295.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP90-E6",
+  "price_gbp": 295.0,
+  "image": "p073_SMBD7-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "bi-fold door 4mm corner entry",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm SMSP10-E6 \u00a3323.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP10-E6",
+  "price_gbp": 323.0,
+  "image": "p073_SMBD7-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SMPD76-E6 \u00a3363.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMPD76-E6",
+  "price_gbp": 363.0,
+  "image": "p073_SMPD76-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm SMPD80-E6 \u00a3375.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMPD80-E6",
+  "price_gbp": 375.0,
+  "image": "p073_SMPD76-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm SMPD90-E6 \u00a3402.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMPD90-E6",
+  "price_gbp": 402.0,
+  "image": "p073_SMPD76-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm SMPD10-E6 \u00a3437.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMPD10-E6",
+  "price_gbp": 437.0,
+  "image": "p073_SMPD76-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "700mm SMHD70-E6 \u00a3375.00",
+  "dims": {
+   "width_mm": 700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD70-E6",
+  "price_gbp": 375.0,
+  "image": "p073_SMHD70-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SMHD76-E6 \u00a3388.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD76-E6",
+  "price_gbp": 388.0,
+  "image": "p073_SMHD70-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm  SMHD80-E6 \u00a3415.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD80-E6",
+  "price_gbp": 415.0,
+  "image": "p073_SMHD70-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm  SMHD90-E6 \u00a3447.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD90-E6",
+  "price_gbp": 447.0,
+  "image": "p073_SMHD70-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm SMSL10-E6 \u00a3398.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL10-E6",
+  "price_gbp": 398.0,
+  "image": "p073_SMSL10-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1100mm SMSL11-E6 \u00a3419.00",
+  "dims": {
+   "width_mm": 1100,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL11-E6",
+  "price_gbp": 419.0,
+  "image": "p073_SMSL10-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200mm SMSL12-E6 \u00a3429.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL12-E6",
+  "price_gbp": 429.0,
+  "image": "p073_SMSL10-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1400mm  SMSL14-E6 \u00a3473.00",
+  "dims": {
+   "width_mm": 1400,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL14-E6",
+  "price_gbp": 473.0,
+  "image": "p073_SMSL10-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1500mm  SMSL15-E6 \u00a3489.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL15-E6",
+  "price_gbp": 489.0,
+  "image": "p073_SMSL10-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1600mm  SMSL16-E6 \u00a3505.00",
+  "dims": {
+   "width_mm": 1600,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL16-E6",
+  "price_gbp": 505.0,
+  "image": "p073_SMSL10-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1700mm  SMSL17-E6 \u00a3520.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL17-E6",
+  "price_gbp": 520.0,
+  "image": "p073_SMSL10-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "double sliding door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1400mm  SMSLD14-E6 \u00a3520.00",
+  "dims": {
+   "width_mm": 1400,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSLD14-E6",
+  "price_gbp": 520.0,
+  "image": "p073_SMSLD14-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "double sliding door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1700mm  SMSLD17-E6 \u00a3588.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSLD17-E6",
+  "price_gbp": 588.0,
+  "image": "p073_SMSLD14-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "side panels",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "700mm SMSP70-E6 \u00a3222.00",
+  "dims": {
+   "width_mm": 700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP70-E6",
+  "price_gbp": 222.0,
+  "image": "p073_SMSP70-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "side panels",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SMSP76-E6 \u00a3250.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP76-E6",
+  "price_gbp": 250.0,
+  "image": "p073_SMSP70-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "side panels",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm SMSP80-E6 \u00a3269.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP80-E6",
+  "price_gbp": 269.0,
+  "image": "p073_SMSP70-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "side panels",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm SMSP90-E6 \u00a3295.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP90-E6",
+  "price_gbp": 295.0,
+  "image": "p073_SMSP70-E6.png"
+ },
+ {
+  "page": 73,
+  "name": "side panels",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm SMSP10-E6 \u00a3323.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP10-E6",
+  "price_gbp": 323.0,
+  "image": "p073_SMSP70-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000 x 800mm SMQU108BB-E6 \u00a3694.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": 800,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMQU108BB-E6",
+  "price_gbp": 694.0,
+  "image": "p074_SMQU108BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200 x 800mm SMQU128BB-E6 \u00a3786.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": 800,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMQU128BB-E6",
+  "price_gbp": 786.0,
+  "image": "p074_SMQU108BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200 x 900mm SMQU129BB-E6 \u00a3827.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": 900,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMQU129BB-E6",
+  "price_gbp": 827.0,
+  "image": "p074_SMQU108BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "700mm SMSP70BB-E6 \u00a3318.00",
+  "dims": {
+   "width_mm": 700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP70BB-E6",
+  "price_gbp": 318.0,
+  "image": "p074_SMQU108BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SMSP76BB-E6 \u00a3344.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP76BB-E6",
+  "price_gbp": 344.0,
+  "image": "p074_SMQU108BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm SMSP80BB-E6 \u00a3376.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP80BB-E6",
+  "price_gbp": 376.0,
+  "image": "p074_SMQU108BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm SMSP90BB-E6 \u00a3385.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP90BB-E6",
+  "price_gbp": 385.0,
+  "image": "p074_SMQU108BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm SMSP10BB-E6 \u00a3406.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP10BB-E6",
+  "price_gbp": 406.0,
+  "image": "p074_SMQU108BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800 x 800mm SMQU8BB-E6 \u00a3656.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": 800,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMQU8BB-E6",
+  "price_gbp": 656.0,
+  "image": "p074_SMQU8BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900 x 900mm SMQU9BB-E6 \u00a3683.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": 900,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMQU9BB-E6",
+  "price_gbp": 683.0,
+  "image": "p074_SMQU8BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm SMSL10BB-E6 \u00a3557.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL10BB-E6",
+  "price_gbp": 557.0,
+  "image": "p074_SMQU8BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1100mm SMSL11BB-E6 \u00a3590.00",
+  "dims": {
+   "width_mm": 1100,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL11BB-E6",
+  "price_gbp": 590.0,
+  "image": "p074_SMQU8BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200mm SMSL12BB-E6 \u00a3600.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL12BB-E6",
+  "price_gbp": 600.0,
+  "image": "p074_SMQU8BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1400mm  SMSL14BB-E6 \u00a3656.00",
+  "dims": {
+   "width_mm": 1400,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL14BB-E6",
+  "price_gbp": 656.0,
+  "image": "p074_SMQU8BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1500mm  SMSL15BB-E6 \u00a3687.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL15BB-E6",
+  "price_gbp": 687.0,
+  "image": "p074_SMQU8BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1600mm  SMSL16BB-E6 \u00a3718.00",
+  "dims": {
+   "width_mm": 1600,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL16BB-E6",
+  "price_gbp": 718.0,
+  "image": "p074_SMQU8BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1700mm  SMSL17BB-E6 \u00a3749.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL17BB-E6",
+  "price_gbp": 749.0,
+  "image": "p074_SMQU8BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900 x 900mm SMQ9E1BB-E6 \u00a3683.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": 900,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMQ9E1BB-E6",
+  "price_gbp": 683.0,
+  "image": "p074_SMQ9E1BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "700mm SMHD70BB-E6 \u00a3497.00",
+  "dims": {
+   "width_mm": 700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD70BB-E6",
+  "price_gbp": 497.0,
+  "image": "p074_SMQ9E1BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SMHD76BB-E6 \u00a3524.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD76BB-E6",
+  "price_gbp": 524.0,
+  "image": "p074_SMQ9E1BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm  SMHD80BB-E6 \u00a3555.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD80BB-E6",
+  "price_gbp": 555.0,
+  "image": "p074_SMQ9E1BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm  SMHD90BB-E6 \u00a3586.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD90BB-E6",
+  "price_gbp": 586.0,
+  "image": "p074_SMQ9E1BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "bi-fold door 4mm",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "700mm SMBD7BB-E6 \u00a3552.00",
+  "dims": {
+   "width_mm": 700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMBD7BB-E6",
+  "price_gbp": 552.0,
+  "image": "p074_SMBD7BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "bi-fold door 4mm",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SMBD76BB-E6 \u00a3557.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMBD76BB-E6",
+  "price_gbp": 557.0,
+  "image": "p074_SMBD7BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "bi-fold door 4mm",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm  SMBD8BB-E6 \u00a3562.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMBD8BB-E6",
+  "price_gbp": 562.0,
+  "image": "p074_SMBD7BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "bi-fold door 4mm",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm  SMBD9BB-E6 \u00a3593.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMBD9BB-E6",
+  "price_gbp": 593.0,
+  "image": "p074_SMBD7BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SMPD76BB-E6 \u00a3483.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMPD76BB-E6",
+  "price_gbp": 483.0,
+  "image": "p074_SMPD76BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm SMPD80BB-E6 \u00a3510.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMPD80BB-E6",
+  "price_gbp": 510.0,
+  "image": "p074_SMPD76BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm SMPD90BB-E6 \u00a3541.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMPD90BB-E6",
+  "price_gbp": 541.0,
+  "image": "p074_SMPD76BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "700mm SMHD70BB-E6 \u00a3497.00",
+  "dims": {
+   "width_mm": 700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD70BB-E6",
+  "price_gbp": 497.0,
+  "image": "p074_SMHD70BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SMHD76BB-E6 \u00a3524.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD76BB-E6",
+  "price_gbp": 524.0,
+  "image": "p074_SMHD70BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm  SMHD80BB-E6 \u00a3555.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD80BB-E6",
+  "price_gbp": 555.0,
+  "image": "p074_SMHD70BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm  SMHD90BB-E6 \u00a3586.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD90BB-E6",
+  "price_gbp": 586.0,
+  "image": "p074_SMHD70BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm SMSL10BB-E6 \u00a3557.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL10BB-E6",
+  "price_gbp": 557.0,
+  "image": "p074_SMSL10BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1100mm SMSL11BB-E6 \u00a3590.00",
+  "dims": {
+   "width_mm": 1100,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL11BB-E6",
+  "price_gbp": 590.0,
+  "image": "p074_SMSL10BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200mm SMSL12BB-E6 \u00a3600.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL12BB-E6",
+  "price_gbp": 600.0,
+  "image": "p074_SMSL10BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1400mm  SMSL14BB-E6 \u00a3656.00",
+  "dims": {
+   "width_mm": 1400,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL14BB-E6",
+  "price_gbp": 656.0,
+  "image": "p074_SMSL10BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1500mm  SMSL15BB-E6 \u00a3687.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL15BB-E6",
+  "price_gbp": 687.0,
+  "image": "p074_SMSL10BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1600mm  SMSL16BB-E6 \u00a3718.00",
+  "dims": {
+   "width_mm": 1600,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL16BB-E6",
+  "price_gbp": 718.0,
+  "image": "p074_SMSL10BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1700mm  SMSL17BB-E6 \u00a3749.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL17BB-E6",
+  "price_gbp": 749.0,
+  "image": "p074_SMSL10BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "700mm SMSP70BB-E6 \u00a3318.00",
+  "dims": {
+   "width_mm": 700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP70BB-E6",
+  "price_gbp": 318.0,
+  "image": "p074_SMSP70BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SMSP76BB-E6 \u00a3344.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP76BB-E6",
+  "price_gbp": 344.0,
+  "image": "p074_SMSP70BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm SMSP80BB-E6 \u00a3376.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP80BB-E6",
+  "price_gbp": 376.0,
+  "image": "p074_SMSP70BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm SMSP90BB-E6 \u00a3385.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP90BB-E6",
+  "price_gbp": 385.0,
+  "image": "p074_SMSP70BB-E6.png"
+ },
+ {
+  "page": 74,
+  "name": "quadrant single entry quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm SMSP10BB-E6 \u00a3406.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP10BB-E6",
+  "price_gbp": 406.0,
+  "image": "p074_SMSP70BB-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000 x 800mm SMQU108BP-E6 \u00a3632.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": 800,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMQU108BP-E6",
+  "price_gbp": 632.0,
+  "image": "p075_SMQU108BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200 x 800mm SMQU128BP-E6 \u00a3723.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": 800,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMQU128BP-E6",
+  "price_gbp": 723.0,
+  "image": "p075_SMQU108BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200 x 900mm SMQU129BP-E6 \u00a3765.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": 900,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMQU129BP-E6",
+  "price_gbp": 765.0,
+  "image": "p075_SMQU108BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "700mm SMSP70BP-E6 \u00a3289.00",
+  "dims": {
+   "width_mm": 700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP70BP-E6",
+  "price_gbp": 289.0,
+  "image": "p075_SMQU108BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SMSP76BP-E6 \u00a3311.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP76BP-E6",
+  "price_gbp": 311.0,
+  "image": "p075_SMQU108BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm SMSP80BP-E6 \u00a3342.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP80BP-E6",
+  "price_gbp": 342.0,
+  "image": "p075_SMQU108BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm SMSP90BP-E6 \u00a3350.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP90BP-E6",
+  "price_gbp": 350.0,
+  "image": "p075_SMQU108BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm SMSP10BP-E6 \u00a3360.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP10BP-E6",
+  "price_gbp": 360.0,
+  "image": "p075_SMQU108BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800 x 800mm SMQU8BP-E6 \u00a3596.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": 800,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMQU8BP-E6",
+  "price_gbp": 596.0,
+  "image": "p075_SMQU8BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900 x 900mm SMQU9BP-E6 \u00a3620.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": 900,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMQU9BP-E6",
+  "price_gbp": 620.0,
+  "image": "p075_SMQU8BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm SMSL10BP-E6 \u00a3506.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL10BP-E6",
+  "price_gbp": 506.0,
+  "image": "p075_SMQU8BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1100mm SMSL11BP-E6 \u00a3526.00",
+  "dims": {
+   "width_mm": 1100,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL11BP-E6",
+  "price_gbp": 526.0,
+  "image": "p075_SMQU8BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200mm SMSL12BP-E6 \u00a3545.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL12BP-E6",
+  "price_gbp": 545.0,
+  "image": "p075_SMQU8BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1400mm  SMSL14BP-E6 \u00a3596.00",
+  "dims": {
+   "width_mm": 1400,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL14BP-E6",
+  "price_gbp": 596.0,
+  "image": "p075_SMQU8BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1500mm  SMSL15BP-E6 \u00a3617.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL15BP-E6",
+  "price_gbp": 617.0,
+  "image": "p075_SMQU8BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1600mm  SMSL16BP-E6 \u00a3638.00",
+  "dims": {
+   "width_mm": 1600,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL16BP-E6",
+  "price_gbp": 638.0,
+  "image": "p075_SMQU8BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1700mm  SMSL17BP-E6 \u00a3659.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL17BP-E6",
+  "price_gbp": 659.0,
+  "image": "p075_SMQU8BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "bi-fold door 4mm",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "700mm SMBD7BP-E6 \u00a3505.00",
+  "dims": {
+   "width_mm": 700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMBD7BP-E6",
+  "price_gbp": 505.0,
+  "image": "p075_SMBD7BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "bi-fold door 4mm",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SMBD76BP-E6 \u00a3510.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMBD76BP-E6",
+  "price_gbp": 510.0,
+  "image": "p075_SMBD7BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "bi-fold door 4mm",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm  SMBD8BP-E6 \u00a3515.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMBD8BP-E6",
+  "price_gbp": 515.0,
+  "image": "p075_SMBD7BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "bi-fold door 4mm",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm  SMBD9BP-E6 \u00a3546.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMBD9BP-E6",
+  "price_gbp": 546.0,
+  "image": "p075_SMBD7BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SMPD76BP-E6 \u00a3435.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMPD76BP-E6",
+  "price_gbp": 435.0,
+  "image": "p075_SMPD76BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm SMPD80BP-E6 \u00a3452.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMPD80BP-E6",
+  "price_gbp": 452.0,
+  "image": "p075_SMPD76BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm SMPD90BP-E6 \u00a3464.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMPD90BP-E6",
+  "price_gbp": 464.0,
+  "image": "p075_SMPD76BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "700mm SMHD70BP-E6 \u00a3449.00",
+  "dims": {
+   "width_mm": 700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD70BP-E6",
+  "price_gbp": 449.0,
+  "image": "p075_SMHD70BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SMHD76BP-E6 \u00a3465.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD76BP-E6",
+  "price_gbp": 465.0,
+  "image": "p075_SMHD70BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm  SMHD80BP-E6 \u00a3478.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD80BP-E6",
+  "price_gbp": 478.0,
+  "image": "p075_SMHD70BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm  SMHD90BP-E6 \u00a3499.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD90BP-E6",
+  "price_gbp": 499.0,
+  "image": "p075_SMHD70BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm SMSL10BP-E6 \u00a3506.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL10BP-E6",
+  "price_gbp": 506.0,
+  "image": "p075_SMSL10BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1100mm SMSL11BP-E6 \u00a3526.00",
+  "dims": {
+   "width_mm": 1100,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL11BP-E6",
+  "price_gbp": 526.0,
+  "image": "p075_SMSL10BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200mm SMSL12BP-E6 \u00a3545.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL12BP-E6",
+  "price_gbp": 545.0,
+  "image": "p075_SMSL10BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1400mm  SMSL14BP-E6 \u00a3596.00",
+  "dims": {
+   "width_mm": 1400,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL14BP-E6",
+  "price_gbp": 596.0,
+  "image": "p075_SMSL10BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1500mm  SMSL15BP-E6 \u00a3617.00",
+  "dims": {
+   "width_mm": 1500,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL15BP-E6",
+  "price_gbp": 617.0,
+  "image": "p075_SMSL10BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1600mm  SMSL16BP-E6 \u00a3638.00",
+  "dims": {
+   "width_mm": 1600,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL16BP-E6",
+  "price_gbp": 638.0,
+  "image": "p075_SMSL10BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "pivot door single sliding door hinged door",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1700mm  SMSL17BP-E6 \u00a3659.00",
+  "dims": {
+   "width_mm": 1700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSL17BP-E6",
+  "price_gbp": 659.0,
+  "image": "p075_SMSL10BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "side panels",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "700mm SMSP70BP-E6 \u00a3289.00",
+  "dims": {
+   "width_mm": 700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP70BP-E6",
+  "price_gbp": 289.0,
+  "image": "p075_SMSP70BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "side panels",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SMSP76BP-E6 \u00a3311.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP76BP-E6",
+  "price_gbp": 311.0,
+  "image": "p075_SMSP70BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "side panels",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm SMSP80BP-E6 \u00a3342.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP80BP-E6",
+  "price_gbp": 342.0,
+  "image": "p075_SMSP70BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "side panels",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm SMSP90BP-E6 \u00a3350.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP90BP-E6",
+  "price_gbp": 350.0,
+  "image": "p075_SMSP70BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "side panels",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm SMSP10BP-E6 \u00a3360.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMSP10BP-E6",
+  "price_gbp": 360.0,
+  "image": "p075_SMSP70BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "single entry quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "700mm SMHD70BP-E6 \u00a3449.00",
+  "dims": {
+   "width_mm": 700,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD70BP-E6",
+  "price_gbp": 449.0,
+  "image": "p075_SMHD70BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "single entry quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SMHD76BP-E6 \u00a3465.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD76BP-E6",
+  "price_gbp": 465.0,
+  "image": "p075_SMHD70BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "single entry quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm  SMHD80BP-E6 \u00a3478.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD80BP-E6",
+  "price_gbp": 478.0,
+  "image": "p075_SMHD70BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "single entry quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm  SMHD90BP-E6 \u00a3499.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMHD90BP-E6",
+  "price_gbp": 499.0,
+  "image": "p075_SMHD70BP-E6.png"
+ },
+ {
+  "page": 75,
+  "name": "single entry quadrant",
+  "section": "enclosures enclosures rene 6mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900 x 900mm SMQ9E1BP-E6 \u00a3620.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": 900,
+   "height_mm": 1900
+  },
+  "hand": null,
+  "sku": "SMQ9E1BP-E6",
+  "price_gbp": 620.0,
+  "image": "p075_SMHD70BP-E6.png"
+ },
+ {
+  "page": 76,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000 x 800mm SQU108-E5 \u00a3480.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": 800,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQU108-E5",
+  "price_gbp": 480.0,
+  "image": "p076_SQU108-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200 x 800mm SQU128-E5 \u00a3550.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": 800,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQU128-E5",
+  "price_gbp": 550.0,
+  "image": "p076_SQU108-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200 x 900mm SQU129-E5 \u00a3607.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": 900,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQU129-E5",
+  "price_gbp": 607.0,
+  "image": "p076_SQU108-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "700mm SQPD70-E5 \u00a3325.00",
+  "dims": {
+   "width_mm": 700,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQPD70-E5",
+  "price_gbp": 325.0,
+  "image": "p076_SQU108-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SQPD76-E5 \u00a3341.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQPD76-E5",
+  "price_gbp": 341.0,
+  "image": "p076_SQU108-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm SQPD80-E5 \u00a3344.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQPD80-E5",
+  "price_gbp": 344.0,
+  "image": "p076_SQU108-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm SQPD90-E5 \u00a3357.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQPD90-E5",
+  "price_gbp": 357.0,
+  "image": "p076_SQU108-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "700 x 700mm SQU7-E5 \u00a3378.00",
+  "dims": {
+   "width_mm": 700,
+   "depth_mm": 700,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQU7-E5",
+  "price_gbp": 378.0,
+  "image": "p076_SQU7-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800 x 800mm SQU8-E5 \u00a3429.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": 800,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQU8-E5",
+  "price_gbp": 429.0,
+  "image": "p076_SQU7-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "quadrant offset quadrant",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900 x 900mm SQU9-E5 \u00a3455.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": 900,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQU9-E5",
+  "price_gbp": 455.0,
+  "image": "p076_SQU7-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "enclosures ella 5mm",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SQBD76-E5 \u00a3449.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQBD76-E5",
+  "price_gbp": 449.0,
+  "image": "p076_SQBD76-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "enclosures ella 5mm",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm  SQBD80-E5 \u00a3457.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQBD80-E5",
+  "price_gbp": 457.0,
+  "image": "p076_SQBD76-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "enclosures ella 5mm",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm  SQBD90-E5 \u00a3479.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQBD90-E5",
+  "price_gbp": 479.0,
+  "image": "p076_SQBD76-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "enclosures ella 5mm",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "700mm SQSP70-E5 \u00a3187.00",
+  "dims": {
+   "width_mm": 700,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQSP70-E5",
+  "price_gbp": 187.0,
+  "image": "p076_SQBD76-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "enclosures ella 5mm",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SQSP76-E5 \u00a3202.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQSP76-E5",
+  "price_gbp": 202.0,
+  "image": "p076_SQBD76-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "enclosures ella 5mm",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm SQSP80-E5 \u00a3211.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQSP80-E5",
+  "price_gbp": 211.0,
+  "image": "p076_SQBD76-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "enclosures ella 5mm",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm SQSP90-E5 \u00a3228.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQSP90-E5",
+  "price_gbp": 228.0,
+  "image": "p076_SQBD76-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "pivot door single sliding door",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "700mm SQPD70-E5 \u00a3325.00",
+  "dims": {
+   "width_mm": 700,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQPD70-E5",
+  "price_gbp": 325.0,
+  "image": "p076_SQPD70-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "pivot door single sliding door",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SQPD76-E5 \u00a3341.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQPD76-E5",
+  "price_gbp": 341.0,
+  "image": "p076_SQPD70-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "pivot door single sliding door",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm SQPD80-E5 \u00a3344.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQPD80-E5",
+  "price_gbp": 344.0,
+  "image": "p076_SQPD70-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "pivot door single sliding door",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm SQPD90-E5 \u00a3357.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQPD90-E5",
+  "price_gbp": 357.0,
+  "image": "p076_SQPD70-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "corner entry bi-fold door",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760 x 760mm SQCE7676-E5 \u00a3434.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": 760,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQCE7676-E5",
+  "price_gbp": 434.0,
+  "image": "p076_SQCE7676-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "corner entry bi-fold door",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800 x 800mm SQCE8080-E5 \u00a3453.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": 800,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQCE8080-E5",
+  "price_gbp": 453.0,
+  "image": "p076_SQCE7676-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "corner entry bi-fold door",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm SQSL10-E5 \u00a3343.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQSL10-E5",
+  "price_gbp": 343.0,
+  "image": "p076_SQCE7676-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "corner entry bi-fold door",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200mm SQSL12-E5 \u00a3357.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQSL12-E5",
+  "price_gbp": 357.0,
+  "image": "p076_SQCE7676-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "pivot door single sliding door",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1000mm SQSL10-E5 \u00a3343.00",
+  "dims": {
+   "width_mm": 1000,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQSL10-E5",
+  "price_gbp": 343.0,
+  "image": "p076_SQSL10-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "pivot door single sliding door",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "1200mm SQSL12-E5 \u00a3357.00",
+  "dims": {
+   "width_mm": 1200,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQSL12-E5",
+  "price_gbp": 357.0,
+  "image": "p076_SQSL10-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "side panels",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "700mm SQSP70-E5 \u00a3187.00",
+  "dims": {
+   "width_mm": 700,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQSP70-E5",
+  "price_gbp": 187.0,
+  "image": "p076_SQSP70-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "side panels",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "760mm SQSP76-E5 \u00a3202.00",
+  "dims": {
+   "width_mm": 760,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQSP76-E5",
+  "price_gbp": 202.0,
+  "image": "p076_SQSP70-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "side panels",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "800mm SQSP80-E5 \u00a3211.00",
+  "dims": {
+   "width_mm": 800,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQSP80-E5",
+  "price_gbp": 211.0,
+  "image": "p076_SQSP70-E5.png"
+ },
+ {
+  "page": 76,
+  "name": "side panels",
+  "section": "enclosures enclosures ella 5mm",
+  "category": "showering/shower-enclosures",
+  "size_raw": "900mm SQSP90-E5 \u00a3228.00",
+  "dims": {
+   "width_mm": 900,
+   "depth_mm": null,
+   "height_mm": 1850
+  },
+  "hand": null,
+  "sku": "SQSP90-E5",
+  "price_gbp": 228.0,
+  "image": "p076_SQSP70-E5.png"
+ }
+]

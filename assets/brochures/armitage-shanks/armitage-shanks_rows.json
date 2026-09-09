@@ -1,0 +1,658 @@
+[
+ {
+  "page": 4,
+  "name": "Regent Wall Hung Pack",
+  "sku": "X036201",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "toilets",
+  "image": "p004_X036201.png",
+  "_section": ""
+ },
+ {
+  "page": 4,
+  "name": "Regent Single Back-to-wall Pack Universal Outlet",
+  "sku": "X036001",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "toilets",
+  "image": "p004_X036001.png",
+  "_section": ""
+ },
+ {
+  "page": 4,
+  "name": "Regent Close Coupled Pack Universal Outlet",
+  "sku": "X036601",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "toilets",
+  "image": "p004_X036601.png",
+  "_section": ""
+ },
+ {
+  "page": 5,
+  "name": "Regent Basin 68x48cm",
+  "sku": "X034801",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": 680,
+   "depth_mm": 480,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "68x48cm",
+  "category": "basins",
+  "image": "p005_X034801.png",
+  "_section": ""
+ },
+ {
+  "page": 5,
+  "name": "Regent Wall Hung Bidet",
+  "sku": "X036401",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "basins",
+  "image": "p005_X036401.png",
+  "_section": ""
+ },
+ {
+  "page": 5,
+  "name": "Regent Basin 60x48cm",
+  "sku": "X034901",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": 600,
+   "depth_mm": 480,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "60x48cm",
+  "category": "basins",
+  "image": "p005_X034901.png",
+  "_section": ""
+ },
+ {
+  "page": 6,
+  "name": "Regent Vessel 60x44cm",
+  "sku": "X035601",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": 600,
+   "depth_mm": 440,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "60x44cm",
+  "category": "basins",
+  "image": "p006_X035601.png",
+  "_section": ""
+ },
+ {
+  "page": 6,
+  "name": "Regent Counter Top 67x48cm",
+  "sku": "X035701",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": 670,
+   "depth_mm": 480,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "67x48cm",
+  "category": "basins",
+  "image": "p006_X035701.png",
+  "_section": ""
+ },
+ {
+  "page": 6,
+  "name": "Regent Semi Counter Top 67x49cm",
+  "sku": "X035801",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": 670,
+   "depth_mm": 490,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "67x49cm",
+  "category": "basins",
+  "image": "p006_X035801.png",
+  "_section": ""
+ },
+ {
+  "page": 6,
+  "name": "Armitage Shanks product",
+  "sku": "X035101",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "taps",
+  "image": "p006_X035101.png",
+  "_section": ""
+ },
+ {
+  "page": 6,
+  "name": "Armitage Shanks product",
+  "sku": "X035201",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "taps",
+  "image": "p006_X035201.png",
+  "_section": ""
+ },
+ {
+  "page": 6,
+  "name": "Regent Basin 55x46cm",
+  "sku": "X035001",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": 550,
+   "depth_mm": 460,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "55x46cm",
+  "category": "basins",
+  "image": "p006_X035001.png",
+  "_section": ""
+ },
+ {
+  "page": 7,
+  "name": "Chelsea Single Back-to-Wall Pack",
+  "sku": "T333001",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "toilets",
+  "image": "p007_T333001.png",
+  "_section": ""
+ },
+ {
+  "page": 7,
+  "name": "Chelsea Wall Hung Bowl",
+  "sku": "T333201",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "toilets",
+  "image": "p007_T333201.png",
+  "_section": ""
+ },
+ {
+  "page": 7,
+  "name": "Chelsea Close coupled bowl P/S-Trap",
+  "sku": "T333401",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "toilets",
+  "image": "p007_T333401.png",
+  "_section": ""
+ },
+ {
+  "page": 7,
+  "name": "Chelsea Close coupled bowl P/S-Trap",
+  "sku": "T676901",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "toilets",
+  "image": "p007_T676901.png",
+  "_section": ""
+ },
+ {
+  "page": 7,
+  "name": "Chelsea Close coupled bowl P/S-Trap",
+  "sku": "T428801",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "toilets",
+  "image": "p007_T428801.png",
+  "_section": ""
+ },
+ {
+  "page": 8,
+  "name": "Armitage Shanks product",
+  "sku": "T004101",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "taps",
+  "image": "p008_T004101.png",
+  "_section": ""
+ },
+ {
+  "page": 8,
+  "name": "Chelsea Wall Hung Bidet",
+  "sku": "T512101",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "basins",
+  "image": "p008_T512101.png",
+  "_section": ""
+ },
+ {
+  "page": 8,
+  "name": "Chelsea Semi Countertop Basin 55x44cm",
+  "sku": "T004001",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": 550,
+   "depth_mm": 440,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "55x44cm",
+  "category": "basins",
+  "image": "p008_T004001.png",
+  "_section": ""
+ },
+ {
+  "page": 8,
+  "name": "Chelsea Vessel 60x45cm",
+  "sku": "T004201",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": 600,
+   "depth_mm": 450,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "60x45cm",
+  "category": "basins",
+  "image": "p008_T004201.png",
+  "_section": ""
+ },
+ {
+  "page": 9,
+  "name": "Carlton Close Coupled Pack P-Trap",
+  "sku": "X033401",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "toilets",
+  "image": "p009_X033401.png",
+  "_section": ""
+ },
+ {
+  "page": 9,
+  "name": "Carlton Close Coupled Pack S-Trap",
+  "sku": "X033201",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "toilets",
+  "image": "p009_X033201.png",
+  "_section": ""
+ },
+ {
+  "page": 9,
+  "name": "Carlton Floor Standing Bidet",
+  "sku": "X033801",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "basins",
+  "image": "p009_X033801.png",
+  "_section": ""
+ },
+ {
+  "page": 10,
+  "name": "Carlton Vessel 42x42cm",
+  "sku": "X034101",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": 420,
+   "depth_mm": 420,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "42x42cm",
+  "category": "basins",
+  "image": "p010_X034101.png",
+  "_section": ""
+ },
+ {
+  "page": 10,
+  "name": "Carlton Basin 60x51cm",
+  "sku": "X034401",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": 600,
+   "depth_mm": 510,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "60x51cm",
+  "category": "basins",
+  "image": "p010_X034401.png",
+  "_section": ""
+ },
+ {
+  "page": 10,
+  "name": "Carlton Vessel 60x42cm",
+  "sku": "X034201",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": 600,
+   "depth_mm": 420,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "60x42cm",
+  "category": "basins",
+  "image": "p010_X034201.png",
+  "_section": ""
+ },
+ {
+  "page": 11,
+  "name": "Kensington Close Coupled Pack S-Trap",
+  "sku": "W914801",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "toilets",
+  "image": "p011_W914801.png",
+  "_section": ""
+ },
+ {
+  "page": 11,
+  "name": "Kensington Close Coupled Pack S-Trap",
+  "sku": "X037301",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "toilets",
+  "image": "p011_X037301.png",
+  "_section": ""
+ },
+ {
+  "page": 11,
+  "name": "Kensington Wall Hung Pack",
+  "sku": "X037201",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "toilets",
+  "image": "p011_X037201.png",
+  "_section": ""
+ },
+ {
+  "page": 12,
+  "name": "Kensington Washbasin 60x49cm",
+  "sku": "X036801",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": 600,
+   "depth_mm": 490,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "60x49cm",
+  "category": "basins",
+  "image": "p012_X036801.png",
+  "_section": ""
+ },
+ {
+  "page": 12,
+  "name": "Kensington Washbasin 65x52cm",
+  "sku": "X036701",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": 650,
+   "depth_mm": 520,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "65x52cm",
+  "category": "basins",
+  "image": "p012_X036701.png",
+  "_section": ""
+ },
+ {
+  "page": 12,
+  "name": "Kensington Countertop Basin 54x44cm",
+  "sku": "X037101",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": 540,
+   "depth_mm": 440,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "54x44cm",
+  "category": "basins",
+  "image": "p012_X037101.png",
+  "_section": ""
+ },
+ {
+  "page": 13,
+  "name": "Clarendon Floor Standing Bidet",
+  "sku": "X037801",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "basins",
+  "image": "p013_X037801.png",
+  "_section": ""
+ },
+ {
+  "page": 13,
+  "name": "Clarendon Basin 65x48cm",
+  "sku": "X037401",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": 650,
+   "depth_mm": 480,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "65x48cm",
+  "category": "basins",
+  "image": "p013_X037401.png",
+  "_section": ""
+ },
+ {
+  "page": 13,
+  "name": "Clarendon Vessel 56x44cm",
+  "sku": "X037701",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": 560,
+   "depth_mm": 440,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "56x44cm",
+  "category": "basins",
+  "image": "p013_X037701.png",
+  "_section": ""
+ },
+ {
+  "page": 14,
+  "name": "Profile 21 Closed Coupled Pack S-trap",
+  "sku": "S431701",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "toilets",
+  "image": "p014_S431701.png",
+  "_section": ""
+ },
+ {
+  "page": 15,
+  "name": "Korona Close Coupled Pack Vertical Outlet",
+  "sku": "S024601",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "toilets",
+  "image": "p015_S024601.png",
+  "_section": ""
+ },
+ {
+  "page": 15,
+  "name": "Andria 3 Squat Doset 50x60cm",
+  "sku": "X034701",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": 500,
+   "depth_mm": 600,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "50x60cm",
+  "category": null,
+  "image": "p015_X034701.png",
+  "_section": ""
+ },
+ {
+  "page": 15,
+  "name": "Korona Close Coupled Pack Horizontal Outlet",
+  "sku": "S024701",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "toilets",
+  "image": "p015_S024701.png",
+  "_section": ""
+ },
+ {
+  "page": 15,
+  "name": "Wenworth New Wall Hung Bowl",
+  "sku": "W301301",
+  "price_gbp": null,
+  "dims": {
+   "width_mm": null,
+   "depth_mm": null,
+   "height_mm": null
+  },
+  "hand": null,
+  "size_raw": "",
+  "category": "toilets",
+  "image": "p015_W301301.png",
+  "_section": ""
+ }
+]

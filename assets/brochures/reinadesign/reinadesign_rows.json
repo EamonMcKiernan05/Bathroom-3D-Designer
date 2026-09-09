@@ -1,0 +1,7282 @@
+[
+ {
+  "page": 7,
+  "name": "Hedingham Vertical 1800x285",
+  "sku": "REINA-HEDINGHAM-VERTICAL-1800X285",
+  "price_gbp": 319.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 285,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 285mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 7,
+  "name": "Hedingham Vertical 1800x375",
+  "sku": "REINA-HEDINGHAM-VERTICAL-1800X375",
+  "price_gbp": 409.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 375,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 375mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 7,
+  "name": "Hedingham Vertical 1800x465",
+  "sku": "REINA-HEDINGHAM-VERTICAL-1800X465",
+  "price_gbp": 476.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 465,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 465mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 8,
+  "name": "Column Radiator 600x600",
+  "sku": "REINA-COLUMN-RADIATOR-600X600",
+  "price_gbp": 269.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 8,
+  "name": "Column Radiator 600x820",
+  "sku": "REINA-COLUMN-RADIATOR-600X820",
+  "price_gbp": 339.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 820,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 820mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 8,
+  "name": "Column Radiator 600x1000",
+  "sku": "REINA-COLUMN-RADIATOR-600X1000",
+  "price_gbp": 420.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 1000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 1000mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 8,
+  "name": "Column Radiator 600x1175",
+  "sku": "REINA-COLUMN-RADIATOR-600X1175",
+  "price_gbp": 472.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 1175,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 1175mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 8,
+  "name": "Column Radiator 600x1265",
+  "sku": "REINA-COLUMN-RADIATOR-600X1265",
+  "price_gbp": 522.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 1265,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 1265mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 10,
+  "name": "3 Column Radiator 1800x380mm White 1500x200",
+  "sku": "REINA-3-COLUMN-RADIATOR-1800X3-1500X200",
+  "price_gbp": 155.49,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 200,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 200mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 10,
+  "name": "3 Column Radiator 1800x380mm White 1500x290",
+  "sku": "REINA-3-COLUMN-RADIATOR-1800X3-1500X290",
+  "price_gbp": 221.89,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 290,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 290mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 10,
+  "name": "3 Column Radiator 1800x380mm White 1500x380",
+  "sku": "REINA-3-COLUMN-RADIATOR-1800X3-1500X380",
+  "price_gbp": 293.63,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 380,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 380mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 10,
+  "name": "3 Column Radiator 1800x380mm White 1800x200",
+  "sku": "REINA-3-COLUMN-RADIATOR-1800X3-1800X200",
+  "price_gbp": 160.8,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 200,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 200mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 10,
+  "name": "3 Column Radiator 1800x380mm White 1800x290",
+  "sku": "REINA-3-COLUMN-RADIATOR-1800X3-1800X290",
+  "price_gbp": 227.21,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 290,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 290mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 10,
+  "name": "3 Column Radiator 1800x380mm White 1800x380",
+  "sku": "REINA-3-COLUMN-RADIATOR-1800X3-1800X380",
+  "price_gbp": 298.94,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 380,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 380mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "3 Column Radiator 600x1010mm White Colona 500x605",
+  "sku": "REINA-3-COLUMN-RADIATOR-600X10-500X605",
+  "price_gbp": 203.32,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 500,
+   "width_mm": 605,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "500 x 605mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "3 Column Radiator 600x1010mm White Colona 500x785",
+  "sku": "REINA-3-COLUMN-RADIATOR-600X10-500X785",
+  "price_gbp": 259.09,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 500,
+   "width_mm": 785,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "500 x 785mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "3 Column Radiator 600x1010mm White Colona 500x1010",
+  "sku": "REINA-3-COLUMN-RADIATOR-600X10-500X1010",
+  "price_gbp": 329.49,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 500,
+   "width_mm": 1010,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "500 x 1010mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "3 Column Radiator 600x1010mm White Colona 500x1190",
+  "sku": "REINA-3-COLUMN-RADIATOR-600X10-500X1190",
+  "price_gbp": 385.27,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 500,
+   "width_mm": 1190,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "500 x 1190mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "3 Column Radiator 600x1010mm White Colona 300x1010",
+  "sku": "REINA-3-COLUMN-RADIATOR-600X10-300X1010",
+  "price_gbp": 298.94,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 300,
+   "width_mm": 1010,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "300 x 1010mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "3 Column Radiator 600x1010mm White Colona 300x1190",
+  "sku": "REINA-3-COLUMN-RADIATOR-600X10-300X1190",
+  "price_gbp": 349.41,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 300,
+   "width_mm": 1190,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "300 x 1190mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "3 Column Radiator 600x1010mm White Colona 300x1370",
+  "sku": "REINA-3-COLUMN-RADIATOR-600X10-300X1370",
+  "price_gbp": 399.89,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 300,
+   "width_mm": 1370,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "300 x 1370mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "3 Column Radiator 600x1010mm White Colona 600x605",
+  "sku": "REINA-3-COLUMN-RADIATOR-600X10-600X605",
+  "price_gbp": 209.94,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 605,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 605mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "3 Column Radiator 600x1010mm White Colona 600x785",
+  "sku": "REINA-3-COLUMN-RADIATOR-600X10-600X785",
+  "price_gbp": 268.38,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 785,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 785mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "3 Column Radiator 600x1010mm White Colona 600x1010",
+  "sku": "REINA-3-COLUMN-RADIATOR-600X10-600X1010",
+  "price_gbp": 341.44,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 1010,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 1010mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "3 Column Radiator 600x1010mm White Colona 600x1190",
+  "sku": "REINA-3-COLUMN-RADIATOR-600X10-600X1190",
+  "price_gbp": 399.89,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 1190,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 1190mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "3 Column Radiator 600x1010mm White Colona 500x1370",
+  "sku": "REINA-3-COLUMN-RADIATOR-600X10-500X1370",
+  "price_gbp": 468.95,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 500,
+   "width_mm": 1370,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "500 x 1370mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 12,
+  "name": "3 Column Radiator 600x1010mm White Colona 600x1370",
+  "sku": "REINA-3-COLUMN-RADIATOR-600X10-600X1370",
+  "price_gbp": 623.03,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 1370,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 1370mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 16,
+  "name": "3 Column Radiator 1010x600mm 600x605",
+  "sku": "REINA-3-COLUMN-RADIATOR-1010X6-600X605",
+  "price_gbp": 310.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 605,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 605mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 16,
+  "name": "3 Column Radiator 1010x600mm 600x785",
+  "sku": "REINA-3-COLUMN-RADIATOR-1010X6-600X785",
+  "price_gbp": 384.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 785,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 785mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 16,
+  "name": "3 Column Radiator 1010x600mm 600x1010",
+  "sku": "REINA-3-COLUMN-RADIATOR-1010X6-600X1010",
+  "price_gbp": 498.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 1010,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 1010mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 16,
+  "name": "3 Column Radiator 1010x600mm 600x1190",
+  "sku": "REINA-3-COLUMN-RADIATOR-1010X6-600X1190",
+  "price_gbp": 566.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 1190,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 1190mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 17,
+  "name": "Flat Vertical Single 1600x218",
+  "sku": "REINA-FLAT-VERTICAL-SINGLE-1600X218",
+  "price_gbp": 134.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 218,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 218mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 17,
+  "name": "Flat Vertical Single 1600x292",
+  "sku": "REINA-FLAT-VERTICAL-SINGLE-1600X292",
+  "price_gbp": 164.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 292,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 292mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 17,
+  "name": "Flat Vertical Single 1600x366",
+  "sku": "REINA-FLAT-VERTICAL-SINGLE-1600X366",
+  "price_gbp": 194.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 366,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 366mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 17,
+  "name": "Flat Vertical Single 1600x440",
+  "sku": "REINA-FLAT-VERTICAL-SINGLE-1600X440",
+  "price_gbp": 224.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 440,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 440mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 17,
+  "name": "Flat Vertical Single 1600x514",
+  "sku": "REINA-FLAT-VERTICAL-SINGLE-1600X514",
+  "price_gbp": 254.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 514,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 514mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 17,
+  "name": "Flat Vertical Single 1800x218",
+  "sku": "REINA-FLAT-VERTICAL-SINGLE-1800X218",
+  "price_gbp": 149.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 218,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 218mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 17,
+  "name": "Flat Vertical Single 1800x292",
+  "sku": "REINA-FLAT-VERTICAL-SINGLE-1800X292",
+  "price_gbp": 179.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 292,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 292mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 17,
+  "name": "Flat Vertical Single 1800x366",
+  "sku": "REINA-FLAT-VERTICAL-SINGLE-1800X366",
+  "price_gbp": 209.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 366,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 366mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 17,
+  "name": "Flat Vertical Single 1800x440",
+  "sku": "REINA-FLAT-VERTICAL-SINGLE-1800X440",
+  "price_gbp": 239.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 440,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 440mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 17,
+  "name": "Flat Vertical Single 1800x514",
+  "sku": "REINA-FLAT-VERTICAL-SINGLE-1800X514",
+  "price_gbp": 269.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 514,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 514mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 18,
+  "name": "Mild Steel 600x440",
+  "sku": "REINA-MILD-STEEL-600X440",
+  "price_gbp": 124.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 440,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 440mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 18,
+  "name": "Mild Steel 600x588",
+  "sku": "REINA-MILD-STEEL-600X588",
+  "price_gbp": 154.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 588,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 588mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 18,
+  "name": "Mild Steel 600x810",
+  "sku": "REINA-MILD-STEEL-600X810",
+  "price_gbp": 208.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 810,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 810mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 18,
+  "name": "Mild Steel 600x1032",
+  "sku": "REINA-MILD-STEEL-600X1032",
+  "price_gbp": 262.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 1032,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 1032mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 18,
+  "name": "Mild Steel 600x1254",
+  "sku": "REINA-MILD-STEEL-600X1254",
+  "price_gbp": 298.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 1254,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 1254mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 18,
+  "name": "Mild Steel 600x1402",
+  "sku": "REINA-MILD-STEEL-600X1402",
+  "price_gbp": 324.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 1402,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 1402mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 19,
+  "name": "Mild Steel 1500x236",
+  "sku": "REINA-MILD-STEEL-1500X236",
+  "price_gbp": 140.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 236,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 236mm",
+  "category": "heating/towel-rails",
+  "image": "p019_REINA-MILD-STEEL-1500X236.png"
+ },
+ {
+  "page": 19,
+  "name": "Mild Steel 1500x295",
+  "sku": "REINA-MILD-STEEL-1500X295",
+  "price_gbp": 155.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 295,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 295mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 19,
+  "name": "Mild Steel 1500x354",
+  "sku": "REINA-MILD-STEEL-1500X354",
+  "price_gbp": 174.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 354,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 354mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 19,
+  "name": "Mild Steel 1500x413",
+  "sku": "REINA-MILD-STEEL-1500X413",
+  "price_gbp": 200.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 413,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 413mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 19,
+  "name": "Mild Steel 1500x472",
+  "sku": "REINA-MILD-STEEL-1500X472",
+  "price_gbp": 220.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 472,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 472mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 19,
+  "name": "Mild Steel 1500x531",
+  "sku": "REINA-MILD-STEEL-1500X531",
+  "price_gbp": 247.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 531,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 531mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 19,
+  "name": "Mild Steel 1800x236",
+  "sku": "REINA-MILD-STEEL-1800X236",
+  "price_gbp": 150.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 236,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 236mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 19,
+  "name": "Mild Steel 1800x295",
+  "sku": "REINA-MILD-STEEL-1800X295",
+  "price_gbp": 172.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 295,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 295mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 19,
+  "name": "Mild Steel 1800x354",
+  "sku": "REINA-MILD-STEEL-1800X354",
+  "price_gbp": 198.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 354,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 354mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 19,
+  "name": "Mild Steel 1800x413",
+  "sku": "REINA-MILD-STEEL-1800X413",
+  "price_gbp": 225.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 413,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 413mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 19,
+  "name": "Mild Steel 1800x472",
+  "sku": "REINA-MILD-STEEL-1800X472",
+  "price_gbp": 253.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 472,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 472mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 19,
+  "name": "Mild Steel 1800x531",
+  "sku": "REINA-MILD-STEEL-1800X531",
+  "price_gbp": 284.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 531,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 531mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 20,
+  "name": "Ral Colour 1500x236",
+  "sku": "REINA-RAL-COLOUR-1500X236",
+  "price_gbp": 215.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 236,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 236mm",
+  "category": "heating/towel-rails",
+  "image": "p020_REINA-RAL-COLOUR-1500X236.png"
+ },
+ {
+  "page": 20,
+  "name": "Ral Colour 1500x295",
+  "sku": "REINA-RAL-COLOUR-1500X295",
+  "price_gbp": 254.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 295,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 295mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 20,
+  "name": "Ral Colour 1500x354",
+  "sku": "REINA-RAL-COLOUR-1500X354",
+  "price_gbp": 280.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 354,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 354mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 20,
+  "name": "Ral Colour 1500x413",
+  "sku": "REINA-RAL-COLOUR-1500X413",
+  "price_gbp": 306.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 413,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 413mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 20,
+  "name": "Ral Colour 1500x472",
+  "sku": "REINA-RAL-COLOUR-1500X472",
+  "price_gbp": 336.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 472,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 472mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 20,
+  "name": "Ral Colour 1500x531",
+  "sku": "REINA-RAL-COLOUR-1500X531",
+  "price_gbp": 370.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 531,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 531mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 20,
+  "name": "Ral Colour 1800x236",
+  "sku": "REINA-RAL-COLOUR-1800X236",
+  "price_gbp": 234.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 236,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 236mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 20,
+  "name": "Ral Colour 1800x295",
+  "sku": "REINA-RAL-COLOUR-1800X295",
+  "price_gbp": 280.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 295,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 295mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 20,
+  "name": "Ral Colour 1800x354",
+  "sku": "REINA-RAL-COLOUR-1800X354",
+  "price_gbp": 324.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 354,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 354mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 20,
+  "name": "Ral Colour 1800x413",
+  "sku": "REINA-RAL-COLOUR-1800X413",
+  "price_gbp": 360.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 413,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 413mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 20,
+  "name": "Ral Colour 1800x472",
+  "sku": "REINA-RAL-COLOUR-1800X472",
+  "price_gbp": 410.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 472,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 472mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 20,
+  "name": "Ral Colour 1800x531",
+  "sku": "REINA-RAL-COLOUR-1800X531",
+  "price_gbp": 450.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 531,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 531mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 21,
+  "name": "Neva Horizontal Single 550x413",
+  "sku": "REINA-NEVA-HORIZONTAL-SINGLE-550X413",
+  "price_gbp": 122.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 550,
+   "width_mm": 413,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "550 x 413mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 21,
+  "name": "Neva Horizontal Single 550x590",
+  "sku": "REINA-NEVA-HORIZONTAL-SINGLE-550X590",
+  "price_gbp": 150.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 550,
+   "width_mm": 590,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "550 x 590mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 21,
+  "name": "Neva Horizontal Single 550x826",
+  "sku": "REINA-NEVA-HORIZONTAL-SINGLE-550X826",
+  "price_gbp": 196.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 550,
+   "width_mm": 826,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "550 x 826mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 21,
+  "name": "Neva Horizontal Single 550x1003",
+  "sku": "REINA-NEVA-HORIZONTAL-SINGLE-550X1003",
+  "price_gbp": 230.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 550,
+   "width_mm": 1003,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "550 x 1003mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 21,
+  "name": "Neva Horizontal Single 550x1180",
+  "sku": "REINA-NEVA-HORIZONTAL-SINGLE-550X1180",
+  "price_gbp": 264.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 550,
+   "width_mm": 1180,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "550 x 1180mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 21,
+  "name": "Neva Horizontal Single 550x1416",
+  "sku": "REINA-NEVA-HORIZONTAL-SINGLE-550X1416",
+  "price_gbp": 340.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 550,
+   "width_mm": 1416,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "550 x 1416mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 22,
+  "name": "Neva Horizontal Double 550x413",
+  "sku": "REINA-NEVA-HORIZONTAL-DOUBLE-550X413",
+  "price_gbp": 165.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 550,
+   "width_mm": 413,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "550 x 413mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 22,
+  "name": "Neva Horizontal Double 550x590",
+  "sku": "REINA-NEVA-HORIZONTAL-DOUBLE-550X590",
+  "price_gbp": 215.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 550,
+   "width_mm": 590,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "550 x 590mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 22,
+  "name": "Neva Horizontal Double 550x826",
+  "sku": "REINA-NEVA-HORIZONTAL-DOUBLE-550X826",
+  "price_gbp": 320.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 550,
+   "width_mm": 826,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "550 x 826mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 22,
+  "name": "Neva Horizontal Double 550x1003",
+  "sku": "REINA-NEVA-HORIZONTAL-DOUBLE-550X1003",
+  "price_gbp": 360.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 550,
+   "width_mm": 1003,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "550 x 1003mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 22,
+  "name": "Neva Horizontal Double 550x1180",
+  "sku": "REINA-NEVA-HORIZONTAL-DOUBLE-550X1180",
+  "price_gbp": 415.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 550,
+   "width_mm": 1180,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "550 x 1180mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 22,
+  "name": "Neva Horizontal Double 550x1416",
+  "sku": "REINA-NEVA-HORIZONTAL-DOUBLE-550X1416",
+  "price_gbp": 484.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 550,
+   "width_mm": 1416,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "550 x 1416mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 23,
+  "name": "Ral Colour 1500x300",
+  "sku": "REINA-RAL-COLOUR-1500X300",
+  "price_gbp": 222.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 300,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 300mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 23,
+  "name": "Ral Colour 1500x370",
+  "sku": "REINA-RAL-COLOUR-1500X370",
+  "price_gbp": 278.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 370,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 370mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 23,
+  "name": "Ral Colour 1500x440",
+  "sku": "REINA-RAL-COLOUR-1500X440",
+  "price_gbp": 323.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 440,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 440mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 23,
+  "name": "Ral Colour 1500x510",
+  "sku": "REINA-RAL-COLOUR-1500X510",
+  "price_gbp": 374.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 510,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 510mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 23,
+  "name": "Ral Colour 1800x300",
+  "sku": "REINA-RAL-COLOUR-1800X300",
+  "price_gbp": 258.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 300,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 300mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 23,
+  "name": "Ral Colour 1800x370",
+  "sku": "REINA-RAL-COLOUR-1800X370",
+  "price_gbp": 323.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 370,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 370mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 23,
+  "name": "Ral Colour 1800x440",
+  "sku": "REINA-RAL-COLOUR-1800X440",
+  "price_gbp": 356.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 440,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 440mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 23,
+  "name": "Ral Colour 1800x510",
+  "sku": "REINA-RAL-COLOUR-1800X510",
+  "price_gbp": 436.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 510,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 510mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Ral Colour 550x440",
+  "sku": "REINA-RAL-COLOUR-550X440",
+  "price_gbp": 156.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 550,
+   "width_mm": 440,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "550 x 440mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Ral Colour 550x580",
+  "sku": "REINA-RAL-COLOUR-550X580",
+  "price_gbp": 196.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 550,
+   "width_mm": 580,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "550 x 580mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Ral Colour 550x790",
+  "sku": "REINA-RAL-COLOUR-550X790",
+  "price_gbp": 288.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 550,
+   "width_mm": 790,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "550 x 790mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Ral Colour 550x1000",
+  "sku": "REINA-RAL-COLOUR-550X1000",
+  "price_gbp": 346.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 550,
+   "width_mm": 1000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "550 x 1000mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Ral Colour 550x1210",
+  "sku": "REINA-RAL-COLOUR-550X1210",
+  "price_gbp": 410.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 550,
+   "width_mm": 1210,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "550 x 1210mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 24,
+  "name": "Ral Colour 550x1420",
+  "sku": "REINA-RAL-COLOUR-550X1420",
+  "price_gbp": 470.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 550,
+   "width_mm": 1420,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "550 x 1420mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 25,
+  "name": "Mild Steel 544x400",
+  "sku": "REINA-MILD-STEEL-544X400",
+  "price_gbp": 156.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 544,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "544 x 400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 25,
+  "name": "Mild Steel 544x600",
+  "sku": "REINA-MILD-STEEL-544X600",
+  "price_gbp": 186.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 544,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "544 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 25,
+  "name": "Mild Steel 544x800",
+  "sku": "REINA-MILD-STEEL-544X800",
+  "price_gbp": 202.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 544,
+   "width_mm": 800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "544 x 800mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 25,
+  "name": "Mild Steel 544x1000",
+  "sku": "REINA-MILD-STEEL-544X1000",
+  "price_gbp": 218.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 544,
+   "width_mm": 1000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "544 x 1000mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 25,
+  "name": "Mild Steel 544x1200",
+  "sku": "REINA-MILD-STEEL-544X1200",
+  "price_gbp": 250.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 544,
+   "width_mm": 1200,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "544 x 1200mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 25,
+  "name": "Mild Steel 544x1400",
+  "sku": "REINA-MILD-STEEL-544X1400",
+  "price_gbp": 290.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 544,
+   "width_mm": 1400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "544 x 1400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 27,
+  "name": "Reflect 1800x445",
+  "sku": "REINA-REFLECT-1800X445",
+  "price_gbp": 299.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 445,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 445mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 28,
+  "name": "Ral Colour 29x295",
+  "sku": "REINA-RAL-COLOUR-29X295",
+  "price_gbp": 174.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 29,
+   "width_mm": 295,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "29 x 295mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 28,
+  "name": "Ral Colour 295x1200",
+  "sku": "REINA-RAL-COLOUR-295X1200",
+  "price_gbp": 184.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 295,
+   "width_mm": 1200,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "295 x 1200mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 28,
+  "name": "Ral Colour 295x1400",
+  "sku": "REINA-RAL-COLOUR-295X1400",
+  "price_gbp": 196.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 295,
+   "width_mm": 1400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "295 x 1400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 28,
+  "name": "Ral Colour 590x600",
+  "sku": "REINA-RAL-COLOUR-590X600",
+  "price_gbp": 266.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 590,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "590 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 28,
+  "name": "Ral Colour 590x800",
+  "sku": "REINA-RAL-COLOUR-590X800",
+  "price_gbp": 294.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 590,
+   "width_mm": 800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "590 x 800mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 28,
+  "name": "Ral Colour 590x1000",
+  "sku": "REINA-RAL-COLOUR-590X1000",
+  "price_gbp": 310.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 590,
+   "width_mm": 1000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "590 x 1000mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 28,
+  "name": "Ral Colour 590x1200",
+  "sku": "REINA-RAL-COLOUR-590X1200",
+  "price_gbp": 330.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 590,
+   "width_mm": 1200,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "590 x 1200mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 28,
+  "name": "Ral Colour 590x1400",
+  "sku": "REINA-RAL-COLOUR-590X1400",
+  "price_gbp": 370.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 590,
+   "width_mm": 1400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "590 x 1400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 28,
+  "name": "Ral Colour 295x1000",
+  "sku": "REINA-RAL-COLOUR-295X1000",
+  "price_gbp": 128.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 295,
+   "width_mm": 1000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "295 x 1000mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 29,
+  "name": "Mild Steel 1800x324",
+  "sku": "REINA-MILD-STEEL-1800X324",
+  "price_gbp": 275.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 324,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 324mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 29,
+  "name": "Mild Steel 1800x456",
+  "sku": "REINA-MILD-STEEL-1800X456",
+  "price_gbp": 360.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 456,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 456mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 30,
+  "name": "Mild Steel 1800x440",
+  "sku": "REINA-MILD-STEEL-1800X440",
+  "price_gbp": 280.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 440,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 440mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 30,
+  "name": "Mild Steel 1800x540",
+  "sku": "REINA-MILD-STEEL-1800X540",
+  "price_gbp": 320.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 540,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 540mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 30,
+  "name": "Mild Steel 1800x640",
+  "sku": "REINA-MILD-STEEL-1800X640",
+  "price_gbp": 350.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 640,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 640mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 31,
+  "name": "Slimline Vertical 470x300",
+  "sku": "REINA-SLIMLINE-VERTICAL-470X300",
+  "price_gbp": 220.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 470,
+   "width_mm": 300,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "470 x 300mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 31,
+  "name": "Slimline Vertical 770x300",
+  "sku": "REINA-SLIMLINE-VERTICAL-770X300",
+  "price_gbp": 250.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 770,
+   "width_mm": 300,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "770 x 300mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 31,
+  "name": "Slimline Vertical 1170x300",
+  "sku": "REINA-SLIMLINE-VERTICAL-1170X300",
+  "price_gbp": 280.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1170,
+   "width_mm": 300,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1170 x 300mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 31,
+  "name": "Slimline Vertical 1170x400",
+  "sku": "REINA-SLIMLINE-VERTICAL-1170X400",
+  "price_gbp": 330.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1170,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1170 x 400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 31,
+  "name": "Slimline Vertical 1170x500",
+  "sku": "REINA-SLIMLINE-VERTICAL-1170X500",
+  "price_gbp": 360.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1170,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1170 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 31,
+  "name": "Slimline Vertical 1470x300",
+  "sku": "REINA-SLIMLINE-VERTICAL-1470X300",
+  "price_gbp": 330.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1470,
+   "width_mm": 300,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1470 x 300mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 31,
+  "name": "Slimline Vertical 1470x400",
+  "sku": "REINA-SLIMLINE-VERTICAL-1470X400",
+  "price_gbp": 376.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1470,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1470 x 400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 31,
+  "name": "Slimline Vertical 1470x500",
+  "sku": "REINA-SLIMLINE-VERTICAL-1470X500",
+  "price_gbp": 450.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1470,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1470 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 31,
+  "name": "Slimline Vertical 1770x300",
+  "sku": "REINA-SLIMLINE-VERTICAL-1770X300",
+  "price_gbp": 394.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1770,
+   "width_mm": 300,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1770 x 300mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 31,
+  "name": "Slimline Vertical 1770x400",
+  "sku": "REINA-SLIMLINE-VERTICAL-1770X400",
+  "price_gbp": 440.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1770,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1770 x 400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 31,
+  "name": "Slimline Vertical 1770x500",
+  "sku": "REINA-SLIMLINE-VERTICAL-1770X500",
+  "price_gbp": 510.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1770,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1770 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 32,
+  "name": "Mild Steel 600x400",
+  "sku": "REINA-MILD-STEEL-600X400",
+  "price_gbp": 240.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 32,
+  "name": "Mild Steel 600x600",
+  "sku": "REINA-MILD-STEEL-600X600",
+  "price_gbp": 280.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 32,
+  "name": "Mild Steel 600x800",
+  "sku": "REINA-MILD-STEEL-600X800",
+  "price_gbp": 330.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 800mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 32,
+  "name": "Mild Steel 600x1000",
+  "sku": "REINA-MILD-STEEL-600X1000",
+  "price_gbp": 378.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 1000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 1000mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 32,
+  "name": "Mild Steel 600x1200",
+  "sku": "REINA-MILD-STEEL-600X1200",
+  "price_gbp": 450.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 1200,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 1200mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 32,
+  "name": "Mild Steel 600x1400",
+  "sku": "REINA-MILD-STEEL-600X1400",
+  "price_gbp": 486.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 1400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 1400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 33,
+  "name": "Dimaro Chrome 1760x620",
+  "sku": "REINA-DIMARO-CHROME-1760X620",
+  "price_gbp": 560.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1760,
+   "width_mm": 620,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1760 x 620mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 34,
+  "name": "Coredo Chrome 1760x620",
+  "sku": "REINA-COREDO-CHROME-1760X620",
+  "price_gbp": 495.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1760,
+   "width_mm": 620,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1760 x 620mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 35,
+  "name": "Mild Steel 1800x500",
+  "sku": "REINA-MILD-STEEL-1800X500",
+  "price_gbp": 730.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 37,
+  "name": "Mild Steel 1790x400",
+  "sku": "REINA-MILD-STEEL-1790X400",
+  "price_gbp": 695.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1790,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1790 x 400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 37,
+  "name": "Mild Steel 1790x490",
+  "sku": "REINA-MILD-STEEL-1790X490",
+  "price_gbp": 740.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1790,
+   "width_mm": 490,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1790 x 490mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 37,
+  "name": "Mild Steel 1790x590",
+  "sku": "REINA-MILD-STEEL-1790X590",
+  "price_gbp": 818.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1790,
+   "width_mm": 590,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1790 x 590mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 38,
+  "name": "Mild Steel 1800x490",
+  "sku": "REINA-MILD-STEEL-1800X490",
+  "price_gbp": 728.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 490,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 490mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 39,
+  "name": "Ancora 1800x490",
+  "sku": "REINA-ANCORA-1800X490",
+  "price_gbp": 728.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 490,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 490mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 40,
+  "name": "Todi Chrome 800x108",
+  "sku": "REINA-TODI-CHROME-800X108",
+  "price_gbp": 170.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 108,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 108mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 40,
+  "name": "Todi Chrome 1200x108",
+  "sku": "REINA-TODI-CHROME-1200X108",
+  "price_gbp": 206.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 108,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 108mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 40,
+  "name": "Todi Chrome 800x260",
+  "sku": "REINA-TODI-CHROME-800X260",
+  "price_gbp": 240.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 260,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 260mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 40,
+  "name": "Todi Chrome 1200x260",
+  "sku": "REINA-TODI-CHROME-1200X260",
+  "price_gbp": 298.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 260,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 260mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 40,
+  "name": "Todi Chrome 800x415",
+  "sku": "REINA-TODI-CHROME-800X415",
+  "price_gbp": 296.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 415,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 415mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 40,
+  "name": "Todi Chrome 1200x415",
+  "sku": "REINA-TODI-CHROME-1200X415",
+  "price_gbp": 370.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 415,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 415mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 41,
+  "name": "Mild Steel 780x500",
+  "sku": "REINA-MILD-STEEL-780X500",
+  "price_gbp": 308.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 780,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "780 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 41,
+  "name": "Mild Steel 1140x500",
+  "sku": "REINA-MILD-STEEL-1140X500",
+  "price_gbp": 399.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1140,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1140 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 42,
+  "name": "Grace Gun Metal 780x500",
+  "sku": "REINA-GRACE-GUN-METAL-780X500",
+  "price_gbp": 308.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 780,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "780 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 42,
+  "name": "Grace Gun Metal 1140x500",
+  "sku": "REINA-GRACE-GUN-METAL-1140X500",
+  "price_gbp": 399.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1140,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1140 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 43,
+  "name": "Grace Chrome 780x500",
+  "sku": "REINA-GRACE-CHROME-780X500",
+  "price_gbp": 250.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 780,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "780 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 43,
+  "name": "Grace Chrome 1140x500",
+  "sku": "REINA-GRACE-CHROME-1140X500",
+  "price_gbp": 316.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1140,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1140 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 44,
+  "name": "Mild Steel 820x500",
+  "sku": "REINA-MILD-STEEL-820X500",
+  "price_gbp": 340.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 820,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "820 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 44,
+  "name": "Mild Steel 1130x500",
+  "sku": "REINA-MILD-STEEL-1130X500",
+  "price_gbp": 430.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1130,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1130 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 47,
+  "name": "Mild Steel 722x500",
+  "sku": "REINA-MILD-STEEL-722X500",
+  "price_gbp": 240.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 722,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "722 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 47,
+  "name": "Mild Steel 998x500",
+  "sku": "REINA-MILD-STEEL-998X500",
+  "price_gbp": 290.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 998,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "998 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 47,
+  "name": "Mild Steel 1412x500",
+  "sku": "REINA-MILD-STEEL-1412X500",
+  "price_gbp": 390.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1412,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1412 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 48,
+  "name": "Matera Chrome 722x500",
+  "sku": "REINA-MATERA-CHROME-722X500",
+  "price_gbp": 195.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 722,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "722 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 48,
+  "name": "Matera Chrome 998x500",
+  "sku": "REINA-MATERA-CHROME-998X500",
+  "price_gbp": 235.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 998,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "998 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 48,
+  "name": "Matera Chrome 1412x500",
+  "sku": "REINA-MATERA-CHROME-1412X500",
+  "price_gbp": 295.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1412,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1412 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 49,
+  "name": "Mild Steel 500x500",
+  "sku": "REINA-MILD-STEEL-500X500",
+  "price_gbp": 270.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 500,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "500 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 49,
+  "name": "Mild Steel 800x500",
+  "sku": "REINA-MILD-STEEL-800X500",
+  "price_gbp": 370.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 49,
+  "name": "Mild Steel 1100x500",
+  "sku": "REINA-MILD-STEEL-1100X500",
+  "price_gbp": 470.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1100,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1100 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 50,
+  "name": "Mild Steel 1235x500",
+  "sku": "REINA-MILD-STEEL-1235X500",
+  "price_gbp": 420.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1235,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1235 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 50,
+  "name": "Mild Steel 1525x500",
+  "sku": "REINA-MILD-STEEL-1525X500",
+  "price_gbp": 530.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1525,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1525 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 53,
+  "name": "Flora Brushed Brass 800x500",
+  "sku": "REINA-FLORA-BRUSHED-BRASS-800X500",
+  "price_gbp": 270.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 53,
+  "name": "Flora Brushed Brass 1200x500",
+  "sku": "REINA-FLORA-BRUSHED-BRASS-1200X500",
+  "price_gbp": 380.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 53,
+  "name": "Flora Brushed Brass 1500x500",
+  "sku": "REINA-FLORA-BRUSHED-BRASS-1500X500",
+  "price_gbp": 450.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 54,
+  "name": "Flora Gun Metal 800x500",
+  "sku": "REINA-FLORA-GUN-METAL-800X500",
+  "price_gbp": 270.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 54,
+  "name": "Flora Gun Metal 1200x500",
+  "sku": "REINA-FLORA-GUN-METAL-1200X500",
+  "price_gbp": 380.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 54,
+  "name": "Flora Gun Metal 1500x500",
+  "sku": "REINA-FLORA-GUN-METAL-1500X500",
+  "price_gbp": 450.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 55,
+  "name": "Mild Steel 823x550",
+  "sku": "REINA-MILD-STEEL-823X550",
+  "price_gbp": 170.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 823,
+   "width_mm": 550,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "823 x 550mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 55,
+  "name": "Mild Steel 1124x550",
+  "sku": "REINA-MILD-STEEL-1124X550",
+  "price_gbp": 220.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1124,
+   "width_mm": 550,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1124 x 550mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 55,
+  "name": "Mild Steel 1424x550",
+  "sku": "REINA-MILD-STEEL-1424X550",
+  "price_gbp": 280.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1424,
+   "width_mm": 550,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1424 x 550mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 56,
+  "name": "Mild Steel 823x500",
+  "sku": "REINA-MILD-STEEL-823X500",
+  "price_gbp": 180.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 823,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "823 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 56,
+  "name": "Mild Steel 1124x500",
+  "sku": "REINA-MILD-STEEL-1124X500",
+  "price_gbp": 220.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1124,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1124 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 56,
+  "name": "Mild Steel 1424x500",
+  "sku": "REINA-MILD-STEEL-1424X500",
+  "price_gbp": 260.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1424,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1424 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 57,
+  "name": "Mild Steel 530x530",
+  "sku": "REINA-MILD-STEEL-530X530",
+  "price_gbp": 274.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 530,
+   "width_mm": 530,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "530 x 530mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 57,
+  "name": "Mild Steel 720x530",
+  "sku": "REINA-MILD-STEEL-720X530",
+  "price_gbp": 324.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 720,
+   "width_mm": 530,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "720 x 530mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 57,
+  "name": "Mild Steel 1100x530",
+  "sku": "REINA-MILD-STEEL-1100X530",
+  "price_gbp": 430.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1100,
+   "width_mm": 530,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1100 x 530mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 58,
+  "name": "Mild Steel 860x500",
+  "sku": "REINA-MILD-STEEL-860X500",
+  "price_gbp": 270.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 860,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "860 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 58,
+  "name": "Mild Steel 1180x500",
+  "sku": "REINA-MILD-STEEL-1180X500",
+  "price_gbp": 330.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1180,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1180 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 58,
+  "name": "Mild Steel 1500x500",
+  "sku": "REINA-MILD-STEEL-1500X500",
+  "price_gbp": 420.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 59,
+  "name": "Sori Chrome 650x500",
+  "sku": "REINA-SORI-CHROME-650X500",
+  "price_gbp": 330.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 650,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "650 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 60,
+  "name": "Mild Steel 555x500",
+  "sku": "REINA-MILD-STEEL-555X500",
+  "price_gbp": 260.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 555,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "555 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 60,
+  "name": "Mild Steel 875x500",
+  "sku": "REINA-MILD-STEEL-875X500",
+  "price_gbp": 330.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 875,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "875 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 60,
+  "name": "Mild Steel 1195x500",
+  "sku": "REINA-MILD-STEEL-1195X500",
+  "price_gbp": 415.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1195,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1195 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 61,
+  "name": "Rezzo Chrome 740x450",
+  "sku": "REINA-REZZO-CHROME-740X450",
+  "price_gbp": 206.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 740,
+   "width_mm": 450,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "740 x 450mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 61,
+  "name": "Rezzo Chrome 1100x450",
+  "sku": "REINA-REZZO-CHROME-1100X450",
+  "price_gbp": 245.5,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1100,
+   "width_mm": 450,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1100 x 450mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 61,
+  "name": "Rezzo Chrome 1460x450",
+  "sku": "REINA-REZZO-CHROME-1460X450",
+  "price_gbp": 294.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1460,
+   "width_mm": 450,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1460 x 450mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 61,
+  "name": "Rezzo Chrome 740x550",
+  "sku": "REINA-REZZO-CHROME-740X550",
+  "price_gbp": 212.5,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 740,
+   "width_mm": 550,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "740 x 550mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 61,
+  "name": "Rezzo Chrome 1100x550",
+  "sku": "REINA-REZZO-CHROME-1100X550",
+  "price_gbp": 256.5,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1100,
+   "width_mm": 550,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1100 x 550mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 61,
+  "name": "Rezzo Chrome 1460x550",
+  "sku": "REINA-REZZO-CHROME-1460X550",
+  "price_gbp": 305.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1460,
+   "width_mm": 550,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1460 x 550mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 62,
+  "name": "Mild Steel 813x450",
+  "sku": "REINA-MILD-STEEL-813X450",
+  "price_gbp": 294.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 813,
+   "width_mm": 450,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "813 x 450mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 62,
+  "name": "Mild Steel 1200x450",
+  "sku": "REINA-MILD-STEEL-1200X450",
+  "price_gbp": 349.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 450,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 450mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 62,
+  "name": "Mild Steel 813x550",
+  "sku": "REINA-MILD-STEEL-813X550",
+  "price_gbp": 317.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 813,
+   "width_mm": 550,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "813 x 550mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 62,
+  "name": "Mild Steel 1200x550",
+  "sku": "REINA-MILD-STEEL-1200X550",
+  "price_gbp": 388.5,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 550,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 550mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 63,
+  "name": "Elvina 350x500",
+  "sku": "REINA-ELVINA-350X500",
+  "price_gbp": 306.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 350,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "350 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 64,
+  "name": "Elvina 2 1000x500",
+  "sku": "REINA-ELVINA-2-1000X500",
+  "price_gbp": 460.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1000,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 65,
+  "name": "Lago 1 Chrome 450x600",
+  "sku": "REINA-LAGO-1-CHROME-450X600",
+  "price_gbp": 190.5,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 450,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "450 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 66,
+  "name": "Mild Steel 350x700",
+  "sku": "REINA-MILD-STEEL-350X700",
+  "price_gbp": 280.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 350,
+   "width_mm": 700,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "350 x 700mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 67,
+  "name": "Mild Steel 1300x600",
+  "sku": "REINA-MILD-STEEL-1300X600",
+  "price_gbp": 484.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1300,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1300 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 68,
+  "name": "Mild Steel 1400x600",
+  "sku": "REINA-MILD-STEEL-1400X600",
+  "price_gbp": 458.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1400,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1400 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 69,
+  "name": "Mild Steel 816x500",
+  "sku": "REINA-MILD-STEEL-816X500",
+  "price_gbp": 184.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 816,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "816 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 69,
+  "name": "Mild Steel 1126x500",
+  "sku": "REINA-MILD-STEEL-1126X500",
+  "price_gbp": 208.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1126,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1126 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 69,
+  "name": "Mild Steel 1436x500",
+  "sku": "REINA-MILD-STEEL-1436X500",
+  "price_gbp": 280.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1436,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1436 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 70,
+  "name": "Mild Steel 755x500",
+  "sku": "REINA-MILD-STEEL-755X500",
+  "price_gbp": 189.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 755,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "755 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 70,
+  "name": "Mild Steel 1460x500",
+  "sku": "REINA-MILD-STEEL-1460X500",
+  "price_gbp": 299.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1460,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1460 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 71,
+  "name": "Mild Steel 270x500",
+  "sku": "REINA-MILD-STEEL-270X500",
+  "price_gbp": 240.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 270,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "270 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 71,
+  "name": "Mild Steel 510x500",
+  "sku": "REINA-MILD-STEEL-510X500",
+  "price_gbp": 334.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 510,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "510 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 71,
+  "name": "Mild Steel 750x500",
+  "sku": "REINA-MILD-STEEL-750X500",
+  "price_gbp": 384.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 750,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "750 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 72,
+  "name": "Mild Steel 1000x500",
+  "sku": "REINA-MILD-STEEL-1000X500",
+  "price_gbp": 250.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1000,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 72,
+  "name": "Mild Steel 1550x500",
+  "sku": "REINA-MILD-STEEL-1550X500",
+  "price_gbp": 390.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1550,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1550 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 73,
+  "name": "Arbori Chrome 820x500",
+  "sku": "REINA-ARBORI-CHROME-820X500",
+  "price_gbp": 152.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 820,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "820 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 73,
+  "name": "Arbori Chrome 1130x500",
+  "sku": "REINA-ARBORI-CHROME-1130X500",
+  "price_gbp": 196.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1130,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1130 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 73,
+  "name": "Arbori Chrome 1510x500",
+  "sku": "REINA-ARBORI-CHROME-1510X500",
+  "price_gbp": 251.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1510,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1510 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 74,
+  "name": "Mild Steel 900x300",
+  "sku": "REINA-MILD-STEEL-900X300",
+  "price_gbp": 274.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 900,
+   "width_mm": 300,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "900 x 300mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 74,
+  "name": "Mild Steel 1200x300",
+  "sku": "REINA-MILD-STEEL-1200X300",
+  "price_gbp": 338.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 300,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 300mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 74,
+  "name": "Mild Steel 1600x300",
+  "sku": "REINA-MILD-STEEL-1600X300",
+  "price_gbp": 414.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 300,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 300mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 75,
+  "name": "Mild Steel 76x500",
+  "sku": "REINA-MILD-STEEL-76X500",
+  "price_gbp": 200.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 76,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "76 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 75,
+  "name": "Mild Steel 1200x500",
+  "sku": "REINA-MILD-STEEL-1200X500",
+  "price_gbp": 330.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 76,
+  "name": "Serena Chrome 800x300",
+  "sku": "REINA-SERENA-CHROME-800X300",
+  "price_gbp": 162.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 300,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 300mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 76,
+  "name": "Serena Chrome 1200x300",
+  "sku": "REINA-SERENA-CHROME-1200X300",
+  "price_gbp": 198.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 300,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 300mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 76,
+  "name": "Serena Chrome 500x500",
+  "sku": "REINA-SERENA-CHROME-500X500",
+  "price_gbp": 144.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 500,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "500 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 76,
+  "name": "Serena Chrome 800x500",
+  "sku": "REINA-SERENA-CHROME-800X500",
+  "price_gbp": 182.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 76,
+  "name": "Serena Chrome 1200x500",
+  "sku": "REINA-SERENA-CHROME-1200X500",
+  "price_gbp": 237.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 77,
+  "name": "Mild Steel 1400x500",
+  "sku": "REINA-MILD-STEEL-1400X500",
+  "price_gbp": 350.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1400,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1400 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 79,
+  "name": "Mild Steel 800x300",
+  "sku": "REINA-MILD-STEEL-800X300",
+  "price_gbp": 190.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 300,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 300mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 79,
+  "name": "Mild Steel 800x400",
+  "sku": "REINA-MILD-STEEL-800X400",
+  "price_gbp": 210.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 79,
+  "name": "Mild Steel 1200x400",
+  "sku": "REINA-MILD-STEEL-1200X400",
+  "price_gbp": 250.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 79,
+  "name": "Mild Steel 950x500",
+  "sku": "REINA-MILD-STEEL-950X500",
+  "price_gbp": 240.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 950,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "950 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 79,
+  "name": "Mild Steel 1300x500",
+  "sku": "REINA-MILD-STEEL-1300X500",
+  "price_gbp": 310.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1300,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1300 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 81,
+  "name": "Mild Steel 800x550",
+  "sku": "REINA-MILD-STEEL-800X550",
+  "price_gbp": 510.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 550,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 550mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 82,
+  "name": "Mild Steel 400x490",
+  "sku": "REINA-MILD-STEEL-400X490",
+  "price_gbp": 380.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 400,
+   "width_mm": 490,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "400 x 490mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 82,
+  "name": "Mild Steel 700x490",
+  "sku": "REINA-MILD-STEEL-700X490",
+  "price_gbp": 458.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 700,
+   "width_mm": 490,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "700 x 490mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 82,
+  "name": "Mild Steel 1000x490",
+  "sku": "REINA-MILD-STEEL-1000X490",
+  "price_gbp": 530.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1000,
+   "width_mm": 490,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000 x 490mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 83,
+  "name": "Victoria 960x675",
+  "sku": "REINA-VICTORIA-960X675",
+  "price_gbp": 414.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 960,
+   "width_mm": 675,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "960 x 675mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 84,
+  "name": "Traditional Radiator 950x475",
+  "sku": "REINA-TRADITIONAL-RADIATOR-950X475",
+  "price_gbp": 375.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 950,
+   "width_mm": 475,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "950 x 475mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 85,
+  "name": "Traditional Radiator 960x500",
+  "sku": "REINA-TRADITIONAL-RADIATOR-960X500",
+  "price_gbp": 375.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 960,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "960 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 86,
+  "name": "Traditional Radiator 505x675",
+  "sku": "REINA-TRADITIONAL-RADIATOR-505X675",
+  "price_gbp": 350.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 505,
+   "width_mm": 675,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "505 x 675mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 86,
+  "name": "Traditional Radiator 505x770",
+  "sku": "REINA-TRADITIONAL-RADIATOR-505X770",
+  "price_gbp": 375.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 505,
+   "width_mm": 770,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "505 x 770mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 96,
+  "name": "Towel Rails 800x500",
+  "sku": "REINA-TOWEL-RAILS-800X500",
+  "price_gbp": 249.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 96,
+  "name": "Towel Rails 1200x500",
+  "sku": "REINA-TOWEL-RAILS-1200X500",
+  "price_gbp": 339.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 96,
+  "name": "Towel Rails 1600x500",
+  "sku": "REINA-TOWEL-RAILS-1600X500",
+  "price_gbp": 439.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 96,
+  "name": "Towel Rails 800x600",
+  "sku": "REINA-TOWEL-RAILS-800X600",
+  "price_gbp": 259.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 96,
+  "name": "Towel Rails 1200x600",
+  "sku": "REINA-TOWEL-RAILS-1200X600",
+  "price_gbp": 349.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 96,
+  "name": "Towel Rails 1600x600",
+  "sku": "REINA-TOWEL-RAILS-1600X600",
+  "price_gbp": 459.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 97,
+  "name": "Ottone Gun Metal 800x500",
+  "sku": "REINA-OTTONE-GUN-METAL-800X500",
+  "price_gbp": 249.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 97,
+  "name": "Ottone Gun Metal 1200x500",
+  "sku": "REINA-OTTONE-GUN-METAL-1200X500",
+  "price_gbp": 339.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 97,
+  "name": "Ottone Gun Metal 1600x500",
+  "sku": "REINA-OTTONE-GUN-METAL-1600X500",
+  "price_gbp": 439.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 97,
+  "name": "Ottone Gun Metal 800x600",
+  "sku": "REINA-OTTONE-GUN-METAL-800X600",
+  "price_gbp": 259.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 97,
+  "name": "Ottone Gun Metal 1200x600",
+  "sku": "REINA-OTTONE-GUN-METAL-1200X600",
+  "price_gbp": 349.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 97,
+  "name": "Ottone Gun Metal 1600x600",
+  "sku": "REINA-OTTONE-GUN-METAL-1600X600",
+  "price_gbp": 459.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 99,
+  "name": "Aluminium Radiator 1800x430",
+  "sku": "REINA-ALUMINIUM-RADIATOR-1800X430",
+  "price_gbp": 780.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 430,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 430mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 99,
+  "name": "Aluminium Radiator 1800x510",
+  "sku": "REINA-ALUMINIUM-RADIATOR-1800X510",
+  "price_gbp": 884.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 510,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 510mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 100,
+  "name": "Aluminium Radiator 1800x190",
+  "sku": "REINA-ALUMINIUM-RADIATOR-1800X190",
+  "price_gbp": 336.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 190,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 190mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 100,
+  "name": "Aluminium Radiator 1800x270",
+  "sku": "REINA-ALUMINIUM-RADIATOR-1800X270",
+  "price_gbp": 442.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 270,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 270mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 100,
+  "name": "Aluminium Radiator 1800x350",
+  "sku": "REINA-ALUMINIUM-RADIATOR-1800X350",
+  "price_gbp": 538.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 350,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 350mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 100,
+  "name": "Aluminium Radiator 1800x590",
+  "sku": "REINA-ALUMINIUM-RADIATOR-1800X590",
+  "price_gbp": 766.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 590,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 590mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 101,
+  "name": "Aluminium Radiator 1800x370",
+  "sku": "REINA-ALUMINIUM-RADIATOR-1800X370",
+  "price_gbp": 540.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 370,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 370mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 101,
+  "name": "Aluminium Radiator 1800x495",
+  "sku": "REINA-ALUMINIUM-RADIATOR-1800X495",
+  "price_gbp": 670.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 495,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 495mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 101,
+  "name": "Aluminium Radiator 1800x620",
+  "sku": "REINA-ALUMINIUM-RADIATOR-1800X620",
+  "price_gbp": 770.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 620,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 620mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 102,
+  "name": "Aluminium Radiator 1800x245",
+  "sku": "REINA-ALUMINIUM-RADIATOR-1800X245",
+  "price_gbp": 310.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 245,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 245mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 102,
+  "name": "Aluminium Radiator 1800x610",
+  "sku": "REINA-ALUMINIUM-RADIATOR-1800X610",
+  "price_gbp": 604.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 610,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 610mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 103,
+  "name": "Caldaro Horizontal 600x620",
+  "sku": "REINA-CALDARO-HORIZONTAL-600X620",
+  "price_gbp": 312.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 620,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 620mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 103,
+  "name": "Caldaro Horizontal 600x870",
+  "sku": "REINA-CALDARO-HORIZONTAL-600X870",
+  "price_gbp": 430.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 870,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 870mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 103,
+  "name": "Caldaro Horizontal 600x995",
+  "sku": "REINA-CALDARO-HORIZONTAL-600X995",
+  "price_gbp": 480.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 995,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 995mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 103,
+  "name": "Caldaro Horizontal 600x1245",
+  "sku": "REINA-CALDARO-HORIZONTAL-600X1245",
+  "price_gbp": 584.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 1245,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 1245mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 104,
+  "name": "Aluminium Radiator 1800x280",
+  "sku": "REINA-ALUMINIUM-RADIATOR-1800X280",
+  "price_gbp": 394.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 280,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 280mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 104,
+  "name": "Aluminium Radiator 1800x470",
+  "sku": "REINA-ALUMINIUM-RADIATOR-1800X470",
+  "price_gbp": 598.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 470,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 470mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 104,
+  "name": "Aluminium Radiator 1800x660",
+  "sku": "REINA-ALUMINIUM-RADIATOR-1800X660",
+  "price_gbp": 798.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 660,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 660mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 105,
+  "name": "Single Double 1800x280",
+  "sku": "REINA-SINGLE-DOUBLE-1800X280",
+  "price_gbp": 394.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 280,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 280mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 105,
+  "name": "Single Double 1800x375",
+  "sku": "REINA-SINGLE-DOUBLE-1800X375",
+  "price_gbp": 496.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 375,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 375mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 105,
+  "name": "Single Double 1800x470",
+  "sku": "REINA-SINGLE-DOUBLE-1800X470",
+  "price_gbp": 598.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 470,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 470mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 105,
+  "name": "Single Double 1800x565",
+  "sku": "REINA-SINGLE-DOUBLE-1800X565",
+  "price_gbp": 698.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 565,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 565mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 105,
+  "name": "Single Double 1800x660",
+  "sku": "REINA-SINGLE-DOUBLE-1800X660",
+  "price_gbp": 798.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 660,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 660mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 106,
+  "name": "Aluminium Radiator 600x470",
+  "sku": "REINA-ALUMINIUM-RADIATOR-600X470",
+  "price_gbp": 270.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 470,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 470mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 106,
+  "name": "Aluminium Radiator 600x660",
+  "sku": "REINA-ALUMINIUM-RADIATOR-600X660",
+  "price_gbp": 352.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 660,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 660mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 106,
+  "name": "Aluminium Radiator 600x850",
+  "sku": "REINA-ALUMINIUM-RADIATOR-600X850",
+  "price_gbp": 440.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 850,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 850mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 106,
+  "name": "Aluminium Radiator 600x1040",
+  "sku": "REINA-ALUMINIUM-RADIATOR-600X1040",
+  "price_gbp": 520.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 1040,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 1040mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 106,
+  "name": "Aluminium Radiator 600x1230",
+  "sku": "REINA-ALUMINIUM-RADIATOR-600X1230",
+  "price_gbp": 650.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 1230,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 1230mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 106,
+  "name": "Aluminium Radiator 600x1420",
+  "sku": "REINA-ALUMINIUM-RADIATOR-600X1420",
+  "price_gbp": 740.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 1420,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 1420mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 107,
+  "name": "Piatto Vertical 1800x295",
+  "sku": "REINA-PIATTO-VERTICAL-1800X295",
+  "price_gbp": 450.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 295,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 295mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 107,
+  "name": "Piatto Vertical 1800x370",
+  "sku": "REINA-PIATTO-VERTICAL-1800X370",
+  "price_gbp": 540.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 370,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 370mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 107,
+  "name": "Piatto Vertical 1800x445",
+  "sku": "REINA-PIATTO-VERTICAL-1800X445",
+  "price_gbp": 624.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 445,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 445mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 107,
+  "name": "Piatto Vertical 1800x520",
+  "sku": "REINA-PIATTO-VERTICAL-1800X520",
+  "price_gbp": 710.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 520,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 520mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 107,
+  "name": "Piatto Vertical 1800x595",
+  "sku": "REINA-PIATTO-VERTICAL-1800X595",
+  "price_gbp": 796.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 595,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 595mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 108,
+  "name": "Aluminium Radiator 600x445",
+  "sku": "REINA-ALUMINIUM-RADIATOR-600X445",
+  "price_gbp": 290.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 445,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 445mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 108,
+  "name": "Aluminium Radiator 600x595",
+  "sku": "REINA-ALUMINIUM-RADIATOR-600X595",
+  "price_gbp": 368.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 595,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 595mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 108,
+  "name": "Aluminium Radiator 600x820",
+  "sku": "REINA-ALUMINIUM-RADIATOR-600X820",
+  "price_gbp": 480.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 820,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 820mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 108,
+  "name": "Aluminium Radiator 600x1045",
+  "sku": "REINA-ALUMINIUM-RADIATOR-600X1045",
+  "price_gbp": 598.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 1045,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 1045mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 108,
+  "name": "Aluminium Radiator 600x1195",
+  "sku": "REINA-ALUMINIUM-RADIATOR-600X1195",
+  "price_gbp": 700.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 1195,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 1195mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 109,
+  "name": "Aluminium Radiator 1800x375",
+  "sku": "REINA-ALUMINIUM-RADIATOR-1800X375",
+  "price_gbp": 496.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 375,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 375mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 109,
+  "name": "Aluminium Radiator 1800x565",
+  "sku": "REINA-ALUMINIUM-RADIATOR-1800X565",
+  "price_gbp": 698.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 565,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 565mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 111,
+  "name": "Resia Vertical 1800x280",
+  "sku": "REINA-RESIA-VERTICAL-1800X280",
+  "price_gbp": 370.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 280,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 280mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 111,
+  "name": "Resia Vertical 1800x375",
+  "sku": "REINA-RESIA-VERTICAL-1800X375",
+  "price_gbp": 476.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 375,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 375mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 111,
+  "name": "Resia Vertical 1800x470",
+  "sku": "REINA-RESIA-VERTICAL-1800X470",
+  "price_gbp": 574.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 470,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 470mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 111,
+  "name": "Resia Vertical 1800x565",
+  "sku": "REINA-RESIA-VERTICAL-1800X565",
+  "price_gbp": 682.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 565,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 565mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 111,
+  "name": "Resia Vertical 1800x660",
+  "sku": "REINA-RESIA-VERTICAL-1800X660",
+  "price_gbp": 786.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 660,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 660mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 113,
+  "name": "Melvin 1800x360",
+  "sku": "REINA-MELVIN-1800X360",
+  "price_gbp": 414.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 360,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 360mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 113,
+  "name": "Melvin 1800x540",
+  "sku": "REINA-MELVIN-1800X540",
+  "price_gbp": 580.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1800,
+   "width_mm": 540,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1800 x 540mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 114,
+  "name": "Aluminium Radiator 1500x280",
+  "sku": "REINA-ALUMINIUM-RADIATOR-1500X280",
+  "price_gbp": 325.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 280,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 280mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 115,
+  "name": "Carpena 710x500",
+  "sku": "REINA-CARPENA-710X500",
+  "price_gbp": 210.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 710,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "710 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 115,
+  "name": "Carpena 1190x500",
+  "sku": "REINA-CARPENA-1190X500",
+  "price_gbp": 299.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1190,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1190 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 115,
+  "name": "Carpena 1510x500",
+  "sku": "REINA-CARPENA-1510X500",
+  "price_gbp": 359.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1510,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1510 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 116,
+  "name": "Aluminium Radiator 870x500",
+  "sku": "REINA-ALUMINIUM-RADIATOR-870X500",
+  "price_gbp": 299.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 870,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "870 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 116,
+  "name": "Aluminium Radiator 1190x500",
+  "sku": "REINA-ALUMINIUM-RADIATOR-1190X500",
+  "price_gbp": 379.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1190,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1190 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 116,
+  "name": "Aluminium Radiator 1510x500",
+  "sku": "REINA-ALUMINIUM-RADIATOR-1510X500",
+  "price_gbp": 459.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1510,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1510 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 117,
+  "name": "Rienza 565x600",
+  "sku": "REINA-RIENZA-565X600",
+  "price_gbp": 294.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 565,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "565 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 117,
+  "name": "Rienza 565x800",
+  "sku": "REINA-RIENZA-565X800",
+  "price_gbp": 342.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 565,
+   "width_mm": 800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "565 x 800mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 117,
+  "name": "Rienza 565x1000",
+  "sku": "REINA-RIENZA-565X1000",
+  "price_gbp": 390.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 565,
+   "width_mm": 1000,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "565 x 1000mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 117,
+  "name": "Rienza 565x1200",
+  "sku": "REINA-RIENZA-565X1200",
+  "price_gbp": 426.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 565,
+   "width_mm": 1200,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "565 x 1200mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 117,
+  "name": "Rienza 565x1400",
+  "sku": "REINA-RIENZA-565X1400",
+  "price_gbp": 480.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 565,
+   "width_mm": 1400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "565 x 1400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 120,
+  "name": "Stainless Steel Radiator 600x300",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-600X300",
+  "price_gbp": 192.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 300,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 300mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 120,
+  "name": "Stainless Steel Radiator 720x350",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-720X350",
+  "price_gbp": 230.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 720,
+   "width_mm": 350,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "720 x 350mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 120,
+  "name": "Stainless Steel Radiator 1200x350",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1200X350",
+  "price_gbp": 330.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 350,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 350mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 120,
+  "name": "Stainless Steel Radiator 1500x350",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1500X350",
+  "price_gbp": 390.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 350,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 350mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 120,
+  "name": "Stainless Steel Radiator 430x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-430X500",
+  "price_gbp": 182.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 430,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "430 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 120,
+  "name": "Stainless Steel Radiator 720x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-720X500",
+  "price_gbp": 258.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 720,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "720 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 120,
+  "name": "Stainless Steel Radiator 1200x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1200X500",
+  "price_gbp": 342.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 120,
+  "name": "Stainless Steel Radiator 1500x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1500X500",
+  "price_gbp": 440.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 120,
+  "name": "Stainless Steel Radiator 430x600",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-430X600",
+  "price_gbp": 190.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 430,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "430 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 120,
+  "name": "Stainless Steel Radiator 720x600",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-720X600",
+  "price_gbp": 280.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 720,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "720 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 120,
+  "name": "Stainless Steel Radiator 1200x600",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1200X600",
+  "price_gbp": 380.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 120,
+  "name": "Stainless Steel Radiator 1500x600",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1500X600",
+  "price_gbp": 490.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 122,
+  "name": "Stainless Steel Radiator 800x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-800X500",
+  "price_gbp": 262.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 122,
+  "name": "Stainless Steel Radiator 1080x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1080X500",
+  "price_gbp": 320.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1080,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1080 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 122,
+  "name": "Stainless Steel Radiator 1360x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1360X500",
+  "price_gbp": 370.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1360,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1360 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 123,
+  "name": "Stainless Steel Radiator 850x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-850X500",
+  "price_gbp": 370.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 850,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "850 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 123,
+  "name": "Stainless Steel Radiator 1250x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1250X500",
+  "price_gbp": 470.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1250,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1250 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 123,
+  "name": "Stainless Steel Radiator 1650x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1650X500",
+  "price_gbp": 580.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1650,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1650 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 124,
+  "name": "Stainless Steel Radiator 870x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-870X500",
+  "price_gbp": 448.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 870,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "870 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 124,
+  "name": "Stainless Steel Radiator 1270x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1270X500",
+  "price_gbp": 569.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1270,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1270 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 124,
+  "name": "Stainless Steel Radiator 1670x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1670X500",
+  "price_gbp": 735.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1670,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1670 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 125,
+  "name": "Stainless Steel Radiator 530x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-530X500",
+  "price_gbp": 295.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 530,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "530 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 125,
+  "name": "Stainless Steel Radiator 880x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-880X500",
+  "price_gbp": 394.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 880,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "880 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 125,
+  "name": "Stainless Steel Radiator 1230x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1230X500",
+  "price_gbp": 482.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1230,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1230 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 125,
+  "name": "Stainless Steel Radiator 1580x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1580X500",
+  "price_gbp": 658.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1580,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1580 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 126,
+  "name": "Stainless Steel Radiator 585x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-585X500",
+  "price_gbp": 290.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 585,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "585 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 126,
+  "name": "Stainless Steel Radiator 1000x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1000X500",
+  "price_gbp": 380.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1000,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 126,
+  "name": "Stainless Steel Radiator 1415x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1415X500",
+  "price_gbp": 530.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1415,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1415 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 127,
+  "name": "Capelli 800x500",
+  "sku": "REINA-CAPELLI-800X500",
+  "price_gbp": 390.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 127,
+  "name": "Capelli 1235x500",
+  "sku": "REINA-CAPELLI-1235X500",
+  "price_gbp": 590.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1235,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1235 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 127,
+  "name": "Capelli 1525x500",
+  "sku": "REINA-CAPELLI-1525X500",
+  "price_gbp": 690.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1525,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1525 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 128,
+  "name": "Stainless Steel Radiator 840x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-840X500",
+  "price_gbp": 470.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 840,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "840 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 128,
+  "name": "Stainless Steel Radiator 1140x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1140X500",
+  "price_gbp": 630.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1140,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1140 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 128,
+  "name": "Stainless Steel Radiator 1440x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1440X500",
+  "price_gbp": 750.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1440,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1440 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 129,
+  "name": "Stainless Steel Radiator 1106x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1106X500",
+  "price_gbp": 600.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1106,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1106 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 130,
+  "name": "Stainless Steel Radiator 690x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-690X500",
+  "price_gbp": 380.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 690,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "690 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 130,
+  "name": "Stainless Steel Radiator 960x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-960X500",
+  "price_gbp": 470.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 960,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "960 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 131,
+  "name": "Stainless Steel Radiator 720x530",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-720X530",
+  "price_gbp": 320.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 720,
+   "width_mm": 530,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "720 x 530mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 131,
+  "name": "Stainless Steel Radiator 1120x530",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1120X530",
+  "price_gbp": 440.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1120,
+   "width_mm": 530,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1120 x 530mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 131,
+  "name": "Stainless Steel Radiator 1450x530",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1450X530",
+  "price_gbp": 536.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1450,
+   "width_mm": 530,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1450 x 530mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 133,
+  "name": "Stainless Steel Radiator 820x530",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-820X530",
+  "price_gbp": 310.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 820,
+   "width_mm": 530,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "820 x 530mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 133,
+  "name": "Stainless Steel Radiator 1180x530",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1180X530",
+  "price_gbp": 414.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1180,
+   "width_mm": 530,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1180 x 530mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 133,
+  "name": "Stainless Steel Radiator 1540x530",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1540X530",
+  "price_gbp": 490.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1540,
+   "width_mm": 530,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1540 x 530mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 134,
+  "name": "Stainless Steel Radiator 660x530",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-660X530",
+  "price_gbp": 298.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 660,
+   "width_mm": 530,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "660 x 530mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 135,
+  "name": "Stainless Steel Radiator 826x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-826X500",
+  "price_gbp": 372.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 826,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "826 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 135,
+  "name": "Stainless Steel Radiator 1120x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1120X500",
+  "price_gbp": 482.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1120,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1120 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 135,
+  "name": "Stainless Steel Radiator 1535x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1535X500",
+  "price_gbp": 625.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1535,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1535 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 136,
+  "name": "Stainless Steel Radiator 500x500",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-500X500",
+  "price_gbp": 289.5,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 500,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "500 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 137,
+  "name": "Stainless Steel Radiator 750x480",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-750X480",
+  "price_gbp": 280.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 750,
+   "width_mm": 480,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "750 x 480mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 137,
+  "name": "Stainless Steel Radiator 1170x480",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-1170X480",
+  "price_gbp": 390.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1170,
+   "width_mm": 480,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1170 x 480mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 138,
+  "name": "Stainless Steel Radiator 450x450",
+  "sku": "REINA-STAINLESS-STEEL-RADIATOR-450X450",
+  "price_gbp": 372.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 450,
+   "width_mm": 450,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "450 x 450mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 139,
+  "name": "Arnage Dry Electric Polished 800x500",
+  "sku": "REINA-ARNAGE-DRY-ELECTRIC-POLI-800X500",
+  "price_gbp": 258.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 139,
+  "name": "Arnage Dry Electric Polished 1200x500",
+  "sku": "REINA-ARNAGE-DRY-ELECTRIC-POLI-1200X500",
+  "price_gbp": 316.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 140,
+  "name": "Electric Radiator 800x500",
+  "sku": "REINA-ELECTRIC-RADIATOR-800X500",
+  "price_gbp": 318.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 140,
+  "name": "Electric Radiator 1200x500",
+  "sku": "REINA-ELECTRIC-RADIATOR-1200X500",
+  "price_gbp": 390.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 142,
+  "name": "Electric Radiator 350x500",
+  "sku": "REINA-ELECTRIC-RADIATOR-350X500",
+  "price_gbp": 249.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 350,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "350 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 142,
+  "name": "Electric Radiator 1190x500",
+  "sku": "REINA-ELECTRIC-RADIATOR-1190X500",
+  "price_gbp": 370.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1190,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1190 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 143,
+  "name": "Solara Brushed Brass 1500x400",
+  "sku": "REINA-SOLARA-BRUSHED-BRASS-1500X400",
+  "price_gbp": 410.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 144,
+  "name": "Electric Radiator 1500x400",
+  "sku": "REINA-ELECTRIC-RADIATOR-1500X400",
+  "price_gbp": 410.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 145,
+  "name": "Electric Radiator 1500x200",
+  "sku": "REINA-ELECTRIC-RADIATOR-1500X200",
+  "price_gbp": 320.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 200,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 200mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 146,
+  "name": "Rrp Prices 1500x200",
+  "sku": "REINA-RRP-PRICES-1500X200",
+  "price_gbp": 320.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 200,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 200mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 147,
+  "name": "Vispa Brushed Brass 510x500",
+  "sku": "REINA-VISPA-BRUSHED-BRASS-510X500",
+  "price_gbp": 250.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 510,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "510 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 148,
+  "name": "Vispa Gun Metal 510x500",
+  "sku": "REINA-VISPA-GUN-METAL-510X500",
+  "price_gbp": 250.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 510,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "510 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 149,
+  "name": "Rrp Prices 800x500",
+  "sku": "REINA-RRP-PRICES-800X500",
+  "price_gbp": 224.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 149,
+  "name": "Rrp Prices 1200x500",
+  "sku": "REINA-RRP-PRICES-1200X500",
+  "price_gbp": 290.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 151,
+  "name": "Rance Dry Electric 455x500",
+  "sku": "REINA-RANCE-DRY-ELECTRIC-455X500",
+  "price_gbp": 207.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 455,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "455 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 152,
+  "name": "Electric Radiator 750x550",
+  "sku": "REINA-ELECTRIC-RADIATOR-750X550",
+  "price_gbp": 239.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 750,
+   "width_mm": 550,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "750 x 550mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 153,
+  "name": "Electric Radiator 1500x22",
+  "sku": "REINA-ELECTRIC-RADIATOR-1500X22",
+  "price_gbp": 260.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1500,
+   "width_mm": 22,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1500 x 22mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 155,
+  "name": "Electric Radiator 1600x362",
+  "sku": "REINA-ELECTRIC-RADIATOR-1600X362",
+  "price_gbp": 410.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 362,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 362mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 155,
+  "name": "Electric Radiator 1600x453",
+  "sku": "REINA-ELECTRIC-RADIATOR-1600X453",
+  "price_gbp": 480.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 453,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 453mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 155,
+  "name": "Electric Radiator 1600x544",
+  "sku": "REINA-ELECTRIC-RADIATOR-1600X544",
+  "price_gbp": 550.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 544,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 544mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 156,
+  "name": "Maia  Horizontal 500x544",
+  "sku": "REINA-MAIA-HORIZONTAL-500X544",
+  "price_gbp": 290.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 500,
+   "width_mm": 544,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "500 x 544mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 156,
+  "name": "Maia  Horizontal 500x725",
+  "sku": "REINA-MAIA-HORIZONTAL-500X725",
+  "price_gbp": 350.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 500,
+   "width_mm": 725,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "500 x 725mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 156,
+  "name": "Maia  Horizontal 500x907",
+  "sku": "REINA-MAIA-HORIZONTAL-500X907",
+  "price_gbp": 400.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 500,
+   "width_mm": 907,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "500 x 907mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 158,
+  "name": "Nika Horizontal 500x544",
+  "sku": "REINA-NIKA-HORIZONTAL-500X544",
+  "price_gbp": 290.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 500,
+   "width_mm": 544,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "500 x 544mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 158,
+  "name": "Nika Horizontal 500x725",
+  "sku": "REINA-NIKA-HORIZONTAL-500X725",
+  "price_gbp": 350.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 500,
+   "width_mm": 725,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "500 x 725mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 158,
+  "name": "Nika Horizontal 500x907",
+  "sku": "REINA-NIKA-HORIZONTAL-500X907",
+  "price_gbp": 400.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 500,
+   "width_mm": 907,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "500 x 907mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 159,
+  "name": "Electric Radiator 580x480",
+  "sku": "REINA-ELECTRIC-RADIATOR-580X480",
+  "price_gbp": 194.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 580,
+   "width_mm": 480,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "580 x 480mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 159,
+  "name": "Electric Radiator 580x640",
+  "sku": "REINA-ELECTRIC-RADIATOR-580X640",
+  "price_gbp": 214.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 580,
+   "width_mm": 640,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "580 x 640mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 159,
+  "name": "Electric Radiator 580x800",
+  "sku": "REINA-ELECTRIC-RADIATOR-580X800",
+  "price_gbp": 238.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 580,
+   "width_mm": 800,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "580 x 800mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 160,
+  "name": "Electric Radiator 570x360",
+  "sku": "REINA-ELECTRIC-RADIATOR-570X360",
+  "price_gbp": 380.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 570,
+   "width_mm": 360,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "570 x 360mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 160,
+  "name": "Electric Radiator 570x450",
+  "sku": "REINA-ELECTRIC-RADIATOR-570X450",
+  "price_gbp": 410.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 570,
+   "width_mm": 450,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "570 x 450mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 160,
+  "name": "Electric Radiator 570x540",
+  "sku": "REINA-ELECTRIC-RADIATOR-570X540",
+  "price_gbp": 460.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 570,
+   "width_mm": 540,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "570 x 540mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 160,
+  "name": "Electric Radiator 570x720",
+  "sku": "REINA-ELECTRIC-RADIATOR-570X720",
+  "price_gbp": 520.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 570,
+   "width_mm": 720,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "570 x 720mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 161,
+  "name": "Electric Radiator 500x600",
+  "sku": "REINA-ELECTRIC-RADIATOR-500X600",
+  "price_gbp": 188.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 500,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "500 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 161,
+  "name": "Electric Radiator 500x820",
+  "sku": "REINA-ELECTRIC-RADIATOR-500X820",
+  "price_gbp": 248.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 500,
+   "width_mm": 820,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "500 x 820mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 161,
+  "name": "Electric Radiator 500x990",
+  "sku": "REINA-ELECTRIC-RADIATOR-500X990",
+  "price_gbp": 292.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 500,
+   "width_mm": 990,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "500 x 990mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 162,
+  "name": "Electric Radiator 780x550",
+  "sku": "REINA-ELECTRIC-RADIATOR-780X550",
+  "price_gbp": 298.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 780,
+   "width_mm": 550,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "780 x 550mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 162,
+  "name": "Electric Radiator 1120x550",
+  "sku": "REINA-ELECTRIC-RADIATOR-1120X550",
+  "price_gbp": 355.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1120,
+   "width_mm": 550,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1120 x 550mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 600x300",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-600X300",
+  "price_gbp": 157.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 600,
+   "width_mm": 300,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "600 x 300mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 800x300",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-800X300",
+  "price_gbp": 177.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 300,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 300mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 800x400",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-800X400",
+  "price_gbp": 189.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 800x450",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-800X450",
+  "price_gbp": 197.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 450,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 450mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 800x500",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-800X500",
+  "price_gbp": 203.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 800x600",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-800X600",
+  "price_gbp": 217.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 800x750",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-800X750",
+  "price_gbp": 241.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 750,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 750mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 1000x400",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-1000X400",
+  "price_gbp": 207.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1000,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000 x 400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 1000x500",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-1000X500",
+  "price_gbp": 224.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1000,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 1000x600",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-1000X600",
+  "price_gbp": 240.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1000,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 1200x300",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-1200X300",
+  "price_gbp": 211.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 300,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 300mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 1200x400",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-1200X400",
+  "price_gbp": 230.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 1200x450",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-1200X450",
+  "price_gbp": 240.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 450,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 450mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 1200x500",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-1200X500",
+  "price_gbp": 245.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 1200x600",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-1200X600",
+  "price_gbp": 265.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 1200x750",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-1200X750",
+  "price_gbp": 306.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 750,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 750mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 1400x500",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-1400X500",
+  "price_gbp": 279.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1400,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1400 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 1400x600",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-1400X600",
+  "price_gbp": 307.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1400,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1400 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 1600x300",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-1600X300",
+  "price_gbp": 260.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 300,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 300mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 1600x400",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-1600X400",
+  "price_gbp": 284.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 1600x500",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-1600X500",
+  "price_gbp": 309.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 164,
+  "name": "Diva Chrome Flat Electric 1600x600",
+  "sku": "REINA-DIVA-CHROME-FLAT-ELECTRI-1600X600",
+  "price_gbp": 340.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 165,
+  "name": "Diva Black Flat Electric 800x400",
+  "sku": "REINA-DIVA-BLACK-FLAT-ELECTRIC-800X400",
+  "price_gbp": 154.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 400mm",
+  "category": "heating/towel-rails",
+  "image": "p165_REINA-DIVA-BLACK-FLAT-ELECTR.png"
+ },
+ {
+  "page": 165,
+  "name": "Diva Black Flat Electric 800x500",
+  "sku": "REINA-DIVA-BLACK-FLAT-ELECTRIC-800X500",
+  "price_gbp": 164.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 165,
+  "name": "Diva Black Flat Electric 800x600",
+  "sku": "REINA-DIVA-BLACK-FLAT-ELECTRIC-800X600",
+  "price_gbp": 174.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 165,
+  "name": "Diva Black Flat Electric 1200x400",
+  "sku": "REINA-DIVA-BLACK-FLAT-ELECTRIC-1200X400",
+  "price_gbp": 178.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 165,
+  "name": "Diva Black Flat Electric 1200x500",
+  "sku": "REINA-DIVA-BLACK-FLAT-ELECTRIC-1200X500",
+  "price_gbp": 188.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 165,
+  "name": "Diva Black Flat Electric 1200x600",
+  "sku": "REINA-DIVA-BLACK-FLAT-ELECTRIC-1200X600",
+  "price_gbp": 198.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 166,
+  "name": "Electric Radiator 800x400",
+  "sku": "REINA-ELECTRIC-RADIATOR-800X400",
+  "price_gbp": 154.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 400mm",
+  "category": "heating/towel-rails",
+  "image": "p166_REINA-ELECTRIC-RADIATOR-800X.png"
+ },
+ {
+  "page": 166,
+  "name": "Electric Radiator 800x600",
+  "sku": "REINA-ELECTRIC-RADIATOR-800X600",
+  "price_gbp": 174.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 166,
+  "name": "Electric Radiator 1200x400",
+  "sku": "REINA-ELECTRIC-RADIATOR-1200X400",
+  "price_gbp": 178.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 166,
+  "name": "Electric Radiator 1200x600",
+  "sku": "REINA-ELECTRIC-RADIATOR-1200X600",
+  "price_gbp": 198.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 168,
+  "name": "Electric Radiator 1000x400",
+  "sku": "REINA-ELECTRIC-RADIATOR-1000X400",
+  "price_gbp": 161.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1000,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000 x 400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 168,
+  "name": "Electric Radiator 1000x500",
+  "sku": "REINA-ELECTRIC-RADIATOR-1000X500",
+  "price_gbp": 166.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1000,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 168,
+  "name": "Electric Radiator 1000x600",
+  "sku": "REINA-ELECTRIC-RADIATOR-1000X600",
+  "price_gbp": 169.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1000,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 168,
+  "name": "Electric Radiator 1600x400",
+  "sku": "REINA-ELECTRIC-RADIATOR-1600X400",
+  "price_gbp": 213.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 168,
+  "name": "Electric Radiator 1600x500",
+  "sku": "REINA-ELECTRIC-RADIATOR-1600X500",
+  "price_gbp": 220.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 168,
+  "name": "Electric Radiator 1600x600",
+  "sku": "REINA-ELECTRIC-RADIATOR-1600X600",
+  "price_gbp": 227.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 169,
+  "name": "Electric Radiator Electric Radiator 800x400",
+  "sku": "REINA-ELECTRIC-RADIATOR-ELECTR-800X400",
+  "price_gbp": 149.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 400mm",
+  "category": "heating/towel-rails",
+  "image": "p169_REINA-ELECTRIC-RADIATOR-ELEC.png"
+ },
+ {
+  "page": 169,
+  "name": "Electric Radiator Electric Radiator 800x500",
+  "sku": "REINA-ELECTRIC-RADIATOR-ELECTR-800X500",
+  "price_gbp": 155.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 169,
+  "name": "Electric Radiator Electric Radiator 800x600",
+  "sku": "REINA-ELECTRIC-RADIATOR-ELECTR-800X600",
+  "price_gbp": 159.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 800,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "800 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 169,
+  "name": "Electric Radiator Electric Radiator 1000x400",
+  "sku": "REINA-ELECTRIC-RADIATOR-ELECTR-1000X400",
+  "price_gbp": 156.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1000,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000 x 400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 169,
+  "name": "Electric Radiator Electric Radiator 1000x500",
+  "sku": "REINA-ELECTRIC-RADIATOR-ELECTR-1000X500",
+  "price_gbp": 161.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1000,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 169,
+  "name": "Electric Radiator Electric Radiator 1000x600",
+  "sku": "REINA-ELECTRIC-RADIATOR-ELECTR-1000X600",
+  "price_gbp": 164.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1000,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1000 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 169,
+  "name": "Electric Radiator Electric Radiator 1200x400",
+  "sku": "REINA-ELECTRIC-RADIATOR-ELECTR-1200X400",
+  "price_gbp": 162.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 169,
+  "name": "Electric Radiator Electric Radiator 1200x500",
+  "sku": "REINA-ELECTRIC-RADIATOR-ELECTR-1200X500",
+  "price_gbp": 164.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 169,
+  "name": "Electric Radiator Electric Radiator 1200x600",
+  "sku": "REINA-ELECTRIC-RADIATOR-ELECTR-1200X600",
+  "price_gbp": 171.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1200,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1200 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 169,
+  "name": "Electric Radiator Electric Radiator 1600x400",
+  "sku": "REINA-ELECTRIC-RADIATOR-ELECTR-1600X400",
+  "price_gbp": 206.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 400,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 400mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 169,
+  "name": "Electric Radiator Electric Radiator 1600x500",
+  "sku": "REINA-ELECTRIC-RADIATOR-ELECTR-1600X500",
+  "price_gbp": 213.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 500,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 500mm",
+  "category": "heating/towel-rails",
+  "image": null
+ },
+ {
+  "page": 169,
+  "name": "Electric Radiator Electric Radiator 1600x600",
+  "sku": "REINA-ELECTRIC-RADIATOR-ELECTR-1600X600",
+  "price_gbp": 220.0,
+  "price_note": "ex VAT",
+  "dims": {
+   "height_mm": 1600,
+   "width_mm": 600,
+   "depth_mm": null
+  },
+  "hand": null,
+  "size_raw": "1600 x 600mm",
+  "category": "heating/towel-rails",
+  "image": null
+ }
+]
